@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+		<script src='src/js/three.min.js'></script>
+		<script src="https://raw.github.com/mrdoob/three.js/master/examples/js/loaders/STLLoader.js"></script>
+	</head>
+	<body>
+		<p>test</p>
+		<script>
+			var scene=new THREE.Scene()
+			var renderer=new THREE.WebGLRenderer()
+			renderer.setClearColorHex(0x000000,1)
+			renderer.setSize(window.innerWidth,window.innerHeight)
+			document.body.appendChild(renderer.domElement)
+			var camera = new THREE.PerspectiveCamera(50,window.innerWidth/window.innerHeight,1,100000)
+			var cube=new THREE.Mesh(new THREE.CubeGeometry(30,30,30),new THREE.MeshBasicMaterial({color:0xffffff,wireframe:true}))
+			scene.add(cube)
+			camera.position.z=80
+			var loader=new THREE.STLLoader()
+			loader.addEventListener('load',function(event){
+				var geometry=event.content
+				var material=new THREE.MeshLambertMaterial( { ambient: 0xff5533, color: 0xff5533 } )
+				var mesh=new THREE.Mesh(geometry,material)
+				scene.add(mesh)
+			})
+			loader.load('original.stl')
+			scene.add( new THREE.AmbientLight( 0x222222 ) );
+			var directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
+			directionalLight.position = camera.position;
+			scene.add( directionalLight );
+			function animate(){
+				requestAnimationFrame(animate)
+				renderer.render(scene,camera)
+			}
+			animate()
+		</script>
+	</body>
+</html>

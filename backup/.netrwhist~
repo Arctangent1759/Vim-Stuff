@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/arctangent1759/Django_Fun/testproj/polls'
+let g:netrw_dirhist_2='/home/arctangent1759/Documents/LudumDare25/ludum-dare-25/src/com/zachlatta/ludumdare25/engine/component/physics'
+let g:netrw_dirhist_3='/home/arctangent1759/Documents/Projects/Instructional/DjangoFun/mysite'
+let g:netrw_dirhist_4='/home/arctangent1759/Documents/Projects/Instructional/DjangoFun/mysite/polls'
+let g:netrw_dirhist_5='/home/arctangent1759/Documents/Projects/Instructional/DjangoFun/mysite'
+let g:netrw_dirhist_6='/home/arctangent1759/Documents/Projects/Instructional/DjangoFun/mysite/mysite'
+let g:netrw_dirhist_7='/home/arctangent1759/.vim'
