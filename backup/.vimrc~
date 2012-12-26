@@ -37,7 +37,6 @@ set lazyredraw
 set showmatch
 set mat=2
 set encoding=utf8
-set hidden
 
 "----------------------
 "--------Maps----------
@@ -79,7 +78,8 @@ nmap <c-k> mz:m-2<cr>`z
 vmap <c-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <c-k> :m'<-2<cr>`>my`<mzgv`yo`z
 nnoremap <leader>ss :setlocal spell!<cr>
-nnoremap <leader>n :execute 'NERDTreeToggle ' . getcwd()<CR>
+nnoremap <leader>n :execute 'NERDTreeToggle ' . getcwd()<cr>
+nnoremap <leader>t :TagbarToggle<cr>
 
 
 "----------------------
