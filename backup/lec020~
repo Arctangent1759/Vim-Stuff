@@ -1,0 +1,79 @@
+Asymptotic Analysis (continued)
+===============================
+	Big-Omega Notation
+	------------------
+		\Omega(f(n)) is the st of all functions T(n) that stsify:
+			\exists positive constantds d & N such that \foralll n \ge N, T(n) \ge d f(n)
+
+		Compare with Big-Oh: T(n) \le c f(n)
+		\Omega is reverse of Big-Oh. 
+		\2n \in \Omega(n) BECAUSE n \in O(2n)
+		\n^2 \in \Omega(n) BECAUSE n \in O(n^2)
+
+		Big-Omega gives us lower bound on a function.
+
+	Big-Theta Notation
+	------------------
+		Big-Theta precisely specifies a function's asymptotic beahiovr.
+		\Theta(f(n)) is the set of alll functions that are in both of O(f(n)) and \Omega(f(n))
+		\Theta(f(n)) = O(f(n)) \intersect \Omega(f(n))
+
+		f(n) \in \Theta((n) <=> g(n) \in Theta(f(n))
+		n^3 \in \Theta(3n^2-n^2). 3n^2-n^2 \in \Theta(n^3)
+
+		Not as misleading as Big-Oh
+
+		f(n)=n(1+sin n)
+		f(n) \in O(n)
+		f(n) \in \Omega(0)
+
+		\Theta doesn't exist
+	
+	Algorithms Analysis
+	-------------------
+		Problem 1:
+			Given p points,  find pair closest to each other.
+
+			Algorithm #1:
+				Calculate the distance between each pair, return minimum
+				There are p(p-1)/2 pairs, each pair constant time to examine.
+				Time \in \Theta(p^2)
+
+		Problem 2:
+			Squish an array
+			Algorithm #2
+				Code:
+					int i=0,j=0;
+
+					while (i<ints.length){
+						int[j]=ints[i];
+						do{
+							i++;
+						}while((i<ints.length)&&(ints[i]==ints[j]));;
+						j++
+					}
+					//Code to fill in -1s at the end of array omitted
+				Runs in \Theta(n)
+		Problem 3:
+			Matchmaking program for w women and m men.
+			Algorithm #3: 
+				Compare each woman with ecah man. Decide if they're comparable.
+
+				Each comparison takes \theta(1) running timee.
+
+				T(w,m) \in Theta(wm)
+
+				=> There exist constants c,d,W, and M such that d wm \le T(w,m) \le cwm for every w \ge W and m \ge M.
+
+				T is NOT in O(w^2), O(m^2), \Omega(w^2), nor \Omega(m^2) because there can be a case where w >> m or m >> w.
+
+		Problem 4:
+			Array containing n music albums, sorted by title.
+			You request a list of all albums whose titles begin "The Best Of". There are k such albums.
+			Algorithm #4:
+				Search for first match w/ binary search. Walk in both directions to find other matching albums. Worst case-running time \in \Theta(log n + k)
+
+				k can be as large as n, and can be as small as 0.
+				So no simpler expression (cannot eliminate log n term)
+				\*Output sensitive\*: Performance depends partially on size k of input.
+

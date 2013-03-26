@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int input=0; //The current input supplied by the user
+	int last_input=0; //Last input, used to detect double zeroes
+	int subtotal=0; //Current subtotal
+	int total=0; //Running total
+
+	while(true){
+		do{
+			//Save the current input
+			last_input = input;
+
+			//Get the next integer
+			cout << "Enter an integer: ";
+			cin >> input;
+
+			//Update the subtotal
+			subtotal+=input;
+
+		}while(input != 0);
+
+		//Print subtotal
+		if (input != 0 || last_input != 0){
+			cout << "Subtotal: " << subtotal << endl;
+		}
+		else{
+			break;
+		}
+
+		//Update total, reset subtotal
+		total+=subtotal;
+		subtotal=0;
+	}
+	//Print total
+	cout << "Total: " << total << endl;
+}
+//Pointless comment

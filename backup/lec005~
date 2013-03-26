@@ -1,0 +1,55 @@
+Example Problem
+===============
+	Q: You have a speech singal x(t) over 100ms, with highest frequency component = 20kHz. How fast do you need to sample it?
+	a)10kHz
+	b)20kHz
+	c)30kHz
+	d)40kHz
+	e)always lose info no matter how fast you sample it.
+
+
+	CTFS (Continuous Time Fourier Series):
+	--------------------------------------
+		x(t)=A_0 + \sum_(k=1)^(p//2) cos(2\pi kf_ct+\phi_k)
+
+		f_c=1/p=1/(.1s)=10Hz
+
+		Highest Frequency: 20kHz
+
+	DTFS (Discrete Time Fourier Series):
+	------------------------------------
+		x_d(n)=A_0+\sum_(k=1)^k A_k cos(2\pi kf_dn+\phi_k), n=0,1,...,p_d-1
+
+		f_d=1/(p_d) samples^(-1), K=p_d//2
+
+		f_c ----sample----> f_s 
+		f_d=f_c/f_s
+
+
+	f_c=10Hz
+	f_d n = 20000=10K
+	2000=K
+	p_d=4000
+	1/4000=(10)/x
+	10/(x)=1/4000
+	x/(10)=4000
+	x=40000
+
+	Therefore d.
+
+	YOU DOUBLE THE SAMPLE FREQUENCY BECAUSE EACH SINUSOID HAS TWO UNKNOWNS--AMPLITUDE AND FREQUENCY.
+
+Linear Time Invariant Signals
+=============================
+	Systems
+	-------
+		x(t)---------->System------------>y(t)
+
+	Q: 1) Analysis: What happens to the frequency component of x(t) after passing through System?
+	   2) Design: How do I design a system to give desired frequency properties of the output signal?
+
+	x(t)=cos(\omega_0t+\phi)-->System-->y(t)=Acos(\omega t+\phi_2)
+	x(t)=cos(\omega_0t+\phi)+cos(\omega_1t+\phi)-->System-->y(t)=A_0cos(\omega t+\phi_2)+A_1cos(\omega_0 t+\phi_0)
+	y(t)=x(t-\tau(t))
+
+	\*time-invariance\*  is the property of a system that its response to a signal does not depend on time.

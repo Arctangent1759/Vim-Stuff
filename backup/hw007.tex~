@@ -1,0 +1,367 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,textcomp,amssymb,geometry,graphicx}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{111}  % Your discussion section
+\def\Login{cs70-kd} % Your login
+\def\HW{7} % Homework number
+
+\title{CS70--Spring 2013}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS70--Spring 2013 Homework \HW, \Name, section \Sec}{CS70--Spring 2013 Homework \HW, \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\begin{document}
+	\maketitle
+
+	\textbf{Collaborators:Robert Chang, Timothy Quach, Xue Xue He, Jennifer Shih} % Enter your collaborators
+
+	\begin{enumerate}
+		% Have a new \item for each problem
+		% Make sure you have a \newpage after each item
+		\item 
+			\begin{enumerate}
+				\item
+					To detect malicious errors, it is only necessary to add $\boxed{k}$ symbols.\\
+					$k$ additional symbols are necessary to represent the polynomial.
+					The $n$ symbols are represented as a polynomial of degree $d=n-1$.
+					Suppose that $n+k$ symbols are sent through the channel.
+					Any $n$ points uniquely determine a polynomial of degree $n-1$.
+					Thus, if there are $n+k$ points, $k+1$ points must be maliciously corrupted to generate a valid polynomial.
+					Hence, adding $k$ points will suffice to detect $k$ errors.
+				\item
+					To detect most nonmalicious errors, it is only necessary to add 1 point.
+					Since the $k$ errors are not malicious, they are random changes to the data.
+					Since the number of sets of $n+1$ points that align on a polynomial of degree 
+					$n-1$ is vastly smaller than the set of $n+1$ points that don't, the probability 
+					of a random change to the dataset to generate a set of $n+1$ points that do not generate an invalid polynomial is very low.
+					Hence, $n+1$ points can detect most nonmalicious errors.
+			\end{enumerate}
+		\newpage
+		\item
+			The president should encode the launch code numerically, as a number $m$ create a polynomial $P(x)$ of degree $d=99$, $where P(0)=m$.
+			He should then find 100 points on the polynomial, at values $x=1,2,3,\cdots,100$ to distribute among the 100 generals.
+			Since there are at most 5 spies, $k=5$.
+			9 or fewer generals cannot launch the missile, so $n=10$.
+			As this situation will generate malicious errors, to ensure recovery, $N=n+2k=10+(2)(5)=20$ generals must be present.
+			Thus, it takes a minimum of $N=20$ generals to guarantee the launch the missile.
+		\newpage
+		\item
+			\begin{enumerate}
+				\item
+					$a+b=4$\\
+					$2a+b=4$\\
+					\[ \left[ \begin{array}{ccc}
+						1 & 1 & 4 \\
+						2 & 1 & 2 \\
+					\end{array} \right]\] 
+					\[ \left[ \begin{array}{ccc}
+						1 & 1 & 4 \\
+						0 & -1 & -6 \\
+					\end{array} \right]\] 
+					\[ \left[ \begin{array}{ccc}
+						1 & 1 & 4 \\
+						0 & 1 & 6 \\
+					\end{array} \right]\] 
+					\[ \left[ \begin{array}{ccc}
+						1 & 0 & -2 \\
+						0 & 1 & 6 \\
+					\end{array} \right]\] 
+					$-2x+6=y$\\
+					$\boxed{P(x)=5x+6}$\\
+					$P(3)=0$ mod 7\\
+					$P(4)=5$ mod 7\\
+					$P(5)=3$ mod 7\\
+					$P(6)=1$ mod 7\\
+					The transmitted symbols are $\boxed{\{4,2,0,5,3,1\}}$
+				\item
+					$R(x)E(x)=Q(x)$\\
+					$E(x)=x^2+b_1x+b_0$\\
+					$R(x)E(x)=R(x)x^2+R(x)b_1x+R(x)b_0=Q(x)$\\
+					$R(x)x^2=a_4x^4+a_3x^3+a_2x^2+a_1x+a_0-R(x)b_1x-R(x)b_0$\\
+					Therefore\ldots\\
+					$5 =  a_3 +  a_2 +  a_1 +  a_0 + 2 b_1 + 2 b_0$\\
+					$5 = a_3 + 4 a_2 + 2 a_1 +  a_0 + b_1 + 4 b_0$\\
+					$1 = 6 a_3 + 2 a_2 + 3 a_1 +  a_0 + 2 b_1 + 3 b_0$\\
+					$0 = a_3 + 2 a_2 + 4 a_1 +  a_0 + 0 b_1 + 0 b_0$\\
+					$5 = 6 a_3 + 4 a_2 + 5 a_1 +  a_0 + 6 b_1 + 4 b_0$\\
+					$6 = 6 a_3 + a_2 + 6 a_1 +  a_0 + 6 b_1 + 1 b_0$\\
+				\item
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 2 & 2 & 5\\
+1 & 4 & 2 & 1 & 1 & 4 & 5\\
+6 & 2 & 3 & 1 & 2 & 3 & 1\\
+1 & 2 & 4 & 1 & 0 & 0 & 0\\
+6 & 4 & 5 & 1 & 6 & 4 & 5\\
+6 & 1 & 6 & 1 & 6 & 1 & 6\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 2 & 2 & 5\\
+0 & 3 & 1 & 0 & 6 & 2 & 0\\
+0 & 3 & 4 & 2 & 4 & 5 & 6\\
+0 & 1 & 3 & 0 & 5 & 5 & 2\\
+0 & 5 & 6 & 2 & 1 & 6 & 3\\
+0 & 2 & 0 & 2 & 1 & 3 & 4\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 2 & 2 & 5\\
+0 & 3 & 1 & 0 & 6 & 2 & 0\\
+0 & 0 & 3 & 2 & 5 & 3 & 6\\
+0 & 0 & 5 & 0 & 3 & 2 & 2\\
+0 & 0 & 2 & 2 & 5 & 5 & 3\\
+0 & 0 & 4 & 2 & 4 & 4 & 4\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 2 & 2 & 5\\
+0 & 3 & 1 & 0 & 6 & 2 & 0\\
+0 & 0 & 3 & 2 & 5 & 3 & 6\\
+0 & 0 & 0 & 6 & 4 & 4 & 6\\
+0 & 0 & 0 & 3 & 4 & 3 & 6\\
+0 & 0 & 0 & 4 & 2 & 0 & 3\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 2 & 2 & 5\\
+0 & 3 & 1 & 0 & 6 & 2 & 0\\
+0 & 0 & 3 & 2 & 5 & 3 & 6\\
+0 & 0 & 0 & 6 & 4 & 4 & 6\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 4 & 2 & 6\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 2 & 2 & 5\\
+0 & 3 & 1 & 0 & 6 & 2 & 0\\
+0 & 0 & 3 & 2 & 5 & 3 & 6\\
+0 & 0 & 0 & 6 & 4 & 4 & 6\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 2 & 2 & 5\\
+0 & 3 & 1 & 0 & 6 & 2 & 0\\
+0 & 0 & 3 & 2 & 5 & 3 & 6\\
+0 & 0 & 0 & 6 & 4 & 4 & 6\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 1 & 0 & 1 & 2\\
+0 & 3 & 1 & 0 & 0 & 6 & 5\\
+0 & 0 & 3 & 2 & 0 & 4 & 2\\
+0 & 0 & 0 & 6 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 1 & 0 & 0 & 3 & 2\\
+0 & 3 & 1 & 0 & 0 & 6 & 5\\
+0 & 0 & 3 & 0 & 0 & 1 & 2\\
+0 & 0 & 0 & 6 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 1 & 0 & 0 & 0 & 5 & 6\\
+0 & 3 & 0 & 0 & 0 & 1 & 2\\
+0 & 0 & 3 & 0 & 0 & 1 & 2\\
+0 & 0 & 0 & 6 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 3\\
+0 & 3 & 0 & 0 & 0 & 1 & 2\\
+0 & 0 & 3 & 0 & 0 & 1 & 2\\
+0 & 0 & 0 & 6 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 3\\
+0 & 3 & 0 & 0 & 0 & 1 & 2\\
+0 & 0 & 3 & 0 & 0 & 1 & 2\\
+0 & 0 & 0 & 6 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 3\\
+0 & 3 & 0 & 0 & 0 & 1 & 2\\
+0 & 0 & 3 & 0 & 0 & 1 & 2\\
+0 & 0 & 0 & 6 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 3\\
+0 & 1 & 0 & 0 & 0 & 5 & 3\\
+0 & 0 & 3 & 0 & 0 & 1 & 2\\
+0 & 0 & 0 & 6 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 3\\
+0 & 1 & 0 & 0 & 0 & 5 & 3\\
+0 & 0 & 1 & 0 & 0 & 5 & 3\\
+0 & 0 & 0 & 6 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 3\\
+0 & 1 & 0 & 0 & 0 & 5 & 3\\
+0 & 0 & 1 & 0 & 0 & 5 & 3\\
+0 & 0 & 0 & 1 & 0 & 5 & 0\\
+0 & 0 & 0 & 0 & 2 & 1 & 3\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 3\\
+0 & 1 & 0 & 0 & 0 & 5 & 3\\
+0 & 0 & 1 & 0 & 0 & 5 & 3\\
+0 & 0 & 0 & 1 & 0 & 5 & 0\\
+0 & 0 & 0 & 0 & 1 & 4 & 5\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+\[ \left[ \begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 3\\
+0 & 1 & 0 & 0 & 0 & 5 & 3\\
+0 & 0 & 1 & 0 & 0 & 5 & 3\\
+0 & 0 & 0 & 1 & 0 & 5 & 0\\
+0 & 0 & 0 & 0 & 1 & 4 & 5\\
+0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\end{array} \right]\]
+			$a_3=3$\\
+			$a_2=3-5b_0$\\
+			$a_1=3-5b_0$\\
+			$a_0=-5b_0$\\
+			$b_1=5-4b_0$\\
+			$b_0$ is free\\
+
+			Solution 1:\\
+			$a_3=3$\\
+			$a_2=3$\\
+			$a_1=3$\\
+			$a_0=0$\\
+			$b_1=5$\\
+			$b_0=0$\\
+			$Q(x)=3x^3+3x^2+3x$\\
+			$E(x)=x^2+5x$\\
+			$P(x)=\boxed{3x+2}$\\
+
+			Solution 2:\\
+			$a_3=3$\\
+			$a_2=3-5(1)=5$\\
+			$a_1=3-5(1)=5$\\
+			$a_0=-5(1)=2$\\
+			$b_1=5-4(1)=1$\\
+			$b_0=1$\\
+			$Q(x)=3x^3+5x^2+5x+2$\\
+			$E(x)=x^2+x+1$\\
+			$P(x)=\boxed{3x+2}$
+
+			The results match. $P(x)=3x+2$
+			\item
+				$x^2+5x=x(x+5)$\\
+				$x^2+x+1=(x-2)(x-4)=(x+5)(x+3)$\\
+				The common factor is $x+5$. This suggests that the error is at position $-5$ mod 7 $= \boxed{2}$.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}
+				\item
+					Suppose for contradiction that there is an odd cycle in some bipartite graph with sets A and B.
+					Then, $\exists$ some point P, such that there is a path from P to P in an odd number of steps.
+					Without loss of generality, assume that P is in A.
+					By definition of bipartite graph, each each step of any path will go from A to B, or B to A; 
+					there are no direct paths from A to A or B to B.
+					Then, a step from P will be a path to a point in B.
+					A step from B, in turn, goes back to A.
+					Therefore, in every odd step, the path goes to a point in B.
+					In every even step, the path goes to a point in A.
+					So every odd step yields a point in B.
+					But P is in A, and there exists an odd cycle in the graph.
+					The graph must not be bipartite. Contradiction.
+				\item
+					By definition of bipartite graph with sets L and R, the only valid edges connect a point in L and a point in R.
+					Therefore, each edge counts both for some point in L and some point in R.
+					Suppose, now for contradiction, that $\sum_{v\in L} degree(v)\neq\sum_{v\in R} degree(v)$.
+					For this to be true, there must be some edge that connects two points in R, or two points in L.
+					By definition of bipartite graph, this cannot be the case. Contradiction.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}
+				\item
+					$\binom{10}{3}=\frac{10!}{(10-3)!3!}=\frac{(10)(9)(8)}{6}=\boxed{120}$
+				\item
+					$10^3=\boxed{1000}$
+				\item
+					$\binom{52}{4}=\frac{52!}{(52-4)!4!}=\frac{(52)(51)(50)(49)}{24}=\frac{(13)(17)(25)(49)}{1}=\boxed{270725}$
+				\item
+					$\binom{16}{4}=\frac{16!}{(16-4)!4!}=\frac{(16)(15)(14)(13)}{24}=\frac{(4)(5)(7)(13)}{1}=\boxed{1820}$
+				\item
+					$\binom{52}{4}-\binom{48}{4}=\frac{52!}{(52-4)!4!}-\frac{48!}{(48-4)!4!}=\frac{(52)(51)(50)(49)}{24}-\frac{(48)(47)(46)(45)}{24}=76145$
+				\item
+					$\binom{4}{1}\times\binom{13}{2}\times\binom{3}{1}\times\binom{13}{2}=\boxed{73008}$
+				\item
+					$13^4=\boxed{28561}$
+				\item
+					$11*4*4*4*4=\boxed{3328}$
+				\item
+					$\frac{7!}{3!2!}=(7)(6)(5)(2)=\boxed{420}$
+				\item
+					$\binom{10}{4}=\frac{10!}{(10-4)!4!}=\frac{(10)(9)(8)(7)}{24}=\boxed{210}$
+				\item
+					Suppose we have a box of order $n$.
+					The smallest box can be in $n-1$ different boxes.
+					The seconds smallest box can be in $n-2$ boxes.
+					The largest and second largest box can only be in 1 boxes.
+					Hence, the number of configurations is $\boxed{(n-1)!}$.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}
+				\item
+					Suppose you choose $k$ cards from a collection of $n$ distinct cards.
+					You choose $i$ different cards from $k$, and form one hand, $A$, with them.
+					You choose $k-i$ more cards from the rest of $k$, and form another hand, $B$, with them.
+					The total number of combinations comprising $A \cup B$ is $\binom{n}{i}\binom{n-i}{k-i}$.
+					Now, the total number of cards in both hands, $i+k-i$, is $k$.
+					The total number of cards forming the two hands, thus, must equal $\binom{k}{i}\binom{n}{k}$, or choosing $k$ cards from the $n$ in the deck, and $i$ cards out of the $k$ to comprise the first hand.
+					We have, thus, that $\binom{n}{i}\binom{n-i}{k-i}=\binom{k}{i}\binom{n}{k}$.
+
+				\item
+					Suppose that you have two sets, $A$ and $B$. 
+					$A$ is of length $m$ and $B$ is of length $p$.
+					Suppose that you have to pick $n$ items from the combined set of $A$ and $B$.
+					This is equivalent to picking some number $k$ of "$A$"s, and picking the rest $n-k$ "$B$"s (choosing $k+n-k=n$ items in total).
+					But you can choose any number $0\le k\le n$ of "$A$"s.
+					Hence, you have to add up all ways to pick $k$ "$A$"s and $n-k$ "$B$"s, for all $k\in [0,n]$.
+					Thus, $\binom{m+p}{n}=\sum_{k=0}^m \binom{m}{k} \binom{p}{n-k}$.
+			\end{enumerate}
+		\newpage
+		\item
+			\textbf{Base Case: }\\
+			$\sum_{k=0}^0 \binom{0-k}{k}=\frac{0!}{0!0!}=1=F(0)$\\
+			$\sum_{k=0}^1 \binom{1-k}{k}=1=F(0)$\\
+			\textbf{Inductive Hypothesis: }\\
+			Assume $\sum_{k=0}^i \binom{i-k}{k}=F(i), \forall i \le n$\\
+			\textbf{Inductive Step: }\\
+			$F(n+1)=\sum_{k=0}^{n+1} \binom{n-k+1}{k}$\\
+			$=\sum_{k=0}^{n+1} \binom{n-k}{k}+\binom{n-k}{k-1}$\\
+			$=\sum_{k=0}^{n+1} \binom{n-k}{k}+\sum_{k=0}^{n+1} \binom{n-k}{k-1}$\\
+			$=\binom{-1}{n+1}+\sum_{k=0}^{n} \binom{n-k}{k}+\binom{-1}{n}+\binom{0}{n-1}+\sum_{k=0}^{n-1} \binom{n-k}{k-1}$\\
+			$=\sum_{k=0}^{n} \binom{n-k}{k}+\sum_{k=0}^{n-1} \binom{n-k}{k-1}$\\
+			$=\sum_{k=0}^{n} \binom{n-k}{k}+\binom{n}{-1}+\sum_{k=1}^{n-1} \binom{n-k}{k-1}$\\
+			$=\sum_{k=0}^{n} \binom{n-k}{k}+0+\sum_{k=1}^{n-1} \binom{n-k}{k-1}$\\
+			$=\sum_{k=0}^{n} \binom{n-k}{k}+\sum_{k=1}^{n-1} \binom{n-k}{k-1}+0$\\
+			$=\sum_{k=0}^{n} \binom{n-k}{k}+\sum_{k=1}^{n-1} \binom{n-k}{k-1}+\binom{0}{n-1}$\\
+			$=\sum_{k=0}^{n} \binom{n-k}{k}+\sum_{k=1}^{n} \binom{n-k}{k-1}$\\
+			Let $k = k'+1$\\
+			$=\sum_{k=0}^{n} \binom{n-k}{k}+\sum_{k'=0}^{n-1} \binom{n-k'-1}{k'}$\\
+			$=\sum_{k=0}^{n} \binom{n-k}{k}+\sum_{k=0}^{n-1} \binom{n-k-1}{k}$\\
+			$=F(n)+F(n-1)$\\
+
+	\end{enumerate}
+\end{document}

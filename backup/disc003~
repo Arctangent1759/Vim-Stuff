@@ -1,0 +1,53 @@
+Periodicity
+===========
+	Problem: Find the period of
+		a. x(t)=cos(4\pi t)+cos(8\pi t)
+			1/2
+		b. x(t)=cos(4\pi t)+cos(6\pi t)
+			1
+		c. x(t)=cos(4\pi t)+sin(5\pi t)
+			2
+
+		Procedure: cos(2\pi at)+cos(2\pi bt)find smallest t such that a*t \in \integers and b*t \in \integers
+
+Fourier Series
+==============
+	Problem: Given x[n]=A_0+\sum_(k=1)^m A_k cos(k (2\pi)/p n + \phi_k); p even
+		a. Show that x[n] is p-periodic
+			x[n]=A_0+\sum_(k=1)^m A_k cos(k (2\pi)/p (n+p) + \phi_k)
+			x[n]=A_0+\sum_(k=1)^m A_k cos(k (2\pi)/p n + \phi_k + 2\pi k)
+			x[n]=A_0+\sum_(k=1)^m A_k cos(k (2\pi)/p n + \phi_k)
+		b. Show that x[n] can be represented by x[n]=A_0'+\sum_(k=1)^pk A_k' cos(k (2\pi)/p n + \phi_k')
+
+			x/y:
+			x=quotient*y+remainder
+			x/y=y*(x//y)+(x%y)
+
+			\forall k \in \naturals
+			k=k/(p/2)=(p/2)*(k//(p/2))+(k%(p/2))
+			k=(p/2)q_k+r_k, 0<r_k<p/2
+
+			x[n]=A_0+\sum_(k=1)^m A_k cos(k (2\pi)/p n + \phi_k)
+			x[n]=A_0+\sum_(k=1)^m A_k cos((2\pi)/p (q_k+p/2+r_k)) n + \phi_k)
+			x[n]=A_0+\sum_(k=1)^m A_k cos((2\pi n)/p r_k + \phi_k)
+			x[n]=A_0+\sum_(k=1)^m \sum_(1<=k<=m,sqrt(k)=3) A_k cos((2\pi n)/p r_k + \phi_k)
+
+			if q_k=0 % 2
+				(-1)^(nq_k) A_K cos((2\pi)/p sn+\phi_k)
+				=A_k cos((2\pi n)/p s - \phi_k)
+			if q_k=1%2
+				(-1)^(nq_k) A_k cos((2\pi n)/p s + \phi_k)
+				=(-1)^(n) A_k cos((2\pi n)/p s + \phi_k)
+				=(-1)^(n) A_k cos(-(2\pi n)/p s - \phi_k)
+				=(-1)^(n) A_k cos(n\pi-(2\pi n)/p s - \phi_k)
+
+			n\pi-(2\pi n)/p s - \phi_k
+			=(2\pi n)/p (p/2 -s)-\phi_k
+
+			0<=s<=p/2
+			1<=p/2-s<=p/2
+
+
+Linear Algebra
+==============
+	Gaussian Elimination to find inverse.

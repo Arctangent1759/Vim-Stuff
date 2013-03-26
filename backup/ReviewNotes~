@@ -1,0 +1,4 @@
+Abstract Classes vs Interfaces
+==============================
+	Interface: Only abstract methods.
+	Abstract Class: Can provide some implementations, as well as abstract methods. Can define static variables and other vars.

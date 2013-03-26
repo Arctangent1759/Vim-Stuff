@@ -1,0 +1,53 @@
+OFDM
+====
+	OFDM Algorithm:
+		1. Take a block of bits b(0), b(1), ... b(p-1)
+		2. b(m) --> X_m = 0,1,...p-1
+		3. Synthesize periodic signal x(n)=\sum_(m=0)^(p-1) X_m e^(imwn)
+		4. Transmit the signal through channel
+		5. Recieve y(n)
+		6. Analyze y(n) to get FS coefficients Y_m s
+			y(n)=\sum_(m=0)^(p-1) Y_m e^(imwn)
+		7. y_m = H(mw)X_m
+
+	Problem:
+		It takes too much time to transmit a periodic signal for an infinite amount of time.
+
+	Solution:
+		Use DFT instead of DTFT
+
+		Add Cyclic Prefix to signal block and use DTFT to generate signal
+
+	The spacing between frequencies is W/p, where p is the number of bits per block, and W is bandwidth.
+
+	Because of the doppler effect, it is necessary to make spacing sufficiently large (~10kHz, since most doppler shifts are ~100Hz)
+
+
+CTFT
+====
+	periodic 
+	--------
+		x(t)=\sum_(m=-\infinity)^(\infinity) X_m e^(imw_0t)
+		w_0, w_0=2\pi/p
+	
+	aperiodic:
+	----------
+		x(t)=1/(2\pi) \integral_(k=-infinity)^(infinity) X(\omega) e^(imw_0t) dw
+
+		X(w)=\integral_(-infinity)^(infinity) x(t) e^(-iwt) dt
+
+	x(t)-->X(w)
+	e^(-iw_ct)x(t)-->X(w-w_c)
+	x(t-T)-->X(w)e^(-iwT)
+	
+	So multiplication by complex exponential in the time/frequency domain corresopnds to a shift in the frequency/time domain.  
+
+
+
+	(Qr^3/R^3)/(4 pi r^2 ep_0)
+	(Qr/R^3)/(4 pi ep_0)
+	(Qr)/(4 pi ep_0 R^3)
+
+	(Qr^2)/(4 pi ep_0 R^3)
+
+	Q/(4 pi ep_0 R)

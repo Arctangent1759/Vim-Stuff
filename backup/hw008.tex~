@@ -1,0 +1,449 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,textcomp,amssymb,geometry,graphicx,qtree}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{111}  % Your discussion section
+\def\Login{cs70-kd} % Your login
+\def\HW{8} % Homework number
+
+\title{CS70--Spring 2013}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS70--Spring 2013 Homework \HW, \Name, section \Sec}{CS70--Spring 2013 Homework \HW, \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\begin{document}
+	\maketitle
+
+	\textbf{Collaborators:Robert Chang, Timothy Quach, Bonnie Xiao, Niraj Amalkanti} % Enter your collaborators
+
+	\begin{enumerate}
+		% Have a new \item for each problem
+		% Make sure you have a \newpage after each item
+		\item 
+			\begin{enumerate}
+				\item 
+					FFFBBB\\
+					FFBFBB\\
+					2*2=4 ways.
+				\item 
+					The number of forward steps must equal the number of backward steps.
+					This is impossible for an odd number of steps.\\
+					0 ways.
+				\item 
+					FFFFBBBB\\
+					FFFBFBBB\\
+					FFFBBFBB\\
+					FFBFBFBB\\
+					FFBFFBBB\\
+					2*5=10 ways.
+				\item 
+					The number of forward steps must equal the number of backward steps.
+					This is impossible for an odd number of steps.\\
+					0 ways.
+				\item 
+					Of the $2n+2$ steps, the first step must be forward, and the last step must be backward.
+					Given these constraints, the problem, consisting of the remaining $2n$ steps then reduces to the Valid String of Parentheses problem.
+					From the graphical argument made in lecture, the number of combinations of $2n$ steps is equivalent to the Catalan number at $n$:\\
+					$2*\frac{1}{n+1}\left(
+						\begin{array}{c}
+							2n\\
+							n
+						\end{array}
+					\right)$ steps.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}
+				\item
+					There are three doors. Two contain goats, and one contains a prize. You are allowed to pick one door. After you pick a door, 
+					Another door is opened, with a goat inside. 
+				\item
+					Let $i$ be the door has the prize.\\
+					Let $j$ be the door that the contestant picks.\\
+					Let $k$ be the door that is revealed to have a goat.\\
+					Let $(i,j,k)$ denotes a game outcome.\\
+						\Tree [.{$i=1$} 
+						[.{$j=1$} 
+						$k=2$ 
+						$k=3$ 
+						]
+						[.{$j=2$} 
+						$k=3$ 
+						] 
+						[.{$j=3$} 
+						$k=2$ 
+						]
+						]\\\\
+						\Tree [.{$i=2$} 
+						[.{$j=1$} 
+						$k=3$ 
+						]
+						[.{$j=2$} 
+						$k=1$ 
+						$k=3$ 
+						] 
+						[.{$j=3$} 
+						$k=1$ 
+						]
+						]\\\\
+						\Tree [.{$i=3$} 
+						[.{$j=1$} 
+						$k=2$ 
+						]
+						[.{$j=2$} 
+						$k=1$ 
+						] 
+						[.{$j=3$} 
+						$k=1$ 
+						$k=2$ 
+						]
+						]\\ 
+					The sample space is:\\
+					$(1,1,2)$,
+					$(1,1,3)$,
+					$(1,2,3)$,
+					$(1,3,2)$,
+					$(2,1,3)$,
+					$(2,2,1)$,
+					$(2,2,3)$,
+					$(2,3,1)$,
+					$(3,1,2)$,
+					$(3,2,1)$,
+					$(3,3,1)$,
+					$(3,3,2)$
+
+				\item
+					$(1,1,2)$ Stick win, $p=\frac{1}{18}$\\ 
+					$(1,1,3)$ Stick win, $p=\frac{1}{18}$\\ 
+					$(1,2,3)$ Switch win, $p=\frac{1}{9}$\\ 
+					$(1,3,2)$ Switch win, $p=\frac{1}{9}$\\ 
+					$(2,1,3)$ Switch win, $p=\frac{1}{9}$\\ 
+					$(2,2,1)$ Stick win, $p=\frac{1}{18}$\\ 
+					$(2,2,3)$ Stick win, $p=\frac{1}{18}$\\
+					$(2,3,1)$ Switch win, $p=\frac{1}{9}$\\
+					$(3,1,2)$ Switch win, $p=\frac{1}{9}$\\ 
+					$(3,2,1)$ Switch win, $p=\frac{1}{9}$\\
+					$(3,3,1)$ Stick win, $p=\frac{1}{18}$\\
+					$(3,3,2)$ Stick win, $p=\frac{1}{18}$\\
+				\item
+					The event of interest, $A$, is the contestant winning.
+				\item
+					The sample points of interest are:
+					$(1,1,2)$,
+					$(1,1,3)$,
+					$(2,2,1)$,
+					$(2,2,3)$,
+					$(3,3,1)$,and
+					$(3,3,2)$, each with a probability of $\frac{1}{3}\times\frac{1}{3}\times\frac{1}{2}=\frac{1}{18}$.\\
+					$P(A)=6\times\frac{1}{18}=\frac{6}{18}=\boxed{\frac{1}{3}}$
+				\item
+					The sample points of interest are:
+					$(1,2,3)$,
+					$(1,3,2)$,
+					$(2,1,3)$,
+					$(2,3,1)$,
+					$(3,1,2)$, and
+					$(3,2,1)$, each with a probability of $\frac{1}{3}\times\frac{1}{3}\times1=\frac{1}{9}$.\\
+					$P(A)=6\times\frac{1}{9}=\frac{6}{9}=\boxed{\frac{2}{3}}$
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}
+				\item
+					$m=2 \implies k=m/2=1$; There can be at most 1 error.\\
+					The event of interest, $A$, then, is that at most 1 symbol is corrupted.\\
+					$P(A)=P(\mbox{no errors})+P(\mbox{exactly one error})$
+					$=.9^7+7*.1*.9^6=0.8503056$
+				\item
+					$m=3 \implies k=(m-1)/2=1$; There can be at most 1 error.\\
+					The event of interest, $A$, then, is that at most 1 symbol is corrupted.\\
+					$P(A)=P(\mbox{no errors})+P(\mbox{exactly one error})$
+					$=.9^8+8*.1*.9^7=0.81310473$
+				\item
+					Adding more characters is not necessarily helpful. If the number of characters is even, and you add 1, the odd character contributes nothing to error tolerance, but will increase the chance of an additional error.
+				\item
+					In general, the probability that a message of length 5 with $m$ additional symbols with successfully reconstruct is:\\
+					$P(A)=\sum_{i=0}^{floor(m/2)} \left(
+						\begin{array}{c}
+							5+m\\
+							i
+						\end{array}
+					\right).1^i.9^{5+m-i}$\\
+					Let $m = 4$\\
+					$=.9^9+9*.1*.9^8+36*.1^2*.9^7=0.947028$
+					Therefore, at least $\boxed{4}$ symbols are required to ensure above $.90$ probability of success.
+					
+				\item
+					False.\\
+					For message of length $n$ with $m$ additional symbols and corruption chance $p$:\\
+					$P(A)=\sum_{i=0}^{floor(m/2)} \left(
+						\begin{array}{c}
+							n+m\\
+							i
+						\end{array}
+					\right)p^i(1-p)^{n+m-i}$\\\\
+
+					\textbf{Counterexample:}\\
+					Let $n=1$, $m=0$, $p=.9$\\
+					$P(A)=.1$\\
+					\\
+					Now, Let $n=1$, $m=2$, $p=.9$
+					$P(A)=\sum_{i=0}^{floor(m/2)} \left(
+						\begin{array}{c}
+							n+m\\
+							i
+						\end{array}
+					\right)p^i(1-p)^{n+m-i}=.1^3+3*.1^2*.9=.028<.1$\\
+					Counterexample reached.
+					We observe that if the probability of signal corruption is greater than its complement, then adding more symbols will hurt recovery chances.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}
+				\item
+					If the Golden Bears win three times, then there exists some string *w*w*w, where * represents "bins" that the two losses can go into.\\
+					The losses cannot go into the last bin (after the last w) since the series would have ended by then.\\
+					The number of combinations is then the number of ways the two losses can be arranged into the two bins.\\
+					We represent each situation as a binary string. 0 represents a loss in a bin. 1 represents a separation between the bins.
+					A sample of such a string is 0011, which represents "loss loss win win win".
+					The number of such binary strings with exactly 2 0s is $\left(\begin{array}{c}4\\2\end{array}\right)=\boxed{6}$.
+
+				\item
+					$\left(
+						\begin{array}{c}
+							5\\
+							3
+						\end{array}
+					\right)=\boxed{10}$
+				\item
+					$\sum_{i=0}^{n} \left(\begin{array}{c}n+i\\i\end{array}\right)$\\
+					$=\left(\begin{array}{c}n+0\\0+0\end{array}\right)+\left(\begin{array}{c}n+1\\0+1\end{array}\right)+\left(\begin{array}{c}n+2\\0+2\end{array}\right)+\cdots+\left(\begin{array}{c}n+n-1\\0+n-1\end{array}\right)+\left(\begin{array}{c}n+n\\0+n\end{array}\right)$\\
+					$=\left(\begin{array}{c}n+1\\0+0\end{array}\right)+\left(\begin{array}{c}n+1\\0+1\end{array}\right)+\left(\begin{array}{c}n+2\\0+2\end{array}\right)+\cdots+\left(\begin{array}{c}n+n-1\\0+n-1\end{array}\right)+\left(\begin{array}{c}n+n\\0+n\end{array}\right)$\\
+					But $\left(\begin{array}{c}n\\k\end{array}\right)=\left(\begin{array}{c}n-1\\k\end{array}\right)+\left(\begin{array}{c}n-1\\k-1\end{array}\right)$\\
+					$=\left(\begin{array}{c}n+2\\0+1\end{array}\right)+\left(\begin{array}{c}n+2\\0+2\end{array}\right)+\cdots+\left(\begin{array}{c}n+n-1\\0+n-1\end{array}\right)+\left(\begin{array}{c}n+n\\0+n\end{array}\right)$\\
+					$=\left(\begin{array}{c}n+3\\0+2\end{array}\right)+\cdots+\left(\begin{array}{c}n+n-1\\0+n-1\end{array}\right)+\left(\begin{array}{c}n+n\\0+n\end{array}\right)$\\
+					$=\left(\begin{array}{c}n+n+1\\n+1\end{array}\right)$\\
+					$=\left(\begin{array}{c}n+n+1\\n+1\end{array}\right)$\\
+					$=\left(\begin{array}{c}2n+1\\n+1\end{array}\right)$\\
+				\item
+					Sum over the ways to fit $k$ losses into $n$ bins. This represents the combinations resulting in a 1-loss victory, 2-loss victory, to a maximum of a n-loss victory:\\
+					$\binom{n}{1}+\binom{n+1}{2}+\binom{n+2}{3}+\cdots+\binom{2n}{n}$\\
+					$=\sum_{i=0}^n \binom{n+i}{i}=\binom{2n+1}{n+1}$\\
+					Therefore, there are $\binom{2n+1}{n+1}$ ways for the Golden Bears to win the series.
+				\item
+					If $2n+1$ games are played, the Golden Bears must win at least half of the games, rounded up, in order to win the series.
+					This means that the Golden Bears must win $ceil(\frac{2n+1}{2})=ceil(n+\frac{1}{2})=n+1$ games in order to win the series.
+					However, once the Golden Bears have won $n+1$ games, they are gaurunteed victory. 
+					Hence, games with more than $n+1$ wins are indisctinct.
+					This means, the number of combinations that result in a Golden Bear win is equal to the number of ways to choose $n+1$ games out of $2n+1$ games.
+					Hence, the number of series that result in a Golden Bear win is $\left(\begin{array}{c}2n+1\\n+1\end{array}\right)$.
+				\item
+					$n_1+n_2-1$ games are played, and the Golden Bears need $n_1$ games to win, and the Stanford Cardinals need $n_2$ games to win.\\
+					Numbers of wins beyond $n_1$ are indistinct, because the series ends when one team is a clear winner.\\
+					Since $n_1$ wins are required for the Golden Bears to win, the the number of winning combination for the bears is $\left(\begin{array}{c}n_1+n_2-1\\n_1\end{array}\right)$.\\
+					However, this is logically equivalent to the Stanford Cardinals winning at most $n_2-1$ games, with $\left(\begin{array}{c}n_1+n_2-1\\n_2-1\end{array}\right)$.\\
+					These two numbers are consistent , since $n_1+n_2-1-n_2+1=n_1$, so $\left(\begin{array}{c}n_1+n_2-1\\n_1\end{array}\right)=\left(\begin{array}{c}n_1+n_2-1\\n_2-1\end{array}\right)$.
+					Hence, there are $\left(\begin{array}{c}n_1+n_2-1\\n_1\end{array}\right)$ winning combinations for the Golden Bears.
+				\item
+					$6\times.7^3\times.3^2=\boxed{0.18522}$
+				\item
+					$
+						.7^3+
+						\left(\begin{array}{c}3\\1\end{array}\right).7^3\times.3+
+						\left(\begin{array}{c}4\\2\end{array}\right).7^3\times.3^2
+					$\\
+					$=
+						.7^3+
+						(3)(.7^3\times.3)+
+						(6)(.7^3\times.3^2)
+					$\\
+					$=\boxed{0.83692}$
+				\item
+					With best of 3, 2 wins are required to win the series.
+					Losses must fit in 2 bins instead of 3, and there can only be 1 loss.\\
+					$
+						.7^2+
+						\left(\begin{array}{c}2\\1\end{array}\right).7^2\times.3
+					=.7840$\\
+					$\boxed{\mbox{The change is advantageous to the Cardinal.}}$
+				\item
+					Additional wins required: 2\\
+					Loss "bins":2\\
+					Maximum number of losses: 2\\
+					$.7^2+\binom{2}{1}.7^2.3+\binom{3}{2}.7^2.3^2$\\
+					$=.7^2+2(.7^2.3)+3(.7^2.3^2)$\\
+					$=\boxed{.9163}$
+				\item
+					Let $A=\mbox{Golden Bears win the first game}$\\
+					Let $B=\mbox{Golden Bears win the series}$\\
+					$P(A|B)=\frac{P(B|A)P(A)}{P(B)}$\\
+					$P(A|B)=\frac{(.9163)(.7)}{0.83692}$\\
+					$=\boxed{0.766393}$
+				\item
+					The event of interest, $A$, is that the Golden Bears \textbf{win} the last game.
+					The complement $A'$ of $A$ consists of the event that the game is lost, and that the game is never played.
+					Hence, the probability $P(A)$ that the last game is a victory is the product of the probabiltiy that the game is played, and the probability that the game is won.
+					$P(A)=6*(.7^2)(.3^2)(.7)=\boxed{0.18522}$
+				\item
+					The Golden Bears play the fifth game $\implies$ the Golden Bears have won exactly $2$ games, and lost exactly $2$ games.
+					But since the Golden Bears won the fifth game, they have $3$ wins. So the probability that the Golden Bears win is:
+					$\boxed{1}$
+				\item
+					Let $A=\mbox{Golden Bears win the fifth game}$\\
+					Let $B=\mbox{Golden Bears win the series}$\\
+					$P(A|B)=\frac{P(B|A)P(A)}{P(B)}$\\
+					$P(A|B)=\frac{(1.0)(0.18522)}{.83692}$\\
+					$=\boxed{0.221311475}$
+
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}
+				\item$ $\\
+					\includegraphics[width=3in]{plot.png}
+				\item
+					$\ln(1)+\ln(2)+\cdots+\ln(n)=\sum_{k=1}^n \ln(k)$ is the right-hand rectangle approximation of $\int_1^n ln(x) dx$
+					Consider a single right-handed rectangle at $x=n$:\\
+					$A_{rect}=(1)(\ln(n))$\\
+					The area under the curve in the same rectangle is:\\
+					$A_{curve}=\int_{n-1}^{n}\ln(n)=(n)(\ln(n)-1)-(n-1)(\ln(n-1)-1)$\\
+					$A_{curve}=n\ln(n)-n-(n-1)\ln(n-1)+n-1$\\
+					$A_{curve}=n\ln(n)-n\ln(n-1)+\ln(n-1)-1$\\
+					$A_{curve}=n\ln(\frac{n}{n-1})+\ln(n-1)-1$\\
+					$A_{curve}=\ln(\frac{n^n}{(n-1)^n})+\ln(n-1)-1$\\
+					$A_{curve}=\ln(\frac{n^n}{(n-1)^{n-1}})-1$\\
+					$A_{rect}-A_{curve}=\ln(n)-\ln(\frac{n^n}{(n-1)^{n-1}})+1$\\
+					$A_{rect}-A_{curve}=\ln(\frac{(n-1)^{n-1}}{n^{n-1}})+1$\\
+					$A_{rect}-A_{curve}=\ln((\frac{n-1}{n})^{n-1})+1\ge 0 \forall n \in \mathbb{Z}$\\
+					$\therefore ln(n)\ge \int_{n-1}^n\ln x dx$\\
+					$\therefore \ln(1)+\ln(2)+\cdots+\ln(n)\ge\int_1^n ln(x) dx$\\
+					Notice how the area of the Right-Hand rectangle approximation is greater than or equal to the area of the integral, with equality at at x=1:\\
+					\includegraphics[width=3in]{plotn.png}
+				\item
+					Perform a change of coordinates on $\int_1^{n+1} ln x dx$:\\
+					Let $k = n + 1\implies n =k-1$\\
+					The originl expression becomes $\ln(1)+\ln(2)+\cdots+\ln(k-1) < \int_1^{k} ln x dx$\\
+					$\ln(1)+\ln(2)+\cdots+\ln(k-1)=\sum_{l=1}^{k-1} \ln(l)$ is the left-hand rectangle approximation of $\int_1^{k} ln x dx$
+					Consider a single right-handed rectangle at $x=n$:\\
+					$A_{rect}=(1)(\ln(n))$\\
+					The area under the curve in the same rectangle is:\\
+					$A_{curve}=\int_{n}^{n+1}\ln(n)=(n+1)(\ln(n+1)-1)-(n)(\ln(n)-1)$\\
+					$A_{curve}=n\ln(n+1)+\ln(n+1)-n-1-n\ln(n)+n$\\
+					$A_{curve}=n\ln(n+1)+\ln(n+1)-1-n\ln(n)$\\
+					$A_{curve}=\ln(\frac{(n+1)^n}{(n)^n})+\ln(n+1)-1$\\
+					$A_{curve}=\ln(\frac{(n+1)^{n+1}}{(n)^n})-1$\\
+					$A_{curve}-A_{rect}=\ln(\frac{(n+1)^{n+1}}{(n)^n})-1-\ln(n)$\\
+					$A_{curve}-A_{rect}=\ln(\frac{(n+1)^{n+1}}{(n)^{n+1}})-1\ge 0 \forall n \in \mathbb{Z}$\\
+					$\therefore \int_{n}^{n+1}\ln x dx > ln(n)$\\
+					$\therefore \ln(1)+\ln(2)+\cdots+\ln(n)<\int_1^{n+1} ln(x) dx$\\
+					Notice how the area of the Right-Hand rectangle approximation is less than than the area of the integral:\\
+					\includegraphics[width=3in]{plotnp1.png}
+				\item
+					$\frac{\ln(a)+\ln(a+1)}{2}$ represents the area of a single trapazoid in the trapazoidal approximation of $\int_a^{a+1}\ln(x)dx$\\
+					As shown in the graph below, because $\ln(n)$ is concave down $\forall n$, the area of a given trapazoid will always be less than the area under the curve.\\
+					\includegraphics[width=3in]{trap.png}
+				\item
+					$\ln(1)+\ln(2)+\cdots+\ln(n)\ge\int_1^n \ln(x)dx$\\
+					$\ln(1\times2\times\cdots\times n)=\ln(n!)\ge\int_1^n \ln(x)dx=n\ln(n)-n-\ln(1)+1$\\
+					$\ln(n!)\ge n\ln(n)-n+1$\\
+					$\ln(n!)\ge \ln(n^n)-n+1$\\
+					$n!\ge e^{\ln(n^n)-n+1}$\\
+					$n!\ge e^{\ln(n^n)}e^{-n}e^{+1}$\\
+					$n!\ge e\frac{n^n}{e^n}$\\
+					$n!\ge e(\frac{n}{e})^n$\\
+					$\boxed{QED}$
+				\item
+					$\ln(1)+\ln(2)+\cdots+\ln(n)<\int_1^{n+1} \ln(x)dx$\\
+					Perform the same change of coordinates as our proof in (c):\\
+					Let $k = n + 1\implies n =k-1$\\
+					$\ln(1)+\ln(2)+\cdots+\ln(k-1) < \int_1^{k} ln x dx$\\
+					The originl expression becomes $\ln(1)+\ln(2)+\cdots+\ln(n-1) < \int_1^{n} ln x dx$\\
+					$\ln(1)+\ln(2)+\cdots+\ln(n-1) < \int_1^{n} ln x dx$\\
+					$\implies\ln(1\times2\times\cdots\times (n-1)) < \int_1^{n} ln x dx$\\
+					$\implies\ln(1\times2\times\cdots\times (n-1)) < \int_1^{n} ln x dx$\\
+					$\implies\ln((n-1)!) < \int_1^{n} ln x dx$\\
+					$\implies\ln(\frac{n!}{n}) < \int_1^{n} ln x dx$\\
+					$\implies\ln(\frac{n!}{n}) < n \ln(n)-n-\ln(1)+1$\\
+					$\implies\ln(\frac{n!}{n}) < n \ln(n)-n+1$\\
+					$\implies\frac{n!}{n} < e^{n \ln(n)-n+1}$\\
+					$\implies\frac{n!}{n} < e^{n \ln(n)}e^{-n}e^{1}$\\
+					$\implies\frac{n!}{n} < e^{ \ln(n^n)}e^{-n}e^{1}$\\
+					$\implies\frac{n!}{n} < e\frac{n^n}{e^{n}}$\\
+					$\implies n! < en(\frac{n}{e})^n$\\
+					for n = 1, $n!=en(\frac{n}{e})^n$\\
+					$\implies n! \le en(\frac{n}{e})^n$\\
+				\item
+					$\frac{\ln(a)+\ln(a+1)}{2}<\int_a^{a+1} \ln x dx$\\
+					$\sum_{k=1}^{n-1}\frac{\ln(k)+\ln(k+1)}{2}<\sum_{k=1}^{n-1}\int_a^{a+1} \ln x dx$\\
+					$\sum_{k=1}^{n-1}\frac{\ln(k)+\ln(k+1)}{2}<\int_1^{n} \ln x dx$\\
+					$\frac{\ln((n-1)!)+\ln(n!)}{2}<\int_1^{n} \ln x dx$\\
+					$\frac{1}{2}\ln(\frac{n!n!}{n})<\int_1^{n} \ln x dx$\\
+					$\ln(\sqrt{\frac{n!n!}{n}})<\int_1^{n} \ln x dx$\\
+					$\ln(\frac{n!}{\sqrt{n}})<\int_1^{n} \ln x dx$\\
+					$\ln(\frac{n!}{\sqrt{n}})<n \ln(n)-n-\ln(1)+1$\\
+					$\frac{n!}{\sqrt{n}}<e^{n \ln(n)-n-\ln(1)+1}$\\
+					$\frac{n!}{\sqrt{n}}<e^{n \ln(n)}e^{-n}e^{-\ln(1)}e^{1}$\\
+					$\frac{n!}{\sqrt{n}}<e^{\ln(n^n)}e^{-n}e^{-\ln(1)}e^{1}$\\
+					$\frac{n!}{\sqrt{n}}<n^ne^{-n}e$\\
+					$\frac{n!}{\sqrt{n}}<e\frac{n^n}{e^{n}}$\\
+					$\frac{n!}{\sqrt{n}}<e(\frac{n}{e})^n$\\
+					$n!<e\sqrt{n}(\frac{n}{e})^n$\\
+					for n = 1, $n!=e\sqrt{n}(\frac{n}{e})^n$\\
+					$n! \le e\sqrt{n}(\frac{n}{e})^n$\\
+				\item From the plot, we see that $\frac{sqrt{2 \pi n} (n/e)^n}{n!}$ asymptotically approaches 1 as $n$ approaches $\infty$.
+					This implies that the accuracy of the Stirling Approximation increases at $n$ tends towards $\infty$. 
+					Aberrations appear in the approximation for small $n$.\\
+					\includegraphics[width=3in]{factplot.png}
+				\item
+					$m=\frac{k}{n}\implies k=nm$\\
+					$\frac{n!}{(n-k)!k!}$\\
+					$=\frac{(\frac{n}{e})^n}{(\frac{n-k}{e})^{n-k}(\frac{k}{e})^{k}}$\\
+					$=\frac{e^ke^{n-k}}{e^n}\times\frac{n^n}{(n-k)^{n-k}(k)^{k}}$\\
+					$=\frac{n^n}{(n-k)^{n-k}(k)^{k}}$\\
+					$=\frac{n^n}{(n-k)^{n-k}(k)^{k}}$\\
+					$=\frac{n^n}{(n-nm)^{n-nm}(nm)^{nm}}$
+				\item$ $\\
+					m=.25:\\
+					\includegraphics[width=3in]{log25.png}\\
+					m=.5:\\
+					\includegraphics[width=3in]{log50.png}\\
+					m=.75:\\
+					\includegraphics[width=3in]{log75.png}\\
+					All three log plots are linear. This suggests that the function increases exponentially with n.
+				\item
+					m=.25:\\
+					$(0,1),(4,10)$\\
+					$\implies m=\frac{y_2-y_1}{x_2-x_1}=\frac{10-1}{4-0}$\\
+					$\implies m=\frac{9}{4}$\\
+					m=.5:\\
+					$(0,1),(4,20)$\\
+					$\implies m=\frac{y_2-y_1}{x_2-x_1}=\frac{20-1}{4-0}$\\
+					$\implies m=\frac{19}{4}$\\
+					m=.75:\\
+					$(0,1),(4,10)$\\
+					$\implies m=\frac{y_2-y_1}{x_2-x_1}=\frac{10-1}{4-0}$\\
+					$\implies m=\frac{9}{4}$\\
+					
+					
+			\end{enumerate}
+		\newpage
+		\item
+			\textbf{Problem: }
+			What is the probability of drawing all the face cards in a deck of cards in the first 16 draws if the cards are not returned to the deck?
+			What is the same probability if the cards are replaced into the deck?
+			Which probability is greater?
+			\textbf{Solution: }
+			The probability of drawing all the face cards if the cards are not returned is:\\
+			$\frac{16}{52}\times\frac{15}{51}\times\frac{14}{50}\times\frac{13}{49}\times\frac{12}{48}\times\frac{11}{47}\times\frac{10}{46}\times\frac{9}{45}\times\frac{8}{44}\times\frac{7}{43}\times\frac{6}{42}\times\frac{5}{41}\times\frac{4}{40}\times\frac{3}{39}\times\frac{2}{38}\times\frac{1}{37}$
+			$=\frac{16!(52-16)!}{52!}~=9.6495342\times10^{-14}$\\
+			The probability of drawing all the face cards if the cards are returned is:\\
+			$\frac{16}{52}\times\frac{15}{52}\times\frac{14}{52}\times\frac{13}{52}\times\frac{12}{52}\times\frac{11}{52}\times\frac{10}{52}\times\frac{9}{52}\times\frac{8}{52}\times\frac{7}{52}\times\frac{6}{52}\times\frac{5}{52}\times\frac{4}{52}\times\frac{3}{52}\times\frac{2}{52}\times\frac{1}{52}$
+			$=\frac{16!}{52^{16}}~=9.6495342\times10^{-14}=7.3209273\times10^{-15}$\\
+
+			The probability of drawing all the face cards, interestingly enough, is lower when the cards are replaced.
+			This is because the problem requires that every unique face card, be drawn, so the portion of the sample space of single draws that satisfies the requirement shrinks by 1 every time, while the size of the sample space itself remains exactly the same.
+		\newpage
+	\end{enumerate}
+
+
+\end{document}

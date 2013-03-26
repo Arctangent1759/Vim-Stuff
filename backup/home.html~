@@ -1,0 +1,22 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>A Toast to not being on fire!</h1>
+		<p>
+		Hello
+		{% if name %}
+			{{ name }}
+		{% else %}
+			World
+		{% endif %}
+		</p>
+		<ul>
+		{% for i in posts %}
+			<li>
+			<a href="/post/{{ i.id }}">{{ i.title }}</a>
+			</li>
+		{% endfor %}
+		</ul>
+	</body>
+</html>

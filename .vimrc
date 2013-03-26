@@ -37,6 +37,11 @@ set lazyredraw
 set showmatch
 set mat=2
 set encoding=utf8
+set autowrite
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
 
 "----------------------
 "--------Maps----------
@@ -68,26 +73,24 @@ nnoremap <leader><leader><leader>cat :echom '(>^.^<) -- Meow!'<cr>
 nnoremap <leader><leader><leader>kirby :echom "(>'')>"<cr>
 nnoremap <leader>tn :tabnew<cr>
 nnoremap <leader>tc :tabclose<cr>
-nnoremap <leader>tm :tabmove
-nnoremap <leader>th :tabp<cr>
-nnoremap <leader>tl :tabn<cr>
-nnoremap <leader>$ :tablast<cr>
-nnoremap <leader>^ :tabfirst<cr>
+nnoremap <leader>mt :tabmove
+nnoremap <leader><leader>h :tabp<cr>
+nnoremap <leader>, :tabp<cr>
+nnoremap <leader><leader>l :tabn<cr>
+nnoremap <leader>. :tabn<cr>
 nmap <c-j> mz:m+<cr>`z
 nmap <c-k> mz:m-2<cr>`z
 vmap <c-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <c-k> :m'<-2<cr>`>my`<mzgv`yo`z
 nnoremap <leader>ss :setlocal spell!<cr>
-nnoremap <leader>n :execute 'NERDTreeToggle ' . getcwd()<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>b :TagbarToggle<cr>
-
-
-"----------------------
-"---Abbreviations------
-"----------------------
-iabbrev hte the
-iabbrev teh the
-iabbrev adn and
+nmap <leader>p <c-p>
+nnoremap <f5> :make<cr>
+noremap <leader><leader><leader>e :set wrap!<cr>:setlocal spell!<cr>:set linebreak!<cr>
+nnoremap B ^
+nnoremap E $
+nnoremap <leader>a <c-a>
 
 "----------------------
 "-----AutoCmds---------
@@ -98,7 +101,8 @@ autocmd FileType python nnoremap <buffer> <localleader>c I#
 "---------------------
 "----AutoComplete-----
 "---------------------
-set completeopt=longest,menuone
+set complete=.,b,u,]
+set completeopt=longest,menuone,preview
 set ofu=syntaxcomplete#Complete
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
@@ -113,3 +117,17 @@ highlight PmenuThumb ctermbg=white ctermfg=red
 "---------------------
 set backup
 set backupdir=~/.vim/backup
+
+"---------------------
+"------Makeprg--------
+"---------------------
+au FileType c set makeprg=gcc\ %
+au FileType cpp set makeprg=g++\ %
+au FileType java set makeprg=javac\ %
+au FileType python set makeprg=python\ %
+
+"---------------------
+"------Run Maps-------
+"---------------------
+nnoremap <leader>r :execute "!pdflatex " . @% . "; evince " . join(split(@%,"\\.tex")) . ".pdf &"<cr>
+nnoremap <leader><f5> :execute "!javac %;java " . join(split(@%,".java"))<cr>

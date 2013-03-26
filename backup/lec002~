@@ -1,0 +1,51 @@
+Objects and Constructors
+========================
+	Strings
+	-------
+		Method 1:
+			String s; //Step 1: declare a String variable.
+			s = new String(); //Step 2: Construct a new empty string. s|--------->|<Empty String>|
+							  //Step 3: Bind s to the new string.
+					  
+		Method 2:
+			String s = new String(); //Steps 1,2,3 combined.
+			s="Yow!"; //Implied constructor. s|------------>|"Yow!"|
+			String s2 = s; //				s2|----------------^
+			s2 = new String(s); //Now s2 and s point to different, identical objects
+
+		Constructors return \*object references\*.
+
+		There are String Constructors:
+			1. new String() constructs empty String--zero character
+			2. "Yow!"
+			3. new String(s); takes a parameter s
+
+		Constructors \*always\* have the same name as their class, except "stuff_in_quotes".
+		Strings are immmutable
+
+		String Methods:
+			s2=s.toUppercase(); //Looks up s2 ("yow!"), and constructs a new string in uppercase ("YOW!") and binds s2 to it.
+			String s3=s2.concat("!!"); Constructs "!!" and constructs a new string "YOW!!" and binds it to s3.
+			String s4="\asterisk".concat(s2).concat("\asterisk"); Constructs "\asterisk" and adds (s2)
+
+I/O Classes and Objects
+=======================
+	Objects in the System class for interacting with the user.
+
+	System.out is a PrintStream object that outputs to the screen.
+	
+		System.out|--------------------->|Print Stream|
+
+	System.in is an InputStream object that reads from the keyboard.
+		readline method is defined on BufferedReader objects.
+		How to construct a BuffferedReader:
+			-Use InputStreamReader with an InputStream (System.in) (Figure this out from online Java API in java.io)
+			-If you want to read from a file or anything else, use another InputStream
+			Code:
+			import java.io.*;
+			class SimpleIO{
+				public static void main(String[] args) throws Exception{
+					BufferedReader keybd=new BuffferedReader(new InputStreamReader(System.in));
+					System.out.println(keybd.readLine());
+				}
+			}

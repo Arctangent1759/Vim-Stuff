@@ -1,0 +1,5 @@
+Name: Alexander Chu
+Student ID: 23460953
+Login: cs61b-ga
+
+Since the DList class in the homework has methods that return the DListNodes themselves, it is possible that a malicious or poorly designed program to tamper with the list sizes. To illustrate, take, for instance a program that creates two instances of DList, d and e, in one of its methods. The program then populates these lists with objects. The program then calls d.front(), obtaining the first node of d, and binds it to a DListNode reference n. The program the calls e.remove on the node n. The remove method properly removes n from list d, but decrements the size of e. This means that e.length() now returns one less than its true length, and d.length() returns one more than its true length, violating invariant #6.

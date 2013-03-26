@@ -1,0 +1,39 @@
+Discrete Fourier Transform
+==========================
+	Synthesis:
+	----------
+		x(n) = 1/p \sum_(m=0)^(p-1) X_m e^(imw_0 n)
+	Analysis:
+	---------
+		X_m = \sum_(k=0)^(p-1) x(k) e^(-imw_0 k)
+		
+	Fourier analysis is a matrix.
+
+	Ax=X_k, x is the signal vector.
+	A_(mk)=e^(imw_0  k)
+
+	A^(-1) is the inverse of A
+	A^(-1)_(mk) = (1/p) e^(imw_0 k)
+
+Wireless Communication
+======================
+	End to End Communication System
+	-------------------------------
+		Diagram:
+			info bits ---> Baseband DSP ---> D/A ---> * ---> Channel ---> * ---> A/D ---> Baseband DSP ---> Info Bits
+													  ^		1.9Ghz		  ^
+													  |	Bandwidth:10MHz	  |
+													  |					  |
+												cos(2\pi f_c t)		cos(2\pi f_c t)
+		Baseband DSP
+		------------
+			Find the sampling rate
+			2 * 10MHz/2 = 10MHz
+			Baseband b(n)=0,1 --> x(n)={A, b=0; -A, b=-1}
+			Diagram:
+				info bits ---> Baseband DSP ---> DT LTI SYSTEM ---> Baseband DSP ---> Info Bits
+
+			y(n)=(h*x)(n)=\sum_(k=0)^(L-1) h(k)x(n-k)
+
+			y(5)=h(0)x(5-0)+h(1)x(5-1)+h(2)x(5-2)+h(3)x(5-3)+h(5)x(5-4)+h(5)x(5-5)
+			=h(0)x(5)+h(1)x(4)+h(2)x(3)+h(3)x(2)+h(5)x(1)+h(5)x(0)

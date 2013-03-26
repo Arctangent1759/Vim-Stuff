@@ -1,0 +1,8 @@
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+Words words words words. Text text. Circles.
+\section{Test test test}
+OVALS!
+\subsection{The heresy of ovals}
+Ovals are banned.
+\end{document}

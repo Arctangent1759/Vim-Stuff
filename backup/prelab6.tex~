@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{datetime}
+\usepackage{fancybox}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks]{hyperref}
+\usepackage{palatino}
+\usepackage[margin=0.25in]{geometry}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+\begin{document}
+\title{\sc Lab 06 Pre-Lab}
+\author{Electrical Engineering 20N \\ University of California, Berkeley}
+\date{3/15/2013}
+
+\maketitle
+
+{\bf Name}: Alexander Chu
+
+{\bf Lab Section}: 015
+
+{\bf Lab TA}: KK
+
+\begin{enumerate}
+	\item
+		$N(\omega)=\frac{(e^{i\omega}-e^{i\Omega})(e^{i\omega}-e^{-i\Omega})}{(e^{i\omega}-\alpha e^{i\Omega})(e^{i\omega}-\alpha e^{-i\Omega})}$\\
+		$z_1=e^{i\Omega}$\\
+		$z_2=e^{-i\Omega}$\\
+		$p_1=\alpha e^{i\Omega}$\\
+		$\boxed{p_2=\alpha e^{-i\Omega}}$
+	
+	\item
+		$y(n)=\sum_{k=0}^M \alpha_k x(n-k) + \sum_{l=0}^N \beta_l y(n-l) $\\
+		$H(\omega)e^{i\omega n}=\sum_{k=0}^M \alpha_k e^{i \omega (n-k)} + \sum_{l=0}^N \beta_l H(\omega) e^{i \omega (n-l)}$\\
+		$H(\omega)e^{i\omega n}=e^{i\omega n}\sum_{k=0}^M \alpha_k e^{-i \omega k} + H(\omega)e^{i\omega n}\sum_{l=0}^N \beta_le^{-i \omega l}$\\
+		$H(\omega)=\sum_{k=0}^M \alpha_k e^{-i \omega k} + H(\omega)\sum_{l=0}^N \beta_le^{-i \omega l}$\\
+		$H(\omega) - H(\omega)\sum_{l=0}^N \beta_le^{-i \omega l}=\sum_{k=0}^M \alpha_k e^{-i \omega k}$\\
+		$H(\omega)(1 - \sum_{l=0}^N \beta_le^{-i \omega l})=\sum_{k=0}^M \alpha_k e^{-i \omega k}$\\
+		$\boxed{H(\omega)=\frac{\sum_{k=0}^M \alpha_k e^{-i \omega k}}{1 - \sum_{l=0}^N \beta_le^{-i \omega l}}}$
+
+	\item
+		$N(\omega)=\frac{(e^{i\omega}-e^{i\Omega})(e^{i\omega}-e^{-i\Omega})}{(e^{i\omega}-\alpha e^{i\Omega})(e^{i\omega}-\alpha e^{-i\Omega})}$\\
+		$N(\omega)=\frac{e^{i2\omega}-e^{i\Omega}e^{i\omega}-e^{-i\Omega}e^{i\omega}+1}{e^{i2\omega}-\alpha e^{i\Omega}e^{i\omega}-\alpha e^{-i\Omega}e^{i\omega}+\alpha^2}$\\
+		$N(\omega)=\frac{e^{i2\omega}-(e^{i\Omega}+e^{-i\Omega})e^{i\omega}+1}{e^{i2\omega}-\alpha(e^{i\Omega}+e^{-i\Omega})e^{i\omega}+\alpha^2}$\\
+		$N(\omega)=\frac{e^{i2\omega}(1-(e^{i\Omega}+e^{-i\Omega})e^{-i\omega}+e^{-i2\omega})}{e^{i2\omega}(1-\alpha(e^{i\Omega}+e^{-i\Omega})e^{-i\omega}+\alpha^2 e^{-i2\omega})}$\\
+		$N(\omega)=\frac{1-(e^{i\Omega}+e^{-i\Omega})e^{-i\omega}+e^{-i2\omega}}{1-(\alpha(e^{i\Omega}+e^{-i\Omega})e^{-i\omega}-\alpha^2 e^{-i2\omega})}$\\
+		$a_0=1$\\
+		$a_1=e^{i\Omega}+e^{-i\Omega}$\\
+		$a_2=1$\\
+		$b_0=0$\\
+		$b_1=\alpha(e^{i\Omega}+e^{-i\Omega})$\\
+		$b_2=-\alpha^2$\\
+		$y(n)=x(n)+(e^{i\Omega}+e^{-i\Omega})x(n-1)+x(n-2)+\alpha(e^{i\Omega}+e^{-i\Omega})y(n-1)-\alpha^2 y(n-2)$\\
+		$\boxed{y(n)=x(n)+2\cos{(\Omega)}x(n-1)+x(n-2)+2\alpha\cos{(\Omega)}y(n-1)-\alpha^2 y(n-2)}$
+
+	\item$ $\\
+		\includegraphics[width=7.50in]{Derp.png}
+	
+\end{enumerate}
+
+\end{document}

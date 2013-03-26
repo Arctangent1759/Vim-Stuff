@@ -1,0 +1,10 @@
+
+def num_productive(n):
+	"""Number of productive rabbits"""
+	return num_rabbits(n-2)
+
+def num_rabbits(n):
+	"""Number of Rabbits"""
+	if n==0:
+		return 1
+	return num_rabbits(n-1)+num_productive(n)

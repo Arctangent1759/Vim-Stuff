@@ -1,0 +1,44 @@
+Dictionaries Continued
+======================
+	Hash Codes
+	----------
+		Good hash codes:
+			Code:
+				private static int hashCode(String key){
+					int hashVal=0; 
+					for (int i =0; i < key.length(); i++){
+						hashVal=(127*hashVal+key.charAt(i))%16908799; 
+						//We treat hashVal as a Base 127 number.
+						//The modulo prime mixes up the bits
+					}
+				}
+
+		Bad hash codes on words: Sum ASCII values of characters.
+			Sum ASCII values of characters
+				-Rarely exceeds 500
+				-Anagrams like "pat", "tap", "apt" collide
+			First 3 letters of a word, with 26^3 buckets
+				-Lots of "pre" not a lot of "xzw"
+			Suppose prime modulus is 127
+				-Always lose hashVal
+	Resizing Hash Tables
+	--------------------
+		If load factor n/N too large, we lose constant-time performance.
+		Enlarge hash table when load factor >= .75
+
+		Allocate a new array at least twice as long.
+		Walk through entries in old array, rehash them into new.
+		
+		Option: shrink hash tables (eg. when n/N < .25) to free memory.
+
+		\_Resizing hash tables is expensive; it takes \Theta(n) time\_
+
+		But because resizing occurs so infrequently, the average over long run is still O(1) time per operation.
+	
+	Transposition Tables: Speed Game Trees
+	--------------------------------------
+		Some grids reachable through different sequences of moves, may be evaluated many times.
+		Mantain hash table of grids, called \*transposition table\*
+			-Key is grid
+			-Value is gri's score
+		Minimax algorihm checks if grid is in table

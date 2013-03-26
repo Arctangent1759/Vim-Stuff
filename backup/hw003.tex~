@@ -1,0 +1,285 @@
+\documentclass[11pt]{article}
+\usepackage{enumerate,amsmath,textcomp,amssymb,geometry,graphicx}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{111}  % Your discussion section
+\def\Login{cs70-kd} % Your login
+\def\HW{3} % Homework number
+
+\title{CS70--Spring 2013}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS70--Spring 2013 Homework \HW, \Name, section \Sec}{CS70--Spring 2013 Homework \HW, \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\begin{document}
+	\maketitle
+
+	\textbf{Collaborators: Niraj Amalkanti, Robert Chang, Grady Yu} % Enter your collaborators
+
+	\begin{enumerate}[1)]
+		% Have a new \item for each problem
+		% Make sure you have a \newpage after each item
+		\item 
+			\begin{enumerate}[1.]
+				\item
+					\textbf{Base Case:} $a_1=1$\\
+					\textbf{Inductive Hypothesis:} $a_n=2^{n-1}$\\
+					\textbf{Inductive Step:} \\
+					$a_{n+1}=2^n=2*2^{n-1}=2*a_n$\\
+					\textsc{qed}\\
+					$\boxed{a_n=2^{n-1}}$
+				\item
+					\textbf{Base Case:} $b_1=3$\\
+					\textbf{Inductive Hypothesis:} $b_{n}=2^{n+1}-1$\\
+					$\implies b_{n}+1=2^{n+1}$\\
+					\textbf{Inductive Step:}\\
+					$b_{n+1}=2^{n+2}-1=2(2^{n+1})-1$\\
+					$b_{n+1}=2(b_n+1)-1$\\
+					$b_{n+1}=2b_n+2-1$\\
+					$b_{n+1}=2b_n+1$\\
+					\textsc{qed}\\
+					$\boxed{b_{n+1}=2^{n+1}-1}$
+				\item
+					\textbf{Base Case:} $c_1=2$ \\
+					\textbf{Inductive Hypothesis:} $c_{n}=5^{n+1}+1$\\
+					$c_{n}-1=5^{n+1}$\\
+					\textbf{Inductive Step:}\\
+					$c_{n+1}=5^{n+1}+1=5(5^n)+1$\\
+					$5(c_n-1)+1$\\
+					$5c_n-4$\\
+					\textsc{qed}\\
+					$\boxed{c_{n}=5^{n+1}+1}$
+				\item
+					\textbf{Base Case:} $d_1=2$ \\
+					\textbf{Inductive Hypothesis:} $d_{n}=4(3^{n-1})-2$\\
+					$d_{n}+2=4(3^{n-1})$\\
+					\textbf{Inductive Step:}\\
+					$d_{n+1}=4(3^{n})-2$
+					$=3(4(3^{n-1}))-2$
+					$=3(d_n+2)-2$
+					$=3d_n+6-2$
+					$=3d_n+4$
+					\textsc{qed}\\
+					$\boxed{d_{n}=4(3^{n+1})-2}$
+				\item
+					\textbf{Base Case:} $e_1=100$\\
+					\textbf{Inductive Hypothesis:} $e_n=\frac{2213(23^{n-1})-13}{22}$\\
+					$e_n+\frac{13}{22}=\frac{2213(23^{n-1})}{22}$\\
+					\textbf{Inductive Step:} $e_{n+1}=\frac{2213(23^{n})-13}{22}$\\
+					$=\frac{23(2213(23^{n-1}))-13}{22}$\\
+					$=23\frac{2213(23^{n-1})}{22}-\frac{13}{22}$\\
+					$=23(e_n+\frac{13}{22})-\frac{13}{22}$\\
+					$=23e_n+\frac{299}{22})-\frac{13}{22}$\\
+					$=23e_n+13$\\
+					\textsc{qed}\\
+					$\boxed{e_n=\frac{2213(23^{n-1})-13}{22}}$
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[1.]
+				\item
+					$a_{n+1}=3a_n^2$\\
+					\textbf{Base Case:} $a_1=1\le3^{2^1}=9$\\
+					\textbf{Inductive Hypothesis:} $a_n\le3^{2^n}$\\
+					\textbf{Inductive Step:}\\ 
+					$a_{n+1}=3a_n^2\le3(3^{2^{n}})^2=3(3^{2\times2^n})=3\times3^{2^{n+1}}$\\
+					$\implies a_{n+1} \le 3\times 3^{2^{n+1}}$\\
+					But $3\times3^{2^{n+1}}>3^{2^{n+1}}$\\
+					Since $3\times3^{2^{n+1}}>3^{2^{n+1}}$, our proof is not suffficiently strong; it does not hold for values in $(3^{2^{n+1}},3\times3^{2^{n+1}})$
+				\item
+					$a_{n+1}=3a_n^2$\\
+					\textbf{Base Case:} $a_1=1\le3^{2^1}=9$\\
+					\textbf{Inductive Hypothesis:} $a_n\le3^{2^{n}-1}$\\
+					\textbf{Inductive Step:}\\ 
+					$a_{n+1}=3a_n^2\le3(3^{2^n-1})^2=3(3^{2\times2^n-2})$\\
+					$=3^{2^{n+1}-2+1}$\\
+					$=3^{2^{n+1}-1}$\\
+					$\implies a_{n+1}\le3^{2^{n+1}-1}$\\
+					But $3^{2^{n+1}-1}\le3^{2^{n+1}}$\\
+					This implies that our Inductive Hypothesis here is stronger than the statement we are trying to prove.\\
+					$\implies a_{n+1}\le3^{2^{n+1}}$\\
+					$a_n\le 3^{2^{n}}$
+					Since we proved that $a_{n} \le 3^{2^{n+1}-1} < 3^{2^{n+1}}$, a statement stronger than the original statement, we have also proved that the original statement holds.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[1.]
+				\item
+					Suppose, for contradiction, that two men M an M' are matched with the same woman W in the final pairing $P_f$.\\
+					By the algorithm description, $\exists$ a stable pairing $P_1$ in which M is paired with W and M' is matched with W*, and $P_2$ in which M' is paired with W and M is matched with W**.\\
+					But since M and M' are both matched to W, M' prefers W to W*, and M prefers W to W**.\\
+					By definition, W either has preferences M $>$ M' or M' $>$ M. There are, hence two cases:
+					\begin{enumerate}
+						\item
+							\textbf{Claim: }If W likes M $>$ M', then (M, W) is a rogue couple in $P_2$.\\
+							W prefers M to her current partner M'.\\
+							M prefers W to his current partner W**\\
+							Hence, (M,W) is a rougue couple in $P_2$.
+						\item
+							\textbf{Claim: }If W likes M' $>$ M, then (M', W) is a rogue couple in $P_1$.\\
+							W prefers M' to her current partner M.\\
+							M' prefers W to his current partner W*\\
+							Hence, (M',W) is a rougue couple in $P_1$.
+					\end{enumerate}
+					By case, if $P_1$ is stable $\implies$ $P_2$ is not stable. If $P_2$ is stable $\implies$ $P_1$ is not stable. Contradiction.
+				\item
+					Suppose, for contradiction, that the pairing $P_f$ produced by the algorithm is not stable $\implies \exists $ a rogue couple (M,W) in $P_f$.\\
+					Then, M is paired with some W' < W, and W is paired with some M' $<$ M.\\
+					But if M is paired with W', $\exists$ a stable pairing $P_1$ in which M is paired with W'.\\
+					But M prefers W to W'. $\implies P_1$ cannot be stable, because (M,W) forms a rogue couple in $P_1$.\\
+					By definition of the Mr. Matchmaker's algorithm, $P_1$ must be stable. Contradiction.
+				\item
+					Suppose, for contradiction, that $\exists$ a woman W who gets her favorite suitor M $\ge$ M', where M and M' are her suitors.\\
+					This implies that M picks W$\ge$W', where W and W' are both his suitors.\\
+					Since M can choose between W and W' and W has suitors M and M', there must exist stable pairing $P_1$ in which M is matched with W, and $P_2$ in which M is matched with W' and M' is matched with W.\\
+					\textbf{Claim:} $P_2$ is not stable.\\
+					M prefers W to W'.\\
+					W prefers M to M'.\\
+					If M is matched with W' and W is matched with M', (M,W) forms a rougue couple in $P_2$. Contradiction.
+				\item
+					Suppose that there are $n$ stable configurations in the space of all stable configurations.\\
+					Apply the Matchmaker Algorithm to the first two configurations.
+					Then, apply the algorithm to the result and the next configuration, and apply the algorithm to the result and the next configuration thereafter until all configurations are exhausted.\\
+					For example, there are configurations 1,2,3,4, and 5. Let M(x,y) be applying the Matchmaker Algorithm to pairings x and y.
+					The result of the aforthmentioned operation is M(M(M(M(1,2),3),4),5).\\
+					By 3.3, $P_{12}$ M(1,2) will result in each woman W getting the worst suitor of their suitors in 1 and 2.
+					But $P_{123}$=M($P_{12}$,3) will result in each woman W getting the worst suitor of their suitors in $P_{12}$ and 3.
+					By extension, we can justify the lemma that pessimality is transitive.\\
+					Now, let us consider the $n$ stable configurations in the space of all stable configurations. 
+					With each iteration of the Matchmaker Algorithm, each woman will get her worst suitor of the suitors presented to her, by 3.3.
+					But by definition, each woman's pessimal mate is unique.
+					Hence, when the Matchmaker Algorithm is applied down all the possible stable configurations, each woman will end up with her pessimal suitor.
+					Because female pessimality implies male optimality, there always exists a male-optimal, female-pessimal configuration.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[1.]
+				\item
+					This problem is just the standard propose and reject algorithm with special assumptions about the preference lists.
+					Each man $M_n$ has an imaginary friend, $W^I_n$. Let $W^I_n$ always have $M_n$ at the top of her preference list.
+					$M_n$ prefers some number of real women, then $W^I_n$, then some number of real women, and then all other imaginary women.
+					Likewise, each woman $W_i$ has an imaginary friend, $M^I_i$. Let $M^I_i$ always have $W_n$ at the top of her preference list.
+					$W_n$ prefers some number of real men, then $M^I_i$, then some number of real men, and then all other imaginary men.\\
+					Now suppose that there is a couple (M,W) in pairing P generated by this algorithm, where M or W may or may not be imaginary.
+					Suppose that M prefers W* (imaginary or not) to W. Then W* > W in the list of M, so M must have proposed to her first.
+					So if M is paired with W, W* must have rejected M in favor of M', so W* prefers M' to M.
+					Hence, there exists no rougue couple in P.
+				\item
+					Let S(x) be a function that denotes stability of a couple x, $[P \rightarrow T,F]$, where P is a pairing configuration, and T,F is true or false.
+					Let M(x,y) denote taking the Matchmaker Algorithm of pairing configurations A,B, $[P^2 \rightarrow P]$.\\
+					Let A and B be pairing configurations.
+					$S(A) \wedge S(B) \Rightarrow S(M(A,B))$, by definition of the Matchmaker Algorithm.
+					Hence, $\neg S(M(A,B)) \Rightarrow \neg S(A) \vee \neg S(B)$. \\
+					\textbf{Approach: }One just have to prove $\neg S(M(A,B))$ for $A$ a pairing where man M is single, and $B$ a pairing where M is married to W. (Since the number of single men and women is always equal, our logic applies reflexatively to women as well).\\
+					\\
+					Supppose for contradiction that $\exists$ two stable pairings, A in which M is single, and B in which M is married.
+					There are two cases:
+					\begin{enumerate}
+						\item
+							\textbf{Man m prefers being single to being married.}\\
+							In pairing A, man M is paired with S, his imaginary mate. In other words, he is single.
+							In pairing B, man M is paired a woman W < S. 
+							It becomes clear that B is unstable; M likes S more than W, and by definition, M is at the top of S's list. (M,S) forms a rogue couple in B.
+							Contradiction.
+						\item
+							\textbf{Man m prefers being married to W to being single.}\\
+							In pairing A, M is paired with S, is imaginary mate. In other words, he is single.\\
+							Some man M' is paired with W.
+							Some other man M* is paired with W'.\\
+							In pairing B, M is paired with W > S. 
+							M' is paired with W'. 
+							M* is paired with S, and is single. (the number of single men must remain constant)\\
+							In order for these pairings to be stable, the following preferences must be true:
+							M: W $>$ S, by the assumption of this case\\
+							M*: W' $>$ S, for A to be stable given B is stable\\
+							M': W' $>$ W, for B to be stable given A is stable\\
+							W: M' $>$ M, for A to be stable given B is stable\\
+							W': M* $>$ M', for A to be stable given B is stable.\\
+							Hence, M(A,B), the application of the Matchmaker Algorithm will be:\\
+							M is paired with W
+							W' is paired with W'
+							M* is also paired with W'.
+							But in 3.1 we proved that the Matchmaker Algorithm will never pair two men to a single women. No stable version of M(A,B) exists. A or B must be unstable. \\
+							Contradiction.
+					\end{enumerate}
+					By contradiction, if a man or woman is single in one pairing, he or she is single in all pairings.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[1.]
+				\item
+					\textbf{Addition:}\\
+					\begin{tabular}{|c|c|c|c|c|c|c|}
+						\hline
+						  & 0 & 1 & 2 & 3 & 4 & 5\\ \hline
+						0 & 0 & 1 & 2 & 3 & 4 & 5\\ \hline
+						1 & 1 & 2 & 3 & 4 & 5 & 0\\ \hline
+						2 & 2 & 3 & 4 & 5 & 0 & 1\\ \hline
+						3 & 3 & 4 & 5 & 0 & 1 & 2\\ \hline
+						4 & 4 & 5 & 0 & 1 & 2 & 3\\ \hline
+						5 & 5 & 0 & 1 & 2 & 3 & 4\\ \hline
+					\end{tabular}
+					\\
+					\\
+					\textbf{Multiplication:}\\
+					\begin{tabular}{|c|c|c|c|c|c|c|}
+						\hline
+						  & 0 & 1 & 2 & 3 & 4 & 5\\ \hline
+						0 & 0 & 0 & 0 & 0 & 0 & 0\\ \hline
+						1 & 0 & 1 & 2 & 3 & 4 & 5\\ \hline
+						2 & 0 & 2 & 4 & 0 & 2 & 4\\ \hline
+						3 & 0 & 3 & 0 & 3 & 0 & 3\\ \hline
+						4 & 0 & 4 & 2 & 0 & 4 & 2\\ \hline
+						5 & 0 & 5 & 4 & 3 & 2 & 1\\ \hline
+					\end{tabular}
+				\item
+					0:(0,0)\\
+					1:(1,1)\\
+					2:(0,2)\\
+					3:(1,0)\\
+					4:(0,1)\\
+					5:(1,2)\\
+					No pairs appear twice.
+				\item
+					\textbf{Addition:}\\
+					\begin{tabular}{|c|c|c|c|c|c|c|}
+						\hline
+						      & (0,0) & (1,1) & (0,2) & (1,0) & (0,1) & (1,2)\\ \hline
+						(0,0) & (0,0) & (1,1) & (0,2) & (1,0) & (0,1) & (1,2)\\ \hline
+						(1,1) & (1,1) & (0,2) & (1,0) & (0,1) & (1,2) & (0,0)\\ \hline
+						(0,2) & (0,2) & (1,0) & (0,1) & (1,2) & (0,0) & (1,1)\\ \hline
+						(1,0) & (1,0) & (0,1) & (1,2) & (0,0) & (1,1) & (0,2)\\ \hline
+						(0,1) & (0,1) & (1,2) & (0,0) & (1,1) & (0,2) & (1,0)\\ \hline
+						(1,2) & (1,2) & (0,0) & (1,1) & (0,2) & (1,0) & (0,1)\\ \hline
+					\end{tabular}
+					\\
+					\\
+					\textbf{Multiplication:}\\
+					\begin{tabular}{|c|c|c|c|c|c|c|}
+						\hline
+						      & (0,0) & (1,1) & (0,2) & (1,0) & (0,1) & (1,2)\\ \hline
+						(0,0) & (0,0) & (0,0) & (0,0) & (0,0) & (0,0) & (0,0)\\ \hline
+						(1,1) & (0,0) & (1,1) & (0,2) & (1,0) & (0,1) & (1,2)\\ \hline
+						(0,2) & (0,0) & (0,2) & (0,1) & (0,0) & (0,2) & (0,1)\\ \hline
+						(1,0) & (0,0) & (1,0) & (0,0) & (1,0) & (0,0) & (1,0)\\ \hline
+						(0,1) & (0,0) & (0,1) & (0,2) & (0,0) & (0,1) & (0,2)\\ \hline
+						(1,2) & (0,0) & (1,2) & (0,1) & (1,0) & (0,2) & (1,1)\\ \hline
+					\end{tabular}
+					\\
+					To add two numbers $(x_1,y_1)$ and $(x_2,y_2)$, the x component of the sum is $(x_1+x_2) \mod 2$, and the y component is $(y_1+y_2) \mod 3$.\\
+					So $(x_1,y_1)+(x_2,y_2)=((x_1+x_2) \mod 2,(y_1+y_2) \mod 3)$\\
+					To multiply two numbers $(x_1,y_1)$ and $(x_2,y_2)$, the x component of the product is $(x_1\times x_2) \mod 2$, and the y component is $(y_1\times y_2) \mod 3$.\\
+					So $(x_1,y_1)\times (x_2,y_2)=((x_1\times x_2) \mod 2,(y_1\times y_2) \mod 3)$
+			\end{enumerate}
+		\newpage
+		\item
+			$3^{32} \mod 100$\\
+			$=9^{16} \mod 100$\\
+			$=81^8 \mod 100$\\
+			$=61^4 \mod 100$\\
+			$=21^2 \mod 100$\\
+			$=41 \mod 100$\\
+			$=41$\\
+		\newpage
+	\end{enumerate}
+\end{document}

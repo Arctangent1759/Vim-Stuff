@@ -1,0 +1,13 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<form action="/create" method="post" accept-charset="utf-8">
+			<label for="name">Post Title</label>
+			<input type="text" name="title" id="" value=""/>
+			<br/>
+			<textarea type="text"name="content"id="" rows="8" cols="40"></textarea>
+			<button type="submit">Create Post!</button>
+		</form>
+	</body>
+</html>

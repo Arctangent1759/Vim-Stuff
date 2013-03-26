@@ -1,0 +1,11 @@
+def thing(t,idx):
+	def helpy(tr,idx,below):
+		if tr.right!=0:
+			tree.node[tr.right]=helpy(tr.right,idx,below or idx==tr.right)
+		if tr.left!=0:
+			tree.node[tr.left]=helpy(tr.left,idx,below or idx==tr.left)
+		if below:
+			tree.node[tr].value*=tree.node[tr].value
+		return tr
+	t.root=helpy(t.root,idx,t.root==idx)
+	return t

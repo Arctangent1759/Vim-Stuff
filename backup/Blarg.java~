@@ -1,0 +1,18 @@
+public class Blarg{
+	int i;
+	public Blarg(int i){
+		this.i=i;
+	}
+	public double addNum(double d){
+		return this.i+d;
+	}
+	public int addNum(int i){
+		return this.i+i;
+	}
+	public void asdf(){
+		System.out.println("asdf");
+	}
+	public static void asdf(int i){
+		System.out.println("asdf");
+	}
+}

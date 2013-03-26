@@ -1,0 +1,31 @@
+# #Post pages
+from flask import *
+from flask_simpledb import SimpleDb
+
+app = Flask(__name__)
+db = SimpleDb()
+
+@app.route("/")
+def home():
+	name=request.args.get("name")
+	posts=db.getPosts()
+	return render_template("home.html",name=name,posts=posts)
+
+@app.route("/create", methods=["GET","POST"])
+def create():
+	if request.method=="GET":
+		return render_template("create.html")
+	else:
+		title=request.form['title']
+		content=request.form['content']
+		db.addPost(title,content)
+		return redirect("/")
+
+
+@app.route("/posts/<post_id>")
+def get_post(post_id):
+	return render_template("post.html",post=db.getPost(int(post_id)))
+
+if __name__ == "__main__":
+    app.debug = True
+    app.run()

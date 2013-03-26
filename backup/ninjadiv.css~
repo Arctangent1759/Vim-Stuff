@@ -1,0 +1,11 @@
+.ninja{
+	block:inline;
+	float:left;
+	position:relative;
+	padding:10px;
+	margin:10px;
+}
+.content:hover{
+	opacity:.8;
+	background-color:blue;
+}

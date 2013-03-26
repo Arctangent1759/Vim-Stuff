@@ -1,0 +1,54 @@
+Physics 7B-106
+
+106 GSI:
+Ben Ponedel
+bponde1@berkeley.edu
+
+Head GSI:
+Lenny Evans
+levans@berkeley.edu
+
+OH: 107 Leconte
+M: 2P-3P
+F: 12P-1P
+
+Discussion is worth 10%
+	-No points IFF don't come and failing
+	-COME TO LABS
+
+Course is easy until Ch21: Electromechanics
+
+==========================================
+
+			 Math Concepts
+
+==========================================
+
+Basic Integration (1b trig sub)
+
+Vectors
+	-ai+bj+ck
+	-(ax,ay,az)
+	-[ax,ay,az] (column form) (best form, easy to add, easy to dot)
+
+Law of Cosines
+
+Volume and Surface Integrals
+	-Divergence Theorem
+	-Stoke's Theorem
+
+==========================================
+
+			Maxwell's Equations
+
+==========================================
+
+B is magnetic field
+E is electrical field
+
+Divergence(B) = 0
+Divergence(E) = 4 pi p
+Curl(E)=-1/C dB/dt
+Curl(B)=-1/C dE/dt
+
+Break down when very small

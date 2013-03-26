@@ -1,0 +1,56 @@
+LATEXMODE=True;
+matrix=[[1,1,1,1,2,2,5],[1,4,2,1,1,4,5],[6,2,3,1,2,3,1],[1,2,4,1,0,0,0],[6,4,5,1,6,4,5],[6,1,6,1,6,1,6]]
+inverses={0:0,1:1,2:4,3:5,4:2,5:3,6:6}
+
+def row_add(a,b,m):
+	out=b[:]
+	for i in range(len(a)):
+		out[i]=(out[i]+a[i]*m)%7
+	return out
+
+def printmatrix(m):
+	if not LATEXMODE:
+		print
+		print("--------------")
+		for i in m:
+			print(i)
+		print("--------------")
+		print
+	else:
+		print('\[ \left[ \\begin{array}{ccccccc}')
+		for row in m:
+			curr="\t"
+			for elem in row:
+				curr+=str(elem)+" & "
+			curr=str(curr[:-3])+"\\\\"
+			print(curr)
+		print('\end{array} \\right]\]')
+
+def scalerow(m,s):
+	out=m[:]
+	for i in range(len(m)):
+		out[i]=(out[i]*s)%7
+	return out
+
+if not LATEXMODE:
+	print("Beginning down phase.")
+
+for i in range(len(matrix)):
+	printmatrix(matrix)
+	for j in range(i+1,len(matrix)):
+		matrix[j]=row_add(matrix[i],matrix[j],(7-matrix[j][i])*inverses[matrix[i][i]])
+
+if not LATEXMODE:
+	print("Beginning up phase.")
+
+for i in reversed(range(len(matrix))):
+	for j in range(0,i):
+		matrix[j]=row_add(matrix[i],matrix[j],(7-matrix[j][i])*inverses[matrix[i][i]])
+	printmatrix(matrix)
+
+if not LATEXMODE:
+	print("Scaling.")
+
+for i in range(len(matrix)):
+	matrix[i]=scalerow(matrix[i],inverses[matrix[i][i]])
+	printmatrix(matrix)

@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,textcomp,amssymb,geometry,graphicx}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{111}  % Your discussion section
+\def\Login{ee20n-fx} % Your login
+
+\title{EE20N Post-Lab 4}
+\author{\Name, section \Sec, \Login}
+\pagestyle{myheadings}
+
+\begin{document}
+	\maketitle
+	\section{4.1.2 Exercises}
+	\begin{enumerate}
+		% Have a new \item for each problem
+		% Make sure you have a \newpage after each item
+		\item 
+			$y(n)-\alpha y(n-N)=x(n)$\\
+			$H(\omega)e^{i\omega n}-\alpha H(\omega)e^{i\omega (n-N)}=e^{i\omega n}$\\
+			$H(\omega)e^{i\omega n}-\alpha H(\omega)e^{i\omega n}e^{-i\omega N}=e^{i\omega n}$\\
+			$H(\omega)-\alpha H(\omega)e^{-i\omega N}=1$\\
+			$H(\omega)(1-\alpha e^{-i\omega N})=1$\\
+			$H(\omega)=\frac{1}{1-\alpha e^{-i\omega N}}$\\
+			$H(\omega)=\frac{1}{1-\frac{\alpha}{e^{i\omega N}}}$\\
+			$H(\omega)=\frac{1}{\frac{e^{i\omega N}-\alpha}{e^{i\omega N}}}$\\
+			$H(\omega)=\frac{e^{i\omega N}}{e^{i\omega N}-\alpha}$, QED.
+		\item
+			$H(\omega)=\frac{e^{i\omega N}}{e^{i\omega N}-\alpha}$\\
+			$|H(\omega)|=|\frac{e^{i\omega N}}{e^{i\omega N}-\alpha}|$\\
+			$|H(\omega)|=\frac{|e^{i\omega N}|}{|e^{i\omega N}-\alpha|}$\\
+			$|H(\omega)|=\frac{1}{|e^{i\omega N}-\alpha|}$\\
+			$|H(\omega)|=\frac{1}{|\cos(\omega N)-\alpha+i\sin(\omega N)|}$\\
+			$|H(\omega)|=\frac{1}{\sqrt{(\cos(\omega N)-\alpha)^2+\sin^2(\omega N)}}$\\
+			$|H(\omega)|=\frac{1}{\sqrt{\cos^2(\omega N)-2\alpha \cos(\omega N)+\alpha^2+\sin^2(\omega N)}}$\\
+			$|H(\omega)|=\frac{1}{\sqrt{1-2\alpha \cos(\omega N)+\alpha^2}}$\\
+			\begin{tabular}{l|l}
+				Phase:                                  & Magnitude:                                  \\ \hline
+				\includegraphics[width=3in]{phase1.png} & \includegraphics[width=3in]{magnitude1.png} \\
+			\end{tabular}
+		\item
+			See CF Frequency Domain.vi
+			\begin{tabular}{l|l}
+				Front Panel:                                  & Block Diagram:                                  \\ \hline
+				\includegraphics[width=3in]{CFFrequencyDomainFP.png} & \includegraphics[width=3in]{CFFrequencyDomainBD.png} \\
+			\end{tabular}
+
+		\item
+			Changing $\alpha$ changes the shape of the magnitude response. 
+			The maxima and minima become sharper as $|\alpha|$ approaches 1 (as $\alpha$ approaches either 1 or -1, and rounder as $\alpha$ approaches 0.
+			Thus, for $|\alpha|$ near 1, the curve increases and decreases more quickly.\\\\
+			For positive values of $\alpha$, the magnitude response is at a maximum at $\omega=0$, while for negative values of $\alpha$, the magniutde response is at a minimum at $\omega=0$.
+		\item
+			At $N=0$, the curve is flat. 
+			As $N$ increases from 0 to 10, the magnitude response becomes more compressed, and more peaks are added to the curve.
+			$N$, thus, determines the frequency of the manitude response.
+			The filter is probably called a comb filter because increasing N causes the appearance of the magnitude response to resemble that of a comb.
+		\item
+			See CF Time Domain.vi\\
+			\begin{tabular}{l|l}
+				Front Panel:                                  & Block Diagram:                                  \\ \hline
+				\includegraphics[width=3in]{CFTimeDomainFP.png} & \includegraphics[width=3in]{CFTimeDomainBD.png} \\
+			\end{tabular}
+
+		\item
+			As expected, amplitude varies with frequency with periodicity $2\pi/N$.\\
+			For negative $\alpha$, the amplitude is minimum near 0, while for positive $\alpha$, the amplitude is near maximum.\\
+			For $N=1, \alpha =.5$, amplitude decreases until $pi$, then increases again.\\
+			For $N=2, \alpha =.5$, amplitude decreases until $\frac{pi}{2}$, then increases again.\\
+			These observations are consistent with our predictions.
+	\end{enumerate}
+	\section{4.2.2 Exercises}
+	\begin{enumerate}
+		\item
+			$ $\\
+			\includegraphics[width=140mm]{diagram.png}
+		\item
+			$y(n)+\alpha y(n-1)=\alpha x(n)+x(n-1)$\\
+			$F_A(\omega)e^{i\omega n}+\alpha F_A(\omega)e^{i\omega (n-1)}=\alpha e^{i\omega n}+e^{i\omega (n-1)}$\\
+			$F_A(\omega)e^{i\omega n}+\alpha F_A(\omega)e^{i\omega n}e^{-i\omega}=\alpha e^{i\omega n}+e^{i\omega n}e^{-i\omega}$\\
+			$F_A(\omega)+\alpha F_A(\omega)e^{-i\omega}=\alpha +e^{-i\omega}$\\
+			$F_A(\omega)(1+\alpha e^{-i\omega})=\alpha +e^{-i\omega}$\\
+			$F_A(\omega)=\frac{\alpha +e^{-i\omega}}{1+\alpha e^{-i\omega}}$\\
+		\item
+			$F_A(\omega)=\frac{\alpha +e^{-i\omega}}{1+\alpha e^{-i\omega}}$\\
+			$F_A(\omega)=e^{-i\omega}\frac{\alpha e^{i\omega} +1}{1+\alpha e^{-i\omega}}$\\
+			$|F_A(\omega)|=|e^{-i\omega}\frac{\alpha e^{i\omega} +1}{1+\alpha e^{-i\omega}}|=|e^{-i\omega}||\frac{\alpha e^{i\omega} +1}{1+\alpha e^{-i\omega}}|=1$\\
+			\begin{tabular}{l|l}
+				Phase:                                  & Magnitude:                                  \\ \hline
+				\includegraphics[width=3in]{phase2.png} & \includegraphics[width=3in]{magnitude2.png} \\
+			\end{tabular}
+		\item
+			See APF Frequency Domain.vi\\
+			\begin{tabular}{l|l}
+				Front Panel:                                  & Block Diagram:                                  \\ \hline
+				\includegraphics[width=3in]{APFFrequencyDomainFP.png} & \includegraphics[width=3in]{APFFrequencyDomainBD.png} \\
+			\end{tabular}
+
+		\item
+			The magnitude response is always 1, regardless of $\alpha$, for sufficiently large n. 
+			The filter is called an all-pass filter because all frequencies pass through the filter with no attenuation.
+			Hence, "all" frequencies "pass" through the filter.
+			This filter would be useful for phase shitfting a signal without changing any of its frequency components, or reversing a phase shift caused by something like the two-channel system in the homework.
+		\item
+			See APF Time Domain.vi\\
+			\begin{tabular}{l|l}
+				Front Panel:                                  & Block Diagram:                                  \\ \hline
+				\includegraphics[width=3in]{APFTimeDomainFP.png} & \includegraphics[width=3in]{APFTimeDomainBD.png} \\
+			\end{tabular}
+
+		\item
+			As expected, for sufficiently large n, there is no change to the amplitude of the sinusoid.
+			For negative $\alpha$, the sinusoid changes in phase quickly with increasing frequency, as predicted by our frequency response.
+			For positive $\alpha$, the sinusoid changes in phase slowly with increasing frequency, as predicted by our frequency response.
+			These observations are consistent with our predictions.
+	\end{enumerate}
+\end{document}

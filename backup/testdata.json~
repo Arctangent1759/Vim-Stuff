@@ -1,0 +1,22 @@
+{
+	Foothill:{
+		Breakfast:[],
+		Lunch:[],
+		Dinner:[]
+	}
+	CKC:{
+		Breakfast:[],
+		Lunch:[],
+		Dinner:[]
+	},
+	Cafe3:{
+		Breakfast:[],
+		Lunch:[],
+		Dinner:[]
+	},
+	Crossroads{
+		Breakfast:[],
+		Lunch:[],
+		Dinner:[]
+	}
+}

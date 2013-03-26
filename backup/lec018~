@@ -1,0 +1,46 @@
+Encapsulated Lists (A case study)
+=================================
+	Hw 3,4,5: three different linked lists
+	Hw 3 lists: query every item takes \theta(n^2) time using nth(i)
+	Hw 4,5: Application can hold a node.
+	Query all items in \theta(n) time
+
+	HW5 SList and DList are well-encapsulated
+
+	HW4 DList has flaws: 
+	--------------------
+		What if l.remove(n) but node is in different list than l?
+			"size" field of wrong list is updated.
+			Fix: add pointer to list nodes
+			Disadvantage: bigger list nodes.
+		Should insertAfter, remove, etc be methods of List or ListNode?
+			If we define these in ListNode, we avoid question 1.
+			ADT interface fix:
+				List: isEmpty, insertFront
+				ListNode: item, next, insertAfter
+
+			Implementation fix:
+				Each node has "mylist", so we can update list's "size" field.
+
+		What if l.remove(n), l.insertAfter(i,n)?
+				ADT fix: After n.remove(), n is invalid node.
+					Any attempt to use n throws an exception
+					Any attempt to use n throws an exception
+				Implementation fix: 
+					n.remove()->n.myList set to null
+					marked as invalid
+					next and prev also set to null
+		What if we walk off the end of the list?
+			HW4 returns null.
+			HW5 returns invalid node.
+			Reasons:
+				Proides consistency. .next() at list end gives you same result as remove()
+				n.next().item() throws InvalidNodeException
+			Implementation answer:
+				Any sentinel is an invalid node.
+		How do we access an item?
+			ADT inteface answer:
+				HW4: Node's item field is public
+				HW5: Node's item field is protected
+					Application must use item() and setItem()
+					Why? Applications can't store items in deleted nodes or sentinels.

@@ -1,0 +1,41 @@
+Questions 1
+===========
+1. 
+	f=2000Hz
+	p=1/2000 s
+
+2.
+	Yes.
+	T=16000 Hz / sample^-1
+	f=2000Hz/16000Hz = 1/8 sample^-1
+	\Omega=2\pi f = 2\pi/8=\pi/4
+	p=8 samples
+
+3.
+	Yes.
+	Max freq=8000Hz
+
+4.	
+	8 samples (collect 1 period)
+
+Questions 2
+===========
+1.
+	|x(0)|			|1	1			1		 |	|X'_0|
+	|x(1)|	=	1/p	|1	e^(iwk)	e^(i2wk)|	|X'_1|
+	|x(2)|			|1	e^(i2wk)	e^(i4wk)|	|X'_2|
+
+	|1	1			1		 |	|x(0)|		|X'_0|
+	|1	e^(-iwk)	e^(-i2wk)|	|x(1)|	=	|X'_1|
+	|1	e^(-i2wk)	e^(-i4wk)|	|x(2)|		|X'_2|
+2.
+	AB=I_3
+	x(n)--DTFT-->X(w)
+	Claim:
+	nx(n) --DTFT--> i dX(w)/dw
+
+	\int_(-pi)^(pi) i dX(w)/dw e^(iwn) dw
+	=\int_(-pi)^(pi) dX(w)/dw e^(iwn+i \pi/2) dw
+	=X(pi) e^(i pi n+i \pi/2)+X(-pi) e^(i -pi n+i \pi/2)
+	=X(pi) e^(i pi n+i \pi/2)+X(-pi) e^(i -pi n+i \pi/2)
+

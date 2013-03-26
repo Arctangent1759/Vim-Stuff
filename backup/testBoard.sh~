@@ -1,0 +1,1 @@
+mkdir temp; g++ Board.cpp; ./a.out > temp/temp; diff temp/temp test/expectedBoard;

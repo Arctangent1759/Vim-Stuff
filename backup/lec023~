@@ -1,0 +1,127 @@
+Rooted Tree:
+===========
+	The set of all nodes and the edges that connect them
+	Exactly 1 path between any two nodes.
+	Path: Sequence of one or more nodes, each consecutive pair connected by an edge
+
+	Rooted tree: One distinguished node is root
+	Every node c except root has one parent p, the first node on the path from c to the root
+	c is p's \*child\*
+
+	A node can have any number of children
+
+	Tree Vocab:
+	-----------
+		-\*Leaf\*: Node with no children
+		-\*Siblings\*: Node with some parent
+		-\*Ancestors\* of d: Every node on the path from d to root, including d itself
+		-If a is an ancestor of d, d is a descendant of a.
+		-\*Length\* of a path: number of edges in path
+		-\*Depth\* of a node n: length of path from n to root.
+			Depth of root is 0
+		-\*Height\* of a  node n:length of path from n to its deepest decendent. Height of a leaf is zero.
+		-Height of a tree 
+		-Height of a tree = height of its root.
+		-\*Subtree\* rooted at n: tree formed by n and its descendants
+		-\*Binary tree\*: No node has more than 2 children and every child is a \*left child\* or a \*right child\*, even if its the only child.
+	
+	A good example of a rooted tree is a filesystem:
+	Tree:
+		~jrs/61b +
+				 |
+				 + hw
+				 |
+				 + lab
+				 |
+				 + proj
+	
+	Representing rooted trees
+	-------------------------
+		G&T: Each node has 3 references:
+			1. item
+			2. parent
+			3. children stored in a list.
+
+		Another option: The Sibiling Tree
+			Code:
+				class SubTree{
+					SibTreeNode root;
+					int size;
+				}
+				class SibTreeNode{
+					Object item;
+					SibTreeNode parent;
+					SibTreeNode firstChild;
+					SubTreeNode nextSibiling;
+				}
+	Tree Traversals
+	---------------
+		Preorder Traversals
+		-------------------
+			\*Traversal\*: A manner of visiting each node in a tree once.
+			\*Preorder Traversal\*: Visit each node before recursively visiting its children left o right. Root visited first.
+
+			Code:
+				class SibTreeNode{
+
+					...
+
+					public void preorder(){
+						this.visit();
+						if (firstChild!=null){
+							firstChild.preorder();
+						}
+						if (nextSibiling!=null){
+							nextSibiling.preorder();
+						}
+					}
+
+					...
+
+				}
+
+			Each node visited only once, so preorder traversal takes O(n) time, where n is the number of nodes in tree.
+
+			Preorder Traversal can generate a tree like this:
+			Plaintext:
+				~jrs/61b
+					hw
+						h1
+						h2
+					index.html
+						lab
+							lab1
+							lab2
+						lec
+							lec01
+							lec02
+							lec04
+							lec05
+							lec05
+
+		Postorder Traversal
+		-------------------
+			A \*Postorder Traversal\* visits each node's children from left to right before the node itself.
+			Code:
+				class SibTreeNode{
+
+					...
+
+					public void postorder(){
+						if (firstChild!=null){
+							firstChild.postorder();
+						}
+						this.visit();
+						if (nextSibiling!=null){
+							nextSibiling.postorder();
+						}
+					}
+
+					...
+
+				}
+
+		Inorder Traveral
+		----------------
+			Binary trees have inorder traversal:
+				recursively traverse root's left tree, then root, then right subtree.

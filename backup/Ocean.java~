@@ -1,0 +1,361 @@
+/* Ocean.java */
+
+/**
+ *  The Ocean class defines an object that models an ocean full of sharks and
+ *  fish.  Descriptions of the methods you must implement appear below.  They
+ *  include a constructor of the form
+ *
+ *      public Ocean(int i, int j, int starveTime);
+ *
+ *  that creates an empty ocean having width i and height j, in which sharks
+ *  starve after starveTime timesteps.
+ *
+ *  See the README file accompanying this project for additional details.
+ */
+
+public class Ocean {
+
+	/**
+	 *  Do not rename these constants.  WARNING:  if you change the numbers, you
+	 *  will need to recompile Test4.java.  Failure to do so will give you a very
+	 *  hard-to-find bug.
+	 */
+
+	public final static int EMPTY = 0;
+	public final static int SHARK = 1;
+	public final static int FISH = 2;
+
+	/**
+	 *  Define any variables associated with an Ocean object here.  These
+	 *  variables MUST be private.
+	 */
+	private int[][][] grid;
+	private final int starveTime;
+
+
+
+	/**
+	 *  The following methods are required for Part I.
+	 */
+
+	/**
+	 *  Ocean() is a constructor that creates an empty ocean having width i and
+	 *  height j, in which sharks starve after starveTime timesteps.
+	 *  @param i is the width of the ocean.
+	 *  @param j is the height of the ocean.
+	 *  @param starveTime is the number of timesteps sharks survive without food.
+	 */
+
+	public Ocean(int i, int j, int starveTime) {
+	  grid = new int[i][j][2];
+	  this.starveTime=starveTime;
+	  //Initialize the ocean as empty:
+	  for (int x = 0; x < this.width(); x++){
+		  for (int y = 0; y < this.height(); y++){
+			  grid[x][y][0]=EMPTY;
+			  grid[x][y][1]=starveTime;
+		  }
+	  }
+	}
+
+	/**
+	 *  width() returns the width of an Ocean object.
+	 *  @return the width of the ocean.
+	 */
+
+	public int width() {
+		// Replace the following line with your solution.
+		return grid.length;
+	}
+
+	/**
+	 *  height() returns the height of an Ocean object.
+	 *  @return the height of the ocean.
+	 */
+
+	public int height() {
+		// Replace the following line with your solution.
+		return grid[0].length;
+	}
+
+	/**
+	 *  starveTime() returns the number of timesteps sharks survive without food.
+	 *  @return the number of timesteps sharks survive without food.
+	 */
+
+	public int starveTime() {
+		// Replace the following line with your solution.
+		return this.starveTime;
+	}
+
+	/**
+	 *  addFish() places a fish in cell (x, y) if the cell is empty.  If the
+	 *  cell is already occupied, leave the cell as it is.
+	 *  @param x is the x-coordinate of the cell to place a fish in.
+	 *  @param y is the y-coordinate of the cell to place a fish in.
+	 */
+
+	public void addFish(int x, int y) {
+		if (grid[x][y][0]==EMPTY){
+			grid[x][y][0]=FISH;
+		}
+	}
+
+	/**
+	 *  addShark() (with two parameters) places a newborn shark in cell (x, y) if
+	 *  the cell is empty.  A "newborn" shark is equivalent to a shark that has
+	 *  just eaten.  If the cell is already occupied, leave the cell as it is.
+	 *  @param x is the x-coordinate of the cell to place a shark in.
+	 *  @param y is the y-coordinate of the cell to place a shark in.
+	 */
+
+	public void addShark(int x, int y) {
+		addShark(x,y,starveTime);
+	}
+
+	/**
+	 *  cellContents() returns EMPTY if cell (x, y) is empty, FISH if it contains
+	 *  a fish, and SHARK if it contains a shark.
+	 *  @param x is the x-coordinate of the cell whose contents are queried.
+	 *  @param y is the y-coordinate of the cell whose contents are queried.
+	 */
+
+	public int cellContents(int x, int y) {
+		return grid[x][y][0];
+	}
+
+	/**
+	 *  timeStep() performs a simulation timestep as described in README.
+	 *  @return an ocean representing the elapse of one timestep.
+	 */
+
+	public Ocean timeStep() {
+		Ocean out = new Ocean(width(),height(),starveTime());
+		for (int x = 0; x < width(); x++){
+			for (int y = 0; y < height(); y++){
+				switch(grid[x][y][0]){
+					case EMPTY:
+						if (getFishNeighbors(x,y)>=2 && getSharkNeighbors(x,y)<=1){
+							//Add a fish if there is at least 2 fish and at most 1 shark
+							out.addFish(x,y);
+						}else if (getFishNeighbors(x,y)>=2 && getSharkNeighbors(x,y)>=2){
+							//Add a shark if there are at least 2 sharks and two fish
+							out.addShark(x,y);
+						}
+						break;
+					case SHARK:
+						if (getFishNeighbors(x,y)>0){
+							//If any neighbors are fish, reset hunger.
+							out.addShark(x,y);
+						}else{
+							//Add the shark iff it's not dead.
+							if (grid[x][y][1]>0){
+								//If the shark is still alive, it gets hungrier.
+								out.addShark(x,y,grid[x][y][1]-1);
+							}
+						}
+						break;
+					case FISH:
+						if (getSharkNeighbors(x,y)==0){
+						//Add the fish to out iff there's no shark nearby.
+							out.addFish(x,y);
+						} else if (getSharkNeighbors(x,y)>1){
+						//Replace fish with shark if there's at least 2 sharks nearby.
+							out.addShark(x,y);
+						}
+						break;
+					default:
+						//INVARIANT: This should never happen.
+						assert false;
+				}
+			}
+		}
+		return out;
+	}
+
+	/**
+	 *  The following method is required for Part II.
+	 */
+
+	/**
+	 *  addShark() (with three parameters) places a shark in cell (x, y) if the
+	 *  cell is empty.  The shark's hunger is represented by the third parameter.
+	 *  If the cell is already occupied, leave the cell as it is.  You will need
+	 *  this method to help convert run-length encodings to Oceans.
+	 *  @param x is the x-coordinate of the cell to place a shark in.
+	 *  @param y is the y-coordinate of the cell to place a shark in.
+	 *  @param feeding is an integer that indicates the shark's hunger.  You may
+	 *         encode it any way you want; for instance, "feeding" may be the
+	 *         last timestep the shark was fed, or the amount of time that has
+	 *         passed since the shark was last fed, or the amount of time left
+	 *         before the shark will starve.  It's up to you, but be consistent.
+	 */
+
+	public void addShark(int x, int y, int feeding) {
+		if (grid[x][y][0]==EMPTY){
+			grid[x][y][0]=SHARK;
+			grid[x][y][1]=feeding;
+		}
+	}
+
+	/**
+	 *  The following method is required for Part III.
+	 */
+
+	/**
+	 *  sharkFeeding() returns an integer that indicates the hunger of the shark
+	 *  in cell (x, y), using the same "feeding" representation as the parameter
+	 *  to addShark() described above.  If cell (x, y) does not contain a shark,
+	 *  then its return value is undefined--that is, anything you want.
+	 *  Normally, this method should not be called if cell (x, y) does not
+	 *  contain a shark.  You will need this method to help convert Oceans to
+	 *  run-length encodings.
+	 *  @param x is the x-coordinate of the cell whose contents are queried.
+	 *  @param y is the y-coordinate of the cell whose contents are queried.
+	 */
+
+	public int sharkFeeding(int x, int y) {
+		// Replace the following line with your solution.
+		assert grid[x][y][0]==SHARK;
+		return grid[x][y][1];
+	}
+
+	//Abstract away neighbor getting
+	
+	private int getSharkNeighbors(int x, int y){
+		return getNeighbors(x,y)[0];
+	}
+	private int getFishNeighbors(int x, int y){
+		return getNeighbors(x,y)[1];
+	}
+	//Returns [Shark count, Fish count]
+	private int[] getNeighbors(int x, int y){
+		int[] totals = new int[2];
+		for (int i = -1; i <= 1; i++){
+			for (int j = -1; j <= 1; j++){
+				//Don't count the contents of (x,y)
+				if (i!=0 || j!=0){
+					switch (getGridLocation(x,y,i,j)[0]){
+						case EMPTY:
+							break;
+						case FISH:
+							totals[1]+=1;
+							break;
+						case SHARK:
+							totals[0]+=1;
+							break;
+						default:
+					}
+				}
+			}
+		}
+		return totals;
+	}
+	//Abstract away positioning
+	private int[] getTop(int x, int y){
+		return getGridLocation(x,y,0,-1);
+	}
+	private int[] getBot(int x, int y){
+		return getGridLocation(x,y,0,1);
+	}
+	private int[] getLeft(int x, int y){
+		return getGridLocation(x,y,-1,0);
+	}
+	private int[] getRight(int x, int y){
+		return getGridLocation(x,y,1,0);
+	}
+	private int[] getTopRight(int x, int y){
+		return getGridLocation(x,y,1,-1);
+	}
+	private int[] getTopLeft(int x, int y){
+		return getGridLocation(x,y,-1,-1);
+	}
+	private int[] getBotRight(int x, int y){
+		return getGridLocation(x,y,1,1);
+	}
+	private int[] getBotLeft(int x, int y){
+		return getGridLocation(x,y,-1,1);
+	}
+
+	private int[] getGridLocation(int x, int y,int dx,int dy){
+		return grid[wrap(x,dx,width())][wrap(y,dy,height())];
+	}
+	private static int wrap(int x,int dx,int max){
+		if (dx<0){
+			dx=max-((max-dx)%max);
+		}
+		return (x+dx)%max;
+	}
+
+	//Test code
+	private static void main(String[] args){
+		//Testing positioning get
+		print("Testing positioning");
+		Ocean o = new Ocean(4,2,3);
+		print("Should be 4: "+o.width());
+		print("Should be 2: "+o.height());
+		print("Should be 3: "+o.starveTime());
+		//Testing fish and shark
+		print("Testing Fish and Shark");
+		o.addFish(0,1);
+		o.addShark(1,1);
+		print("Should be 2: "+o.cellContents(0,1));
+		print("Should be 1: "+o.cellContents(1,1));
+		print("Should be 3: "+o.sharkFeeding(1,1));
+		print("Should be 3: "+o.sharkFeeding(1,1));
+		//Testing wrap
+		print("Testing Wrap");
+		print("Should be 1: "+wrap(0,1,10));
+		print("Should be 2: "+wrap(1,1,10));
+		print("Should be 1: "+wrap(2,-1,10));
+		print("Should be 8: "+wrap(2,-4,10));
+		print("Should be 0: "+wrap(9,1,10));
+		print("Should be 9: "+wrap(0,-1,10));
+		print("Should be 4: "+wrap(4,0,10));
+		//Testing Position Abstraction
+		print("Testing Position Abstraction");
+		Ocean c = new Ocean(3,3,1);
+		c.grid[0][0][1]=1;
+		c.grid[1][0][1]=2;
+		c.grid[2][0][1]=3;
+		c.grid[0][1][1]=4;
+		c.grid[1][1][1]=5;
+		c.grid[2][1][1]=6;
+		c.grid[0][2][1]=7;
+		c.grid[1][2][1]=8;
+		c.grid[2][2][1]=9;
+		print("Should print 1236789:");
+		print("\t"+c.getTopLeft(1,1)[1]);
+		print("\t"+c.getTop(1,1)[1]);
+		print("\t"+c.getTopRight(1,1)[1]);
+		print("\t"+c.getLeft(1,1)[1]);
+		print("\t"+c.getRight(1,1)[1]);
+		print("\t"+c.getBotLeft(1,1)[1]);
+		print("\t"+c.getBot(1,1)[1]);
+		print("\t"+c.getBotRight(1,1)[1]);
+		print("Should print 23154897:");
+		print("\t"+c.getTopLeft(2,1)[1]);
+		print("\t"+c.getTop(2,1)[1]);
+		print("\t"+c.getTopRight(2,1)[1]);
+		print("\t"+c.getLeft(2,1)[1]);
+		print("\t"+c.getRight(2,1)[1]);
+		print("\t"+c.getBotLeft(2,1)[1]);
+		print("\t"+c.getBot(2,1)[1]);
+		print("\t"+c.getBotRight(2,1)[1]);
+		print("Should print 64598312");
+		print("\t"+c.getTopLeft(0,2)[1]);
+		print("\t"+c.getTop(0,2)[1]);
+		print("\t"+c.getTopRight(0,2)[1]);
+		print("\t"+c.getLeft(0,2)[1]);
+		print("\t"+c.getRight(0,2)[1]);
+		print("\t"+c.getBotLeft(0,2)[1]);
+		print("\t"+c.getBot(0,2)[1]);
+		print("\t"+c.getBotRight(0,2)[1]);
+
+	}
+
+	//Redeeming features of python
+	private static void print(String s){
+		System.out.println(s);
+	}
+}

@@ -1,0 +1,6 @@
+class inventory{
+	public:
+		inventory();
+		void Update (string, int);
+	private:
+};

@@ -112,8 +112,14 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-CYGWIN=/media/arctangent1759/34FEA60CFEA5C688/cygwin/home/Alex
-WINHOME=/media/arctangent1759/34FEA60CFEA5C688/Users/Alex
 alias idea="/opt/intelij/idea-IC-123.72/bin/idea.sh"
 export PATH=$PATH:/opt/adt-bundle-linux-x86_64/sdk/platform-tools:/opt/adt-bundle-linux-x86_64/sdk/tools
-export PATH=$PATH:/opt/adt-bundle-linux-x86_64/sdk/platform-tools:/opt/adt-bundle-linux-x86_64/sdk/tools:/opt
+export PATH=$PATH:/opt/adt-bundle-linux-x86_64/sdk/platform-tools:/opt/adt-bundle-linux-x86_64/sdk/tools:/opt/arduino-1.0.3/
+alias android-connect="mtpfs -o allow_other /media/Nexus7/"
+alias android-disconnect="fusermount -u /media/Nexus7/"
+
+alias cs70lon="ssh -x cs70-kd@star.cs.berkeley.edu"
+alias fcs70lon="ssh -x cs70-kd@hive4.cs.berkeley.edu"
+alias cs9flon="ssh -x cs9b-bg@star.cs.berkeley.edu"
+alias fs9flon="ssh -x cs9b-bg@hive4.cs.berkeley.edu"
+alias cs61blon="ssh -x cs61b-ga@star.cs.berkeley.edu"

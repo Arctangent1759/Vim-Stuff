@@ -1,0 +1,361 @@
+/* RunLengthEncoding.java */
+
+/**
+ *  The RunLengthEncoding class defines an object that run-length encodes an
+ *  Ocean object.  Descriptions of the methods you must implement appear below.
+ *  They include constructors of the form
+ *
+ *      public RunLengthEncoding(int i, int j, int starveTime);
+ *      public RunLengthEncoding(int i, int j, int starveTime,
+ *                               int[] runTypes, int[] runLengths) {
+ *      public RunLengthEncoding(Ocean ocean) {
+ *
+ *  that create a run-length encoding of an Ocean having width i and height j,
+ *  in which sharks starve after starveTime timesteps.
+ *
+ *  The first constructor creates a run-length encoding of an Ocean in which
+ *  every cell is empty.  The second constructor creates a run-length encoding
+ *  for which the runs are provided as parameters.  The third constructor
+ *  converts an Ocean object into a run-length encoding of that object.
+ *
+ *  See the README file accompanying this project for additional details.
+ */
+
+public class RunLengthEncoding {
+
+  /**
+   *  Define any variables associated with a RunLengthEncoding object here.
+   *  These variables MUST be private.
+   */
+	//Data
+	private int width;
+	private int height;
+	private int starveTime;
+	private DList runs;
+
+	//Access
+	private int index;
+
+
+
+  /**
+   *  The following methods are required for Part II.
+   */
+
+  /**
+   *  RunLengthEncoding() (with three parameters) is a constructor that creates
+   *  a run-length encoding of an empty ocean having width i and height j,
+   *  in which sharks starve after starveTime timesteps.
+   *  @param i is the width of the ocean.
+   *  @param j is the height of the ocean.
+   *  @param starveTime is the number of timesteps sharks survive without food.
+   */
+
+  public RunLengthEncoding(int i, int j, int starveTime) {
+	  this.width=i;
+	  this.height=j;
+	  this.starveTime=starveTime;
+	  this.runs=new DList();
+	  this.runs.pushFront(new Run(Ocean.EMPTY,i*j));
+  }
+
+  /**
+   *  RunLengthEncoding() (with five parameters) is a constructor that creates
+   *  a run-length encoding of an ocean having width i and height j, in which
+   *  sharks starve after starveTime timesteps.  The runs of the run-length
+   *  encoding are taken from two input arrays.  Run i has length runLengths[i]
+   *  and species runTypes[i].
+   *  @param i is the width of the ocean.
+   *  @param j is the height of the ocean.
+   *  @param starveTime is the number of timesteps sharks survive without food.
+   *  @param runTypes is an array that represents the species represented by
+   *         each run.  Each element of runTypes is Ocean.EMPTY, Ocean.FISH,
+   *         or Ocean.SHARK.  Any run of sharks is treated as a run of newborn
+   *         sharks (which are equivalent to sharks that have just eaten).
+   *  @param runLengths is an array that represents the length of each run.
+   *         The sum of all elements of the runLengths array should be i * j.
+   */
+
+  public RunLengthEncoding(int i, int j, int starveTime,
+                           int[] runTypes, int[] runLengths) {
+	  this.width=i;
+	  this.height=j;
+	  this.starveTime=starveTime;
+	  this.runs=new DList();
+	  //Invariant: runTypes.length == runLengths.length
+	  for (int a = 0; a < runTypes.length; a++){
+		  this.runs.pushBack(new Run(runTypes[a],runLengths[a]));
+	  }
+  }
+
+  /**
+   *  restartRuns() and nextRun() are two methods that work together to return
+   *  all the runs in the run-length encoding, one by one.  Each time
+   *  nextRun() is invoked, it returns a different run (represented as an
+   *  array of two ints), until every run has been returned.  The first time
+   *  nextRun() is invoked, it returns the first run in the encoding, which
+   *  contains cell (0, 0).  After every run has been returned, nextRun()
+   *  returns null, which lets the calling program know that there are no more
+   *  runs in the encoding.
+   *
+   *  The restartRuns() method resets the enumeration, so that nextRun() will
+   *  once again enumerate all the runs as if nextRun() were being invoked for
+   *  the first time.
+   *
+   *  (Note:  Don't worry about what might happen if nextRun() is interleaved
+   *  with addFish() or addShark(); it won't happen.)
+   */
+
+  /**
+   *  restartRuns() resets the enumeration as described above, so that
+   *  nextRun() will enumerate all the runs from the beginning.
+   */
+
+  public void restartRuns() {
+	  this.index=0;
+  }
+
+  /**
+   *  nextRun() returns the next run in the enumeration, as described above.
+   *  If the runs have been exhausted, it returns null.  The return value is
+   *  an array of two ints (constructed here), representing the type and the
+   *  size of the run, in that order.
+   *  @return the next run in the enumeration, represented by an array of
+   *          two ints.  The int at index zero indicates the run type
+   *          (Ocean.EMPTY, Ocean.SHARK, or Ocean.FISH).  The int at index one
+   *          indicates the run length (which must be at least 1).
+   */
+
+  public int[] nextRun() {
+	  int[] out = new int[2];
+	  Run curr=(Run)runs.getItem(index);
+	  if (curr==null){
+		  return null;
+	  }
+	  out[0]=curr.occupant;
+	  out[1]=curr.runLength;
+	  index++;
+	  return out;
+  }
+
+  /**
+   *  toOcean() converts a run-length encoding of an ocean into an Ocean
+   *  object.  You will need to implement the three-parameter addShark method
+   *  in the Ocean class for this method's use.
+   *  @return the Ocean represented by a run-length encoding.
+   */
+
+  public Ocean toOcean() {
+	  Ocean out = new Ocean(width,height,starveTime);
+	  int index=0;
+	  for (int i = 0; i < runs.length(); i++){
+		  Run currRun=((Run)runs.getItem(i));
+		  if (currRun.occupant==Ocean.FISH){
+			  for (int j = 0; j < currRun.runLength; j++){
+				  out.addFish(index%width,index/width);
+				  index++;
+			  }
+		  }else if(currRun.occupant==Ocean.SHARK){
+			  for (int j = 0; j < currRun.runLength; j++){
+				  out.addShark(index%width,index/width,currRun.starveTime);
+				  index++;
+			  }
+		  }else if(currRun.occupant==Ocean.EMPTY){
+			  for (int j = 0; j < currRun.runLength; j++){
+				  index++;
+			  }
+		  }else{
+			  //Invariant: This should not happen. Ever.
+			  assert false;
+		  }
+	  }
+	  return out;
+  }
+
+  /**
+   *  The following method is required for Part III.
+   */
+
+  /**
+   *  RunLengthEncoding() (with one parameter) is a constructor that creates
+   *  a run-length encoding of an input Ocean.  You will need to implement
+   *  the sharkFeeding method in the Ocean class for this constructor's use.
+   *  @param sea is the ocean to encode.
+   */
+
+  public RunLengthEncoding(Ocean sea) {
+	  this.width=sea.width();
+	  this.height=sea.height();
+	  this.starveTime=sea.starveTime();
+	  this.runs = new DList();
+
+	  int index=0;
+	  int prevOccupant=-1;
+	  int prevStarveTime=-1;
+	  int currOccupant=-1;
+	  int currStarveTime=-1;
+	  int currRunLength=0;
+	  
+	  //Linearize the sea.
+	  for (int y = 0; y < sea.height(); y++){
+		  for (int x = 0; x < sea.width(); x++){
+			  //Save curr data into prev
+			  prevOccupant=currOccupant;
+			  prevStarveTime=currStarveTime;
+			  //Scrape all the data on the current cell.
+			  currOccupant=sea.cellContents(x,y);
+			  if (currOccupant==Ocean.SHARK){
+				  currStarveTime=sea.sharkFeeding(x,y);
+			  }else{
+				  currStarveTime=this.starveTime;
+			  }
+
+			  //Check if curr values match prev values
+			  if (index == 0){
+				  //Do nothing.
+			  }
+			  else if (((prevOccupant==currOccupant) && (prevStarveTime==currStarveTime))){
+				  //If they're the same, increment run
+				  currRunLength+=1;
+			  }else{
+				  //Otherwise, save current run.
+				  this.runs.pushBack(new Run(prevOccupant,currRunLength+1,prevStarveTime));
+				  currRunLength=0;
+			  }
+			  index++;
+		  }
+	  }
+	  //Solve (unfortunate) fence post problem
+	  this.runs.pushBack(new Run(prevOccupant,currRunLength+1,prevStarveTime));
+
+	  check();
+  }
+
+  /**
+   *  The following methods are required for Part IV.
+   */
+
+  /**
+   *  addFish() places a fish in cell (x, y) if the cell is empty.  If the
+   *  cell is already occupied, leave the cell as it is.  The final run-length
+   *  encoding should be compressed as much as possible; there should not be
+   *  two consecutive runs of sharks with the same degree of hunger.
+   *  @param x is the x-coordinate of the cell to place a fish in.
+   *  @param y is the y-coordinate of the cell to place a fish in.
+   */
+
+  public void addFish(int x, int y) {
+	  int target=x+width*y;
+	  int index=0;
+	  runs.reset();
+
+	  //Get target position
+	  while (true){
+		  target-=((Run)runs.next()).runLength;
+		  if (target < 0){
+			  break;
+		  }
+		  index++;
+	  }
+
+	  Run targetRun = (Run)(runs.getItem(index));
+	  if (targetRun.occupant==Ocean.EMPTY){ //Make changes only if targetRun is a run of empties.
+		  int insertPos=targetRun.runLength+target;//Position of new shark relative to targetRun
+		  if (insertPos==0){
+			  runs.replaceItem(index,new Run(Ocean.FISH,1,starveTime));
+			  if (targetRun.runLength-1!=0){
+				  runs.insertItem(index+1, new Run(targetRun.occupant,targetRun.runLength-1,targetRun.starveTime));
+			  }
+		  }else{
+			  runs.replaceItem(index,new Run(targetRun.occupant,insertPos,targetRun.starveTime));
+			  runs.insertItem(index+1,new Run(Ocean.FISH,1,starveTime));
+			  if (-target-1!=0){
+				  runs.insertItem(index+2,new Run(targetRun.occupant,-target-1,targetRun.starveTime));
+			  }
+		  }
+	  }
+
+	  //Collapse runs.
+	  runs.collapse();
+	  check();
+  }
+
+  /**
+   *  addShark() (with two parameters) places a newborn shark in cell (x, y) if
+   *
+   * the cell is empty.  A "newborn" shark is equivalent to a shark that has
+   *  just eaten.  If the cell is already occupied, leave the cell as it is.
+   *  The final run-length encoding should be compressed as much as possible;
+   *  there should not be two consecutive runs of sharks with the same degree
+   *  of hunger.
+   *  @param x is the x-coordinate of the cell to place a shark in.
+   *  @param y is the y-coordinate of the cell to place a shark in.
+   */
+
+  public void addShark(int x, int y) {
+	  int target=x+width*y;
+	  int index=0;
+	  runs.reset();
+
+	  //Get target position
+	  while (true){
+		  target-=((Run)runs.next()).runLength;
+		  if (target < 0){
+			  break;
+		  }
+		  index++;
+	  }
+
+	  Run targetRun = (Run)(runs.getItem(index));
+	  if (targetRun.occupant==Ocean.EMPTY){ //Make changes only if targetRun is a run of empties.
+		  int insertPos=targetRun.runLength+target;//Position of new shark relative to targetRun
+		  if (insertPos==0){
+			  runs.replaceItem(index,new Run(Ocean.SHARK,1,starveTime));
+			  if (targetRun.runLength-1!=0){
+				  runs.insertItem(index+1, new Run(targetRun.occupant,targetRun.runLength-1,targetRun.starveTime));
+			  }
+		  }else{
+			  runs.replaceItem(index,new Run(targetRun.occupant,insertPos,targetRun.starveTime));
+			  runs.insertItem(index+1,new Run(Ocean.SHARK,1,starveTime));
+			  if (-target-1!=0){
+				  runs.insertItem(index+2,new Run(targetRun.occupant,-target-1,targetRun.starveTime));
+			  }
+		  }
+	  }
+
+	  //Collapse runs.
+	  runs.collapse();
+	  check();
+  }
+
+  /**
+   *  check() walks through the run-length encoding and prints an error message
+   *  if two consecutive runs have the same contents, or if the sum of all run
+   *  lengths does not equal the number of cells in the ocean.
+   */
+
+  private void check() {
+	  int totalCells=0; //Counts the number of cells represented by the run length encoding
+	  for (int i = 0; i < runs.length(); i++){
+		  Run curr=(Run)runs.getItem(i);
+		  if (i<runs.length()-1){//Don't check the next run if the current run is the last run.
+			  Run next=(Run)runs.getItem(i+1);
+			  if (next.occupant==curr.occupant && next.starveTime==curr.starveTime){
+				  System.out.println("========================================================");
+				  System.out.println("***   WARNING: Invalid RunLengthEncoding detected.   ***");
+				  System.out.println("========================================================");
+			  }
+		  }
+		  //Add the current run's length to the total number of cells
+		  totalCells+=curr.runLength;
+	  }
+	  //Print error if the number of cells is inconsistent ocean dimensions
+	  if (totalCells!=width*height){
+				  System.out.println("========================================================================");
+				  System.out.println("***   WARNING: RunLengthEncoding length does not match Ocean size.   ***");
+				  System.out.println("========================================================================");
+ 
+	  }
+  }
+
+}

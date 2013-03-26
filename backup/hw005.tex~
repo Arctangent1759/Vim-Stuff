@@ -1,0 +1,344 @@
+\documentclass[11pt]{article}
+\usepackage{enumerate,amsmath,textcomp,amssymb,geometry,graphicx}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{114}  % Your discussion section
+\def\Login{cs70-kd} % Your login
+\def\HW{5} % Homework number
+
+\title{CS70--Spring 2013}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS70--Spring 2013 Homework \HW, \Name, section \Sec}{CS70--Spring 2013 Homework \HW, \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\begin{document}
+	\maketitle
+
+	\textbf{Collaborators:} % Enter your collaborators
+
+	\begin{enumerate}
+		% Have a new \item for each problem
+		% Make sure you have a \newpage after each item
+		\item 
+			\begin{enumerate}[1)]
+				\item
+					True\\
+					$(a+b)^3=a^3+3a^2b+3ab^2+b^3 \mbox{ mod } 3$\\
+					$=a^3+b^3 \mbox{ mod } 3$
+				\item
+					False\\
+					$(a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4 \mbox{ mod } 4$\\
+					$=a^4+2a^2b^2+b^4 \mbox{ mod } 4$\\
+					Counterexample:\\
+					$a=2,b=1$\\
+					$(2+1)^4=3^4=81$\\
+					$2^4+1^4=16+1=17\neq81$
+				\item
+					True\\
+					$(a+b)^5=a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5 \mbox{ mod } 3$\\
+					$=a^5+b^5 \mbox{ mod } 3$
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[1)]
+				\item
+					\textbf{Base Case:}\\
+					$P_0(7)=19=0 \mbox{ mod }19$\\
+					$P_1(7)=49=0 \mbox{ mod }19$\\
+					\textbf{Inductive Hypothesis:}\\
+					$P_i=7P_{i-2}(7)-P_{i-1}(7)=19k=0 \mbox{ mod }19, i \le n, k \in \mathbb{Z}$\\
+					\textbf{Inductive Step:}\\
+					$P_{n+1}=7P_{n-1}(7)-P_n(7)\mbox{ mod }19$\\
+					$=7(19k_1)-(19k_2)\mbox{ mod }19$\\
+					$=19(7k_1-19k_2)=0\mbox{ mod }19$\\
+					By Strong Induction, $\forall N \in \mathbb{N}. P_n(7)=0\mbox{ mod }19$
+				\item
+					We will prove that $P_n$ is of degree at most n.\\
+					\textbf{Base Case:}\\
+					$P_2 = 17x-5$ is iof degree 1 $<$ 2\\
+					$P_3 = x^3-5x^2-12x+5$ is iof degree 2 < 3\\
+					\textbf{Inductive Hypothesis:}\\
+					Assume $P_i$ is of degree $\le i$, $i \le n$
+					\textbf{Inductive Step:}\\
+					$P_{n+1}=xP_{n-1}+P_n$\\
+					$=Q_n+P_n$, $Q_n$ is some polynomial of degree at most $n$\\
+					By strong induction, $P_{n}$ is a polynomial of degree at most n.\\
+					By the fundamental theorem of algebra, $P_{n}$ has at most n roots.\\
+					So $P_{2013}$ has at most 2013 roots.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[1)]
+				\item
+					$13x+7y=2$\\
+					$8x+4y=8$\\
+					\\
+					$x+y=2\mbox{ mod }3$\\
+					$2x+y=2\mbox{ mod }3$\\
+					\\
+					$3x+2y=2\mbox{ mod }5$\\
+					$3x+4y=3\mbox{ mod }5$\\
+				\item
+					$y=2+2x\mbox{ mod }3$\\
+					$y=2+x\mbox{ mod }3$\\
+					$2+2x=2+x\mbox{ mod }3$\\
+					$x=0\mbox{ mod }3$\\
+					$y=2+0=2\mbox{ mod }3$\\
+					$\boxed{x=0,y=2}$\\
+					\\
+					$3x+2y=2\mbox{ mod }5$\\
+					$3x+4y=3\mbox{ mod }5$\\
+					$3x=2+3y\mbox{ mod }5$\\
+					$3x=3+y\mbox{ mod }5$\\
+					$3+y=2+3y\mbox{ mod }5$\\
+					$3y=4\mbox{ mod }5$\\
+					$y=4\times2=8=3\mbox{ mod }5$\\
+					$3x=3+3=6=1\mbox{ mod }5$\\
+					$x=2\mbox{ mod }5$\\
+					$\boxed{x=2,y=3}$
+				\item
+					In general, if $x=a\mbox{ mod }5=b\mbox{ mod }3$\\
+					$x=a+5k$\\
+					$\implies 3x=3a+15k$\\
+					$x=b+3k$\\
+					$\implies 5x=5b+15l$\\
+					$\implies 3x+5x=8x=3a+5b+15(k+l)$\\
+					$\implies x=2\times8x=6a+10b+15(k+l)$\\
+					$\implies x=6a+10b\mbox{ mod }15$\\
+					But $x=0$ mod $3=2$ mod $5$, $y=2$ mod $3=3$ mod $5$\\
+					$x=(6)(2)+(10)(0)=12\mbox{ mod }15$\\
+					$y=(6)(3)+(10)(2)=3+5=8\mbox{ mod }15$\\
+					$\boxed{x=12, y=8}$
+			\end{enumerate}
+		\newpage
+		\item
+			A
+		\newpage
+		\item
+			\begin{enumerate}[1)]
+				\item
+					From experience, it's impossible to send instant messages at exactly the same time. If one of the two sent his/her message faster, the other will strategically change his/her response to win. The game won't be fair.
+				\item
+					Alice encrypts her symbol using a private key. She then sends the encrypted message to Bob.
+					Bob then sends his unencrypted symbol to Alice.
+					Alice compares her symbol to Bob's, and admits defeat if she loses.
+					If Alice wins, she declares victory and sends her private key to Bob as proof. 
+					Bob then uses the key to decrypt the response, proving Alice the victor.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[a)]
+				\item
+					No. A prefers 1 to her partner 2. 1 prefers A to his partner C. Hence, (A,1) forms a rogue couple.
+				\item$ $\\
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 1,2 \\ \hline
+						B &~\\ \hline
+						C & 3   \\
+						\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & A$>$C$>$B\\\hline
+						2 & A$>$B$>$C\\\hline
+						3 & C$>$A$>$B\\\hline
+					\end{tabular}\\
+
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 1 \\ \hline
+						B & 2   \\ \hline
+						C & 3   \\
+						\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & A$>$C$>$B\\\hline
+						2 & B$>$C\\\hline
+						3 & C$>$A$>$B\\\hline
+					\end{tabular}\\
+					Final Pairing: {(A,1),(B,2),(C,3)}
+				\item \textbf{Preferences:}\\
+
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & A$>$B$>$C\\\hline
+						2 & B$>$A$>$C\\\hline
+						3 & A$>$C$>$B\\\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 2$>$1$>$3\\\hline
+						B & 1$>$2$>$3\\\hline
+						C & 3$>$1$>$2\\\hline
+					\end{tabular}\\
+					\\
+					\\
+					\textbf{Normal Case:}\\
+					If the traditional propose and reject algorithm ran normally, this would happen:\\
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 1,3 \\ \hline
+						B & 2\\ \hline
+						C &~\\
+						\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & A$>$B$>$C\\\hline
+						2 & B$>$A$>$C\\\hline
+						3 & A$>$C$>$B\\\hline
+					\end{tabular}\\
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 1 \\ \hline
+						B & 2\\ \hline
+						C & 3\\
+						\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & A$>$B$>$C\\\hline
+						2 & B$>$A$>$C\\\hline
+						3 & C$>$B\\\hline
+					\end{tabular}\\
+
+					\textbf{Emma Case:}\\
+					If a woman acted to better the womens' situation:\\
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 1,3 \\ \hline
+						B & 2\\ \hline
+						C &~\\
+						\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & A$>$B$>$C\\\hline
+						2 & B$>$A$>$C\\\hline
+						3 & A$>$C$>$B\\\hline
+					\end{tabular}
+					\\
+					Here, woman A chooses 3, instead of 1, the man she normally would choose in the above algorithm. 
+					The algorithm then runs as usual.
+					\\
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 3 \\ \hline
+						B & 1,2\\ \hline
+						C &~\\
+						\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & B$>$C\\\hline
+						2 & B$>$A$>$C\\\hline
+						3 & A$>$C$>$B\\\hline
+					\end{tabular}\\
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 3,2 \\ \hline
+						B & 1\\ \hline
+						C &~\\
+						\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & B$>$C\\\hline
+						2 & A$>$C\\\hline
+						3 & A$>$C$>$B\\\hline
+					\end{tabular}\\
+					\begin{tabular}{|c|c|}
+						\hline
+						A & 2 \\ \hline
+						B & 1\\ \hline
+						C & 3\\
+						\hline
+					\end{tabular}
+					\begin{tabular}{|c|c|}
+						\hline
+						1 & B$>$C\\\hline
+						2 & A$>$C\\\hline
+						3 & C$>$B\\\hline
+					\end{tabular}\\
+					\\
+					Thanks to A's choice, all three women end up with their top choices. Because of this, no woman is hurt by A's actions, and the pairings are stable because any man who likes a woman other than his current mate more will not recieve recipricol attraction (each woman is fully satisfied with her pair). Unlike the result of the traditional propose and reject, which is male optimal, this configuration is female optimal.
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[a)]
+				\item
+					False.\\
+					Counterexample: If $P$ is true and $Q$ is true, $\neg (P \implies Q)$ is false, while $Q \implies P$ is true.
+				\item
+					True.\\
+					\textbf{Base Case:}\\ 
+					$F(3)=2$ is even.\\
+					$F(6)=8$ is even.\\
+					\textbf{Inductive Hypothesis:}\\
+					$i\in\mathbb{Z}. 3i < n. \Longleftrightarrow F(3i)=2k, k \in\mathbb{Z}$\\
+					$\implies$ F(multiple of 3) = 2k, F(not multiple of 3)=2k+1, for values $\le$ n\\
+					\textbf{Inductive Step:}\\
+					$F(n+3)=F(n+2)+F(n+1)=F(n)+2F(n+1)=3F(n)+2F(n-1)=3*2k_1+2*(2k_2+1)=2(3k_1+2k_2+1)$\\
+					$\therefore F(n+3)$ is even.\\
+					By strong induction, the statement is true.
+				\item
+					False.\\
+					Counterexample: $a=3,m=4$\\
+					$3^{4-1}
+					=3\neq1$ mod 4
+				\item 
+					True.\\
+					Suppose that n is odd, $\implies n=2k+1$.\\
+					$\implies n^3+5=(2k+1)^3+5=8k^3+12k^2+6k+1+5=8k^3+12k^2+6k+6=2(4k^3+6k^2+3k+3)$\\
+					$l=4k^3+6k^2+3k+3$
+					$\implies n^3+5=2l$\\
+					$\implies n^3+5$ is even.\\
+					By contraposition, $n^3+5$ is odd $\implies$ n is even.
+				\item
+					True.\\
+					$a\equiv b$ mod m\\
+					$\implies a=b+km$\\
+					$\implies a^x=(b+km)^x$\\
+					$\implies a^x=b^x+(xC1)b^xkm+\cdots+(km)^x$\\
+					$\implies a^x=b^x+m((xC1)b^xk+\cdots+k^xm^{x-1})$\\
+					$\implies a^x=b^x$ mod $m$
+				\item
+					False.\\
+					Counterexample: $a=2,b=5,m=3$\\
+					$2^2=4=1$ mod 3\\
+					$2^5=32=2\neq1$ mod 3\\
+			\end{enumerate}
+		\newpage
+		\item
+			\begin{enumerate}[a)]
+				\item
+					$2^5=2\times4^2=2\times16=32$ mod 105
+				\item
+					$3^5=3\times9^2=3\times81=243=33$ mod 105
+				\item$ $\\
+					$2\times4\times6=48$\\
+					\begin{tabular}{|c|c||c||c|c|c||c|c|c|}
+						\hline
+						x  & y &x//y& d & a & b & d & b & a\\\hline
+						48 & 5 &  9 & 1 & -1& 2 & 1 & 2 &-19\\\hline
+						5  & 3 &  1 & 1 & 1 & -1& 1 & -1& 2\\\hline
+						3  & 2 &  1 & 1 & 0 & 1 & 1 & 1 &-1\\\hline
+						2  & 1 &  2 & 1 & 1 & 0 & 1 & 0 & 1\\\hline
+						1  & 0 &  - & - & - & - & 1 & 1 & 0\\\hline
+					\end{tabular}\\
+					48-19=\boxed{29}
+				\item
+					$D(E(x))=(x^e)^d=x^{ed}$ mod N\\
+					$=(x^e)^d=x^{ed}$ mod $(p)(q)(r)$\\
+					$ed=1$ mod $(p-1)(q-1)(r-1)$\\
+					By Fermat's Little Theorem:\\
+					$x^{ed}=x^{ed\mbox{ mod }(p-1)(q-1)(r-1)}$ mod $(p)(q)(r)$\\
+					$x^{ed}=x^{1}$ mod $(p)(q)(r)$\\
+					$x^{ed}=x$\\
+					By definition of inverse.
+			\end{enumerate}
+
+	\end{enumerate}
+\end{document}

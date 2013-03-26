@@ -1,0 +1,21 @@
+from time import sleep
+
+def main():
+	T_0=20;			#Starting time between beeps
+	GEO_T=.5;		#Geometric factor of change between beeps
+
+	interval = T_0; #Time between beeps
+	last_beep = 0;	#Time of last beep
+
+	beep();
+	for curr_time in range(300):
+		if curr_time-last_beep>=interval:
+			beep();
+			interval*=GEO_T;
+			last_beep=curr_time;
+		sleep(1);
+
+def beep():
+	print("Bleep!")
+
+main();

@@ -1,0 +1,43 @@
+Linear Time-Invariant Systems
+=============================
+	Time invariance describes \_systems\_.
+
+	Why is this important?
+	A time-varying system is not predictable in behavior, because its reponse varies with the time on which it is applied to a given signal.
+
+	time invariance + linearity
+
+	Theorem:
+		x(t) = cos(\omega_0 t + \phi) --> LTI System --> A(\omega_0) cos(\omega_0 t + \phi + \theta(\omega_0)
+			-The response of a LTI system can be described by two properties:
+				-Amplitude gain
+				-Phase Change
+			-True \forall \omega_0
+			-A(\omega) and \theta(\omega) describe \*frequency response\*, denoted by H(\omega) = A(\omega)e^(i\theta(\omega))
+	Proof:
+		x(t)=cos(\omega_0t)-->z(t)=e^(i\omega_0t), because x is the real part of z
+		Also because x(t)=cos(\omega_0t)=(e^(i\omega_0t)+e^(-\omega_0t))/2
+		x(t)=e^(i\omega t) --> LTI System --> a_1 e^(i\omega_0(t-\tau_1)) + a_2 e^(i\omega_0(t-\tau_2)) 
+		= e^(i\omega_0t) (a_1 e^(-i\omega_0\tau_1)+a_2 e^(-i\omega_0\tau_2))
+
+		Def: H(\omega)=(a_1 e^(-i\omega\tau_1)+a_2 e^(-i\omega\tau_2))
+		=>y(t)=H(\omega_0)e^(i\omega_0t)
+
+		So... 
+		x(t)=e^(i\omega_0t)-->LTI-->H(\omega_0)e^(i\omega_0t)
+		x(-t)=e^(-i\omega_0t)-->LTI-->H(-\omega_0)e^(-i\omega_0t)
+
+		Since we have e^(i\omega_0t) and e^(-i\omega_0t), , and cos(\omega_0t)=(e^(i\omega_0t)+e^(-\omega_0t))/2, we can rederive the cosine.
+		cos(\omega_0t)=(e^(i\omega_0t)+e^(-\omega_0t))/2
+		=(H(\omega_0)e^(i\omega_0t)+H(-\omega_0)e^(-i\omega_0t))/2
+
+		But H(\omega_0)e^(i\omega_0t) and H(-\omega_0)e^(-i\omega_0t) MUST be \_complex conjugates\_!
+
+		Hence,
+			By definition, z=|z|e^(i\theta) => z* = |z|e^(i\theta)
+			H(\omega_0)=|H(\omega_0)|e^(i\angle H(\omega_0))
+			H(\omega_0)=H(\omega_0)*=|H(\omega_0)e^(-i\angle H\omega_0)
+			(z+z*)/2=Re{z}
+
+		(H(\omega_0)e^(i\omega_0t)+H(-\omega_0)e^(-i\omega_0t))/2 = Re{H(\omega_0)cos(\omega_0t+\angle H(\omega_0))}
+

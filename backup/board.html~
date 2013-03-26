@@ -1,0 +1,48 @@
+{% extends "Base/onePanedBase.html" %}
+{% block content %}
+	<!--Page Content-->
+		<h2>Board</h2>
+		<table style="width:100%;">
+			<tr><td>
+				<hr/>
+				<h3>Sarah Yifan Wang</h3>
+				<div class="crop" style="float:right; padding-right:15px;">
+					<img src="http://placekitten.com/g/250/250"/>
+				</div>
+				<div style="white-space: pre-wrap;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet imperdiet leo. Nullam eu nunc tellus. Maecenas pellentesque risus ac justo porta fringilla. Donec convallis vestibulum volutpat. Aenean aliquam, eros nec posuere bibendum, massa dolor mollis est, eget ornare magna tellus id enim. Suspendisse sollicitudin pellentesque est, vitae vulputate ipsum pharetra eget. In nec enim tellus. Cras pellentesque vehicula scelerisque. Donec dignissim porttitor turpis ut faucibus. Fusce luctus condimentum dui ut faucibus. Maecenas ut nibh dolor. Praesent id nisi lorem, non convallis risus. Curabitur gravida aliquet lacus, sit amet volutpat eros lobortis id. Sed a lorem at mauris laoreet adipiscing vel sed neque. Quisque consectetur convallis diam in feugiat. Duis quis metus id quam dapibus commodo sed sed tellus. 
+				</div>
+			</td></tr>
+			<tr><td>
+				<hr/>
+				<h3>Isabel Chan</h3>
+				<div class="crop" style="float:right; padding-right:15px;">
+					<img src="http://placekitten.com/g/251/250"/>
+				</div>
+				<div style="white-space: pre-wrap;">
+ Praesent aliquam dolor in quam luctus vehicula. Vestibulum in dolor neque, eget egestas eros. Nulla congue porttitor sodales. Integer augue risus, dapibus ac fringilla in, egestas eu ligula. Praesent cursus ultricies lacus sit amet fringilla. Nulla pharetra sodales quam, ac molestie dui imperdiet auctor. Fusce euismod tristique turpis, ut vulputate sapien eleifend ut. Vestibulum volutpat facilisis quam, sit amet venenatis nisi rhoncus a. Fusce auctor mauris eget orci dictum et mollis diam sodales. 
+				</div>
+			</td></tr>
+			<tr><td>
+				<hr/>
+				<h3>Grant Ye</h3>
+				<div class="crop" style="float:right; padding-right:15px;">
+					<img src="http://placekitten.com/g/252/250"/>
+				</div>
+				<div style="white-space: pre-wrap;">
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum in mi metus, a semper augue. Fusce cursus vestibulum lobortis. Donec lobortis aliquam libero, a luctus magna consequat in. Aenean at porttitor ante. Quisque pellentesque, sapien in iaculis dapibus, ante justo pulvinar nibh, at aliquam mauris nisl eu lorem. Phasellus luctus gravida molestie. Fusce non magna quis elit ullamcorper dictum. Donec varius fermentum metus vitae dapibus. Nunc leo metus, congue sed ullamcorper et, luctus ac purus. Sed euismod lobortis nibh, consequat hendrerit ligula sodales non. Sed quis felis a orci egestas tincidunt. Vestibulum augue velit, consectetur et vestibulum in, volutpat sit amet justo. Integer ligula quam, accumsan ut placerat id, lobortis quis massa. Duis sed massa vel dolor ullamcorper aliquam sed eget leo. 
+				</div>
+			</td></tr>
+			<tr><td>
+				<hr/>
+				<h3>Alexander Chu</h3>
+				<div class="crop" style="float:right; padding-right:15px;">
+					<img src="http://placekitten.com/g/253/250"/>
+				</div>
+				<div style="white-space: pre-wrap;">
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+				</div>
+			</td></tr>
+		</table>
+		<hr/>
+{% endblock %}

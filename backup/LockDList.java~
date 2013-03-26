@@ -1,0 +1,86 @@
+package list;
+public class LockDList extends DList{
+    public void lockNode(DListNode node) {
+		((LockDListNode)node).lock=true;
+	}
+
+	@Override
+	protected DListNode newNode(Object item, DListNode prev, DListNode next) {
+		return new LockDListNode(item,prev,next,false);
+	}
+
+	@Override
+	public void remove(DListNode node) {
+		if (node==null || ((LockDListNode)node).lock==true){
+			return;
+		}
+		super.remove(node);
+	}
+
+	public static void main(String args[]){
+		LockDList d = new LockDList();
+		d.insertBack("Potato");
+		d.insertBack(1);
+		d.insertBack(2);
+		d.insertBack(3);
+		d.insertFront(5);
+		d.insertFront("A toast to not being on fire!");
+		print("Should be [\"A toast to not being on fire!\", 5, \"Potato\", 1, 2, 3]: "+d);
+		print("Should be 6: "+d.length());
+		print("Should be \"A toast to not being on fire!\": "+d.front().item);
+		print("Should be 3: "+d.back().item);
+		d.remove(d.back());
+		print("Should be 2: "+d.back().item);
+		d.remove(d.front());
+		print("Should be 5: "+d.front().item);
+		d.remove(d.next(d.front()));
+		print("Should be [5, 1, 2]: "+d);
+		print("Should be 3: "+d.length());
+		d.remove(d.prev(d.front()));
+		print("Should be [5, 1, 2]: "+d);
+		print("Should be 3: "+d.length());
+		d.remove(d.prev(d.back()));
+		print("Should be [5, 2]: "+d);
+		print("Should be 2: "+d.length());
+		d.insertBefore(7,d.back());
+		print("Should be [5, 7 ,2]: "+d);
+		print("Should be 3: "+d.length());
+		d.insertAfter(9,d.back());
+		print("Should be [5, 7, 2, 9]: "+d);
+		d.insertAfter(1,d.front());
+		print("Should be [5, 1, 7, 2, 9]: "+d);
+		d.insertBefore(6.5,d.front());
+		print("Should be [6.5, 5, 1, 7, 2, 9]: "+d);
+		print("Should be 6: "+d.length());
+		d.remove(d.front());
+		d.remove(d.front());
+		d.remove(d.front());
+		d.remove(d.front());
+		d.remove(d.front());
+		print("Should be 1: "+d.length());
+		print("Should be [9]: "+d);
+		d.lockNode(d.front());
+		d.remove(d.front());
+		print("Should be 1: "+d.length());
+		print("Should be [9]: "+d);
+		d.insertFront(5);
+		d.lockNode(d.front());
+		d.insertFront(7);
+		d.lockNode(d.front());
+		d.insertFront(1);
+		d.lockNode(d.front());
+		print("Should be [1,7,5,9]: "+d);
+		d.remove(d.front());
+		d.remove(d.next(d.front()));
+		d.remove(d.next(d.next(d.front())));
+		d.remove(d.next(d.next(d.next(d.front()))));
+		print("Should be [1,7,5,9]: "+d);
+		print("Should be 4: "+d.length());
+		d.insertAfter(1717,d.prev(d.back()));
+		print("Should be [1,7,5,9]: "+d);
+	}
+	//Redeeming features of python
+	private static void print(String s){
+		System.out.println(s);
+	}
+}

@@ -1,0 +1,86 @@
+/*
+ *
+ */
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+using namespace std;
+
+void InterpretCommands (istream&);
+void InterpretUpdate (istream&);
+void InterpretList (istream&);
+void InterpretBatch (istream&);
+void InterpretQuit (istream&);
+
+//Interprets commands in stream cmds, dispatches messages to respective functions
+void InterpretCommands (istream& cmds) {
+	string line, cmdWord;
+	// other definitions go here
+	while ( getline(cmds,line) ) {		// get a line
+		istringstream lineIn (line.c_str());
+		if (!( lineIn>>cmdWord)) {	// get the line's first word
+			cerr << "Please enter a command." << endl;// there weren't any words
+		} else if (cmdWord=="update") {
+			InterpretUpdate (lineIn);
+		} else if (cmdWord=="list") {
+			InterpretList (lineIn);
+		} else if (cmdWord=="batch") {
+			InterpretBatch (lineIn);
+		} else if (cmdWord=="quit") {
+			InterpretQuit (lineIn);
+		} else {
+			cerr << "Unrecognizable command word." << endl;
+		}
+	}
+}
+
+//Prints 1 arg to standard output.
+void InterpretUpdate (istream& s){
+	int num;
+	string r;
+	if ((s >> num) && !(s >> r)){//Check args
+		cout << num << endl;
+	}else{
+		cerr << "Update: Invalid arguments" << endl;
+	}
+}
+
+//Prints 1 arg to standard output.
+void InterpretList (istream& s){
+	int num;
+	string r;
+	if ((s >> num) && !(s >> r)){//Check args
+		cout << num << endl;
+	}else{
+		cerr << "List: Invalid arguments" << endl;
+	}
+}
+
+//Interprets commands from file
+void InterpretBatch (istream& s){
+	string filename;
+	string r;
+	if ((s >> filename) && !(s >> r)){//Check args
+		ifstream input (filename.c_str());
+		if (input==NULL){//Check if file successfully loaded
+			cerr << "Error reading file." << endl;
+		}else{
+			InterpretCommands(input);//Interpret batch
+		}
+	}else{
+		cerr << "Batch: Invalid arguments" << endl;
+	}
+}
+
+//Exits
+void InterpretQuit (istream& s){//Exit
+	exit(0);
+}
+
+//Inits InterpretCommands
+int main () {
+	InterpretCommands (cin);
+	return 0;
+}

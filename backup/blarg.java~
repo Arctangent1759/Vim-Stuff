@@ -1,0 +1,6 @@
+public class Blarg{
+	int i;
+	public Blarg(int i){
+		this.i=i;
+	}
+}
