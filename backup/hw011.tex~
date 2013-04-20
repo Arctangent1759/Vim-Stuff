@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage{enumerate,amsmath,textcomp,amssymb,geometry,graphicx}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{111}  % Your discussion section
+\def\Login{cs70-kd} % Your login
+\def\HW{12} % Homework number
+
+\title{CS70--Spring 2013}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS70--Spring 2013 Homework \HW, \Name, section \Sec}{CS70--Spring 2013 Homework \HW, \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\begin{document}
+	\maketitle
+
+	\textbf{Collaborators:} % Enter your collaborators
+
+	\begin{enumerate}
+		% Have a new \item for each problem
+		% Make sure you have a \newpage after each item
+		\item 
+			\begin{enumerate}
+				\item
+					$\sigma^2=np(1-p)$\\
+					$p=\frac{1}{2}$\\
+					$P(|X-\mu|\ge k\sigma)\le\frac{1}{k^2}$\\
+					$P(|X-\mu|\ge k\sqrt{np(1-p)})\le\frac{1}{k^2}$\\
+					$k\sqrt{np(1-p)}=\sqrt{n}$\\
+					$k\sqrt{\frac{1}{4}}=1$\\
+					$k=2$\\
+					$P(|X-\mu|\ge \sqrt{n})\le\frac{1}{2^2}=\boxed{\frac{1}{4}}$\\
+					$k\sqrt{np(1-p)}=5\sqrt{n}$\\
+					$k\sqrt{\frac{1}{4}}=5$\\
+					$k=10$\\
+					$P(|X-\mu|\ge 5\sqrt{n})\le\frac{1}{2^2}=\boxed{\frac{1}{100}}$\\
+				\item
+					$\sigma^2=1$\\
+					$P(|X-\mu|\ge k\sigma)\le\frac{1}{k^2}$\\
+					$k\sigma=10$
+					$k=10$
+					$P(|X-\mu|\ge k\sigma)\le\boxed{\frac{1}{100}}$\\
+			\end{enumerate}
+		\newpage
+		\item 
+			\textbf{Prints the approximate value of pi (3.1416128)}:
+\begin{verbatim}
+from random import random
+
+NUMPOINTS=10000000;
+in_circle=0;
+
+for _ in range(NUMPOINTS):
+    point=(2*random()-1,2*random()-1)
+    if (point[0]**2+point[1]**2)**.5<=1:
+        in_circle+=1
+
+print ((float(in_circle)/float(NUMPOINTS)))*4
+\end{verbatim}
+			\textbf{Error graph ($\pi-f(x)$)}:\\
+			\includegraphics[width=4in]{Plot.png}
+		\newpage
+		\item 
+			\begin{enumerate}
+				\item
+				\item
+				\item
+				\item
+			\end{enumerate}
+		\newpage
+		\item 
+			\begin{enumerate}
+				\item
+					$E(B)=np=432286\times.003=1297$\\
+					$Var(B)=np(1-p)=(432286\times.003)(1-.003)=1293$
+				\item
+					$k\sigma=2110$\\
+					$k=\frac{2110}{\sqrt{1293}}=59$\\
+					$P(B\ge3407)\ge\frac{1}{59^2}\le.03\%$
+				\item
+					$P(B\ge3407)\ge\frac{1}{59^2}=.03\%$
+				\item
+					$1-(1-.0003)^{67}=2.0\%$\\
+					The number of votes for Buchanan is still significant.
+					The probability of \textbf{any} county having this many votes for Buchanan is 2\%.
+					The fact that Buchanan got this many votes in Palm Beach is statistically significant.
+				\item
+					Only 0.2 of the popullation now votes randomly. Hence, our sample size is now reduced to 0.2 of the original population. Hence, the variance decreases in our answer to part b.
+					Since variance increases, the probability that the number of Buchanan voters exceeds 3407, also increases.
+			\end{enumerate}
+		\newpage
+		\item 
+			\begin{enumerate}
+				\item
+					$P(X=x_i)=p(1-p)^{i-1}$
+				\item
+				\item
+				\item
+			\end{enumerate}
+		\newpage
+		\newpage
+		\newpage
+		\item 
+		\newpage
+		\item 
+		\newpage
+	\end{enumerate}
+\end{document}

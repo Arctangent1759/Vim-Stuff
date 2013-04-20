@@ -21,6 +21,7 @@
 	<h2>Related Stories</h2>
 	<hr/>
 		<table>
+			{% if related_stories %}
 			{% for story in related_stories %}
 				<tr>
 					<td>

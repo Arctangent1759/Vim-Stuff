@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks]{hyperref}
+\usepackage{palatino}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+\begin{document}
+	\title{\sc Lab 05 Pre-Lab}
+	\author{Electrical Engineering 20N \\
+		Department of Electrical Engineering and Computer Sciences \\
+		University of California, Berkeley}
+	\date{}
+
+\maketitle
+
+{\bf Name}: Alexander Chu% Insert name here
+
+{\bf Lab Section}: 017% Insert lab section here
+
+{\bf Lab TA}: KK Lam% Insert name of lab TA here
+
+\begin{enumerate}
+	\item
+		\textbf{2.1}
+		\begin{enumerate}[1.]
+			\item
+				$15+15\times16=\boxed{255}$
+			\item
+				$13+10\times16+3\times16^2+13\times16^3=\boxed{54189}$
+			\item
+				$5+1\times16=\boxed{21}$
+			\item
+				$\boxed{F}$
+			\item
+				$\boxed{10}$
+			\item
+				$512=2\times16^2$\\
+				$\boxed{200}$
+		\end{enumerate}
+	\item 
+		\textbf{2.4}
+		\begin{enumerate}[1.]
+			\item
+				TrueColor Hex:FDFDFD\\
+				Red: 253\\
+				Green: 253\\
+				Blue: 253\\
+				White light is a composition of every color.
+				Hence, the color white would have the maximal brightness for each color.
+				Our result makes intuitive sense because r, g, and b are large qantities of equal proportion.
+			\item
+				TrueColor Hex:000000\\
+				Red: 0\\
+				Green: 0\\
+				Blue: 0\\
+				Black "light" is zero brightness, or luminance.
+				0 magnitude of red, green, and blue is equivalent to zero total brightness.
+				Our result makes intuitive sense because r, g, and b are small qantities of equal proportion.
+			\item
+				TrueColor Hex:FF8C12	
+				Red: 255
+				Green: 140
+				Blue: 18
+				Red and green light in equal quantity makes yellow light.
+				Orange light results from yellow light with more red light than green light.
+				Our result makes intuitive sense because r and g are high, while b is low.
+			\item
+				TrueColor Hex:AC00B2	\\
+				Red: 172\\
+				Green: 0\\
+				Blue: 180\\
+				Red and blue light in equal amounts produce different shades of magenta.
+				Purple is a member of this family of colors.
+				Our result makes intuitive sense because r and b are high, while g is low.
+		\end{enumerate}
+\end{enumerate}
+\end{document}

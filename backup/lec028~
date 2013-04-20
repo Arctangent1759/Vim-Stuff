@@ -1,0 +1,162 @@
+Sorting
+=======
+	Insertion Sort 
+	--------------
+		If S is a list:
+			O(n^2) time
+			Invariant: S is sorted
+			Start with empty list S and unsorted list I of n items.
+
+			for (each item x in I){
+				insert x into S in sorted order.
+			}
+			
+			Why O(n^2)?
+				If S is a linked list, it taks theta(n) worst-case time to find the right position.
+
+			If S is an array, it takes Theta(log n) time to find position by binary search.
+			Moving all the other items over to make room for the inserted item, however, takes Theta(n) time.
+
+			Both ways Theta(n^2) worst-case time overall.
+
+			If S is an array, insertion sort is an in-place sort.
+
+			An \*in-place sort\* performs the sorting operation on the input array.
+
+			plaintext:
+				7|3|9|5
+				S|----I
+
+				3|7|9|5
+				S--|--I
+
+				3|7|9|5
+				S----|I
+
+				3|5|7|9
+				S------
+
+	
+		If S is a balanced search tree (technically not an insertion sort):
+			running time \in O(n log n)
+
+	Selection sort
+	--------------
+		Also in quadratic time
+		Invariant: S is sorted
+
+		Start with an empty list S and unsorted list I of n items.
+
+		for (i=0; i < n; i++){
+			x is item in I with smallest key
+			Remove x from I
+			Append x to end of S
+		}
+
+		Doesn't matter whether S is an array or a linked list. Always takes Theta(n^2) time, even if already sorted.
+
+		In place sort:
+		plaintext:
+			7|3|9|5
+			---I---
+
+			3|7|9|5
+			S|-I---
+
+			3|5|9|7
+			S--|-I-
+
+			3|5|7|9
+			S----|I
+
+			3|5|7|9
+			S------
+	Heapsort
+	--------
+		Selection sort in which I is a heap.
+
+		Toss all items in I onto heap h (currently ignoring heap-order property)
+
+		Construct heap by using h.bottomUpHeap();
+
+		Then, using h, construct the output.
+
+		for (i=0; i<n; i++){
+			x=h.removeMin(); //O(log n) time
+			Append x to end of S.
+		}
+
+		Heapsort runs in O(n log n) time
+
+		In place: maintain heap backward at the end of the array.
+
+		plaintext:
+					5
+				9		3
+			7
+			7|3|9|5
+			---I---
+
+					3
+				7		5
+			9
+			9|5|7|3
+			---I---
+
+					5
+				7		9
+			3|9|5|7
+			S|--I--
+
+				7
+					9
+			3|5|7|9
+			S--|I--
+
+				9
+			3|5|7|9
+			S----|I
+
+			3|5|7|9
+			S------
+
+		Excellent for sorting arrays, awkward for linked lists.
+	
+	Mergesort
+	---------
+		Based on the principle that it is possible to merge 2 sorted lists into 1 in linear time.
+
+		Let Q1, Q2 be 2 sorted queues.
+
+		while (neither Q1 nor Q2 isEmpty){
+			item1 = Q1.front();
+			item2 = Q2.front();
+			move the smaller of item1 and item2 from present queues to the end of Q
+		}
+		concatenate remaining non-empty queue (Q1 or Q2) to end of Q.
+
+		Mergesort is a recursive divide and conquer algorithm.
+
+		Procedure:
+
+			Divide list into two unsorted list, sort each unsorted list recursively, then merge the two lists togethher.
+
+			Start with unsorted list I of n items.
+
+			Break I into halves I1 and I2, having ceil(n/2) and floor(n/2) items, respectively.
+
+			Sort I1 recursively, yielding S1.
+
+			Sort I2 recursively, yielding S2.
+
+			Merge S1 and S2 into sorted list S.
+
+		plaintext:
+
+			0|1|3|4|5|7|8|9
+			3|5|7|9	0|1|4|8
+			3|7	5|9	4|8	0|1
+			7 3	9 5	4 8	0 1
+
+
+		Not an in place algorithm

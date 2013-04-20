@@ -1,17 +1,24 @@
-#include <stdio.h>      /* printf, fopen */
 
-int main ()
-{
-FILE * pFile;
-pFile = fopen ("myfile.txt","r");
-if (pFile==NULL)
-{
-printf ("Error opening file");
-exit (EXIT_FAILURE);
+
+using namespace std;
+#include <iostream>
+#include "lists.h"
+
+ListNode* FromInput (istream &is) {
+	//int k;
+	ListNode* head = 0;
+	while (is >> k) {
+		head = new ListNode (k, head);
+	}
+	return head;
 }
-else
-{
-/* file operations here */
+
+int main () {
+	ListNode* list = FromInput (cin);
+	list->Print ();
+	if (list) {
+		delete list;
+	}
+	return 0;
 }
-return 0;
-}
+

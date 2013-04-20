@@ -1,0 +1,78 @@
+Selection
+=========
+	Find kth smallest key in list.
+		(Item w/ index if list is sorted, j=k-1)
+	eg. median of set of n keys.
+
+	Quickselect
+	-----------
+		Modify qicksort
+		Start with unsorted list I of n items
+		Choose pivot v from I
+		Parrtition I into lists I1, Iv, and I2
+		Items with the same key as v go into any list
+		Find j:
+			if  j < |I1|{
+				Recursively find item with index j in I1, return it.
+			}else if j < |I1|+|Iv|{
+				return v;
+			}else{
+				recursively find item with index j-|I1|-|Iv| in I2, return it.
+			}
+
+	Theta(n^2) worst case time if pivots bad.
+	Theta(n) average running time if we select pivots randomly
+
+A Lower Bound on Comparison Sort
+================================
+	n numbers, each 1...n occurring once.
+	How many orders can the numbers take?
+		n!
+	Each ordering is called a permutation of the numbers.
+	n! = 1*2*...*(n-1)*n <= n*n*n*...= n^n >= n/2 * n/2+1 * ... (n-1) * n <= (n/2)^(n/2)
+	(n/2)^(n/2) <= n! <= n^n
+	log(n/2)^(n/2) <= log n! <=  log n^n
+	n/2 log(n/2) <= log n! <=  n log n
+	log(n!) \in Theta(n log n)
+	
+	Comparison-Based sort: All decisions are based on comparing keys ("if" statement).
+	A correct sorting algorithm must generate a different sequence of true/false answers for each permutation of 1..n.
+
+	If algorithm asks d true/false questioons, it generates <= 2^d different sequences of true/false answers.
+	n!<=2^d
+	log_2 n! <= d
+	d \in Omega(n log n)
+	Algorithm spends Omega(d) time asking d questions.
+
+	So EVERY comparison-based sort takes att least Omega(n log n) time.
+
+Linear-Time Sort
+================
+	Fastor algorithm make q-way decisions for large values of q
+
+	Bucket Sort
+	-----------
+		Works when keys are in a small range, eg 0 to q-1, where q \in O(n)
+		Array of q queues numered 0 to q-1.
+		Enqueue each input item: key i goes in queue i.
+
+		Input:
+			6:a | 7:b | 3:c | 0:d | 3:e | 1:f | 5:g | 0:h | 3:i | 7:j
+
+			Queue fronts:
+			0: 0:d, 0:h
+			1: 1:f
+			2:
+			3: 3:c 3:e 3:i
+			4:
+			5: 5:g
+			6: 6:a
+			7: 7:b 7:j
+
+		Concatenate queues together.
+
+		Take Theta(q+n) time
+
+		If q \in Theta(n), takes Theta(n) time
+
+		Bucket sort is stable.

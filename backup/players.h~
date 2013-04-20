@@ -1,0 +1,34 @@
+#ifndef PLAYERS_H
+#define PLAYERS_H
+#include <string>
+#include "cards.h"
+#include "21game.h"
+class Dealer: public Player{
+	public:
+		Dealer(string s);
+		Card Upcard();
+		virtual bool IsStillDrawing (Card c);
+};
+class Smarter: public Player{
+	public:
+		virtual bool IsStillDrawing (Card c);
+		Smarter(string s);
+};
+class OneMoreTaker: public Player{
+	public:
+		virtual void Reset ();
+		virtual bool IsStillDrawing (Card c);
+		OneMoreTaker(string s);
+	protected:
+		string myName;
+		vector<Card> myHand;
+		int myCardCount;
+		int myAcesAs11Count;
+		int myTotal;
+		int myWinCount;
+		int myGameCount;
+		bool lastIsStanding;
+
+};
+
+#endif

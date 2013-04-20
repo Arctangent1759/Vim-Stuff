@@ -1,0 +1,115 @@
+Graphs
+======
+	A Graph G is V a set of vertices and a set E of edges that connects vertices
+	G=(V,E)
+	T=(V,F)
+	2 types of graphs: directed and undirected
+
+	Every edge connects some vertex v to some vertex w.
+
+	Multiple copies of an edge are forbidden.
+
+	A Digraph may contain both (v,w) and (w,v)
+
+	Self-edges: (v,v)
+
+	Path: Sequence of vertices with each consecutive pair connected by an edge. A path in a directed graph \_MUST\_ be in the right direction.
+
+	Length of path: # of edges.
+		<4,5,6,3> length 3
+		<2>: length 0
+
+	A graph is \*strongly connected\* if there is a path from every vertex to every other vertex.
+
+	Degree of graph is the number of edges incident on a vertex
+
+Graph Representations
+=====================
+	Adjacency Matrix
+	----------------
+		Adjacency Matrix: |v|-by-|v| array of booleans.
+		Directed graph:
+			Plaintext:
+					1	2	3	4	5	6
+				1	-	-	-	T	-	-
+				2	T	-	-	-	-	-
+				3	-	T	-	-	-	T
+				4	-	-	-	-	T	-
+				5	-	T	-	-	-	T
+				6	-	-	T	-	-	-
+
+		Undirected graph:
+				Plaintext:
+					1	2	3	4	5	6
+				1	-	T	-	T	-	-
+				2	T	-	T	-	T	-
+				3	-	T	-	-	-	T
+				4	T	-	-	-	T	-
+				5	-	T	-	T	-	T
+				6	-	-	T	-	T	-
+
+		a[x][y] is true iff there is an edge from x to y
+
+		Planar graphs have O(|v|) vertices.
+
+		Graph is \*sparse\* if it has far fewer edges than max possible (not mathematically rigerous definition)
+
+	Adjacency List
+	--------------
+		Adjacency list: Each vertex v has a list of edges out.
+
+		1-->4
+		2-->1
+		3-->2,6
+		4-->5
+		5-->2,6
+		6-->3
+
+		Memory used: \theta(|V|+|E|)
+
+		If vertices are consecutive integers, use array of lists.
+		Find any vertex list in O(1) time.
+		If vertices are Strings or objects, use a hash table: keys:vertex name, value:list objects
+		Adjacency list is more time and space efficient for a sparse graph, less efficient for a complete graph.
+
+	
+Graph Traversal
+===============
+	Graph Traversals
+	----------------
+		Visit each vertex once
+
+		Depth-First Search
+			Depth search (DFS) searches graph as deeply as possible and as early as possible.
+
+			If graph is tree, DFS performs preorder or postorder traversal.
+
+			Each vertex has a boolean field "visited" that tells us if we have visited it before.
+
+			Assume a strongly connected graph.
+
+			When DFS visits a vertex u, checks every edge (u,v).
+
+			If v not yet visited, DFS visits it recursively.
+
+			Code:
+				public class Graph{
+					...
+					public void dfs(Vertex u){
+						u.visit()
+						u.visited=true;
+						for (each vertex v such that (u,v) is anedge in E){
+							if (!v.visited){
+								dfs(v);
+							}
+						}
+					}
+					...
+				}
+
+		Breadth-First Search
+			Breadth first search (BFS) visits all vertices whose distance from starting vertex is one, then 2, then 3, etc.
+
+			In a tree, BFS performs a level-order traversal
+
+

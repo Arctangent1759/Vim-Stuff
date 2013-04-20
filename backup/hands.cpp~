@@ -143,5 +143,5 @@ int CustomerHand::Total(){
  * Print avaliable information about the hand.
  */
 void CustomerHand::Print(){
-	cout << "Customer hand: " << myCardCount << " cards, " << myAceAs11Count << " aces counting 11, " << myTotal << " total."<< endl;
+	cout << "\t" << "Customer hand: " << myCardCount << " cards, " << myAceAs11Count << " aces counting 11, " << myTotal << " total."<< endl;
 }

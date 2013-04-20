@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/arctangent1759/Documents/School/CS61B/Projects/proj2'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/arctangent1759/Documents/School/CS61B/Homework/hw7'
+let g:netrw_dirhist_2='/home/arctangent1759/Documents/School/CS61B/DataStructures/BinaryHeap'
+let g:netrw_dirhist_3='/home/arctangent1759/Documents/School/CS61B/DataStructures'
+let g:netrw_dirhist_4='/home/arctangent1759/Documents/School/CS9F/Homework/hw5'
+let g:netrw_dirhist_5='/home/arctangent1759/Documents/Projects/Ongoing/GlobalInternships/GlobalInternships/Account'
+let g:netrw_dirhist_6='/home/arctangent1759/Documents/Projects/Ongoing/GlobalInternships/GlobalInternships/Event'
