@@ -1,129 +1,38 @@
-Dictionaries
-============
-	Two-letter words and definitions.
+More Sampling
+=============
+  Under what conditions can we reconstruct the continuous signal?
+    f_s=sampling frequency
+    T=1/f_s
+    f_(max)<=f_s/2
+  If we can reconstruct, how?
+    Interpolate between known points.
+  What can go wrong?
+    Aliasing
 
-	Word is the key that addresses the definition.
-	26*26=676 possible words.
+Interpolation
+=============
+  Zero-order hold:
+    Take each point (n,f(n)), and set all values in [n,n+1) to be f(n).
+    Bad. Nature is continuous.
 
-	To insert a definition into a dictionary:
-		function hashCode() maps each word (key) to integer in range from 0 to 675
-	
-	Code:
-		public class Word{
-			public static final int LETTERS=26, words=LETTERS*Letters;
-			private String word;
-			public int hasHCode(){
-				return LETTERS*(word.charAt(0)-'a')+word.charAt(1)-'a');
-			}
-		}
+  Linear Inerpolation:
+    Straight line between each point.
+    Bad. Nature is smooth.
 
-		public class WordDictionary{
-			private Definition[] defTable=new Definition[Word.WORDS];
-			public void insert(Word w, Definition d){
-				defTable[w.hashCode()]=d;
-			}
-			Definition find(Word w){
-				return defTable[w.hashCode()];
-			}
-			Definition find (Word w){
-				return defTable[w.hashCode()];
-			}
-		}
+  (Interpolation in time domain is pretty useless.)
 
-	\*Dictionary\*: Data structure that maps arbitrary keys to associated values.
+  Use frequency domain.
 
-	\*Hash Tables\*: (most common implementation of dictionaries)
+  -x(t)-> sampler -y(n)-> interpolator -z(t)->
 
-	n: nmber of keys (eg words) to store
+  x(w) in rads/s
+  y(w) in rads/sample
+  z(w) in rads/s
 
-	Table of N buckets.
+  Each w in discrete time frequency domain maps to wf_s+nf_s, n \in \integers
+  
+  Y(w)=f_s \sum_k=-\inf^inf X(wf_s+k(2\pi)f_s)
 
-	N is usually a bit larger than n.
+  z(t)=\sum y(n)h(t-nT)
 
-	Hash table maps a huge number of possible keys (eg 26^45) into N buckets by applying a compression function
-
-	h(hashCode)=hashCode mod N
-	hashCode is often negative.
-
-	Problem: Collision: When 2 keys map to the same bucket
-	Solution: Chaining: refereneces a linked list of entries, called a chain
-
-	Problem 2: Which definition for which word?
-	Solution: entry=(key, value)
-
-	3 operations: public Entry insert(key,value)
-	public Entry insert(key,value)
-		-Compute key's hash code.
-		-Compress it to determine bucket.
-		-Insert entry into bucket's list.
-
-	public Entry find(key)
-		-Hash the key.
-		-Search through the chain for entry with given key
-		-If found, return entry; otherwise, null.
-
-	public Entry remove(key)
-		-Hash the key
-		-Search the chain
-		-Remove from chain if found
-		-Returns entry if found, null if not
-	2 entries with same key?
-		-Store all of them (G&T) in chain. find() returns arbitrary element
-		-findAll returns all elements in list
-		-Replace old value with new one. Only one enry with given key
-	
-	Load factor measures n relative to N
-
-	Load factor of hash table is n/N.
-		If load factor is low and hash code and compression function are "good" and no duplicate keys, 
-		then chains are all short and each operation takes O(1) time.
-	
-		If load factor too large (n >> N), degenerates to O(n) time.
-
-	Hash codes & compression functions
-	----------------------------------
-		key-->hash code-->[0,N-1]
-
-		Ideal hash code and compression function maps each key to a random bucket.
-		(Why? the probability of two keys in a given bucket is 1/N)
-
-		Bad compression functions:
-			Suppose keys are integers:
-				hashCode(i)=i
-				compression function:h(hash) = hashCode mod N
-				N=10,000 buckets
-			Why is this bad? Suppose that the application using this function only generates multiples of 4.
-			Then, the index is always divisble by 4. 3/4 of buckets are wasted.
-			Better h(hashCode)=((a*hashCode+b) mod p) mod N
-			a,b,p \in \Integers^+
-			p is a large prime.
-			p >> N
-
-			Now, N doesn't need to be prime.
-
-Crippled Lists
-==============
-	Stack
-	-----
-		Operations:
-			-push puts an item into a list
-			-pop removes an item from the list and returns it
-			-examine looks at most recent item in list 
-		Operation run in O(1)
-	Queue
-	-----
-		Operations:
-			-"enqueue" item at back of queue
-			-"dequeue" item at front
-			--examine "front" item
-		Sample aplication: Printer queue
-
-		diagram:
-			ab-->dequeue-->b-->enqueue(c)-->bc-->front()-->
-					|
-					v
-					a
-	DEQUES
-	------
-		Double-Ended Queue
-		You can insert and remove items at both ends.
+  Z(w)=fourierTransform(z(t))=\sum_(n=-inf)^(inf) y(n) e&(-iwnT) H(w)

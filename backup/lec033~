@@ -1,0 +1,101 @@
+Splay Trees
+===========
+  Balanced binary search tree
+
+  All operations run: O(log n) time on average, n is the # of items stored in the tree.
+
+  Single operations: Theta(n) time worst-case.
+
+  Any sequence of k ops with tree initially empty and never having more than n items in the tree is gaurunteed to take O(k log n) worst-case time.
+
+  Fast access to entries accessed recently.
+
+  Tree Rotations
+  --------------
+    Tree:
+            Y
+           / \
+          X   C
+         / \
+        A   B
+           
+            |
+            v
+
+            X
+           / \
+          A   Y
+             / \
+            B   C
+
+  Splay Tree Operations
+  ---------------------
+    1. Entry find(Object K);
+
+      Begins like ordinary BST:
+      Walk down tree to find key k or dead end.
+      Let X be the node where the ssearch ended, whether it contains k or not.
+      \_Splay\_ X up the tree through a sequence of rotations, so X becomes root.
+    
+      3 cases:
+        1. X is right child of a left chid, or the left child of a right child.
+                        G
+                       / \
+                      P   D
+                     / \
+                    A   X
+                       / \
+                      B   C
+
+                        G
+                       / \
+                      X   D
+                     / \
+                    P   C
+                   / \  
+                  A   B   
+
+                        X
+                       / \
+                      P   G
+                     / \ / \
+                    A  B C  D
+
+          2. X is the left child of a left child or the right child of a right child, rotate parent to root, then X to root
+                        G
+                       / \
+                      P   D
+                     / \
+                    X   C
+                   / \
+                  A   B
+
+                        P
+                       / \
+                      X   G
+                     / \ / \
+                    A  B C  D
+
+                        X
+                       / \
+                      A   P
+                         / \
+                         B  G
+                           / \
+                          C   D
+          3. X is the left child or right child of the root. Rotate up to root.
+
+          A node initially at a depth d on access path from root to X moves up to a final depth no more than 3+d/2
+
+        2. min/max
+          Leftmost child.
+          Splay to root.
+
+        3.insert
+          Insert new entry (k,v), splay to root.
+
+        4. remove
+          An entry having key k is removed from tree, as with ordinary BST.
+          Let X be the node removed from the tree.
+          After X is removed, splay X's parent to the root.
+          If key k is not in tree, spay node where search tree ended in node

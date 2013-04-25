@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{datetime}
+\usepackage{fancybox}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks]{hyperref}
+\usepackage{palatino}
+\usepackage[margin=0.25in]{geometry}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+\begin{document}
+\title{\sc Lab 06 Pre-Lab}
+\author{Electrical Engineering 20N \\ University of California, Berkeley}
+\date{3/15/2013}
+
+\maketitle
+
+{\bf Name}: Alexander Chu
+
+{\bf Lab Section}: 015
+
+{\bf Lab TA}: KK
+
+\begin{description}
+	\item[4.1]
+      The mean filter is an LTI system (or more properly a Linear Space-Invariant system), because it is just a low-pass filter in two dimensions.
+      Formally:\\
+      $x(a,b)\rightarrow y(n)=\frac{1}{9}\sum_{i=-2}^{2}\sum_{j=-2}^{2}x(a-i,b-j)$\\
+      $Ax_1(a,b)+Bx_2(a,b)\rightarrow y(n)=A\frac{1}{9}\sum_{i=-2}^{2}\sum_{j=-2}^{2}x_1(a-i,b-j)+B\frac{1}{9}\sum_{i=-2}^{2}\sum_{j=-2}^{2}x_2(a-i,b-j)=Ay_1(a,b)+By_2(a,b)$\\
+      $y(a-\tau_a,b-\tau_b)=\frac{1}{9}\sum_{i=-2}^{2}\sum_{j=-2}^{2}x(a-i-\tau_a,b-j-\tau_b)$\\
+      $\hat{y}(a-\tau_a,b-\tau_b)=\frac{1}{9}\sum_{i=-2}^{2}\sum_{j=-2}^{2}x(a-i-\tau_a,b-j-\tau_b)=y(a-\tau_a,b-\tau_b)$
+      $\implies LTI$
+	\item[4.2]
+      The median filter is not LTI.\\
+      Take, for example, a 3 by 3 image, a(x,y), that takes the following values:\\
+          \begin{tabular}{|c|c|c|}\hline
+            622 & 166 & 149 \\\hline
+            482 & 845 & 779 \\\hline
+            828 & 23 & 667 \\\hline
+          \end{tabular}\\
+      This array has a median of 622.\\
+      And another 3 by 3 image, b(x,y), that takes the following values:\\
+          \begin{tabular}{|c|c|c|}\hline
+            327 & 113 & 568 \\\hline
+            541 & 899 & 437 \\\hline
+            949 & 743 & 623 \\\hline
+          \end{tabular}\\
+      This array has a median of 568.\\
+      But the following signal is a+b:\\
+          \begin{tabular}{|c|c|c|}\hline
+            949 & 279 & 717 \\\hline
+            1023 & 1744 & 1216 \\\hline
+            1817 & 816 & 1290 \\\hline
+          \end{tabular}\\
+      This array has a median of 1023.
+      $622+568=1190\neq1023$
+      So the median filter fails the superposition property of linearity, and is not LTI.
+	\item[4.6]
+      The median filter does a better job at removing the noise in the image without destroying quality.
+      This is the case because the noisy particles tend to add skewing to the image data in the window.
+      In statistics, generally, median serves better as the center of a distribution that is not normal.
+      Since median is positional, it is more resistant to both noise and outliers like the noise added to the Lena image.
+      Mean, on the other hand, is heavily skewed by outliers.
+      Since median minimizes the effects of the outliers, it does a better job at eliminating noise.
+\end{description}
+
+\end{document}

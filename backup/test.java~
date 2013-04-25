@@ -1,16 +1,11 @@
 public class test{
-	public static void main(String[] args){
-		try{
-			print("try");
-			throw new NullPointerException();
-		}catch (ClassCastException e){
-			print("catch");
-		}finally{
-			print("finally");
-		}
-
-	}
-	static void print(Object o){
-		System.out.println(o);
-	}
+  public static void main{
+    int x = 4;
+    while (x>0){
+      while (x%4!=0){
+        x-=1
+      }
+      x/=2;
+    }
+  }
 }

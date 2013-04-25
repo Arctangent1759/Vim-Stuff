@@ -1,34 +1,21 @@
-GRADER file for Homework 8
+(a)  How would your algorithm ensure that there is a path between every pair of
+     cells, but no more than one path between any pair of cells (i.e., no
+     cycles)?
 
- Your Name:  
-Your Login:  
+     Generate a connected (or complete) graph of n points.
+     Perform a depth-first search on the graph. The visit function connects 
+     the node that it traverses with the one that it came from. Since the 
+     depth first search always traverses all nodes in any connected graph, 
+     it gauruntees that the there will be a path to every cell. Since the 
+     depth first search does not visit nodes already marked visited, there 
+     will be no cycles, as no node is visited twice.
 
-Part III.  Running time comparisons
+(b)  How does your algorithm use random numbers to generate a different maze
+     each time?  Specifically, what decision should be made by random numbers
+     at each recursive invocation of the depth-first search method?
 
-  List size         mergesort             quicksort
-       10           0                     0
-      100           1                     1
-    1,000           13                    6
-   10,000           41                    31
-  100,000           153                   186
-
-
-
-
-
-Part IV.
-
-  Is mergesort stable?  
-      Yes.
-  Why or why not?
-      My Mergesort is deterministic; there is no random element in the algorithm that will produce aberrant behavior in the case of ordering elements with the same key.
-	  The method mergeSortedQueues() determines whether or not the sort is stable. 
-	  Particularly, the order in which the method inserts elements when both q1's element returns 0 on compareTo q2's element determines the stability..
-	  If the second list is dequeued first, then the sort is stable.
-	  If the first list is dequeued first, then the sort is not stable, since the elements are out of order.
-	  
-
-  Is quicksort stable?  
-      Yes.
-  Why or why not?
-      Unstable quicksorts are in-place quicksorts. My quicksort creates a new queue, and therefore, can preserve the ordering of equal elements.
+     A random number generator will decide ordering in which which neighbor 
+     node from the set of all nodes connected to the current node are traversed.
+     Since the order in which the children of a given node are visited determines the 
+     shape of the maze, this will ensure that a different maze will be produced almost
+     every time

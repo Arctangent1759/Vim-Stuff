@@ -1,69 +1,36 @@
-{% extends "Base/twoPanedBase.html" %}
-{% block content %}
-	<!--Page Content-->
-		<h2>Events</h2>
-		{% if upcoming_events %}
-			{% for event in upcoming_events %}
-				<tr>
-					<td>
-						<hr/>
-						<a href="{% url Event:event event.id %}"><h3>{{ event.name }}</h3><br/></a>
-						<table class="table table-striped">
-							<tr>
-								<td>
-									<strong>Date:</strong>
-								</td>
-								<td>
-									<div style="white-space: pre-wrap;">{{ event.start }} to {{ event.end }}</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<strong>Location:</strong>
-								</td>
-								<td>
-									<div style="white-space: pre-wrap;">{{ event.location }}</div>
-								</td>
-							</tr>
-
-							<tr>
-								<td>
-									<strong>Description:</strong>
-								</td>
-								<td>
-									<div style="white-space: pre-wrap;">{{ event.description|truncatewords:"50"}}<a href="{% url Event:event event.id %}"> (read more)</a></div>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			{% endfor %}
-			<hr/>
-		{% else %}
-			<p>No events available.</p>
-		{% endif %}
-
-{% endblock %}
-
-{% block sidebar %}
-	<!--Page Sidebar-->
-	<h2>Related Stories</h2>
-	<hr/>
-		<table>
-			{% for story in related_stories %}
-				<tr>
-					<td>
-						<div class="shaded">
-							<a href="{% url News:detail story.id %}"><strong>{{ story.title }}</strong><br/></a>
-							<div style="margin:10px">
-								<a href="{% url News:detail story.id %}"><img src="{{story.imageURL}}" style="width:50%;height:50%;float:left;margin:3px;"/></a>
-								{{ story.preview }}
-								<a href="{% url News:detail story.id %}">... (read more)<br/></a>
-							</div>
-							<br/>
-						</div>
-					</td>
-				</tr>
-			{% endfor %}
-		</table>
-{% endblock %}
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+      <title>Eta Kappa Nu (HKN), Mu Chapter</title>
+      <script src="https://hkn.eecs.berkeley.edu/assets/application-54517505e0a0174cf744e6233ecb2ba5.js" type="text/javascript"></script>
+      <link href="https://hkn.eecs.berkeley.edu/assets/main-b33130365f80c143afe0d50c1abb3b5a.css" media="screen" rel="stylesheet" type="text/css" />
+      <link href="https://hkn.eecs.berkeley.edu/assets/print-87758024eacc670346d45b7efda928ae.css" media="print" rel="stylesheet" type="text/css" />
+      <script src="https://hkn.eecs.berkeley.edu/assets/jquery.history-e9ef9966e4f7c7208268122f6c65835d.js" type="text/javascript"></script>
+      <script src="https://hkn.eecs.berkeley.edu/assets/common-f49255b65a26287a24b33d135cbe4e0c.js" type="text/javascript"></script>
+      <script src="https://hkn.eecs.berkeley.edu/assets/navigation-c618009a582c1bca110c5ddaff19bc8d.js" type="text/javascript"></script>
+      <script src="https://hkn.eecs.berkeley.edu/assets/chat-aeade5ffa6fd404a8d0dfa3fc2dc5413.js" type="text/javascript"></script>
+      <script src="https://hkn.eecs.berkeley.edu/assets/quick-rsvp-c570589b2b75a67c9471f0d28a09e7e5.js" type="text/javascript"></script>
+      <script src="https://hkn.eecs.berkeley.edu/assets/ga-b63d3a83d738b2f5f1bb6c346de105b7.js" type="text/javascript"></script>
+      <link href="https://hkn.eecs.berkeley.edu/assets/jquery-ui-1.10.0.custom.min-5b9dff78c4dc2380a95363d9c00bb36a.css" media="screen" rel="stylesheet" type="text/css" />
+      <link href="https://hkn.eecs.berkeley.edu/assets/jquery-ui-timepicker-addon-c78e53d193d15c091101955b67a17ea8.css" media="screen" rel="stylesheet" type="text/css" />
+      <script src="https://hkn.eecs.berkeley.edu/assets/jquery-ui-1.10.0.custom.min-a96b5de6bb517343cf4eeaeb77227fef.js" type="text/javascript"></script>
+      <script src="https://hkn.eecs.berkeley.edu/assets/jquery-ui-timepicker-addon-e6926a880bee3e2159018d1833a1003b.js" type="text/javascript"></script>
+      <script src="https://hkn.eecs.berkeley.edu/assets/datetimepicker-45369a13d8aeeb7965c7523f5cd68381.js" type="text/javascript"></script>
+  </head>
+  <body>
+    asdkfjsadlkfja
+    <div>
+    asdfdasfdasfskj
+    asdfasfasfd
+    asdafsafasdfasfd
+    <div style="display: inline-block;">
+    <div id="csljs" style="width:780;height:400;"></div>
+            <div class="text">
+                        <div>
+    </div>
+    ajfksdfadf
+    </div>
+    <script src="Carousel.js"></script>
+  </body>
+</html>

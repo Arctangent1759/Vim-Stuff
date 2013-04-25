@@ -1,0 +1,21 @@
+public class Wall{
+  boolean vertical;
+  int x;
+  int y;
+  boolean exists;
+  public Wall(int x, int y, boolean vertical){
+    this.x=x;
+    this.y=y;
+    this.vertical=vertical;
+    this.exists=true;
+  }
+  public String toString(){
+    return "{x:"+this.x+",y:"+this.y+",vertical:"+this.vertical+", open:"+!this.exists+"}";
+  }
+  public int x(){return x;}
+  public int y(){return y;}
+  public boolean exists(){return exists;}
+  public boolean vertical(){return vertical;}
+  public int[] getCell1(){return new int[]{x,y};}
+  public int[] getCell2(){return vertical?new int[]{x+1,y}:new int[]{x,y+1};}
+}

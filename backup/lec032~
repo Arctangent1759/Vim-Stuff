@@ -1,0 +1,75 @@
+Counting Sort 
+=============
+	Item = key + associated value
+	Let x be input array of objects with key.
+
+	Count keys in x.
+
+	for (i=0; i < x.length; i++){
+		counts[x[i].key]++;
+	}
+
+	Do a scan so counts[i] contains number of keys less than i.
+
+	total=0;
+    for (j=0; j<counts.length; j++){
+        c=counts[j];
+        counts[j]=total;
+        total=total+c;
+    }
+
+    Let y be output array.
+
+    counts[ii] tells us the first index of y to put items with key i.
+
+    for (i=0; i<x.length; i++){
+		y[counts[x[i].key]]=x[i]
+		counts[x[i].key]++;
+    }
+
+	Bucket and counting sort both take O(q+n) time.
+	  Array: counting sort faster, leess memory.
+	  Linked List: bucket sort more natural.
+	
+	Radix Sort
+	Sort 1000 items in range 0 to 99,999,999
+
+	Bucket sort becomes inefficient because of the number of queues you have to make, most ofwhich are empty.
+	Provide q=10 buckets; sort on first digit only.
+
+	Could sort queues recursively on second digit, third, etc..
+
+    Clever idea:
+		Keep numbers in one pile throughout sorting.
+		Sort on last digit first, then next to last, etc.
+		Up to most siginficant digit.
+
+		55,555,558		55,555,552
+		55,555,552		55,555,558
+
+    771 721 822 955 405 5 925 825 777 28 829
+    405 5 721 822 925 825 28 829 955 771 777 
+    5 28 405 721 822 825 829 925 955 771 777 
+
+    Sorting 1000 8 digit #s
+    Faster if we sort 2 digits at a time (sorting with a \*radix\* of 100).
+
+    Computers: power-of-two radix like q=256.
+
+    q is the number of buckets, or the number of counts in our counting sort, or the radix of the radix sort.
+
+    How fast is radix sort?
+        How many passes of radix sort do we have to perform?
+        Each pass inspects log_2 q bits f each key.
+
+        How many passes?
+
+          Each pass inspects log_2 q bits of each key.
+
+          runing time is O((n+q)(b/log_2 q))
+
+          Choose q?
+            q \in O(n) --> # of passes small.
+
+          Chohose Q ~ n.
+            time    --> O(n+b/log(n) n) time
