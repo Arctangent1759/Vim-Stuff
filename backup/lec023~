@@ -1,127 +1,56 @@
-Rooted Tree:
+More sampling
+=============
+  How many samples do you need to reconstruct.
+
+  2 f_max * p samples
+
+  f_max=w/2
+
+  W=f_max*2 (W is bandwidth of signal)
+  # of samples = W*p = W*T
+
+  Over [[0,p], x(t)=\sum_k=-infinity^infinity X_k e^(ikwt)
+  w_0=2\pi / p
+  k 2\pi/p =2\pi W/2
+  k/p =W/2
+  for negative freqencies, there are another Wp/2 term
+  Number of terms Wp
+  
+  So the number of terms in the fourier series expansion of a signal is Wp
+
+  There are Wp \*degrees of freedom\* for a signal with bandwidth W.
+
+  So you only need a finite number of samples = Wp to represent a signal of bandwidth W and length p.
+
+  Still off by a factor of 2, since X_k is complex.
+
+  But if x is a real signal, X_ks are complex conjugates with X_(-k)
+
+  So reduce terms by half. Everything agrees.
+
+D/A and A/D
 ===========
-	The set of all nodes and the edges that connect them
-	Exactly 1 path between any two nodes.
-	Path: Sequence of one or more nodes, each consecutive pair connected by an edge
+  Contiuous Signal------>Sampler--------->Quantization--------->Bits
 
-	Rooted tree: One distinguished node is root
-	Every node c except root has one parent p, the first node on the path from c to the root
-	c is p's \*child\*
+  We need quantization because amplitude is on \reals, while computers store things in bits.
+  Need to quantize amplitude, so we can represent continuous amplitude with discrete amplitude.
 
-	A node can have any number of children
+  W=20kHz=>fs=2.0ksamples/s
+  N=16 bits/sample
+  R=320 kB/s
 
-	Tree Vocab:
-	-----------
-		-\*Leaf\*: Node with no children
-		-\*Siblings\*: Node with some parent
-		-\*Ancestors\* of d: Every node on the path from d to root, including d itself
-		-If a is an ancestor of d, d is a descendant of a.
-		-\*Length\* of a path: number of edges in path
-		-\*Depth\* of a node n: length of path from n to root.
-			Depth of root is 0
-		-\*Height\* of a  node n:length of path from n to its deepest decendent. Height of a leaf is zero.
-		-Height of a tree 
-		-Height of a tree = height of its root.
-		-\*Subtree\* rooted at n: tree formed by n and its descendants
-		-\*Binary tree\*: No node has more than 2 children and every child is a \*left child\* or a \*right child\*, even if its the only child.
-	
-	A good example of a rooted tree is a filesystem:
-	Tree:
-		~jrs/61b +
-				 |
-				 + hw
-				 |
-				 + lab
-				 |
-				 + proj
-	
-	Representing rooted trees
-	-------------------------
-		G&T: Each node has 3 references:
-			1. item
-			2. parent
-			3. children stored in a list.
+  Use statistical/probablistic compression to reduce data rate. (320 kb/s to 9.6kb/s)
 
-		Another option: The Sibiling Tree
-			Code:
-				class SubTree{
-					SibTreeNode root;
-					int size;
-				}
-				class SibTreeNode{
-					Object item;
-					SibTreeNode parent;
-					SibTreeNode firstChild;
-					SubTreeNode nextSibiling;
-				}
-	Tree Traversals
-	---------------
-		Preorder Traversals
-		-------------------
-			\*Traversal\*: A manner of visiting each node in a tree once.
-			\*Preorder Traversal\*: Visit each node before recursively visiting its children left o right. Root visited first.
+Cell phone ODFM thing
+=====================
+  Continuous voice signal --sampler--> DT signal --quantization--> bits --compression--> less bits --Baseband DSP (IDFT)--> Discrete OFDM modulated signal --Reconstruction (D/A)--> Continuous ODFM modulated signal --multiply by cos(2 \pi f_c t)--> Passband signal --Sampling (A/D)--> Discrte ODFM with high frequency crap --Low Pass Filter--> Discrete OFDM without crap --Baseband DSP (DSP)--> bits
 
-			Code:
-				class SibTreeNode{
+  D/A converter is nothing but an interpolation
+    What kind of interpolation?
+      Zero order hold? No. High frequency otside of bandwidth.
+      Sinc? Yes.
+      T=1/W s=.2 microseconds (ideal performance, use slightly higher T)
 
-					...
-
-					public void preorder(){
-						this.visit();
-						if (firstChild!=null){
-							firstChild.preorder();
-						}
-						if (nextSibiling!=null){
-							nextSibiling.preorder();
-						}
-					}
-
-					...
-
-				}
-
-			Each node visited only once, so preorder traversal takes O(n) time, where n is the number of nodes in tree.
-
-			Preorder Traversal can generate a tree like this:
-			Plaintext:
-				~jrs/61b
-					hw
-						h1
-						h2
-					index.html
-						lab
-							lab1
-							lab2
-						lec
-							lec01
-							lec02
-							lec04
-							lec05
-							lec05
-
-		Postorder Traversal
-		-------------------
-			A \*Postorder Traversal\* visits each node's children from left to right before the node itself.
-			Code:
-				class SibTreeNode{
-
-					...
-
-					public void postorder(){
-						if (firstChild!=null){
-							firstChild.postorder();
-						}
-						this.visit();
-						if (nextSibiling!=null){
-							nextSibiling.postorder();
-						}
-					}
-
-					...
-
-				}
-
-		Inorder Traveral
-		----------------
-			Binary trees have inorder traversal:
-				recursively traverse root's left tree, then root, then right subtree.
+  How many bits can you send, given a certain bandwidth?
+    Cannot send infinite signal because noise.
+    Noise distorts signal.

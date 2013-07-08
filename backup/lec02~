@@ -1,0 +1,240 @@
+===========================
+Introduction to C, Pointers
+===========================
+
+Administriva
+============
+  - Don't post code on Piazza
+  - Only show relevant lins of code
+  - Lecture examples, provided code, and output/error messages OK.
+  - Lab 1 istoday
+	- Get class account and register
+	- Find partner for labs
+  - HW0  is due tonight
+	- Need lab account to submit
+  - HW1 due sunday
+  - Office hours!
+
+Basic C Concepts
+================
+  Compiled language.
+  Develops in Change->Compile->Run cycle
+
+  Typed variables in C
+  --------------------
+	You must declare the type of data a varible will hold.
+	Declaration must come before or simultaneously with assignment.
+
+	code:
+	  int x = 2;
+	  float y = 2.0;
+	  char z = 'A';
+
+	int -- Signed Int
+	short int (short) -- Smaller Signed integer
+	Long int (long) -- larger signed integer
+
+	If integer sizes are machine dependent, how do we tell?
+	  Use SizeOf() function
+	  --Returns size \_in bytes\_ of variable or data  type nae
+	  Acts differently in structs and arrays
+	
+	Char
+	----
+	  Encode characters as numbers, same as everything!
+	  ASCII defines 128 different characters and their numeric encoings
+	  'a'==97
+	  char c = 'a'; or char c = 97; are both valid
+	  A char takes up 1 byte of space
+	  7 bytes is enough to store a char (2^7=128), but we round up to 8 since computers eal in multiples of bytes.
+
+	c is a weakly typed language. You can explicitly  typecast from one type to another.
+
+	code:
+	  int i = -1;
+	  if (i < 0){
+		printf("This will print\n");
+		if ((unsigned int)i < 0){
+		  printf("This will not print\n");
+		}
+	  }
+
+	You can typecast anything, even if it doesn't make sense.
+	struct x;
+	(int)x;
+
+	Typed functions in C
+	--------------------
+	  Declare type of data you plan to return from a function
+	  Return type can be any C type or void
+	
+	Structs in C
+	------------
+	  Way of defining compound cata types
+	  A structured group of variables, possibly other structs
+
+	  code:
+		struct <var_name>{
+		  <type> <name>;
+		  <type> <name>;
+		  <type> <name>;
+		  ...
+		}
+
+	  Alternatively, the following allows reuse of structs
+
+	  code:
+		typedef struct{
+		  intlengthInSeconds;
+		  int yearRecorded;
+		} Song;
+
+		Song song1
+
+		song1.lengthInSeconds=213;
+		Song1.yearRecorded=1994;
+
+		Song song2;
+
+		song2.lengthInSeconds = 248;
+		song2.yearRecorded=1988;
+
+C Syntax and Control Flow
+=========================
+  Operators:
+	Arithmetic: +-*/%
+	assignment: =
+	Shortcuts: += -= *= /= %= &= |= ^= <<= >>=
+	bitwise logic: ~ & | ^
+	bitwise shifts: << >>
+	boolean logic: ! && ||
+	boolean logic: ! && ||
+	equality testing == !=
+	subexpression grouping: ()
+	order operations: < <= > >=
+	increment/decrement: ++ --
+	member selection: . ->
+	conditional evaluation:  ? :
+
+  C program layout:
+	code:
+	  #include <system_file> /*dump other files here*/
+	  #include "local_file" /*dump other files here*/
+
+	  #define MACRO_NAME macro_expression
+
+	  /*Declare functions here*/
+	  /*Declare variables and structs*/
+
+	  int main(itn argc, char *argv[]){
+		/*The innards*/
+	  }
+
+	  /*Define other functions*/
+	
+	argc is the length of arglist
+	argv is a pointer to an array of argument strings
+
+  Variables:
+	All variable declarations must appear before thay are used (eg at the beginning of a block of code)
+	A variable may be initialized in its declaration. If not, it holds garbage.
+	Variables of the same type may be declared on the same line.
+
+  Booleans
+  --------
+	There is NO explicit boolean type inC.
+	0 and NULL are false. Everything else is true.
+
+  C Syntax: Control Flow
+  ----------------------
+	For loop
+	  code:
+		for (initialize;check;update)
+		  statement
+	
+	Switch
+	  code:
+		switch(val){
+		  case c: break;
+		  ...
+		  default:
+		}
+  
+
+
+Pointers
+========
+  What is a pointer?
+  Consider memory as a huge-ass array
+  Each cell has an address and a value.
+  \_DON'T CONFUSE ADDRESS AND VALUE!\_ 
+  A pointer is a variable that contains an address.
+  Name comes from the fact that you can say that it points to a memory location
+
+  Syntax
+  ------
+	int *x;
+
+	Declare variable x the address of an int
+
+	x=&y
+
+	Assigns the address of y to x
+	& is caled teh address operator in this context
+	z=*x;
+	Assigns the \_value at address\_ in x ot z
+
+	Pointer Example:
+	code:
+	  int *p,x,y; /*Only p is a pointer. x and y are values.*/
+	  x=3; y=4;
+	  p=&x;
+	  *p=5;
+	  y=*p;
+	
+	Pointers are used to point to one kidn of data
+	Pointers to pointers? Yes. int **pp
+
+	Exception is the type void* whcih can point to ANYTHING.
+	  Use sparingly to avoid problems
+	
+	Functions can return pointers.
+	code:
+	  char *foo(char data){
+		return &data;
+	  }
+
+	Placement of * doesn't matter
+
+	int *x == int* x;
+	
+	int* x,y,z == int *x,y,z, but that's confusing.
+
+	C passes parameters by value. Procedure/function/method gets a copy of the parameter, so changin the copy does not change the original.
+
+	To change values, we pass variables by reference.
+
+	Function accepts a pointer and then modifies value by dereferencing it.
+
+	Why use pointers?
+	  When passing a large struct or array, it's easier/faster to pass a pointer than a copy of the whole thing. 
+	  Pointers alllow cleaner compact code
+
+	  
+	Pointers cause bugs though.
+
+	Pointer Bugs
+	------------
+	  Local variables in C are not initialized, so they can contain anything.
+
+	  void f(){
+		int *p,x;
+		x=*p; /*Error! x assigned to garbage at *p, so you're most likely not allowed to use that memory. segfault.*/
+	  }
+
+	  Declaring a pointer does not allocate the thing being pointed to.
+	  
+	  void f2(){
+		int *p;
+		*p=5; /*Probably a segfault.*/
+	  }

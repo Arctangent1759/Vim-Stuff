@@ -1,0 +1,196 @@
+========
+Assembly
+========
+
+Machine Language
+================
+  Definitions:
+	Instruction: Word a computer understands
+	Instruction Set Architecture (ISA): all words a computer understands
+
+  Why?
+  ----
+	Assembly lets you write more efficient code. You can sometimes hand optimize better than a copmiler.
+	Most sensible for minimalistic applications, like distributed sensing and systems
+
+  Two major ISAs
+  --------------
+	Definitions:
+	  Complex Instruction Set Computing (CISC) : More instructions to do more complicated things
+	  Reduced Instruction Set Computing (RISC) : Simpler instruction set makes it easier to build fast hardware. Let software do the compliated operations by composing simpler ones
+	
+  Mainstream ISAs:
+	Intel 80x86
+	  - Used in computers
+	  - Cire i3, i5, i7, etc.
+	
+	Advanced RISC Machine (ARM)
+	  - Smart phone-like devices
+	  - The most popular RISC
+	
+	MIPS
+	  - Networking equipment, PS2, PSP
+	  - Very similar to ARM
+
+Registers
+=========
+  Computer is composed of:
+	- Control
+	- Datapath
+	- Memory
+	- Input
+	- Output
+
+  Registers are part of the Datapath.
+
+  In high-level languages, number of variables limited only by avaliable memory
+
+  ISAs have a fixed number of operands called registers
+
+  Special locations built directly into hardware
+
+  Benefit: Registers are REALLY FAST.
+
+  Drawback: there are only a few of them.
+
+MIPS
+====
+
+  MIPS Registers
+  --------------
+	MIPS has 32 registers
+	  Each register is 43 bits wide and holds a word
+
+	REGISTERS HAVE NO TYPE. The operation being performed determines how register contents are treated.
+
+	Registers are denoted by $, can be referenced by number ($0-$31)
+
+	Registers that hold prorammer variables:
+	$s0-$s7 <---> $16-$23
+
+	Registers that hold temporary variables:
+	  $t0-$t7 <---> $8-$15
+	  $t8-$t9 <---> $24-$25
+
+	MIPS Instructions
+	-----------------
+	  Registers
+	  ---------
+		Operator syntax:
+		  op dst, src1, src2
+			op = operation
+			dst = destination
+			src1 = source 1
+			src2 = source 2
+
+		Comments
+		  Comments in MIPS follow hash mark (#) until the end of line.
+		  Improves readability and helps you keep track of variables/registers!
+		  No block comments!
+
+		The Zero Register
+		  Register zero ($0 or $zero) always has the value 0 and cannot be change
+
+		Numerical constants are called immediates
+
+		Seperate instruction syntax for immediates:
+		  opi dst, src, imm
+		  Operations names that end with i replace 2nd source register with immediate
+		  For example:
+			addi $s3, $s2, 6
+
+		  Since you can add negative numbers, there is no subi instruction.
+
+	  Memory
+	  ------
+		C variables map onto registers. What about large data structures like arrays?
+		  We have memory, a giant array.
+		  MIPS instructions only operate on registers!
+		  Specialized data transfer instructions move data between registers and memory.
+
+		  Syntax:
+			memop reg, off (bAddr)
+			memop=operation name ("operator")
+			reg=register for operation source or destination
+			bAddr=register with pointer to memory ("base address")
+			off=address offset (immediate) in bytes ("offset")
+
+		  Accesses memory at address bAddr+off
+
+		Memory addresses are indexed by bytes, not words.
+		Word addresses are 4 bytes apart
+		Word address is same as left-most byte
+		Addrs must be multiples of 4 to be "word-aligned"
+
+		POINTER ARITHMETIC IS NOT DONE FOR YOU IN ASSEMBLY.
+		  Must take data size yo damn self.
+
+		Load Word (lw reg, bAddr(off))
+		  Takes data at address bAddr+off FROM memory and places it into reg
+
+		Store Word(sw)
+		  Takes data in reg and stores it TO memory at address bAddr+off
+	
+	What if more variables than registers?
+	  Store variables in memory.
+	Why not keep everything in memory?
+	  Registers are hundreds of times faster than registers.
+	
+	Chars and Strings
+	-----------------
+	  Recall: A string is just an array of characters an a char in C uses 8-bit ASCII
+
+	  Method 1:
+		Move words in and out of memory using bit masking and shifting
+		lw $s0,0($s1)
+		andi $s0,$s0,$0xFF
+	  Method 2
+		lb $s0,0($s1)
+		sb $s0,1($s1)
+
+	  lb/sb utilized the least eignificant byte of the register
+
+	  On sb, upper 24 bits ignored.
+	  On lb, upper 24 bits filled by sign extension
+
+	  You normally don't sign extend chars, so use lbu
+	
+	Endianness
+	----------
+	  Big Endian: Most significant byte at least address of word
+		Word adddress = address of most significant byte
+	  Little Endian Least significant byte at least address of word
+		Word address = adress of least significant byte
+	  MIPs is bi-endian (can go either way)
+		Using MARS simulator in lab, which is Little Endian
+		Cofusing because 0x1020304 stored as 04 03 02 01 in memory
+	
+	Control Flow
+	------------
+	  In MIPS, we can't define bocks;
+	  Al we have are labels
+	  Defined by text + colon lke main:
+
+	  Jump to create control flow
+
+	  Decision making instructions
+	  ----------------------------
+		Branch if Equal (beq)
+		  beq reg1,reg2,label
+		  If value in reg1 = value in reg2 go to label
+		Branch if Not Equal (bne)
+		  bne reg1,reg2,label
+		  If value in reg1 != value in reg2, go to label
+		Jump (j)
+		  j label
+		  Unconditional jump to label
+
+		if:
+		---
+		  code:
+			bne reg1 reg2 else
+			  #then stuff
+			  j end
+			else:
+			  #else stuff
+			end:

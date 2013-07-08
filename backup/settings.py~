@@ -1,4 +1,4 @@
-# Django settings for GlobalInternships project.
+# Django settings for cat project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/arctangent1759/Documents/Projects/Ongoing/GlobalInternships/GlobalInternships/Databases/Newsdb.sqlite',                      # Or path to database file if using sqlite3.
+        'NAME': '/home/arctangent1759/django-test/cat/database/database.sqlite3',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -67,7 +67,6 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	"/home/arctangent1759/Documents/Projects/Ongoing/GlobalInternships/GlobalInternships/Static",
 )
 
 # List of finder classes that know how to find static files in
@@ -79,7 +78,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '&amp;xy^se^jul&amp;=t7r!$ljjb-1f0#j@#8@s0=3&amp;sn%=31ly8lmmj3'
+SECRET_KEY = '8ct@ea9!zkdp$ig+=71+vft2%1dj8(1i9s8&amp;uc1^wi_g$3*)tx'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -98,13 +97,12 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'GlobalInternships.urls'
+ROOT_URLCONF = 'cat.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'GlobalInternships.wsgi.application'
+WSGI_APPLICATION = 'cat.wsgi.application'
 
 TEMPLATE_DIRS = (
-	"/home/arctangent1759/Documents/Projects/Ongoing/GlobalInternships/GlobalInternships/templates"
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -117,13 +115,11 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'catapp',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-	'News',
-	'Event',
-	'Account',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -154,15 +150,3 @@ LOGGING = {
         },
     }
 }
-
-#My settings
-
-
-
-AUTH_PROFILE_MODULE = 'Account.Profile'
-
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-
-

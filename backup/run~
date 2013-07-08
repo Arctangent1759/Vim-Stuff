@@ -1,1 +1,4 @@
-if javac list/*.java; then java list.DList; fi
+scp -rq . cs61c-hp@hive6.cs.berkeley.edu:~/proj1
+scp -q remotescr.sh cs61c-hp@hive6.cs.berkeley.edu:~
+ssh cs61c-hp@hive6.cs.berkeley.edu 'chmod +x ./remotescr.sh'
+ssh cs61c-hp@hive6.cs.berkeley.edu './remotescr.sh'

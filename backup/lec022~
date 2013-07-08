@@ -1,44 +1,43 @@
-Dictionaries Continued
-======================
-	Hash Codes
-	----------
-		Good hash codes:
-			Code:
-				private static int hashCode(String key){
-					int hashVal=0; 
-					for (int i =0; i < key.length(); i++){
-						hashVal=(127*hashVal+key.charAt(i))%16908799; 
-						//We treat hashVal as a Base 127 number.
-						//The modulo prime mixes up the bits
-					}
-				}
+Z(w)=Y(wT)H(w)
+H(w)=CTFT of h(t)
+z(t)=\sum_(h=-inf)^(inf) y(n) h(t-nT)
 
-		Bad hash codes on words: Sum ASCII values of characters.
-			Sum ASCII values of characters
-				-Rarely exceeds 500
-				-Anagrams like "pat", "tap", "apt" collide
-			First 3 letters of a word, with 26^3 buckets
-				-Lots of "pre" not a lot of "xzw"
-			Suppose prime modulus is 127
-				-Always lose hashVal
-	Resizing Hash Tables
-	--------------------
-		If load factor n/N too large, we lose constant-time performance.
-		Enlarge hash table when load factor >= .75
+h(n) should be the sinc function, or thhe ideal low pass filter:
 
-		Allocate a new array at least twice as long.
-		Walk through entries in old array, rehash them into new.
-		
-		Option: shrink hash tables (eg. when n/N < .25) to free memory.
+                                        H(w)
+                                        |
+                                        |
+                                        |
+                              ----------|---------- 1/fs
+                              |         |         |
+                              |         |         |
+                              |         |         |
+                              |         |         |
+                              |         |         |
+                              |         |         |
+------------------------------|---------|---------|-----------------------------w
+                            -pi fs              pi fs
 
-		\_Resizing hash tables is expensive; it takes \Theta(n) time\_
+h(t)=1/fs sin(pi fs t)/(pi t)
 
-		But because resizing occurs so infrequently, the average over long run is still O(1) time per operation.
-	
-	Transposition Tables: Speed Game Trees
-	--------------------------------------
-		Some grids reachable through different sequences of moves, may be evaluated many times.
-		Mantain hash table of grids, called \*transposition table\*
-			-Key is grid
-			-Value is gri's score
-		Minimax algorihm checks if grid is in table
+fs = 1/T
+
+h(t)=sin(pi t/T)
+
+Problem: Need to interpolate forever.
+  Interpolation (sinc) is not  causal.
+  You need future samples to have real time interpolation.
+Solution: Introduce a delay into the system.
+  Look somewhat into the future. Since the sinc function decays to 0, can set finite delay window.
+  Problem: Ideal low pass filter allows for too many high frequencies; want fast decay to limit window.
+  Solution: Don't use ideal lpf; use curvy version instead.
+
+Downsampling
+============
+  When you downsample, the Fourier Transform gets wider.
+  Apply aliasing filter to prevent aliasing.
+  To reconstruct downsampled  data, interpolate to find x(t), the CT signal, and resample to get the original signal.
+
+  y(n)=x(nT)=\sum_(m=-inf)^(inf)w(m)h_(2T) (nT-2mT)
+  h_(2T)(t)=sin(pi t/(2T))
+  h_(2T)((n-2m)T)=sin(pi (n-2m)T/(2T))=sin(pi (n-2m)/(2))

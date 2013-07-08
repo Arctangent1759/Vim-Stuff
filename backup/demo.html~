@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+
+<!-- 
+ * Markup for jQuery Orbit Plugin 1.2.3
+ * www.ZURB.com/playground
+ * Copyright 2010, ZURB
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ -->
+ 
+ 
+ 
+	<head>
+		<meta charset="utf-8" />
+		<title>Orbit Demo</title>
+		
+		<!-- Attach our CSS -->
+	  	<link rel="stylesheet" href="orbit-1.2.3.css">
+	  	
+		<!-- Attach necessary JS -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="jquery.orbit-1.2.3.min.js"></script>	
+		
+			<!--[if IE]>
+			     <style type="text/css">
+			         .timer { display: none !important; }
+			         div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+			    </style>
+			<![endif]-->
+		
+		<!-- Run the plugin -->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#featured').orbit();
+			});
+		</script>
+		
+	</head>
+	<body>
+	
+	
+		<div id="featured"> 
+          <img src="https://hkn.eecs.berkeley.edu/gallery3/var/albums/Spring-2013/Pi-Day-and-Board-Game-Night/010.JPG?m=1363397782"/>
+          <img src="https://hkn.eecs.berkeley.edu/gallery3/var/resizes/Spring-2013/Pi-Day-and-Board-Game-Night/011.JPG?m=1363397789"/>
+          <img src="https://hkn.eecs.berkeley.edu/gallery3/var/resizes/Spring-2013/Pi-Day-and-Board-Game-Night/012.JPG?m=1363397795"/>
+          <img src="https://hkn.eecs.berkeley.edu/gallery3/var/resizes/Spring-2013/Pi-Day-and-Board-Game-Night/013.JPG?m=1363397801"/>
+          <img src="https://hkn.eecs.berkeley.edu/gallery3/var/resizes/Spring-2013/Pi-Day-and-Board-Game-Night/014.JPG?m=1363397806"/>
+		</div>
+		
+		
+		
+	</body>
+</html>

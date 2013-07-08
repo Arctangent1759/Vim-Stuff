@@ -4,4 +4,3 @@ source ~/.vim/config/settings.vim
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/autocmds.vim
 source ~/.vim/config/autocomplete.vim
-nnoremap <leader><leader><leader><leader>m :execute "vert sview ~/.vim/playlist.txt \| vert resize 30"<cr><c-w>r:call PlayFile()<cr>:vert resize 0<cr><c-w>h

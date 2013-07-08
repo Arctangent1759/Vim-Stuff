@@ -1,0 +1,10 @@
+#!/usr/bin/python
+from serial import Serial;
+
+ser = Serial('/dev/ttyUSB0', 9600);
+
+while True:
+  try:
+	ser.write(raw_input().strip()+"__EOL__");
+  except EOFError:
+	break;

@@ -1,0 +1,81 @@
+CS 61C Su13 Homework 3
+Name: Alexander Chu
+Login: cs61c-hp
+
+Problem 1
+
+a.
+add
+addi
+sub
+
+b.
+Register number rd (or register destination).
+Equivalent to $(rd), where rd is an integer.
+
+c.
+andi
+ori
+
+d.
+0x57
+
+e.
+0x10008000
+It grows up.
+
+f.
+xor: 0b100110
+xori: 0b001110
+zero extended.
+
+g.
+A kibibyte is 2^10 bytes = 1024 bytes.
+A kilobyte is 10^3 bytes = 1000 bytes.
+
+h.
+Register 7 is $a3. It is not preserved across a function call.
+
+Problem 2
+
+Add comments to each line:
+
+fun:    addi $t0,$zero,32
+        # Initialize $t0 to 32.
+        addi $t1,$zero,0
+        # Initiailze t1 to 0.
+loop:    sub $t0,$t0,4
+        # Begin loop. Decrement t0 by 4.
+        srlv $t2,$a0,$t0
+        # Shift $a0 right by $t0 bits.
+        andi $t2,$t2,15
+        # Apply a bit mask to $t2, of value 0b1111. This an the previous step set $t2 to the $t0/4th digit of a0 in base 16.
+        slti $t3,$t2,10
+        # Set $t3 to 1 if $t2 is less than 10, 0 otherwise.
+        bne  $t3,$zero,addLess
+        # Skip the following line if $t2 is less than 10. (If this is the case, the hex representation needs a number, not a letter.)
+        addi $t2,$t2,7
+        # Increment t2 by 7. Combined with the following step, this takes the ascii code contained in $t2 to a minimum value o the first char, 'A'.
+addLess:addi $t2,$t2,48
+        # Increment $t2 by 48. For digits d < 10, this makes t2 a number. For digits d >= 10, this makes t2 a letter A to F.
+        add  $t4,$a1,$t1
+        # Add $t1 and $a1, placing the result in $t4. Functionaly, construct a pointer to the '$t1'th address offset from $a1, and place it in $t4.
+        sb   $t2,0($t4)
+        # Set the byte addressed at $t4 to the value in $t2 (the char we calculated earlier)
+        beq  $t0,$zero,done
+        # End condition of the loop. If $t0 is equal to 0, break to the end of the loop.
+        addi $t1,$t1,1
+        # Increment $t1 by 1.
+        j loop
+        # Jump back to the beginning of the loop.
+done:   sb   $zero,1($t4)
+        # Set the last byte to 0. This places a null terminator at the end of the string. 
+        jr   $ra
+        # Jump back to the return address.
+
+Explain what is in the array as the function returns (1-2 sentences):
+The array in register $a1 is a string that is the hexadecimal representation of the 32-bit integer in register $a0. The function mutates the value in $a1 to reflect the hexdecimal representation, but since $v0 and $v1 are unchanged, it technically does not "return" anything.
+
+
+
+

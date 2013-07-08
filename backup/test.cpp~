@@ -1,24 +1,6 @@
-
-
-using namespace std;
+#include <string>
 #include <iostream>
-#include "lists.h"
-
-ListNode* FromInput (istream &is) {
-	//int k;
-	ListNode* head = 0;
-	while (is >> k) {
-		head = new ListNode (k, head);
-	}
-	return head;
+int main(){
+  string s = "asdf";
+  cout << s;
 }
-
-int main () {
-	ListNode* list = FromInput (cin);
-	list->Print ();
-	if (list) {
-		delete list;
-	}
-	return 0;
-}
-

@@ -1,0 +1,108 @@
+=========
+MOAR MIPS
+=========
+
+Inequalities in MIPS
+====================
+  Set on Less Than (slt)
+	slt dst, src1, src2
+	Sets dst if src1<src2
+
+  If less than example:
+	slt $t0, $s0, $s1
+	bne $t0, $0, then
+	  #do else shit here
+	  j end
+	then:
+	  #do shit here
+	end:
+
+  Three variants of slt:
+	sltu: unsigned comparison
+	slti: compare against constant
+	sltiu: unsigned comparison againt constant
+
+  Signed and unsigned changes: 
+  bit extension
+	lb blu
+  no overflow detection
+	add addi addu addiu subbu multu divu
+  Comparison
+
+Assembler Pseudo-Instructions
+=============================
+  Load Address(la)
+	la dst label
+	Loads address of specified label into dst
+  Load immediate(li)
+	li dst immmediate
+	Load immediate  into dst
+  Problem: when breaking up a pseudo instruction,  the assembler may need touse an extra register
+	If it uses a regular register, it'll overite whatever the program has put into it.
+  TAL: True assembly language
+  MAL: MIPS assembly language
+  Every MAL instructions become one or more TAL instruction
+  Solution: Reserve a register $1, or $at.
+
+Functions
+=========
+  Registers are way faster than emmory, so use them whenever possible
+  $a0-$a3: 4 argument registers to pass parameters
+  $v0-$v1: two avlue registers to return values
+  $ra: return address registers saves where a functionw as called from.
+
+  Jump and Link (jal)
+	-jal label
+	-Saves the location of following instrution in register $ra and then jumps to label
+	-Used to invoke a function
+
+  Jump Register(jr)
+	-jr src
+	-Unconditional jump to the address specified in src (almost always used with $ra)
+	-Used to return from a function
+
+Instruction Addresses
+=====================
+  jal puts addressses of instructions into $ra
+  instructions are stored as data in memory!
+  Recall: code section
+  More on this next lecture
+  In MIPS, all instructions are 4 bytes long.
+
+Program Counter
+===============
+  The PC is a special register tat holds the address of currrent instruction being executed This register is not accessible to the programmer, but is accessible to jal
+  jal store PC+4 to $ra
+
+Function Call Example
+=====================
+  sum: add $v0, $a0, $a1
+  jr $ra
+
+Saving and Restoring Registers
+==============================
+  Limited number of registers
+  What happens if functioncalls another function? $ra would get overritten!
+  Where should we save registers? The Stack!
+  $sp (stack pointer) register contains pointer to current bottom (last used space) of stack.
+
+Function calling conventions
+============================
+  Register Conventions
+  --------------------
+	Saved Registers
+	  These registers are expected to be the same before and after a function call. If these registers are used, they must be restored after.
+	  $s0-$s7
+	  $sp
+	Volatile Registers
+	  These registers may be freely changed by te callE.
+	  If calleR needs them, it must save those values before making a procedure call.
+	  $t1-$t0
+	  $v0-$v1
+	  $a0-$a3
+	CalleR must save volitile registers before destroying them
+	CallE must save saved registers before destroying them
+  Choosing Registers
+  ------------------
+	Use t0-9 and there's nothing to save.
+	put values you need in s0-s7 and others go in t0-t1

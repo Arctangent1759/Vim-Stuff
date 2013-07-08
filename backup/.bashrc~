@@ -118,9 +118,14 @@ export PATH=$PATH:/opt/adt-bundle-linux-x86_64/sdk/platform-tools:/opt/adt-bundl
 alias android-connect="mtpfs -o allow_other /media/Nexus7/"
 alias android-disconnect="fusermount -u /media/Nexus7/"
 
-alias cs70lon="ssh -X cs70-kd@star.cs.berkeley.edu"
-alias fcs70lon="ssh -X cs70-kd@hive4.cs.berkeley.edu"
-alias cs9flon="ssh -X cs9b-bg@star.cs.berkeley.edu"
-alias fs9flon="ssh -X cs9b-bg@hive4.cs.berkeley.edu"
-alias cs61blon="ssh -X cs61b-ga@star.cs.berkeley.edu"
-alias fcs61blon="ssh -X cs61b-ga@hive4.cs.berkeley.edu"
+#alias cs9flon="ssh -X cs9b-bg@star.cs.berkeley.edu"
+#alias fs9flon="ssh -X cs9b-bg@hive4.cs.berkeley.edu"
+alias cs61clon="ssh -X cs61c-hp@hive6.cs.berkeley.edu"
+alias fcs61clon="ssh -X cs61c-hp@hive6.cs.berkeley.edu"
+alias giblon="ssh -X gib@ssh.ocf.berkeley.edu"
+alias ocflon="ssh -X alchu@ssh.ocf.berkeley.edu"
+
+[[ -s /etc/profile.d/autojump.sh ]] && . /etc/profile.d/autojump.sh
+
+PATH+=:~/.vim/runFiles
+alias mars=/opt/mars/Mars4_3.jar

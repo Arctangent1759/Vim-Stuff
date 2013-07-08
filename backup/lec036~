@@ -1,0 +1,88 @@
+The Java Virtual Machine (JVM) that rus your program uses hidden data structures to manage memory.
+
+Roots and Reachability
+======================
+  Roots and Reachability
+  ----------------------
+    An object your program might use again is live.
+    Opposite is garbage-objects your program cannot reference.
+
+    Root: any reference your program can acces directly:
+
+    There are two kinds of root:
+      -Local variables on stack
+      -Class (static) variable references on the heap
+
+    An object is live if
+      -It is referenced by a root
+      -It is referenced by a field in another object
+
+    To identify all live objects, rn DFS from roots.
+
+    Each vertex needs a visited flag.
+
+    Each object has a "visited" tag, invisible to yor program.
+
+  How Memory Works
+  ----------------
+    Memory is an array of bytes with addreses (like data and array indices).
+
+    Declare local variable <-- naming a mmemory location. You pick the name, but Java picks the address.
+
+    Aside:
+      In older programming languages, you could pick the address, and have to remember where your variables are.
+
+    Memory address = pointer
+
+    Image:
+      url:http://imgs.xkcd.com/comics/pointers.png
+      alt:lol
+
+    Java imposes structure on the memory address space.
+
+  Mark and Sweep Garbage Collection
+  ---------------------------------
+
+    2 Phases:
+      1. Mark phase doesa DFS from every root, marks all live objects.
+      2. Sweep phase does a pass over all objects in memory and reclaims the memory.
+
+    JVM data structures keep track of free and allocated memory.
+    This means that garbage collected memory locations are not actually deleted, but rather, marked writeable.
+
+  Compaction
+  ----------
+    A typical program creates objects and kills them, resulting in fragmented memory.
+
+    Fragmentation is the tendancy of your free memroy to be broken into pieces of free memory.
+
+    So you are unable to allocate a large object despite lots of free memory.
+
+    A compacting garbage collector moves objects during sweep phase.
+
+  References
+  ----------
+    In the Sun JVM, a reference is a handle.
+
+    A handle is a pointer to a pointer.
+
+    The second pointers are kept in a special table.
+
+    reference---|
+                |
+    reference---|-->pointer-->object
+                |
+    reference---|
+
+    So however many refernce reference the object, the compacting garbage collector is free to move the actual direct pointer to the object however it wants, keeping all reference up to date.
+
+  Copying Garbage Collection
+  --------------------------
+
+    Faster than mark and sweep because onlyone phase.
+
+    Also does compaction.
+
+    Memorry is divided into 2 spaces, old space and new space
+      -Finds live objects by DFS. and immediately moves live objects into new space.
+      -On next run, swap old and new space and repeat.

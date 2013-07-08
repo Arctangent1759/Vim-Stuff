@@ -10,13 +10,6 @@ set smartindent
 set smarttab
 set tabstop=4
 set shiftwidth=2
-
-""""""""""""""""""""
-"Remove after Proj3"
-set expandtab
-"------------------"
-""""""""""""""""""""
-
 syntax enable
 set background=dark
 set incsearch
@@ -41,4 +34,10 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 set nobackup
+
+"---------------------
+"---Backup Settings---
+"---------------------
+set backup
+set backupdir=~/.vim/backup
 

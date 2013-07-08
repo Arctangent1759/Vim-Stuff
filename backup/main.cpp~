@@ -1,0 +1,257 @@
+//Declare any variables shared between functions here
+
+/////////////////////////////////////////////////
+//        **        Constants        **        //
+/////////////////////////////////////////////////
+
+// Adjust these depending on the physical parameters of the spacecraft. ie, you can't accelerate to [huge number here] over [really small number here]  meters.  
+
+float ORBIT_RADIUS;
+float Z_POSITION;
+float ACCELERATION_DISTANCE;
+float TARGET_VELOCITY;
+float TOLERANCE;
+float MASS;
+
+
+/////////////////////////////////////////////////
+//       **     Global variables     **        //
+/////////////////////////////////////////////////
+
+int state;
+float init_pos[3];
+float init_velocity[3];
+float init_attitude[3];
+float start_circle_pos[3];
+
+///////////////////////////////////////////////////
+//        **        Program Body        **       //
+///////////////////////////////////////////////////
+
+void init(){
+  //Init variables
+
+  ORBIT_RADIUS=2;
+  Z_POSITION=0;
+  ACCELERATION_DISTANCE=2;
+  TARGET_VELOCITY=0.1;
+  TOLERANCE=.01;
+  MASS=1; //TODO: set this to the actual mass of the craft.
+
+  state=1;
+
+  init_pos[0]=-ACCELERATION_DISTANCE;
+  init_pos[1]=ORBIT_RADIUS;
+  init_pos[2]=Z_POSITION;
+
+  init_velocity[0]=TARGET_VELOCITY;
+  init_velocity[1]=0;
+  init_velocity[2]=0;
+
+  init_attitude[0]=0;
+  init_attitude[1]=1;
+  init_attitude[2]=0;
+
+  start_circle_pos[0]=0;
+  start_circle_pos[1]=ORBIT_RADIUS;
+  start_circle_pos[2]=Z_POSITION;
+}
+
+void loop(){
+
+  /**
+  *
+  * We model the sequence of movements (setup and all) as a state machine:
+  *
+  * State 1: Move to position. Move to a point behind the position where orbiting starts.
+  *                                      Allows for space to accelerate to initial velocity.
+  * State 2: Set Attitude. Rotate craft to allow circling.
+  * State 3: Accelerate to initial velocity.
+  * State 4: Begin circling.
+  * State 0/other: An error has occurred. Please wait for the technological singularity before trying again.
+  *
+  */
+
+  //pointless comment
+
+  switch(state){
+	case 1:
+	  //Move towards the initial position.
+	  api.setPositionTarget(init_pos);
+	  if (vectThreshold(getPosition(),init_pos,TOLERANCE)){
+	  //If close enough to initial position, move to next state.
+	  state=3;
+	  DEBUG(("Entering State 3."));
+	  }
+	  break;
+	case 2:
+	  //Move towards the initial attitude.
+	  DEBUG(("The distance between init_pos and position is now %f\n",vectNorm(vectSubtract(init_attitude,getAttitude()))));
+	  api.setAttitudeTarget(init_pos);
+	  if (vectThreshold(getAttitude(),init_attitude,TOLERANCE)){
+	  //If close enough to initial position, move to next state.
+	  state=3;
+	  DEBUG(("Entering State 3."));
+	  }
+	  break;
+	case 3:
+	  //Begin accelerating towrads circle point
+	  api.setVelocityTarget(init_velocity);
+	  if (vectThreshold(getVelocity(),init_velocity,TOLERANCE)
+		&& vectThreshold(getPosition(),start_circle_pos,TOLERANCE)){
+		//When velocity is close enough to orbiting velocity, and we are at the orbiting position, move to next state.
+		state=4;
+		DEBUG(("Entering State 4."));
+	  }else if(getPosition()[0]>start_circle_pos[0]+TOLERANCE){
+		//If we are not at target velocity but are past the circle position, we have a problem. Throw an error and self-destruct.
+		state=0;
+	  }
+	  break;
+	case 4:
+	  //Begin circling.
+	  api.setForces(vectScale(getAttitude(),-MASS*TARGET_VELOCITY*TARGET_VELOCITY/ORBIT_RADIUS));
+	  break;
+	default:
+	  DEBUG(("An error has occured. Please wait for the singularity.\n"));
+  }
+}
+
+////////////////////////////////////////////////////////
+//        **        Get Abstractions        **        //
+////////////////////////////////////////////////////////
+
+float out[3];
+
+/**
+* Private function. TOUCH THIS AND DIE. >_<
+* An abstraction within an abstraction. Abstractionception.
+*/
+
+float* _getThing(int s){
+  float state[12];
+  api.getMyZRState(state);
+  for (int i = 0; i < 3; i++){
+	out[i]=state[i+s];
+  }
+  return out;
+}
+
+/**
+* Returns the position of the spacecraft.
+* @returns the spacecraft position.
+*/
+float* getPosition(){
+  return _getThing(0);
+}
+
+/**
+* Returns the velocity of the spacecraft.
+* @returns the spacecraft velocity.
+*/
+float* getVelocity(){
+  return _getThing(3);
+}
+
+
+/**
+* Returns the attitude of the spacecraft.
+* @returns the spacecraft attitude.
+*/
+float* getAttitude(){
+  return _getThing(6);
+}
+
+/**
+* Returns the rate of the spacecraft.
+* @returns the spacecraft attitude.
+*/
+float* getRate(){
+  return _getThing(9);
+}
+
+
+///////////////////////////////////////////////////////////
+//        **        Vector Abstractions        **        //
+///////////////////////////////////////////////////////////
+
+/**
+* Returns whether two vectors v1 and v2 are equal.
+* @param v1 is the first vector.
+* @param v2 is the second vector.
+* @return whether v1 and v2 are equal.
+*/
+bool vectEquals(float* v1, float* v2){
+  return (v1[0]==v2[0] && v1[1]==v2[1] && v1[2]==v2[2]);
+}
+
+/**
+* Returns whether two vectors v1 and v2 are equal within a threshold.
+* @param v1 is the first vector.
+* @param v2 is the second vector.
+* @param threshold is the threshold
+* @return whether v1 and v2 are equal within the threshold.
+*/
+bool vectThreshold(float* v1, float* v2, float threshold){
+  return vectNorm(vectSubtract(v1,v2))<=threshold;
+}
+
+
+/**
+* Returns the difference of two vectors.
+* @param v1 is the first vector.
+* @param v2 is the second vector.
+* @return v1-v2.
+*/
+float outsub[3];
+
+float* vectSubtract(float* v1, float* v2){
+  outsub[0]=v1[0]-v2[0];
+  outsub[1]=v1[1]-v2[1];
+  outsub[2]=v1[2]-v2[2];
+  return outsub;
+}
+
+
+/**
+* Scales vector v by c.
+* @param v is the vector.
+* @param c is a scalar.
+* @return the scaled vector.
+*/
+float outscale[3];
+
+float* vectScale(float v[3], float c){
+  outscale[0]=c*v[0];
+  outscale[1]=c*v[1];
+  outscale[2]=c*v[2];
+  return outscale;       
+}
+
+/**
+* Finds the magnitude of a vector
+* @param v is the vector.
+* @return the magnitude of the vector.
+*/
+float vectNorm(float* v){
+  return sqrt(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]);
+}
+/**
+ *
+ * They may fight against 
+ * greatness in us who are 
+ * the children of men, 
+ * but can they conquer? 
+ * Even if they should 
+ * destroy us every one, 
+ * what then? Would it save 
+ * them? No! For greatness 
+ * is abroad, not only in 
+ * us, not only in the Food, 
+ * but in the purpose of 
+ * all things! It is in the 
+ * nature of all things, it 
+ * is part of space and time.
+ *
+ * 				--H.G. Wells
+ *
+ */

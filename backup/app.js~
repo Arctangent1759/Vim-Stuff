@@ -1,0 +1,15 @@
+var fs = require('fs');
+var http = require('http');
+var io = require('socket.io');
+
+var server = http.createServer(function(request,response){
+  response.writeHead(200,{'Content-type':'text/html'});
+  response.end(fs.readFileSync(__dirname+'/index.html'));
+}).listen(1515,function(){console.log("Listening at http://localhost:1515")});
+
+io.listen(server).on('connection',function(socket){
+  socket.on('message',function(msg){
+	console.log('Message recieved: ' + msg);
+	socket.broadcast.emit('message',msg);
+  }
+}

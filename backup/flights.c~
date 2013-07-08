@@ -1,0 +1,273 @@
+/* 
+ * CS61C Summer 2013
+ * Name: Alexander Chu
+ * Login: cs61c-hp
+*/
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include "flights.h"
+#include "timeHM.h"
+
+/********************************
+ * General Helpers
+ ********************************/
+bool stringEquals (char* c1, char* c2){
+  while (*c1 && *c2) if (*c1++ != *c2++) return 0;
+  return (*c1==*c2);
+}
+
+/********************************
+ * Linked List implementation
+ ********************************/
+
+/*
+ * Data node that contains all information on a single flight.
+ */
+typedef struct flightNode{
+  struct flightNode *next;
+  airport_t *destination;
+  timeHM_t arrival;
+  timeHM_t departure;
+  int cost;
+} flightNode;
+
+/*
+ *
+ * Allocates memory for and initializes a flightNode
+ * This function reduces the potential number of repeated calls to malloc, and does error checking as well.
+ *
+ */
+flightNode *newFlight(airport_t *destination, timeHM_t arrival, timeHM_t departure, int cost){
+  flightNode *out = (flightNode*)malloc(sizeof(flightNode));
+  if (!out) return NULL; /* Memory allocation failed! Return NULL to notify the calling stack frame. */
+  out->next=NULL;
+  out->destination=destination;
+  out->arrival=arrival;
+  out->departure=departure;
+  out->cost=cost;
+  return out;
+}
+
+/*
+ * Recursively frees the memory in a flightList
+ */
+void freeFlight(flightNode *f){
+  if (!f) return;
+  if (f->next) freeFlight(f->next);
+  free(f);
+  /* 
+   *
+   * If possible, free f and all its desendents. 
+   * Do NOT free f's destination, as this will 
+   * cause it to be freed twice.
+   *
+   */
+}
+
+
+
+/*
+ * Flight system
+ */
+
+struct flightSys {
+  airport_t *root; /* Head of the airport list */
+  airport_t *tail; /* Keeps track of the end of the airport list. */
+};
+
+struct airport {
+  char* name;
+  flightNode *flightRoot;
+  flightNode *flightTail;
+  airport_t *next;
+  bool visited;
+};
+
+/*
+ *
+ * Allocates memory for and initializes an airport
+ * This function reduces the potential number of repeated calls to malloc, and does error checking as well.
+ *
+ */
+airport_t *newAirport(char* name){
+  airport_t *out = (airport_t*)malloc(sizeof(airport_t));
+  if (!out) return NULL; /* Memory allocation failed! Return NULL to notify the calling stack frame. */
+  out->next=NULL;
+  out->name=name;
+  out->flightRoot=NULL;
+  out->flightTail=NULL;
+  out->visited=false;
+  return out;
+}
+
+/*
+ * Recursively frees the memory in a flightList
+ */
+void freeAirport(airport_t *a){
+  if (!a) return;
+  if (a->next) freeAirport(a->next);
+  freeFlight(a->flightRoot);
+  free(a->name);
+  free(a);
+}
+/*
+   This should be called if memory allocation failed.
+ */
+static void allocation_failed() {
+    fprintf(stderr, "Out of memory.\n");
+    exit(EXIT_FAILURE);
+}
+
+
+/*
+   Creates and initializes a flight system, which stores the flight schedules of several airports.
+   Returns a pointer to the system created.
+ */
+flightSys_t* createSystem() {
+	flightSys_t *s = (flightSys_t*)malloc(sizeof(flightSys_t));
+	if (!s){
+	  allocation_failed();
+	}
+	s->root=NULL;
+	s->tail=NULL;
+	return s;
+}
+
+
+/*
+   Frees all memory associated with this system; that's all memory you dynamically allocated in your code.
+ */
+void deleteSystem(flightSys_t* s) {
+  freeAirport(s->root); /* Frees the root of the airport list, which should free all other allocated memory. */
+  free(s);
+}
+
+
+/*
+   Adds a airport with the given name to the system. You must copy the string and store it.
+   Do not store "name" (the pointer) as the contents it point to may change.
+ */
+void addAirport(flightSys_t* s, char* name) {
+
+  /* Copy the name into a temporary variable */
+  char *namecpy = (char*)malloc(sizeof(char)*(strlen(name)+1)); /* Create container for string copy. Add one to account for the 'Null Terminator'. Which, along with 'Running Time' and 'Django (the web framework) Unchained', make for great CS-related movie titles. */
+  char *tmp = namecpy;
+  while ((*tmp++=*name++)); /*Copy the string*/
+  
+  /* Add the airport. */
+  if (!s->tail){ 
+	/* An airport has never been added to the flightSys. */
+	if (!(s->tail=s->root=newAirport(namecpy))) allocation_failed();
+  }else{
+	/* An airport has been added to flightSys. Append the new fella to the end. */
+	if (!(s->tail->next=newAirport(namecpy))) allocation_failed();
+	s->tail=s->tail->next;
+  }
+}
+
+
+/*
+   Returns a pointer to the airport with the given name.
+   If the airport doesn't exist, return NULL.
+ */
+airport_t* getAirport(flightSys_t* s, char* name) {
+  airport_t* ptr = s->root;
+  while (ptr){
+	if (stringEquals(ptr->name,name)) return ptr;
+	ptr=ptr->next;
+  }
+  return NULL;
+}
+
+
+/*
+   Print each airport name in the order they were added through addAirport, one on each line.
+   Make sure to end with a new line. You should compare your output with the correct output
+   in flights.out to make sure your formatting is correct.
+ */
+void printAirports(flightSys_t* s) {
+  airport_t* ptr = s->root;
+  while (ptr){
+	printf("%s\n",ptr->name);
+	ptr=ptr->next;
+  };
+}
+
+
+/*
+   Adds a flight to src's schedule, stating a flight will leave to dst at departure time and arrive at arrival time.
+ */
+void addFlight(airport_t* src, airport_t* dst, timeHM_t* departure, timeHM_t* arrival, int cost) {
+  if (!src || !dst || !departure || !arrival) return;
+  if (!src->flightTail){
+	/* Airport currently has no scheduled flights. Create first node in list and init tail and root. */
+	if (!(src->flightTail=src->flightRoot=newFlight(dst, *arrival, *departure, cost))) allocation_failed();
+  }else{
+	/* Airport currently has flights. Append new flight to list. */
+	if (!(src->flightTail->next=newFlight(dst, *arrival, *departure, cost))) allocation_failed();
+	src->flightTail=src->flightTail->next;
+  }
+}
+
+
+/*
+   Prints the schedule of flights of the given airport.
+
+   Prints the airport name on the first line, then prints a schedule entry on each 
+   line that follows, with the format: "destination_name departure_time arrival_time $cost_of_flight".
+
+   You should use printTime (look in timeHM.h) to print times, and the order should be the same as 
+   the order they were added in through addFlight. Make sure to end with a new line.
+   You should compare your output with the correct output in flights.out to make sure your formatting is correct.
+ */
+void printSchedule(airport_t* s) {
+  printf("%s\n",s->name); /* Print the airport name. */
+  flightNode *ptr = s->flightRoot;
+  /* Print ALL the flights! */
+  while (ptr){
+	printf("%s ",ptr->destination->name);
+	printTime(&ptr->departure);
+	printf(" ");
+	printTime(&ptr->arrival);
+	printf(" ");
+	printf("$%d\n",ptr->cost);
+	ptr=ptr->next;
+  };
+
+}
+
+
+/*
+   Given a src and dst airport, and the time now, finds the next flight to take based on the following rules:
+   1) Finds the cheapest flight from src to dst that departs after now.
+   2) If there are multiple cheapest flights, take the one that arrives the earliest.
+
+   If a flight is found, you should store the flight's departure time, arrival time, and cost in departure, arrival, 
+   and cost params and return true. Otherwise, return false. 
+
+   Please use the function isAfter() from time.h when comparing two timeHM_t objects.
+ */
+bool getNextFlight(airport_t* src, airport_t* dst, timeHM_t* now, timeHM_t* departure, timeHM_t* arrival, int* cost) {
+  flightNode *ptr = src->flightRoot;
+  flightNode *best = NULL;
+  while (ptr){
+	if (ptr->destination==dst && isAfter(&ptr->departure,now)){
+	  if (!best){
+		best=ptr;
+	  }else{
+		if (ptr->cost < best->cost || (ptr->cost == best->cost && isAfter(&best->arrival,&ptr->arrival))){
+		  best=ptr;
+		}
+	  }
+	}
+	ptr=ptr->next;
+  }
+  if (best){
+	*departure=best->departure;
+	*arrival=best->arrival;
+	*cost=best->cost;;
+  }
+  return best;
+}

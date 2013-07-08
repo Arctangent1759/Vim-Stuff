@@ -1,0 +1,168 @@
+======
+MOAR C
+======
+
+
+Administrivia
+=============
+  HW1 Sunday night
+  Lab 2 tomorrow
+  Lab3 (big lab) next tue)
+  HW2 released fri, due next wednsday
+  Suggested plan of attack
+	HW1 by Sat ight
+	1st half of lab3 sun, start hw2
+	Do 2nd half of lab 3 tuesday, finish hw2 by wed
+
+
+Struct Clarification
+====================
+  struct name{
+	/* fields */
+  }
+
+  Does not declare a variable. Variable type is "struct name".
+
+  Joint struct and typedef removes the need to add the word 'struct' before 'name'
+
+
+Assignment vs. Equailty
+=======================
+  a=b  is assignment
+  a==b is equality
+  To prevent mix-up, do:
+  if (3==a)
+  because
+  if (3=a)
+  will crash
+
+Operator Precedence
+===================
+  Use parentheses to manipualte
+
+  Equality test binds more tightly than logic
+  x&1==0 means x&(1==0) instead of (x&1)==0
+
+  *p++ means you get the value at address pointed to by p, then increment p
+  *--p means decrement p to point to the previous data item then use the value
+   
+  Aside: 
+	p++ returns p, while ++p returns p+1
+
+Arrays
+======
+  Fixed size
+  Even though you can't change the size of an array, an array does not know its size.
+
+  Array size n: access entires 0 to n-1
+
+  Use separate variable for declaration and bound
+  int i, ar[10];
+  for (i = 0; i<10; i++){
+  }
+  Or better yet, use #define
+
+  Arrays are almost identical to pointers
+  char *string and char string[] are nearly identical declarations
+  Differ in ways like initialization, size of, etc
+  An array variable is a poniter to the first element
+  ar[0] same as *ar
+  ar[2] same as *(ar+2)
+
+  To zero an array, the following 3 are equivalent:
+	for (i=0; i<SIZE; i++) ar[i]=0;
+	for (i=0; i<SIZE; i++) *(ar+i)=0;
+	for (p=ar; p<ar+SIZE; p++) *p=0;
+
+  These use pointer arithmetic!
+
+  Arrays are stored differently than pointers.
+  An array name is not actually a variable.
+
+  Declared arrays only allocated while scope is valid.
+  char *foo(){
+	char string[32];
+	return string
+  }
+  BAD!
+
+  An array is passed by reference. Which is why array size gets lost when passed to a function.
+
+  \_p[0] means *(p+0)!\_
+
+Strings
+=======
+  String in C is just an array of charactes
+  char string[] = "abc";
+  How do you tell how long a string is?
+  Last character is followed by a 0 byte ('\0')
+  (a.k.a. "null terminator")
+  code:
+	int strlen(char s[]){
+	  int (n = 0);
+	  while (s[n]) n++;
+	  return n;
+	}
+
+  String standard functions
+  -------------------------
+	int strlen(char *string);
+	  returns the length of the string, not inculding null term
+	int strcmp(char *str1, char *str2);
+	  Return 0 if str1 and str2 are identical (how is this different from str1==str2?)
+	void strcpy(char *str1, char *str2);
+	  Copies str2 into str1
+
+MOAR POINTERZ
+=============
+  pointer+ or - number
+  Increments pointer by number
+  How much increment takes place depends on datatype.
+  int* i;
+  char* c;
+  i++ --> +32
+  c++ --> +8
+  
+  In general, ptr + inc increments by inc*dataSize
+
+  Valid Pointer Arithmetic:
+	-Add int to pointer
+	-Subtract 2 pointers
+	-Compare pointers
+	-Compare pointer to NULL
+
+  Pointers and Allocation
+  -----------------------
+	When you declare a pointer, it points to garbage, and will probably cause an error.
+	Option 1: Point to something that already exists
+	Option 2: Allocate new memory (next lecture)
+
+  Pointers to Structures
+  ----------------------
+	struct Point{
+	  int x;
+	  int y;
+	  struct Point *p;
+	}
+
+	Point pt1;
+	Point pt2;
+	Point *ptaddr;
+
+	Valid operators:
+	----------------
+	  /*Get*/
+	  int x = pt1.x;
+
+	  /*Dereference and then get*/
+	  int h = ptradr->x;
+	
+	Pointers to Pointers
+	--------------------
+	  Pointer to a pointer, declared as **h
+
+	  void IncrementPtr(int **h){
+		*h=*h+1;
+	  }
+
+

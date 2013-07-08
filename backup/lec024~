@@ -1,75 +1,29 @@
-Priority Queues
-===============
-	Entries: Key and associated value.
-	Define total order on the keys.
+Sparsity
+========
+  Do compression to exploit sparsity.
 
-	Operations:
-		-insert() adds entry to priority queue.
-		-min() returns entry with minimum key
-		-removeMin() removes and returns minimum key
-	
-	Plaintext:
-		---------					  ---------				   ---------
-		|4: womp|					  |4: womp|				   |	   |
-		|7:	gong|--insert(5,"hoot")-->|7: gong|--removeMin()-->|7: gong|--min()-->(5,"hoot")
-		---------					  |5: hoot|		|		   |5: hoot|
-									  ---------		|		   ---------
-									  				v
-												(4,"womp")
-	
-	Commonly associated with "event queues" in simulations.
-	Key is time the event takes place.
+  Collection-->Compression is inefficient. WWhy not just collect compressed data?
+  
+  Compressed Sensing
+  ------------------
+    If you throw away 66% of the samples of a waveform, you can still reconstruct the full signal with compressed sensing.
+    Allows you to sample below the nyquist frequency
 
-	Binary Heaps
-	------------
-		An implementation of Priority Queues
-		
-		\*Complete Binary Tree\*: every row is full, except the bottom row, which is filled in from left to right
+    Why?
+    ----
+      Our signals are finite.
+      x(n)=\sum X_k e^(ikwn)
+      w=2\pi/p
+      x(n)=1/p \sum_(k=0)^(p-1) X_k e^(ikwn)
 
-		Tree:
-						2
-				5				3
-			9		6		11		4
+      x=[x(0),x(1),...,x(p-1)]
+      X=[X_0,X_1,...,X_(p-1)]
+      x=AX
+      A_(nk)=1/p e^(ikwn)
 
-		\*Binary Heap\* A complete binary tree whose entries satisfy the \*heap-order property\*: No child has a key less than its parent's key
-		
-		Every subtree of a binary heap is a binary heap.
+      SOME OF THE FREQUENCY COMPONENTS BELOW NYQUIST ARE ZERO!!
+      This means that signals are sparse. 
 
-		To story as array, map tree nodes to aray indices to array indices with \*level numbering\*: level order traversal with root at index 1
-		
-		Faster to manipulate array than to manipulate tree
+      Since some components are zero, can sample below nyquist
 
-		Node i's children are 2i and 2i+1. Parent is floor(i/2)
-
-		Use 2 arrays for key/value or one array of entry objects.
-	
-		Binary Heap Methods
-		-------------------
-			1. Entry min()
-				Return entry at root
-			2. Entry insert(Object k, Object v)
-				Let x be new entry(k,v).
-				Place x in bottom level of tree, at first spot from left.
-				Problem is--tree might now break heap-order property.
-				Bubble x up the stack until property is satisfied
-					-Compare x's key with its parent's key
-					-If x's key is less, exchange x with parent;
-						-Repeat with x's new parent
-			3. Entry removeMin()
-				Remove entry at root; save for return value
-				Remove entry at root; save for return value.
-				Fill hole with last entry in tree, x.
-				Bubble xdown the heap:
-					-while x > one or both children
-						-swap x with its minimum child; repeat;
-
-		Running Times
-		-------------
-			Which data structure is faster?
-			
-			Table:
-									|	min()	|			insert()			|			removeMin()
-				---------------------------------------------------------------------------------------------
-				Binary Heap 		|Theta(1)	|	Theta(1) to Theta(log(n))	|	Theta(1) to Theta(log(n))
-				Sorted List/Array	|Theta(1)	|Theta(1) to Theta(n)			|			Theta(1)
-				Unsorted List/Array	|Theta(n)	|			Theta(1)			|			Theta(n)
+      TODO: Take EE127

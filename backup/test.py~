@@ -1,1 +1,24 @@
-print "Hello world!"
+from pylab import *;
+
+def probWander(nmax,p,a):
+  n=arange(1,nmax,1);
+  chernoff=((e**(p*a))/((a+1)**(p*(a+1))))**n;
+  chebyshev=((p*(1-p))/(a))**2*n**2;
+  z_range=(a-n*p)/(p*(1-p)/(n**.5))
+
+  clt=[]
+  for z in z_range:
+    clt.append(1/((2*pi)**.5)*integral(lambda x:e**((-x**2)/2),-z,z));
+
+  plot(n,chernoff, color='red');
+  plot(n,chebyshev, color='green');
+  plot(n,clt, color='blue');
+  show();
+
+def integral(f,lbound,upbound,dx=.001):
+  total=0;
+  for i in arange(lbound,upbound,dx):
+    total+=f(i)*dx;
+  return total;
+
+probWander(5,.5,.9);

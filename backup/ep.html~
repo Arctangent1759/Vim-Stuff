@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+  </head>
+  <body>
+	<script type="text/javascript">
+		var colors=[
+		  'red',
+		  'orange',
+		  'yellow',
+		  'green',
+		  'blue',
+		  'violet',
+		  'purple',
+		  'black',
+		  'white',
+		];
+		function chColor(c){
+		  document.body.bgColor=c;
+		}
+		function chooseRandom(a){
+		  return a[Math.floor(Math.random()*a.length)];
+		}
+		setInterval(function(){
+			chColor(chooseRandom(colors));
+		},15);
+	</script>
+  </body>
+</html>

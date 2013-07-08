@@ -1,0 +1,227 @@
+\documentclass[11pt]{article}
+\usepackage{enumerate,amsmath,textcomp,amssymb,geometry,graphicx}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{111}  % Your discussion section
+\def\Login{cs70-kd} % Your login
+\def\HW{14} % Homework number
+
+\title{CS70--Spring 2013}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS70--Spring 2013 Homework \HW, \Name, section \Sec}{CS70--Spring 2013 Homework \HW, \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\begin{document}
+	\maketitle
+
+	\textbf{Collaborators:} Robert Chang, Bonnie Xiao, Rohan Chitnis, Chitanya Aluru % Enter your collaborators
+
+	\begin{enumerate}
+		% Have a new \item for each problem
+		% Make sure you have a \newpage after each item
+		\item 
+          \begin{enumerate}[1.]
+            \item 
+              The central limit theorem states that the distribution of any average quantity approaches the normal distribution as the number of samples approaches infinity.
+              Since the distribution specified in this problem is an average, it, too can be approximated by the normal distribution.
+            \item 
+              $n=100$\\
+              $\mu=\frac{1}{6}+\frac{2}{6}+\frac{3}{6}+\frac{4}{6}+\frac{5}{6}+\frac{6}{6}=3.5$\\
+              $\sigma^2=\frac{E(X^2)-E(X)^2}{n}=\frac{35}{1200}=\frac{7}{240}$\\
+              $z=\frac{x-\mu}{\sigma}$\\
+              $p=.9$\\
+              $.9=\frac{1}{\sqrt{2\pi}}\int_{-z}^{z}e^{-\frac{x^2}{2}}dx$\\
+              $.9\sqrt{2\pi}=\int_{-z}^{z}e^{-\frac{x^2}{2}}dx$\\
+              $|z|=1.64$ (Wolfram Alpha)\\
+              $1.64=\frac{x-\mu}{\sigma}$\\
+              $x=\mu+z\sigma=3.78$\\
+              $x=\mu-z\sigma=3.22$\\
+              $\boxed{[3.22,3.78]}$
+            \item 
+              $n=30$\\
+              $\mu=\frac{1}{6}+\frac{2}{6}+\frac{3}{6}+\frac{4}{6}+\frac{5}{6}+\frac{6}{6}=3.5$\\
+              $\sigma^2=\frac{E(X^2)-E(X)^2}{n}=\frac{35}{360}=\frac{7}{72}$\\
+              $z=\frac{x-\mu}{\sigma}=\frac{x-3.5}{\sqrt{\frac{7}{72}}}$\\
+              $z_3==\frac{3-3.5}{\sqrt{\frac{7}{72}}}=-1.603$\\
+              $z_4==\frac{4-3.5}{\sqrt{\frac{7}{72}}}=1.603$\\
+              $p=\frac{1}{\sqrt{2\pi}}\int_{-1.603}^{1.603}e^{-\frac{x^2}{2}}dx=\boxed{0.891}$
+            \item 
+              $\mu=\frac{1}{6}+\frac{2}{6}+\frac{3}{6}+\frac{4}{6}+\frac{5}{6}+\frac{6}{6}=3.5$\\
+              $\sigma^2=\frac{E(X^2)-E(X)^2}{n}=\frac{35}{12n}$\\
+              $z=\frac{x-\mu}{\sigma}=\frac{x-3.5}{\sqrt{\frac{35}{12n}}}$\\
+              $.99=\frac{1}{\sqrt{2\pi}}\int_{-z}^{z}e^{-\frac{x^2}{2}}dx$\\
+              $|z|=2.57583=\frac{x-3.5}{\sqrt{\frac{35}{12n}}}$\\
+              $2.57583=\frac{4-3.5}{\sqrt{\frac{35}{12n}}}$\\
+              $-2.57583=\frac{3-3.5}{\sqrt{\frac{35}{12n}}}$\\
+              $n=77.4\rightarrow \boxed{78}$
+          \end{enumerate}
+		\newpage
+		\item 
+          \begin{enumerate}[1.]
+            \item 
+              $P(X_1=x_1\cdots X_n=x_n)=\prod_{i=1}^{n}P(X_i=x_i)=x_i$, by definition of the distribution of $x_i$
+            \item 
+              $\log_2(\frac{(X_1\cdots X_n)^{\frac{1}{n}}}{p^p(1-p)^{1-p}})$\\
+              $=\log_2((X_1\cdots X_n)^{\frac{1}{n}})-\log(p^p(1-p)^{1-p})$\\
+              $=\frac{1}{n}\log_2((X_1\cdots X_n))-p\log(p)-(1-p)\log(1-p))$\\
+              $=p\log(p)+(1-p)\log(1-p))-p\log(p)-(1-p)\log(1-p))$\\
+              $=0$\\
+            \item 
+              $2^{-n(H(p)+\epsilon)}<P(Y=y)<2^{-n(H(p)-\epsilon)}$\\
+              $ln(2^{-n(H(p)+\epsilon)})<ln(P(Y=y))<ln(2^{-n(H(p)-\epsilon)})$\\
+              $ln(P(Y=y))-ln(2^{-n(H(p)-\epsilon)})=0$\\
+              Substituting H(p), this looks strangely like an intermediate step in 2.
+              This suggests that as $n \rightarrow \infty$, $ln(P(Y=y))-ln(2^{-n(H(p)-\epsilon)})$ approaches 0.
+              Since ethe probability approaches 0, it sweeps through all values as n goes to ifninty.
+              Hence, H goes to infinity.
+            \item 
+              The number of marbles is centered about $\frac{1}{2^{-n(H(p)+\epsilon)}}$
+            \item 
+              With increasing n, the error bounds converge on a single expected value like $e^-x$.
+          \end{enumerate}
+		\newpage
+   		\item 
+          \begin{enumerate}[1.]
+            \item 
+              Arrange the numbers on the coordinate plane (like in the infinity lecture).
+              Traverse the numbers diagonally, shifting the diagonal to the right every time you hit. 
+              The first number traversed maps to 1, the second to 2, et cetera.\\
+              For example, $f(1,1)=1$,$f(1,2)=3$, and $f(3,2)=8$.\\
+              This function can be parameterized arithmetically as:\\
+              $f(x,y)=\frac{(y+x)(y+x-1)}{2}-x+1$
+            \item 
+              $f(x,y)=\frac{(y+x)(y+x-1)}{2}-x+1$
+              is also a onto, and is, thus, a bijection.
+            \item 
+              The arithmetic parameterization is:
+              $f(x,y)=\frac{(y+x)(y+x-1)}{2}-x+1$
+          \end{enumerate}
+		\newpage
+		\item 
+          \begin{enumerate}[1.]
+            \item 
+\begin{verbatim}
+>>> total=0
+>>> for x in range(0,21):
+...     total+=nCr(100,80+x)*(.5)**80*(.5)**20
+Result:5.579544528625976e-10
+\end{verbatim}
+              $P(|X-\mu| \ge k\sigma)\le \frac{1}{k^2}$\\
+              $\sigma=\sqrt{np(1-p)}=5$\\
+              $\mu=np=50$\\
+              $P(|80-50| \ge 5k)\le \frac{1}{k^2}$\\
+              $k=6$\\
+              $P(|X-50| \ge 30)\le \frac{1}{36}$\\
+              $p\le\frac{1}{6}$\\
+              The gap between $\frac{1}{6}$ and $5.57\times10^{-10}$ is quite large.
+            \item 
+              We divide the proof into two cases:\\
+              \begin{enumerate}
+                \item 
+                  $f(0)=f(1)=a$\\
+                  $P(f(X_1)=a,f(X_2)=a)=1=P(X_1=a)P(X_2=a)$\\
+                  $P(f(X_1)=a,f(X_2)=b)=0=P(X_1=a)P(X_2=b), a \neq b$\\
+                  $P(f(X_1)=b,f(X_2)=a)=0=P(X_1=b)P(X_2=a), a \neq b$\\
+                \item 
+                  $f(0) \neq f(1)=a$\\
+                  $f$ is now a one-to-one mapping between $\{0,1\}$ and $\mathbb{R}$\\
+                  So $f$ has an inverse $f^{-1}$.\\
+                  $P(f(X_1)=a,f(X_2)=b)=P(X_1=f^{-1}(a),X_2=f^{-1}(b))$\\
+                  $=P(X_1=f^{-1}(a))P(X_2=f^{-1}(b))=P(f(X_1)=a)P(f(X_2)=b)$\\
+              \end{enumerate}
+              So by case, $f(X_1) and f(X_2)$ are independent.
+            \item 
+              $E(f(X_i))=pf(1)+(1-p)f(0)=\boxed{pe^t+1-p}$
+            \item 
+              $x\le e^{x-1}$
+              $\boxed{E(f(x_i))\le e^{pe^t-p}}$
+            \item 
+              $E(f(X_1)\cdots f(X_n))=E(f(X_1))\cdots E(f(X_n))= E(f(X_i))^n \le e^{npe^t-np}$\\
+              $E(f(X_1)\cdots f(X_n)) \le e^{\mu e^t-\mu}$
+            \item 
+              $Y=e^{tS}$ only takes positive values because exponential functions only asympotically approach 0\\
+              $e^{tS}$ is monotonic increasing with S, so $e^{tS_1}<e^{tS_2}\Leftrightarrow S_1<S_2$\\
+              $S\ge(1+a)\mu \Rightarrow Y\ge e^{t\mu(1+a)}$\\
+              $Pr(S\ge(1+a)\mu) \le \frac{e^{\mu e^t-\mu}}{e^{t\mu(1+a)}}$\\
+              $=e^{\mu e^t - \mu -t\mu-t\mu a}$
+            \item 
+              $\frac{d}{dt}e^{\mu e^t - \mu -t\mu-t\mu a}=0$
+              $(\mu e^t -\mu-\mu a)e^{\mu e^t - \mu -t\mu-t\mu a}=0$
+              $(\mu e^t -\mu-\mu a)=0$
+              $e^t -1-a=0$
+              $t=\boxed{\ln(a+1)}$
+              $Pr(S\ge(1+a)\mu) \le e^{\mu e^t - \mu -t\mu-t\mu a}$\\
+              $Pr(S\ge(1+a)\mu) \le e^{\mu e^{\ln(a+1)} - \mu -\ln(a+1)\mu-\ln(a+1)\mu a}$\\
+              $Pr(S\ge(1+a)\mu) \le e^{\mu(a+1) - \mu -\ln(a+1)\mu-\ln(a+1)\mu a}$\\
+              $Pr(S\ge(1+a)\mu) \le e^{\mu(a+1) - \mu -\ln(a+1)\mu(a+1)}$\\
+            \item 
+              $80=(1+a)\mu$
+              $a=\frac{80}{\mu}-1=\frac{80}{50}-1=\frac{3}{5}$\\
+              $Pr(S\ge80) \le e^{50(\frac{3}{5}+1) - 50 -\ln(\frac{3}{5}+1)(50)(\frac{3}{5}+1)}$\\
+              $Pr(S\ge80) \le \boxed{0.0005003}$, which is a much tighter bound than the one produced by Chebyshev's.\\
+              $Pr(S\ge(1+a)np) \le e^{np(a+1) - np -\ln(a+1)np(a+1)}$\\
+              $Pr(S\ge(1+a)np) \le \frac{e^{np(a+1) - np}}{e^{\ln((a+1)^{np(a+1)})}}$\\
+              $Pr(S\ge(1+a)np) \le (\frac{e^{pa+p - p}}{(a+1)^{p(a+1)}})^n$\\
+              $Pr(S\ge(1+a)np) \le (\frac{e^{pa}}{(a+1)^{p(a+1)}})^n$\\
+              So Chernoff's bound decays exponentialy with n.\\
+              $P(S-\mu\le k)\le \frac{\sigma^2}{k^2}$\\
+              $P(s\le a\mu+\mu)\le \frac{\sigma^2}{a^2\mu^2}$\\
+              $P(s\le (a+1)\mu)\le \frac{\sigma^2}{a^2\mu^2}$\\
+              $P(s\le (a+1)\mu)\le \frac{(np(1-p))^2}{a^2\mu^2}$\\
+              $P(s\le (a+1)\mu)\le \frac{(p(1-p))^2}{a^2\mu^2}n^2$\\
+              So Chebyshev's inequality scales polynomially with n.
+            \item 
+              Red: Chernoff\\
+              Green: Chebyshev\\
+              Blue: CLT\\
+              p=.5, a=.9:\\
+              \includegraphics[width=3in]{plot.png}\\
+              p=.25, a=.5:\\
+              \includegraphics[width=3in]{plot2.png}\\
+          \end{enumerate}
+		\newpage
+		\item 
+          t=10\\
+          \includegraphics[width=3in]{t10.png}\\
+          t=20\\
+          \includegraphics[width=3in]{t20.png}\\
+          t=100\\
+          \includegraphics[width=3in]{t100.png}\\
+   		\newpage
+		\item 
+          \begin{enumerate}[1.]
+            \item 
+              A program of length n in bytecode can be represented by a binary string of length n. 
+              That is, every program maps to a binary natural number.
+              In other words, every binary natural number can be run as a program, and every program can be represented as a binary natural number.
+              The set of binary nautral numbers are related to programs by a bijection. Hence, the two sets are of the same cardinality.
+              Since the set of natural numbers is countably infinite, and, by the above logic, programs are on the same cardinality as the nautral numbers, the set of all programs is countably infinite.\\\\
+              A is a subset of the set of all programs. Hence, we know that A is not uncountably infinite.
+              We now prove that A is infinite.
+              Suppose for contradiction that A the set of halting programs is finite.
+              Then, the set of all programs that print an integer (programs of the form "print(x)", where x is some integer) is finite.
+              But this implies that the set of all integers is finite. This certainly cannot be the case, so by contradiction, A is not finite.
+              Hence, $\boxed{\mbox{A is countably infinite}}$.\\\\
+              B is a subset of the set of all programs. Hence, we know that B is not uncountably infinite.
+              We now prove that B is infinite.
+              Suppose for contradiction that B the set of non-halting programs is finite.
+              Then, the set of all programs that print an integer forever (programs of the form "while (true)\{print(x)\}", where x is some integer) is finite.
+              But this implies that the set of all integers is finite. This certainly cannot be the case, so by contradiction, B is not finite.
+              Hence, $\boxed{\mbox{B is countably infinite}}$.
+            \item
+              Yes. Since programs are just binary strings, each program is representable by an element in the natural numbers.
+              Hence, the set of all natural numbers is onto both A and B.
+          \end{enumerate}
+   		\newpage
+		\item 
+          What is the cardinality of the set of all circles of positive integer radius?\\\\
+          There exists a bijection from the set of natural numbers to the set of circles of positive integer radius; simply take $\pi\times r^2$.
+          Hence, these sets are on the same cardinality.
+          The set of positive integer radius circles is countably infinite.
+   		\newpage
+		\item
+          $ $\\
+          $ $\\
+          \includegraphics[width=200px]{./challenge-accepted.png}
+   	\end{enumerate}
+\end{document}

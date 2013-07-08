@@ -1,0 +1,14 @@
+cd proj1
+make clean
+make
+echo
+echo 'Running Tests...'
+echo '================'
+echo
+echo 'Testing Dissassembly...'
+echo '-----------------------'
+make disasmtest
+echo
+echo 'Testing Memory...'
+echo '-----------------------'
+make heaptest

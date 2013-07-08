@@ -10,13 +10,6 @@ set smartindent
 set smarttab
 set tabstop=4
 set shiftwidth=2
-
-""""""""""""""""""""
-"Remove after Proj3"
-set expandtab
-"------------------"
-""""""""""""""""""""
-
 syntax enable
 set background=dark
 set incsearch

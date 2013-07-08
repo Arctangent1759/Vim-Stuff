@@ -26,6 +26,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 "For teh lolz
 nnoremap <leader><leader><leader>cat :echom '(>^.^<) -- Meow!'<cr>
 nnoremap <leader><leader><leader>kirby :echom "(>'')>"<cr>
+"Tabs
 nnoremap <leader>tn :tabnew<cr>
 nnoremap <leader>tc :tabclose<cr>
 nnoremap <leader>mt :tabmove
@@ -46,12 +47,22 @@ noremap <leader><leAder><leader>e :set wrap!<cr>:setlocal spell!<cr>:set linebre
 nnoremap B ^
 nnoremap E $
 nnoremap <leader>a <c-a>
+nnoremap <leader>f F
+"Clipboard
+nnoremap <c-c> "+yy
+nnoremap <c-v> "+p
+vnoremap <c-c> "+y
+vnoremap <c-v> "+p
 
 "Music Player
-nnoremap <leader><leader><leader><leader>m :execute "vert sview ~/.vim/playlist.txt \| vert resize 30"<cr><c-w>r:call PlayFile()<cr><c-w>h
+nnoremap <leader><leader><leader><leader>m :execute "vert sview ~/.vim/playlist.txt \| vert resize 30"<cr><c-w>r:call PlayFile()<cr>:vert resize 0<cr><c-w>h
+
+"Sublime-like substitution
+nnoremap <leader>sub viwy:%s/\<<c-r>"\>//g<left><left>
 
 "---------------------
 "------Run Maps-------
 "---------------------
 nnoremap <leader>r :execute "!pdflatex " . @% . "; evince " . join(split(@%,"\\.tex")) . ".pdf &"<cr>
-nnoremap <leader><f5> :execute "!javac %;java " . join(split(@%,".java"))<cr>
+"nnoremap <leader><f5> :execute "!javac %;java " . join(split(@%,".java"))<cr>
+nnoremap <leader><f5> :execute "!gcc %; ./a.out;"<cr>
