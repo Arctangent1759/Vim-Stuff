@@ -64,6 +64,12 @@ nnoremap <leader>sub viw"zy:%s/\<<c-r>"\>//g<left><left>
 nnoremap J }
 nnoremap K {
 
+
+"Paren zip
+nnoremap H [{
+nnoremap L ]}
+
+
 "DO ALL THE TABS
 nnoremap <leader>tab mzggvG$='z
 
