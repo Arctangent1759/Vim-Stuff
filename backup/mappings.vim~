@@ -26,7 +26,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 "For teh lolz
 nnoremap <leader><leader><leader>cat :echom '(>^.^<) -- Meow!'<cr>
 nnoremap <leader><leader><leader>kirby :echom "(>'')>"<cr>
-"Tabs
+"Tabs (The navigationy kind)
 nnoremap <leader>tn :tabnew<cr>
 nnoremap <leader>tc :tabclose<cr>
 nnoremap <leader>mt :tabmove
@@ -59,6 +59,13 @@ nnoremap <leader><leader><leader><leader>m :execute "vert sview ~/.vim/playlist.
 
 "Sublime-like substitution
 nnoremap <leader>sub viwy:%s/\<<c-r>"\>//g<left><left>
+
+"Gotta go fast
+nnoremap J }
+nnoremap K {
+
+"DO ALL THE TABS
+nnoremap <leader>tab mzggvG$='z
 
 "---------------------
 "------Run Maps-------
