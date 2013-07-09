@@ -58,7 +58,7 @@ vnoremap <c-v> "+p
 nnoremap <leader><leader><leader><leader>m :execute "vert sview ~/.vim/playlist.txt \| vert resize 30"<cr><c-w>r:call PlayFile()<cr>:vert resize 0<cr><c-w>h
 
 "Sublime-like substitution
-nnoremap <leader>sub viwy:%s/\<<c-r>"\>//g<left><left>
+nnoremap <leader>sub viw"zy:%s/\<<c-r>"\>//g<left><left>
 
 "Gotta go fast
 nnoremap J }
