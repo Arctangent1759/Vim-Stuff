@@ -1,0 +1,9 @@
+Figure 1
+V1 1 0 DC TODO
+R1 1 2 3.0k
+R2 2 0 1.0k
+
+.dc V1 1 10 1
+
+.Trans
+.End

@@ -1,0 +1,460 @@
+% Search for all the places that say "PUT SOMETHING HERE".
+
+\documentclass[11pt]{article}
+\usepackage{amsmath,textcomp,amssymb,graphicx}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{107, Yun Park}  % Your GSI's name and discussion section
+\def\Login{cs170-ix} % Your login
+\def\Homework{4}%Number of Homework, PUT SOMETHING HERE
+\def\Session{Fall 2013}
+
+
+\title{CS170--Fall 2013 --- Solutions to Homework 2}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS170--\Session\  Homework \Homework\ \Name, section \Sec}{CS170--\Session\ Homework \Homework\ \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\usepackage[margin=0.25in]{geometry}
+
+\begin{document}
+\maketitle
+\textbf{Collaborators}: Robert Chang, Rohan Chitnis, Jong Ahn, Leo Wu
+\section*{Problem 1}
+\label{pg:end-of-p1}
+\subsection*{Part (a)}
+$Mv=0$ if and only if $u \cdot v=0$ for each $u$, where $u$ is any row in $M$.
+Since each $u$ is independent, we can compute the probability of each $u \cdot v=0$.\\
+For any given $u$, let $X=u \cdot v$.\\
+We must prove that $(P(X=0))^n=0.5$.
+
+\textbf{Base Case:}\\
+For $n=1$:\\
+$P(v=[0])=0.5$\\
+$P(v=[1])=0.5$\\
+$M$ is nonzero, so $u \neq 0$.\\
+$P(X=0) = P(v=[0]) = 0.5$\\
+Hence, for $n=1$, $(P(X=0))^{n}=0.5 \le \frac{1}{2}$
+
+\textbf{Inductive Hypothesis:}\\
+Assume that for matrices of size $n \times n$ and randomized $v$ of length $n$:\\ 
+$(P(X=0))^n\le \frac{1}{2} \Rightarrow P_n(X=0) \le \frac{1}{\sqrt[n]{2}}$
+
+\textbf{Inductive Step:}\\
+Let $P_{n+1}(X=0)$ be the probability that an arbitrary $n+1$ vector $u$ dotted with randomized $n+1$ vector $v$ returns zero.\\
+Let $v_{n+1}$ be the $n+1$th item of $v$. $P(v_{n+1}=0)=0.5$.\\
+As stated before, $P_n(X=0) \le \frac{1}{\sqrt[n]{2}}$ is the probability that said dot product returns zero for $n$ vectors.\\
+$P_{n+1}(X=0)=P_n(X=0) \times P(v_{n+1}=0) \le (\frac{1}{\sqrt[n]{2}})(\frac{1}{2})\le\frac{1}{\sqrt[n+1]{2}}$\\
+Hence, $(P_{n+1}(X=0))^{n+1}\le \frac{1}{2}$\\
+By induction, $P(Mv=0) \le \frac{1}{2}$. $\boxed{QED}$
+
+
+\subsection*{Part (b)}
+if $AB\neq C$, $P(ABv=Cv)=P(ABv-Cv)=P((AB-C)v)$\\
+Let $M=AB-C$.\\
+$P(Mv)\le \frac{1}{2}$\\
+Hence, $P(ABv=Cv) \le \frac{1}{2}$ if $AB\neq C$. $\boxed{QED}$\\
+To evaluate ABv and Cv, we first multiply B by v, and multiply the resulting vector by A. We then compute Cv. This totals up to 3 vector multiplications.
+To multiply a matrix by a vector, it takes $n$ operations to multiply each element in the vector be each element in a row. This must be done for each of the $n$ rows of the matrix.
+Hence, the algorithm runs in $3n^2=\boxed{O(n^2)}$ time.
+
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p1-continuation}}
+\newpage
+
+
+%%Do NOT remove/comment the next line
+\pagestyle{plain}
+%%It makes sure your name appears only on the first page
+\section*{Problem 2}
+$A(x)=1+2x-x^2+3x^3$
+\subsection*{Part (a)}
+$e^{\frac{2\pi}{4}}=e^{\frac{\pi}{2}}$\\
+$x_1=\boxed{1}$\\
+$x_2=e^{\frac{\pi}{2}}=\boxed{i}$\\
+$x_3=e^{\pi}=\boxed{-1}$\\
+$x_4=e^{\frac{3\pi}{2}}=\boxed{-i}$
+
+\subsection*{Part (b)}
+$\boxed{A_e(x)=1-x}$\\
+$\boxed{A_o(x)=2+3x}$
+
+\subsection*{Part (c)}
+$e^{\frac{2\pi}{2}}=e^{\pi}$\\
+$x_1=e^{\pi}=\boxed{-1}$\\
+$x_2=e^{2\pi}=\boxed{1}$\\
+(The $\frac{n}{2}$ roots of unity)
+
+
+\label{pg:end-of-p2}
+
+%Insert solution here
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p2-continuation}}
+
+
+
+\newpage
+
+\section*{Problem 3}
+\subsection*{Part (a)}
+$$\omega^{kn}=1$$
+$$\omega^{kn}-1=0$$
+$$(\omega^k-1)(\omega^{k(n-1)}+\cdots+\omega^k+1)=0$$
+$$\Rightarrow  \omega^k=1 \mbox{ or } \omega^{k(n-1)}+\cdots+\omega^k+1=0 \forall k \in \mathbb{N}$$\\
+$$\sum_{k=0}^{n}A(\omega^k)=(a_0+a_1\omega+a_2\omega^2+\cdots+a_{d}\omega^d)+(a_0+a_1\omega^2+a_2\omega^{2*2}+\cdots+a_{d}\omega^{d^2})+\cdots$$
+$$\sum_{k=0}^{n}A(\omega^k)=na_0+a_1(\omega+\omega^2+\cdots+\omega^n)+a_2(\omega^{2}+\omega^{2*2}+\cdots+\omega^{n*2})+\cdots$$
+$$\sum_{k=0}^{n}A(\omega^k)=na_0$$
+$$\Rightarrow \boxed{A(\omega^i)=na_0-\sum_{k=0,k\neq i}^{n}A(\omega^k)}$$
+To find the missing evaluation, just calculate $na_0$ and subtract the rest of the known values, taking 1 multiplication and n additions, or $O(n)$ time.
+\subsection*{Part (b)}
+Let $C(x)=c_0+c_1x+c_2x^2+\cdots+c_jx^j+\cdots+c_{2d}x^{2d}$
+To find the missing coefficient of C(x), observe that $C(1)=c_0+c_1+c_2+\cdots+c_j+\cdots+c_{2d}$.
+We know all coefficients but $c_i$, and we know $C(1)=C(\omega^0)$ from the fourier transform.
+Hence, this is one equation with one unknown.\\
+To find $c_j$, simply solve for it:\\
+$\boxed{c_j=C(1)-c_0-c_1-\cdots-c_{j-1}-c_{j+1}-\cdots-c_{2d}}$\\
+This take n additions, or $O(n)$ time.
+\label{pg:end-of-p3}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p3-continuation}}
+
+
+
+
+\newpage
+
+\section*{Problem 4}
+
+\subsection*{Part (a)}
+\textbf{Main Idea:}\\
+Check the first m bits of s1 against s2.
+If the number of errors is less than k, return the position of the substring of s1. 
+Otherwise, remove the first bit of s2 and repeat until a match is found.
+If no match is found, return some constant that represents no match found.\\
+\textbf{Pseudocde:}\\
+\begin{verbatim}
+NO_MATCH_FOUND=None
+def match(s1,s2,k,n,m):
+    pos=0
+    while n >= m-k:
+        mismatches=0
+        pos+=1
+        for i in range(m):
+            if i>=m or s1[i]!=s2[i]:
+                mismatches+=1
+            if mismatches <= k:
+                return pos
+        s1=s1 << 1
+        n-=1;
+    return NO_MATCH_FOUND
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+This algorithm checks each substring of s1 in order against s2.
+Suppose there exists some substring S of s1 that has k or fewer mismatches with s2.
+The algorithm will remove bits from s1 until S begins at index 0 of s1, and count the number of times this happens into pos.
+The algorithm then returns pos, giving the position of S.
+If no such S exists, then s1 will be reduced to a string shorter than m-k, and NO MATCH FOUND will be returned.\\
+\textbf{Running Time:}\\
+$O(nm)$\\
+\textbf{Running Time Analysis:}\\
+There are $n$ bits in s1, so there are up to $n$ positions to be explored for matches with $s2$.
+Every time we check a position, we must iterate through all $m$ bits of s2 and compare them against the first $m$ 
+bits of s1.
+Since we compare $2m$ bits for each of the $n$ positions in s1, we execute $nm$ operations.
+\label{pg:end-of-p4}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p4-continuation}}
+
+
+\newpage
+
+\section*{Problem 5}
+\label{pg:end-of-p5}
+
+\subsection*{Part (a)}
+\textbf{Main Idea:}\\
+If the graph is bipartite, then by definition, we can divide the graph into two sets for which no edge exists between two elements of the same set.
+We do this by marking each node as part of either Set 1 or Set 2 in a modified depth first seach.
+Mark each node the opposite of its parent. 
+If a marked node is encountered, it is either the same set as the parent, or different. 
+In the case that the marked node is the same as the parent, the graph cannot be divided into two sets, and is hence, not bipartite.
+If all nodes are marked successfully into two sets, then we have a bipartite graph.\\
+\textbf{Pseudocde:}\\
+We place each vertex in the graph into a doubly linked list.
+Read the first element off the doubly linked list, and mark it as part of $S_1$.
+Begin a modified depth-first search from the first element: \\
+\indent Whenever a node is visited, remove it from the linked list.\\
+\indent For each child node that the current node is attached to,\\
+\indent \indent If the node is unmarked, mark it as the \textbf{opposite} set to the current node, and push to the depth-first search stack.\\
+\indent \indent If the node is in the same set as the current, return False\\
+\indent \indent If the node is in a different set from the current, treat it as visited and ignore it.\\
+\indent Resume depth-first search at next element on stack.
+If the linked list is not empty, resume the depth first search on the first element of the list. (happens if graph not strongly connected)\\
+Return True.\\
+\textbf{Proof of Correctness:}\\
+By definition, in a bipartite graph, no two connected vertices can exist in the same set.
+Hence, a vertex connected to this one through an edge cannot be part of the same set.
+Suppose that a graph is bipartite with sets $A$ and $B$. This means that no edge exists between two vertices of the same set.
+In the algorithm, we mark each vertex connected to a given vertex as the opposite set. 
+Since all edges must go from an element of $A$ to an element of $B$, all elements of $A$ are marked as one set, and all elements of $B$ are marked as the other set.
+Because each vertex can be marked as a member of either set, no conflicts will be encountered during the traversal.
+Hence, the algorithm will return true.
+Likewise, if the graph is not bipartite, then the graph cannot be divided into two sets for which no edges exist between vertices of the same set.
+The algorithm will attempt to mark each node as either Set 1 or Set 2. Since there exists an edge between some two nodes in at least one ofin the hypothetical sets, the algorithm will encounter a marked node with the same set as an adjacent node.
+Hence, the algorithm will return false.\\
+\textbf{Running Time:}\\
+$O(|V|+|E|)$\\
+\textbf{Running Time Analysis:}\\
+To execute a depth-first search, we mark all nodes in the graph as unvisited, taking O(|V|) operations, where V is the number of nodes.
+The stack implementation of the depth-first search ensures that every node in a connected graph is pushed onto the stack.
+We visit each node on the stack one time, mark it as visited, and never visit it again.
+Hence, we visit a total of $O(|V|)$ nodes.
+The total number of operations, hence, is $O(|V|+|E|)$.
+
+
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p5-continuation}}
+
+
+\newpage
+
+
+\section*{Problem 6}
+
+\textbf{Main Idea:}\\
+Suppose edge $e$ connects vertices $A$ and $B$. 
+If a graph contains a cycle containing edge $e$, then if $e$ is removed from the graph, there exists another path from A to B.
+In this algorithm, remove edge $e$, and do a depth-first search on the graph starting from $A$, and return true if $B$ is found, false otherwise.
+\\\\
+\textbf{Pseudocde:}
+\begin{verbatim}
+def findCycle(graph,e):
+    for each node in graph:
+        node.visited=false;
+
+    startNode=e.node1
+    endNode=e.node2
+
+    graph.remove(e)
+
+    nodeStack=Stack()
+    nodeStack.push(startNode)
+
+    while nodeStack is not empty:
+        currNode = nodeStack.pop()
+        if currNode==endNode:
+            return True
+        for edge in currNode.edges:
+            if not edge.destination.visited:
+                stack.push(edge.destination.visited)
+    return False
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+By definition, if an undirected graph contains a cycle between two points, there are at least 2 paths between those two points.
+By definition, a graph traversal like a Depth-First Search visits all nodes in a graph.
+In our specific implementation, we check the if the node on the opposite side of each node is the destination node.
+Hence, if a second path from A to B exists, our algorithm will detect it. 
+An undirected graph contains a cycle involving A and B if and only if there are at least two paths between the points.
+Hence, the algorithm will detect any cycle involving the two points.\\
+\textbf{Running Time:}\\
+$O(|V|+|E|)$\\
+\textbf{Running Time Analysis:}\\
+In the beginning of the algorithm, we mark all nodes in the graph as unvisited, taking O(|V|) operations, where V is the number of nodes.
+The stack implementation of the depth-first search ensures that every node in a connected graph is pushed onto the stack.
+We visit each node on the stack one time, mark it as visited, and never visit it again.
+Hence, we visit a total of $O(|V|)$ nodes.
+The total number of operations, hence, is $O(|V|+|E|)$.
+
+\label{pg:end-of-p6}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p6-continuation}}
+
+
+\newpage
+
+
+%% Comment out the "extra spaces" completely for the problems for you
+%% don't need them
+
+\section*{Extra space for Problem 1}
+\emph{Continued from Page \pageref{pg:end-of-p1}}\\
+
+%Insert solution here
+
+
+\label{pg:p1-continuation}
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 2}
+\emph{Continued from Page \pageref{pg:end-of-p2}}\\
+
+%Insert solution here
+
+\label{pg:p2-continuation}
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 3}
+\emph{Continued from Page \pageref{pg:end-of-p3}}\\
+
+%Insert solution here
+
+\label{pg:p3-continuation}
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\section*{Extra space for Problem 4}
+\emph{Continued from Page \pageref{pg:end-of-p4}}\\
+\label{pg:p4-continuation}
+
+\subsection*{Part (b)}
+\textbf{Main Idea:}\\
+If we represent s1 and s2 as signals $s1[n]$ and $s2[n]$, then the convolution $(s1*s2)[n]$ gives the number of matching ones between s1 and s2 at position $n$.
+Likewise we flip the bits of s1 and s2 to create signals $s1'[n]$ and $s2'[n]$, then the convolution $(s1'*s2')[n]$ gives the number of matching zeroes between s1 and s2 at position $n$.
+The signal $(s1*s2)[n]+(s1'*s2')[n]$ gives the total number of matches at position n.
+We iterate through the values of $(s1*s2)[n]+(s1'*s2')[n]$, and return the first position for which $(s1*s2)[n]+(s1'*s2')[n]\le k$.
+To convolve s1 and s2 quickly, we represent the signals as polynomials with binary coefficients, and use the Fast Fourier Transform to find $2n$ evaluations at the $2n$th roots of unity.
+We multiply the evaluations, and use interpolation with the inverse fft to compute coefficients the convolved polynomial, which also happen to be the convolved signal.
+\\
+\textbf{Pseudocde:}\\
+\begin{verbatim}
+NO_MATCH_FOUND=None
+def match(s1,s2,k,m,n): #fft is the fourier transform
+    s1FFT=fft(make_polynomial_from_bits(s1)) #make_polynomial returns 
+    s2FFT=fft(make_polynomial_from_bits(s2)) #the coefficients of a polynomial 
+                                             #EG: 1011 becomes 1+x^2+x^3=[1,0,1,1]
+    s1FlippedFFT=fft(make_polynomial_from_bits(~s1))
+    s2FlippedFFT=fft(make_polynomial_from_bits(~s2)) #~ is bitwise not.
+
+    oneFFT=[s1FFT[i]*s2FFT[i] for i in range(len(s1FFT))]
+    zeroFFT=[s1FlippedFFT[i]*s2FlippedFFT[i] for i in range(len(s1FlippedFFT))]
+
+    matches = ifft(oneFFT)+ifft(zeroFFT) #ifft is the inverse fourier transform
+
+    for i in range(len(matches)):
+        if matches[i]>m-k:
+            return i - (m-1) #Offset is to account for negative convolution terms
+    return NO_MATCH_FOUND
+\end{verbatim}
+
+\textbf{Proof of Correctness:}\\
+If two binary signals are convolved at position $n$, two matching ones multiply to 1, and any mismatch will involve a zero, and multiply to zero.
+Summing over these values yields the number of one matches at position $n$. 
+By symmetry, flipping the bits and convolving the signals yields the number of zero matches at position $n$.
+In the algorithm, we add the values of both signals, yielding accurately the total number of matches at position $n$.
+We iterate forward through the convolved signal, searching for a position with more than m-k matches.
+The nature of convolution by polynomial multiplication, however, creates $m-1$ extraneous negative terms.
+The algorithm offsets the result by subtracting $m-1$ from the final position, yielding the first position with k or less mismatches.
+
+\textbf{Running Time:}\\
+$O(n\log(n))$\\
+\textbf{Running Time Analysis:}\\
+A single call to match executes 4 Fast Fourier Transforms ($O(n\log(n))$) and 2 Inverse Fourier Transforms $O(n\log(n))$.
+It also iterates through 3 lists ($O(n)$).
+$5n\log(n)+n=\boxed{O(n\log(n))}$
+
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\section*{Extra space for Problem 5}
+\emph{Continued from Page \pageref{pg:end-of-p5}}\\
+\label{pg:p5-continuation}
+
+\subsection*{Part (b)}
+\textbf{Subproof: }bipartite $\Rightarrow$ no cycles of odd length\\
+Suppose for contradiction that there exists a bipartite graph G with a cycle of odd length. G can hence be divided into two sets $A$ and $B$ for which no edge exists between two elements of the same set.
+Let $a_i$ be a vertex in an odd cycle of length $n$ in the graph, where there is an edge between $a_i$ and $a_{(i+1)\%n}$. 
+It follows that $a_i$ and $a_{(i+1)\%n}$ cannot be of the same set.
+If $a_0$ is in $A$, then ${a_{i}|i\in {Evens}}$ is a subset of $A$, and ${a_{i}|i\in {Odds}}$ is a subset of $B$,
+But the number of nodes in the cycle $n$ is odd $\Rightarrow$ $n-1$ is even.
+$a_{n-1} \in A$, but $a_{0} \in A$. By our earlier formulation, there is an edge between $a_{n-1}$, and $a_{0}$.
+But both edges are in $A$. Hence, there exists an edge between two elements of $A$. Contradiction.\\
+Hence, a bipartite graph contains no cycles of odd length, bipartite $\Rightarrow$ no cycles of odd length.\\
+
+\textbf{Subproof: }no cycles of odd length $\Rightarrow$ bipartite\\
+If a graph has no cycles of odd length, it is either has cycles of even length, or no cycles at all.\\\\
+If an undirected graph as no cycles, then it is tree structured. Choose any node $p$ to be the parent. 
+Any node $n \neq p$ is connected to its parent and its children. 
+If $p$ is part of set $A$, then its children must be part of set $B$. The children of those children must be part of set $A$.
+The tree can be partitioned into two sets for which no two elements of the same set are connected if alternating depth levels of the tree are assigned to alternating sets.
+Hence, graphs without cycles are bipartite.\\\\
+If the graph has cycles of even length, then let $a_i$ be a node in any cycle of length $n$, where $n$ is even. $a_i$ has an edge to $a_{(i+1)\%n}$
+For the graph to be bipartite, $a_i$ and $a_{(i+1)\%n}$ cannot be of the same set. 
+We assign ${a_{i}|i\in {Evens}}$ to set $A$ and ${a_{i}|i\in {Odds}}$ to set $B$. This ensures that adjacent elements are not in the same set.
+Since $n$ is even, $n-1$ is odd. There is no conflict between $a_0 \in A$ and $a_{n-1} \in B$. Hence, the graph is bipartite.
+
+Hence, a graph that contains no cycles of odd length is bipartite, no cycles of odd length $\Rightarrow$ bipartite.\\
+
+(bipartite $\Rightarrow$ no cycles of odd length $\wedge$ no cycles of odd length $\Rightarrow$ bipartite)\\ 
+$\Rightarrow$ no cycles of odd length $\Leftrightarrow$ bipartite $\boxed{QED}$
+
+
+
+\subsection*{Part (c)}
+\boxed{\textbf{3 colors.}}
+We remove the extra node $N$ in the odd cycle and all edges connected to it, and join the edges of the two nodes in the cycle that were once connected to $N$.
+Now, the graph has no cycles of odd length; by the property from (b), the graph is now bipartite and 2-colorable.
+Since $N$ is part of the cycle, it had at least two edges.
+Color the graph with two colors. We now reattach $N$ to the graph, and remove the edge between $N$'s sister elements in the cycle.
+Since $N$'s sister elements were connected at the time of coloring, they are opposite colors.
+To add $N$ to the cycle, $N$ must have a different color from both.
+Hence, we add a third color, and have a total color count of 3.
+
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 6}
+\emph{Continued from Page \pageref{pg:end-of-p6}}\\
+
+
+%Insert solution here
+
+
+\label{pg:p6-continuation}
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\end{document}

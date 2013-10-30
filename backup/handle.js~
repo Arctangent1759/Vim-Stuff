@@ -2,7 +2,7 @@ fs=require('fs');
 handle={
 
   //urls
-  '/':function(response){renderText(ext,response,'./assets/html/index.html');},
+  '/':function(response){renderText("html",response,'./assets/html/index.html');},
 
   //Special cases
   'file':function(response,ext,filename){

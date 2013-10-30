@@ -45,9 +45,16 @@ nmap <leader>p <c-p>
 nnoremap <f5> :make<cr>
 noremap <leader><leAder><leader>e :set wrap!<cr>:setlocal spell!<cr>:set linebreak!<cr>
 nnoremap B ^
+vnoremap B ^
+onoremap B ^
 nnoremap E $
+vnoremap E $
+onoremap E $
 nnoremap <leader>a <c-a>
 nnoremap <leader>f F
+"Gundo
+nnoremap <leader>g :GundoToggle<cr>
+let g:gundo_right=1
 "Clipboard
 nnoremap <c-c> "+yy
 nnoremap <c-v> "+p
@@ -58,7 +65,7 @@ vnoremap <c-v> "+p
 nnoremap <leader><leader><leader><leader>m :execute "vert sview ~/.vim/playlist.txt \| vert resize 30"<cr><c-w>r:call PlayFile()<cr>:vert resize 0<cr><c-w>h
 
 "Sublime-like substitution
-nnoremap <leader>sub viwy:%s/\<<c-r>"\>//g<left><left>
+nnoremap <leader>sub viw"zy:%s/\<<c-r>"\>//g<left><left>
 
 "Gotta go fast
 nnoremap J }
@@ -72,6 +79,9 @@ nnoremap L ]}
 
 "DO ALL THE TABS
 nnoremap <leader>tab mzggvG$='z
+
+"OMG EMBEDDED SHELL
+nnoremap ;osh :!tmux split -p 30<cr>
 
 "---------------------
 "------Run Maps-------

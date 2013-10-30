@@ -1,8 +1,18 @@
 from django.db import models
 
 # Create your models here.
+class Sheet(models.Model):
+    title=models.CharField(max_length=100)
+    tags = models.CharField(max_length=500)
 
-class Cat(models.Model):
-  name=models.CharField(max_length=30);
-  sound=models.CharField(max_length=50);
-  birthday=models.DateTimeField("Cat birthday");
+class Equation(models.Model):
+    title = models.CharField(max_length=500)
+    data = models.CharField(max_length=10000)
+    tags = models.CharField(max_length=500)
+    popularity = models.BigIntegerField()
+    isHTML= models.BooleanField()
+    def render(self):
+        if self.isHTML:
+            return "<div>{0}</div>".format(self.data);
+        else:
+            return "<img src='http://tex.sh/${0}$'/>".format(data)

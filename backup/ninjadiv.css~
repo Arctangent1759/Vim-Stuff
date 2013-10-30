@@ -2,10 +2,33 @@
 	block:inline;
 	float:left;
 	position:relative;
+	width:150px;
+	height:150px;
 	padding:10px;
 	margin:10px;
+	opacity:.6;
 }
-.content:hover{
-	opacity:.8;
-	background-color:blue;
+.red{
+	background-color:#BB0000;
+}
+.red:hover{
+	background-color:#FF0000;
+}
+.yellow{
+	background-color:#CCC000;
+}
+.yellow:hover{
+	background-color:#FFF000;
+}
+.green{
+	background-color:#00A000;
+}
+.green:hover{
+	background-color:#00FF00;
+}
+.blue{
+	background-color:#000CAC;
+}
+.blue:hover{
+	background-color:#0015FF;
 }

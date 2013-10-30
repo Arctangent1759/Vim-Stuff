@@ -1,0 +1,35 @@
+THRESHOLD = 3
+
+LEFT_C = 4
+RIGHT_C = 8
+UP_C = 1
+DOWN_C = 2
+SHOOT_C = 16
+
+out=0
+
+my_x=GetVariable("IMAGE_HEIGHT")/2
+my_y=GetVariable("IMAGE_WIDTH")/2
+
+targetX=(targetX+GetVariable("COG_X"))/2
+targetY=(targetY+GetVariable("COG_Y"))/2
+
+'Lateral movement logic
+if my_x-targetX > THRESHOLD then
+  out = out or RIGHT_C
+elseif my_x-targetX < -THRESHOLD then
+  out = out or LEFT_C
+end if
+
+'Vetical movement logic
+if my_y-targetY > THRESHOLD then
+  out = out or UP_C
+elseif my_y-targetY > -THRESHOLD then
+  out = out or DOWN_C
+end if
+
+if my_y-targetY > -THRESHOLD and  my_y-targetY < THRESHOLD  and  my_x-targetX > -THRESHOLD and  my_x-targetX < THRESHOLD then
+  out = SHOOT_C
+end if
+
+

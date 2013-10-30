@@ -1,0 +1,29 @@
+More properties
+===============
+The fourier transform of $h(t)$ is $H(\omega)$
+
+$h(t-\tau) \leftrightarrow e^{j\omega t}H(j\omega)$
+
+$h(t)*x(t) \leftrightarrow H(j\omega)X(j\omega)$
+$\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} (h(t-\tau)x(\tau) d\tau)e^{-j\omega t} dt$
+$=\int_{-\infty}^{\infty} x(\tau) \int_{-\infty}^{\infty} h(t-\tau)e^{-j\omega t} dt d\tau$
+$=X(j\omega)H(j\omega)$
+
+$\frac{dX(t)}{dt} \leftrightarrow j\omega X(j\omega)$
+$-j tx(t) \leftrightarrow \frac{dX(j\omega)}{d\omega}$
+
+$e^{j\omega_0 t}x(t) \leftrightarrow X(j(\omega-\omega_0))$
+
+Amplitude Modulation (AM)
+=========================
+$s(t)$ --> $\boxed{\times cos(\omega_c t)}$ -$r(t)$->  Transmission
+
+$R(t)=\frac{1}{2}(S(j(\omega-\omega_0))+S(j(\omega+\omega_0)))$
+
+Frequency Response of CT LTI Systems
+====================================
+
+$a_0y(t) + a_1y'(t)+\cdots = b_0x(t)+b_1x'(y)+\cdots$
+$\sum_{k=0}^{N} a_k \frac{d^k}{dt^k}y(t)=\sum_{k=0}^{N} b_k \frac{d^k}{dt^k}x(t)$
+$\leftrightarrow \sum_{k=0}^{N} a_k(j\omega)^k Y(j\omega)=\sum_{k=0}^{N} b_k(j\omega)^k X(j\omega)$
+$\frac{Y(\omega)}{X(\omega)}=H(j\omega)=\frac{\sum_{k=0}^{N} a_k(j\omega)^k}{\sum_{k=0}^{N} b_k(j\omega)^k}$

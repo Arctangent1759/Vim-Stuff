@@ -1,0 +1,19 @@
+Figure 2.
+C1 1 0 1u IC=10
+SW1 1 2 3 0 MySwitch
+.model MySwitch SW(Ron=0.0000000001 Roff=1G Vt=0)
+R1 2 0 1k
+
+
+B1 3 0 V=6*u(time - .001)-1
+
+.Trans .005
+
+.MEAS TRAN res1 FIND time WHEN V(1)=(10/e)
+
+.End
+
+* The .MEAS operation produced a result of .0020025s, which is 
+* about .001s, or 1ms, after the switch is closed. This is equal 
+* to the product of the resistance and capacitance: 
+* (1000Ω)*.000001F=.001s=1ms

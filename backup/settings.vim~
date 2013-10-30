@@ -5,11 +5,12 @@ set nocp
 set backspace=indent,eol,start 
 set number
 set nowrap
+set expandtab
 set autoindent
 set smartindent
 set smarttab
 set tabstop=4
-set shiftwidth=2
+set shiftwidth=4
 syntax enable
 set background=dark
 set incsearch
@@ -41,3 +42,10 @@ set nobackup
 set backup
 set backupdir=~/.vim/backup
 
+"---------------------
+"----Undo Settings----
+"---------------------
+set undofile                " Save undo's after file closes
+set undodir=~/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo

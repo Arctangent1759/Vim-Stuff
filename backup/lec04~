@@ -1,180 +1,105 @@
-======
-Memory
-======
+What is Search For?
+===================
 
-C Memory Layout
-===============
-  Program's address space contains 4 regions:
-	Stack: local variables, grows downward
-	Heap: space requested for pointers via malloc; resizes dynamically, grows upward
-	Static Data: global and static variables, does not grow or shrink
-	Code: Lodaded when program starts, does noot change
+Planning and ...
 
-  Declared outside a function:
-	Static Data
+Identification: Assignments to variables
+----------------------------------------
 
-  Declared inside a function:
-	Stack
++ The goal itself is important, not the path.
 
-  Dynamically allocated (malloc):
-	Heap
++ All paths at the same depth (for some formulations)
 
-  The Stack
-  ---------
-	The stack is divided into frames, which are contiguous blocks of memory holding the local variables of a single procedure.
-	Last In, First Out data Structure
++ CSPs are specialized for identification problems
 
-	A stack frame includes:
-	  - Location of caller function
-	  - Function arguments
-	  - Space for local variables
-	
-	Stack variables are DEALLOCATED when their functions exit.
-	(this means it's a \_really stupid idea\_ to return the address of a local variable)
+Constraint Satisfaction Problems
+================================
 
-  Static Data
-  -----------
-	Place for persistnt variables like String literals, global variables
-	Size does not change, but its data can
+Recall Standard Search Problems
+-------------------------------
 
-  Code
-  ----
-	Copy your code goes here
-	Does not change
++ State is a black box, an arbitrary data structure
 
-Dynamic Memory Allocation
-=========================
-  Sometimes you don't know how much memory you need beforehand like input files, user input.
-  Dynamically alocated memory goes on the Heap --- More permanent to the stack
++ Goal test can be function over states
 
-  Allocating Memory
-  -----------------
-	\_Need to #include <stdlib.h> to use any of this stuff.\_
++ Successor function can also be anything
 
-	malloc(), calloc(), and realloc()
+Constraint Satisfaction Problems:
+---------------------------------
 
-	We focus on malloc(), the most frequently used
++ A special subset of search problems
 
-	malloc()
-	--------
-	  malloc():Allocates a continuous block of n bytes of uninitialized memory (contains garbage)
-			   Returns a pointer to the beginning o the allocated block; NULL indicates failed request (check for this!)
++ State is defined by variables X_i with values from a domain D
 
-	  int *p = (int *) malloc(n*sizeof(int));
++ Goal test is a set of constraints specifying allowable combbinations of valeus fo subsets of variables
 
-	  sizeof() makes code more portable
+Simple example of a formal representation language
 
-	  malloc returns void*, typecastt will help you catch code errors when pointer types don't match
+Allows useful general purpose algorithms with more power than standard search algorithms
 
-	  Can use array of poniter syntax to access
+Examples
+--------
 
-	  Make sure you don't lose original address. p++ is a BAD IDEA; use separate pointer
+###Map Coloring
++ Variables: WA, NT, Q, NSW, V, SA, T
++ Domains: D={red,green,blue}
++ Constraints: Adjacent regions must have different colors
+	+ Implicit: $WA \neq NT$
 
-	Release memory on the Heap using free()
+Solutions are sets of colors: {WA:red, NT:green, Q:blue, NSW:red, V:blue, SA:green, T:blue}
 
-	Memory is limited, released when done
+###Example: N-Queens
++ Variables: $Q_{k}$
++ Domains: $\{1,2,3,\cdots,N\}$
++ Constraints
+	+ Implicit: $\forall i,j \mbox{ non-threatening}(Q_i,Q_j)$
 
-	free()
-	------
-	  Pass it a pointer p to beginning of allocated block; releases the whole block
-	  p must be the address originaly returned by m/c/realloc(), otherwise throws system error!
-	
-	Memory Errors
-	-------------
-	  Segmentation Fault
-		"An error in which a running Unix program attemtps to access memory not allocated to it."
+Varieties of CSPs
+-----------------
++Discrete variables
+	+ Finite Domains
+		+ Size D means $O(d^n)$ complete assignments
+		+ Like boolean CSPS
+	+ Infinite Domains
+		+ Job Scheduling, 
+		Move to a complete solution
+		+ Linear constraints solvable,nonlinear 
++Continuous variables
+	+ Start/End times
+	+ Linear Constraints solvable in polynomial time by LP methods
 
-	  Bus Error
-		"Illegal Memory Access"
-	
-	Common Memoy Problems
-	---------------------
-	  Using uninitialized values -- You copy some garbage into the variable. \_Doesn't throw an error, but causes unpredictable results\_
-	  Using memory you don't own -- Dereferencing a NULL is a value, returning a local variable, freeing a struct before freeing its fields, 
-									or not allocting space for the null terminator of a string are examples. Causing a segfault
-	  Using Memory You Haven't Allocated -- Writing beyond array bounds. May or may not throw error depending on what's after the array.
-	  Freeing Invalid Memory -- Freeing stack variables, freeing in the middle o a malloced block, freeing alerady free memory
-	  Memory Leaks -- Reassign pointers without freeing. If you have more mallocs than frees, you probably have a memory leak
+Varieties of Constraints
+------------------------
++ Unary constraints involve a signle variable, like South Austrialia in NOT green.
++ Binary constraints involve pairs of variables, eg South Austrialia is not teh same color of West Austrialia
++ Higher order constraints
 
-	  Runtime analysis tols for finding memory errors. Dynamic analysis tol collects information on memory management while program runs. 
-	  You will be introduced to Valgrind (memory debugging software) in lab 3/hw 2.
-
-	Memory Management
-	-----------------
-	  Many calls to malloc() and free() with man different size blocks-where are they placed?
-	  Want system to be fast with minimal management overhead.
-
-	  Versus automatic garbage collection of Java.
-
-	  Want to avoid fragmentation (which is breaking memory into tiny bits)
-
-	  Diagram:
-		|-----------------|
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|-----------------| (1) malloc(10);
-		|                 |
-		|-----------------| (2) void *x = malloc(100);
-		|                 |
-		|                 |
-		|                 |  <--Fragmentation!
-		|                 |
-		|                 |
-		|-----------------| (3) free(x); malloc(50); /* Assuming First-fit */
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|                 |
-		|-----------------|
-
-	  Simple allocation strategy (K&R 8.7):
-		Each block holds its own size and pointer to next block
-		free() adds block to the list, combines with adjacent free blocks
-		malloc() searches free list for block large enough to meet request
-		If multiple blocks are large enough, use one of following:
-		  Best-fit: Choose smallest block that fits request
-		  First-fit: Choose first blcok that is large enough (always starts from beginning)
-		  Next-fit: Lik first fit, but resume from where we last left off
-
-C Wrap-Up
-=========
-  code:
-	/*Simplify struct with typedef*/
-	typedef struct Node{
-	  char *value;
-	  struct Node *next;
-    } ListNode;
-
-	/*Can further simplify with pointers*/
-	typedef ListNode *List;
-
-	void addNode(String s, List list){
-	  List node = (List)malloc(sizeof(NodeStruct));
-	  s->value = (String) malloc (strlen(s)+1);
-	  strcpy(node->value, s);
-	  node->next = list;
-	  return node;
-	}
-
-	List deleteNode(List list){
-	  List temp = list-->next;
-	  free(list->value);
-	  free(list);
-	  return temp;
-	}
-
-	Thought exercise: How might you:
-	  - Append node to en of a list?
-	  - Deelete/free an entire list?
-	  - Join two lists together?
-	  - Reorder a list alphabetically?
+Solving CSPs
+------------
++ States are partial solutions
+###What would BFS do?
++ BFS tries every single state that doesn't work, since all solutions are at bottom level.
++ So BFS for CSPs really suck.
+###What would DFS do?
++ Change variables until tree bottom.
++ Tries a lot of bad approaches that are obviously wrong.
+###Backtracking
++ Try only solutions that don't violate constraints
++ Go back in recursion/fringe if there's a violation of the constraints in all children
+###Filtering
++ Keep track of domains for unassigned variables but cross off bad options
++ **Forward checking**: Cross off violating options
++ Consistency of a single arc
+	+ An arc X$\rightarrow$Y is consistent iff for every x in the tail there is some y in the head which could be assigned without violating a constraint.
+	+ Forward checking enforces consistency of arcs pointing to each new assignment
+	+ If an arc loses a value, all neighbors need to be rechecked
+	+ Advantages: you prune a lot
+	+ Disadvantages: Expensive
+	+ Algorithm known as AC3, runs on $O(n^2d^3)$
+	+ After enforcing arc consistency, we can have
+		+ One solution left
+		+ Multiple solutions left
+		+ No solutions left (But not know)
+	+Arc consistency still requires some backtracking.
++ Variable Ordering
+	+ Choose the variable with the fewest legal left values in its domain

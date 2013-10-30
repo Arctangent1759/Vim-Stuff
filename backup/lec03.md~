@@ -1,0 +1,36 @@
+$e^{j\theta}=cos(\theta)+jsin(\theta)$
+$(e^{j\theta})^{*}=cos(\theta)-jsin(\theta)$
+$cos(\theta)=\frac{e^{j\theta}+e^{-j\theta}}{2}$
+$sin(\theta)=\frac{e^{j\theta}-e^{-j\theta}}{2j}$
+
+Continuous Time Fourier Series
+==============================
+
++ Definition of periodicity: $x(t+\tau)=x(t) \forall t$
++ Write x(t) as a weighted sum of $e^{jk \omega_0 t}, k=\cdots,-1,0,1,\cdots$
++ $a_k=(a_{-k})*$, so for real signals, $a_k=(a_{-k})*$
+
+Finding the Fourier Series Coefficients
+---------------------------------------
+
++ $\int_{T} x(t) e^{jn\omega t} dt=\sum_{k=-\infty}^{\infty} a_k \int e^{jk\omega_0 t}e^{-jn\omega_0 t} dt = Ta_n$
++ So a_n=\frac{1}{T} \int_{T} x(t)e^{-jn\omega_0 t}
+
+Discrete Time Fourier Series
+============================
+
++ Definition of periodicity: $x[n+N]=x[n] \forall n$
++ Is cos(n) periodic? **No!** 
++ $cos(\omega_0 (n+N)) = cos(\omega_0 n)$
++ $\omega_0 N = 2\pi M$ then periodic with period $N$.
++ Examples
+	+ $cos(\frac{5\pi}{7}n), N=14$
+	+ $sin(\frac{\pi}{5}n), N=10$
+	+ $cos(\frac{5\pi}{7}n)+sin(\frac{\pi}{5}n), N=lcm(14,10)=70$
++ x[n]=\sum_{k=<N>} a_k e^{jk\omega_0 n}
++ Properties of $\phi_k [n] = e^{jk\omega_0 n}$
+	+ $\phi_k[n+N]=\phi_k [n]$
+	+ $\phi_{k+N} [n] = \phi_k [n]$
+	+ $\phi_k [n]*\phi_m [n] = \mbox{N if k=0 else 0}$
+	+ $\phi_k[n]*\\phi_m[n]=\phi_{k+m}[n]$
++ A useful identity: $1+x+x^2+\cdots+x^M=\frac{1-x^{M+1}}{1-x}$

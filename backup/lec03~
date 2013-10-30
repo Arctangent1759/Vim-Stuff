@@ -1,168 +1,153 @@
-======
-MOAR C
-======
-
-
-Administrivia
+Lecture Goals
 =============
-  HW1 Sunday night
-  Lab 2 tomorrow
-  Lab3 (big lab) next tue)
-  HW2 released fri, due next wednsday
-  Suggested plan of attack
-	HW1 by Sat ight
-	1st half of lab3 sun, start hw2
-	Do 2nd half of lab 3 tuesday, finish hw2 by wed
+	-Diversity, sadaptation, major themes in this course
+		-Ecological, behavioral, anatomical, etc
+	-General review of anatomy, primarily skeletal
+	-Build a knowledge base for future lectures, many of which deal withanatomical variation
+	-How can anatomy tell us about behavior?
 
-
-Struct Clarification
-====================
-  struct name{
-	/* fields */
-  }
-
-  Does not declare a variable. Variable type is "struct name".
-
-  Joint struct and typedef removes the need to add the word 'struct' before 'name'
-
-
-Assignment vs. Equailty
-=======================
-  a=b  is assignment
-  a==b is equality
-  To prevent mix-up, do:
-  if (3==a)
-  because
-  if (3=a)
-  will crash
-
-Operator Precedence
+Body Size and Shape
 ===================
-  Use parentheses to manipualte
+	Morphology
+	----------
+		Primates retain primitive morphology
+			Compare to other mammals like horses, bats, etc
+		Within primate order: body can vary quite substantially, though morphological similarities
+		We are medium-sized mammals
 
-  Equality test binds more tightly than logic
-  x&1==0 means x&(1==0) instead of (x&1)==0
+	Primate Brains
+	--------------
+		Big brains relative to body size
+		Large memory, processing speed, solve complex problems
+		20% of energy consumption of the body
 
-  *p++ means you get the value at address pointed to by p, then increment p
-  *--p means decrement p to point to the previous data item then use the value
-   
-  Aside: 
-	p++ returns p, while ++p returns p+1
+		Chimpanzee brain grows until 2 and levels off
 
-Arrays
-======
-  Fixed size
-  Even though you can't change the size of an array, an array does not know its size.
+		Human brain grows for 4 years to a much larger size, then levels off
 
-  Array size n: access entires 0 to n-1
+		Human brain larger than mother's pelvis causes problem during birth
 
-  Use separate variable for declaration and bound
-  int i, ar[10];
-  for (i = 0; i<10; i++){
-  }
-  Or better yet, use #define
+	Skeletons
+	---------
+		Skeleton is dynamic tissue, "turns over" in 10 years
 
-  Arrays are almost identical to pointers
-  char *string and char string[] are nearly identical declarations
-  Differ in ways like initialization, size of, etc
-  An array variable is a poniter to the first element
-  ar[0] same as *ar
-  ar[2] same as *(ar+2)
+		Skeletal regions:
+			Axial
+			Appendicular
+			Cranial and Postcranial
 
-  To zero an array, the following 3 are equivalent:
-	for (i=0; i<SIZE; i++) ar[i]=0;
-	for (i=0; i<SIZE; i++) *(ar+i)=0;
-	for (p=ar; p<ar+SIZE; p++) *p=0;
+		Bones Types:
+			Long
+			Flat
+			Short (cuboids)
+			Irregular
+			Cortical and Trabecular
 
-  These use pointer arithmetic!
+		Bone function
+			Bones to know: Feagle pg 11, figure 2.3 Feagle 2.21 pg. 22
 
-  Arrays are stored differently than pointers.
-  An array name is not actually a variable.
+			Structural
+				Framework, protection, movement
+			Physiological
+				Resevoir for marrow, for generating blood cells
+				Stores Ca and Ph for use in body
+			Composition
+				1/3 organic (collagin) 2/3 inorganic (hydroxapatite). 
+				Organic tissue provides elasticity.
 
-  Declared arrays only allocated while scope is valid.
-  char *foo(){
-	char string[32];
-	return string
-  }
-  BAD!
+			Cranium
+				Cranium formed by many bones fused together
+				Exception: Ear ossicles
+				The mandible is normally 2 bone, doesn't fuse for some primates.
+				Regions: Face (splanchocranium) nad braincase(Neurocranium)
 
-  An array is passed by reference. Which is why array size gets lost when passed to a function.
+				Protection for brain, eyes, ears
+				Scaffolding for chewing
+				Functions can compete for space
+				Cranial morphology highly important in fossil reconstructions:
 
-  \_p[0] means *(p+0)!\_
+				Large Canine Tooth indicator of Intermale competition
 
-Strings
-=======
-  String in C is just an array of charactes
-  char string[] = "abc";
-  How do you tell how long a string is?
-  Last character is followed by a 0 byte ('\0')
-  (a.k.a. "null terminator")
-  code:
-	int strlen(char s[]){
-	  int (n = 0);
-	  while (s[n]) n++;
-	  return n;
-	}
+				Large Sagital Crest (large anchor point on top of skull) indicative of strong chewing, due to need of muscle anchor points
 
-  String standard functions
-  -------------------------
-	int strlen(char *string);
-	  returns the length of the string, not inculding null term
-	int strcmp(char *str1, char *str2);
-	  Return 0 if str1 and str2 are identical (how is this different from str1==str2?)
-	void strcpy(char *str1, char *str2);
-	  Copies str2 into str1
+		Hands and Feet
+			Bones reveal a great amount of information on behavior
 
-MOAR POINTERZ
-=============
-  pointer+ or - number
-  Increments pointer by number
-  How much increment takes place depends on datatype.
-  int* i;
-  char* c;
-  i++ --> +32
-  c++ --> +8
-  
-  In general, ptr + inc increments by inc*dataSize
+		Pelvis
+			Useful for sex determination--femalses have larger pelvises, and possibly a larger opening
+			Leg muscle differences between us nad quadripeds; chompanzees focus on extension, while we focus on abducion/reetraction
+			Abductors help distribute weight.
+			Knee locking allow standing without muscle strain.
 
-  Valid Pointer Arithmetic:
-	-Add int to pointer
-	-Subtract 2 pointers
-	-Compare pointers
-	-Compare pointer to NULL
+		Limb proportions
+			Lengths--(humerus+radius)/(femur+tibia)*100 (Essentially arm-to-length-ratio)
+			Leapers--70
+			Suspensory--100
+			Quadraped-100
+			Humans--70
 
-  Pointers and Allocation
-  -----------------------
-	When you declare a pointer, it points to garbage, and will probably cause an error.
-	Option 1: Point to something that already exists
-	Option 2: Allocate new memory (next lecture)
+		Teeth:
+			Evolved from fish scales
+			Evolved seperately from jaws
+			Heterodont teeth are ancestral (plesiomorphic) state for vertebrates
+			Most mammals are heterodont; toothed whales, dolphins, porpoises, and armadillos excepted.
+			Determine diet
 
-  Pointers to Structures
-  ----------------------
-	struct Point{
-	  int x;
-	  int y;
-	  struct Point *p;
-	}
+			Enamel -- 95% inorganic, nonvascular coating with no remodeling (doesn't regenerate)
+			Dentine--Bone like substance
+				Calcified tissue: 80% inorganic
+				Harder than bone
+				Living cells called ondontoblasts
 
-	Point pt1;
-	Point pt2;
-	Point *ptaddr;
+			Dental orientation
+				Labial (towards lips) vs Lingual (towards tongue)
+				Buccal (towards cheek)
+				Mesial (front)
+				Distal (back)
+				Occlusal (chewing surface)
+				Incisive (chewing surface of incisor)
+				Interproximal (between the teeth)
 
-	Valid operators:
+			Number of teeth of each class forms the dental formula
+				I--Incisor
+				C--Canine
+				PM--Premolar
+				M--Molars
+			Adult: 2:1:2:3 (I:C:PM:M)
+			Child: 2:1:2 (i:c:m)
+
+			Teeth are extremely informative about the individual
+			Metric Traits
+				Metric features like dimensions, enamel thickness
+			Nonmetric traits
+				Subjective features like "shoveling", the curving geometry of asian teeth
+
+			SEM image of tooth shows scratches and marks on teeth, which indicate diet.
+
+			Geometry of teeth also indicates diet
+
+	Digestive systems
+	-----------------
+		Complexity of digestive system indicative of plant->meat->insect eaters.
+
+	Noses and Smell
+	---------------
+		Strepsirrhines--Split nose, wet nose, likecats
+					  --Jacobson's organ used to smell pheremones
+
+		Haplorhines--dry nose, continuous upper lip and nose
+
+	Ears and Hearing
 	----------------
-	  /*Get*/
-	  int x = pt1.x;
-
-	  /*Dereference and then get*/
-	  int h = ptradr->x;
+		3 parts--Outer, middle, inner-- function similar, structure can be different
 	
-	Pointers to Pointers
+	Reproductive Systems
 	--------------------
-	  Pointer to a pointer, declared as **h
+		Pared testes, scrotum, size differs greatly, bacculum (penis bone)
+		Paired ovaries, paired fallopian tube
+			Uterus size depends on multiple/single birth
+			Bicornate vs singular uterus
+		Periodicity of reproduction quite variable
+			Sexual selling
 
-	  void IncrementPtr(int **h){
-		*h=*h+1;
-	  }
-
-
+tl;dr: We can tell a lot about the ecological niche and behavior of an animal based on its anatomy, without observing the living creature.

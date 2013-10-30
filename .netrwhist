@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/cc/cs61c/su13/class/cs61c-hp/.vim/config'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/arctangent1759/.android'
+let g:netrw_dirhist_2='/home/arctangent1759'
+let g:netrw_dirhist_3='/home/arctangent1759/.metadata'
+let g:netrw_dirhist_4='/home/arctangent1759'
+let g:netrw_dirhist_5='/home/arctangent1759/Documents/Projects/Ongoing/PennApps2013/hazardous-vocabulary-overdrive/.git'
+let g:netrw_dirhist_6='/home/arctangent1759/Documents/Projects/Ongoing/2dTribes/assets/html'
+let g:netrw_dirhist_7='/home/arctangent1759/Documents/Projects/Instructional/Ruby/web/web/lib/web'
+let g:netrw_dirhist_8='/home/arctangent1759/Documents/Projects/Instructional/Ruby/gothonweb/lib/gothonweb'

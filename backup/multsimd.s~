@@ -1,0 +1,44 @@
+multsimd:
+  #Init all registers, but preserve $r3
+  sw $r3 3($r2)
+  setreg 0
+  lw $r3 3($r2)
+
+  #Load A and B into memory. Shift A for packing.
+  lw $r0, 0($r2)
+  ori $r1 $r1 8
+  sllv $r0, $r0, $r1
+  lw $r1, 1($r2)
+
+  #Pack A and B and store into MEM[0]
+  andi $r1, $r1, 0x00ff
+  or $r0, $r0, $r1
+  sw $r0, 0($r2)
+
+  #Load C into $r1
+  lw $r1, 2($r2)
+
+  #Store into MEM[1]
+  sw $r1, 1($r2)
+
+  #Make $r0 our new zero register
+  addi $r0, $r2, 0
+
+  #Loop C times
+  loop:
+
+	#load counter from memory
+	lw $r1, 1($r0)
+	beq $r1, $r0, return
+	#If not termination, decrement counter and store.
+	addi $r1, $r1, -1
+	sw $r1, 1($r0)
+
+	lw $r1, 0($r0)
+	addp8 $r2, $r2, $r1
+	sw $r1, 0($r0)
+	j loop
+
+  #Return
+  return:
+	jr $r3

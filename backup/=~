@@ -1,0 +1,28 @@
+gcc -ggdb -Wall -pedantic -std=c99 -D_GNU_SOURCE -O3    matrixMultiply.c   -o matrixMultiply
+gcc -o matrixMultiply -ggdb -Wall -pedantic -std=c99 -D_GNU_SOURCE -O3 matrixMultiply.c
+./matrixMultiply
+Running Part A...
+
+n = 10, 2.000 Gflop/s
+n = 14, 1.372 Gflop/s
+n = 19, 1.524 Gflop/s
+n = 26, 1.528 Gflop/s
+n = 35, 1.588 Gflop/s
+n = 47, 1.573 Gflop/s
+n = 63, 1.563 Gflop/s
+n = 85, 1.473 Gflop/s
+n = 114, 1.498 Gflop/s
+n = 153, 1.522 Gflop/s
+n = 205, 1.094 Gflop/s
+n = 274, 1.524 Gflop/s
+n = 366, 1.426 Gflop/s
+n = 489, 1.253 Gflop/s
+n = 653, 0.888 Gflop/s
+n = 871, 0.227 Gflop/s
+n = 1000, 0.200 Gflop/s
+
+
+./matrixMultiply 2
+Running Part B...
+
+i

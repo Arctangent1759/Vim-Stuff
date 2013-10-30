@@ -1,0 +1,83 @@
+Linear Constant Coefficient Differential Equations
+==================================================
+
+![](http://tex.sh/$a_0y(t)+a_1\\frac{d}{dt}y(t)+\\cdots+a_N\\frac{d^N}{dt^N}y(t)=b_0x(t)+b_1\\frac{d}{dt}x(t)+\\cdots+b_M\\frac{d^M}{dt^M}x(t)$.png)
+
+
+
+Linear Constant Coefficient Difference Equations
+================================================
+
+![](http://tex.sh/$a_0y[n]+a_1y[n-1]+\\cdots+a_ny[n-N]$.png)
+
+
+![](http://tex.sh/$\\sum_{k=0}^N a_k y[n-k]=\\sum_{k=0}^{M}b_k x[n-k]$.png)
+
+![](http://tex.sh/$LTI iff y[0]=y[-1]=\\cdots=y[-N+1]=0$.png)
+
+![](http://tex.sh/$a_0\\neq 0 \\Rightarrow causal$.png)
+
+
+
+Finiite and Infinite Impulse Response
+=====================================
+
+Finite Impulse Response (FIR): Beyond some point, all values of h(t) become identically zero.
+
+Infinite Impulse Response (FIR): h(t) never becomes identically zero.
+
+![](http://tex.sh/$x[n]=\\delta[n] --> y[n]=h[n]$.png)
+
+FIR Example
+-----------
+![](http://tex.sh/$y[n] = b_0 x[n] + b_1 x[n-1] + \\cdots + b_m x[n-M]$.png) is FIR.
+
+IIR Example
+-----------
+
+![](http://tex.sh/$y[n]=\\sum_{-\infty}^{0}x[k]$.png)
+
+![](http://tex.sh/$y[n]-y[n-1]=x[n]$.png)
+
+![](http://tex.sh/$h[n]-h[n-1]=\delta[n], h[0]=1$.png)
+
+![](http://tex.sh/$h[1]-h[0]=0$.png)
+
+![](http://tex.sh/$h[n]=h[0]=0$.png)
+
+
+
+Response of LTI Systems to Complex Exponentials
+===============================================
+
+###Continuous Time
+![](http://tex.sh/$e^{\sigma t}e^{j\omega t} = cos\(\omega t\) + jsin(\omegat\)$.png)
+
+###Discrete Time
+![](http://tex.sh/$Z^n, Z\in Complex$.png)
+
+![](http://tex.sh/$z=re^{j\omega}$.png)
+
+![](http://tex.sh/$z^n=r^ne^{j\omega n}$.png)
+
+###How is this useful?
+
+![](http://tex.sh/$e^{st} \rightarrow h(t) \rightarrow H(s) = \int_{-\infty}^{\infty} h(t) e^{s(t-\tau)}$.png)
+
+So the **Fourier Transform** of an impulse response is a frequency response.
+
+H(s) is the transfer function.
+
+**Complex Exponential is an Eigenfunction of x!**
+
+![](http://tex.sh/$z^{n} \rightarrow h\(t\) \rightarrow H\(s\) = \sum_{k=-\infty}^{\infty} h\(k\) e^{-k}$.png)
+
+Example
+-------
+![](http://tex.sh/$y[n]=\frac{1}{3}x[n-1]+\frac{1}{3}x[n]+\frac{1}{3}x[n+1]$.png)
+
+![](http://tex.sh/$h[n]=\frac{1}{3}\delta[n-1]+\frac{1}{3}\delta[n]+\frac{1}{3}\delta[n+1]$.png)
+
+![](http://tex.sh/$H\(e^{j\omega}\)=\sum_{k=-1}^{1}e^{-j\omega k}=\frac{1}{3}\frac{sin\(\frac{3\omega}{2}\)}{sin\(\frac{\omega}{2}\)}$.png)
+
+![](http://tex.sh/graph/(sin(3*x/2))/(sin(x/2)),xmin=-1000,xmax=1000.png)

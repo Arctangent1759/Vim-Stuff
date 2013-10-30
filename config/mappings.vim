@@ -45,9 +45,17 @@ nmap <leader>p <c-p>
 nnoremap <f5> :make<cr>
 noremap <leader><leAder><leader>e :set wrap!<cr>:setlocal spell!<cr>:set linebreak!<cr>
 nnoremap B ^
+vnoremap B ^
+onoremap B ^
 nnoremap E $
+vnoremap E $
+onoremap E $
 nnoremap <leader>a <c-a>
 nnoremap <leader>f F
+"Gundo
+nnoremap <leader>g :GundoToggle<cr>
+let g:gundo_right=1
+let g:gundo_close_on_revert=1
 "Clipboard
 nnoremap <c-c> "+yy
 nnoremap <c-v> "+p
@@ -72,6 +80,9 @@ nnoremap L ]}
 
 "DO ALL THE TABS
 nnoremap <leader>tab mzggvG$='z
+
+"OMG EMBEDDED SHELL
+nnoremap ;osh :!tmux split -p 30<cr>
 
 "---------------------
 "------Run Maps-------

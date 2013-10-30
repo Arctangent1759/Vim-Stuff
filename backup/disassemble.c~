@@ -3,9 +3,11 @@
 
 #include "disassemble.h"
 
+int signExtend(int i, int size){
+  return (i >> (size-1))?i|0xffffffff<<size:i;
+}
 void disassemble(inst_t inst)
 {
-  printf("Hippopotamus.");
   /* you could use itype or type instead of rtype */
   /* remember that opcode field is at the same place for all types */
   switch (inst.rtype.opcode)
@@ -35,15 +37,15 @@ void disassemble(inst_t inst)
 	  break;
 
 	  case 0x3: // funct == 0x3 (SRA)
-		printf("sra\t$%d,$%d,$%d\n", inst.rtype.rd, inst.rtype.rs, inst.rtype.rt);
+		printf("sra\t$%d,$%d,$%d\n", inst.rtype.rd, inst.rtype.rt, inst.rtype.shamt);
 	  break;
 
 	  case 0x8: // funct == 0x8 (JR)
-		printf("jr\t$%d,$%d,$%d\n", inst.rtype.rd, inst.rtype.rs, inst.rtype.rt);
+		printf("jr\t$%d\n", inst.rtype.rs);
 	  break;
 
 	  case 0x9: // funct == 0x9 (JALR)
-		printf("jalr\t$%d,$%d,$%d\n", inst.rtype.rd, inst.rtype.rs, inst.rtype.rt);
+		printf("jalr\t$%d\n", inst.rtype.rs);
 	  break;
 
 	  case 0x20: // funct == 0x20 (ADD)
@@ -74,15 +76,15 @@ void disassemble(inst_t inst)
 	break;
 
 	case 0x4: // opcode == 0x4 (BEQ)
-	  printf("beq\t$%d,$%d,%d\n", inst.itype.rs, inst.itype.rt, inst.itype.imm*4);
+	  printf("beq\t$%d,$%d,%d\n", inst.itype.rs, inst.itype.rt, signExtend(inst.itype.imm,16)*4);
 	break;
 
 	case 0x5: // opcode == 0x5 (BNE)
-	  printf("bne\t$%d,$%d,%d\n", inst.itype.rs, inst.itype.rt, inst.itype.imm*4);
+	  printf("bne\t$%d,$%d,%d\n", inst.itype.rs, inst.itype.rt, signExtend(inst.itype.imm,16)*4);
 	break;
 
 	case 0x9: // opcode == 0x9 (ADDIU)
-	  printf("addiu\t$%d,$%d,%d\n", inst.itype.rt, inst.itype.rs, inst.itype.imm);
+	  printf("addiu\t$%d,$%d,%d\n", inst.itype.rt, inst.itype.rs, signExtend(inst.itype.imm,16));
 	break;
 
 	case 0xe: // opcode == 0xe (XORI)
@@ -94,23 +96,23 @@ void disassemble(inst_t inst)
 	break;
 
 	case 0x20: // opcode == 0x20 (LB)
-	  printf("lb\t$%d,$%d,0x%x\n", inst.itype.rt, inst.itype.rs, inst.itype.imm);
+	  printf("lb\t$%d,%d($%d)\n", inst.itype.rt, signExtend(inst.itype.imm,16), inst.itype.rs);
 	break;
 
 	case 0x23: // opcode == 0x23 (LW)
-	  printf("lw\t$%d,%d($%d)\n", inst.itype.rt, inst.itype.imm, inst.itype.rs);
+	  printf("lw\t$%d,%d($%d)\n", inst.itype.rt, signExtend(inst.itype.imm,16), inst.itype.rs);
 	break;
 
 	case 0x24: // opcode == 0x24 (LBU)
-	  printf("lbu\t$%d,$%d,0x%x\n", inst.itype.rt, inst.itype.rs, inst.itype.imm);
+	  printf("lbu\t$%d,%d($%d)\n", inst.itype.rt, signExtend(inst.itype.imm,16), inst.itype.rs);
 	break;
 
 	case 0x28: // opcode == 0x28 (SB)
-	  printf("sb\t$%d,$%d,0x%x\n", inst.itype.rt, inst.itype.rs, inst.itype.imm);
+	  printf("sb\t$%d,%d($%d)\n", inst.itype.rt, signExtend(inst.itype.imm,16), inst.itype.rs);
 	break;
 
 	case 0x2b: // opcode == 0x2b (SW)
-	  printf("sw\t$%d,%d($%d)\n", inst.itype.rt, inst.itype.imm, inst.itype.rs);
+	  printf("sw\t$%d,%d($%d)\n", inst.itype.rt, signExtend(inst.itype.imm,16), inst.itype.rs);
 	break;
 
 	case 0x2: // opcode == 0x2 (J)

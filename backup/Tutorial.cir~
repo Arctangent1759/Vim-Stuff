@@ -1,0 +1,29 @@
+The first line is a comment line.
+
+*Pointless Comment
+
+* We are building this circuit:
+* -----vvv-----
+* |    R1=1k  |
+* |           |
+* +V1=5       >
+* -      R2=1k>
+* |           >
+* |           |
+* |           |
+* -------------
+
+*Create a 5V DC voltage source between nodes 0(-) and 1(+). All Voltage sources must be named with a V at the back.
+V1 1 0 DC 5
+
+*Create a 1000 Ohm resistor
+R1 1 2 1k
+
+*Create a 1000 ohm resistor
+R2 2 0 1000
+
+*Analyze output, spit out output.
+.OP
+
+*The last line is always .End
+.End

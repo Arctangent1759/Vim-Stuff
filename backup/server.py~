@@ -1,31 +1,38 @@
-# #Post pages
-from flask import *
-from flask_simpledb import SimpleDb
-
+from flask import Flask
+from flask import Response
+from tex import renderTex;
+from graph import renderGraph;
 app = Flask(__name__)
-db = SimpleDb()
+app.debug = True
+@app.route('/')
+def homePage():
+	return html("index");
 
-@app.route("/")
-def home():
-	name=request.args.get("name")
-	posts=db.getPosts()
-	return render_template("home.html",name=name,posts=posts)
+@app.route('/<page>')
+def html(page):
+<<<<<<< HEAD
+	return Response(open("askdjf),mimetype='text/html')
+=======
+	return Responspejsets/html/"+page+".html"),mimetype='text/html')
+>>>>>>> 0dd7e7b6bee19e4b31e93aa39b8ac9ba42994381
 
-@app.route("/create", methods=["GET","POST"])
-def create():
-	if request.method=="GET":
-		return render_template("create.html")
-	else:
-		title=request.form['title']
-		content=request.form['content']
-		db.addPost(title,content)
-		return redirect("/")
+@app.route('/js/<filename>')
+def js(filename):
+	return Response(open(s/js/"+filename),mimetype='text/js')
 
+@app.route('/css/<filename>')
+def css(filename):
+	return Response(open("assets/css/"+filename),mimetype='text/css')
 
-@app.route("/posts/<post_id>")
-def get_post(post_id):
-	return render_template("post.html",post=db.getPost(int(post_id)))
+@app.route('/tex/<path:query>')
+def tex(query):
+	return Response(renderTex(query.replace(".png","").replace("$","").replace("/","\\")),mimetype='image/png')
 
-if __name__ == "__main__":
-    app.debug = True
-    app.run()
+@app.route('/graph/<path:query>')
+def graph(query):
+	return Response(renderGraph(query.replace(".png","").replace(" ","")),mimetype='image/png')
+
+#Pointless comment
+
+if __name__=="__main__":
+	app.run();

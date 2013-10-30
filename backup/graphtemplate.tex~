@@ -1,0 +1,20 @@
+\documentclass[preview]{standalone}
+\usepackage{tikz,pgfplots}
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[ 
+  	xmin=0,
+  	xmax=10,
+  	ymin=-10,
+  	ymax=10,
+	samples=500,
+	smooth,
+    xlabel=dog,
+    ylabel=asdf,
+  ] 
+    \addplot[domain=-10:10] {$\input{equation}$}; 
+  \end{axis}
+\end{tikzpicture}
+\end{document}
+
+

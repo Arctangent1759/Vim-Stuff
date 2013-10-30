@@ -1,0 +1,25 @@
+Problem 4
+---------
+**You are given two boxes: one of them containing 900 red marbles and 100 blue marbles, the other one contains 500 red marbles and 500 blue marbles.**
+
+Let $B$ be the event that a marble is blue, and $1$ be the event that a marble came from bucket 1.
+
+1. **If we pick one of the boxes randomly, and pick a marble what is the probability that it is blue?**
+
+    ![](http://tex.sh/$\\frac{1}{2}\\times\\frac{1}{10}+\\frac{1}{2}\\times\\frac{1}{2}=\\frac{6}{20}$.png)
+
+2. **If we see that the marble is blue, what is the probability that it is chosen from box 1?**
+
+    ![](http://tex.sh/$P(1|B)=\\frac{P(1\\cap B)}{P(B)}=\\frac{\\frac{1}{20}}{\\frac{1}{20}+\\frac{1}{4}}=\\frac{1}{6}$.png)
+
+3. **Suppose we pick one marble from box 1 and without looking at its color we put it side. Then we pick another marble from box 1. What is the probability that the second marble is blue?**
+
+    ![](http://tex.sh/$\\frac{1}{10}\\times\\frac{99}{999}+\\frac{9}{10}\\times\\frac{100}{999}=\\frac{999}{9990}=\\frac{1}{10}$.png)
+
+Problem 5
+---------
+**Plot** ![](http://tex.sh/$x^2$.png)
+
+![](http://tex.sh/graph/x^2.png)
+
+

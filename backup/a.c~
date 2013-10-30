@@ -1,0 +1,9 @@
+#include <stdlib.h>
+#include <stdio.h>
+int main(){
+  int* x = malloc(10*sizeof(int));
+  int y[11];
+  printf("%d\n",(int)sizeof(x));
+  printf("%d\n",(int)sizeof(y));
+  return 0;
+}

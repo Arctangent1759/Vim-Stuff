@@ -1,0 +1,20 @@
+from math import e,pi
+def fft(A,n):
+    w=e**(2*pi/n)
+    return fft_helper(A,w)
+
+def ifft(A,n):
+    w=e**(-2*pi/n)
+    return [i/n for i in fft_helper(A,w)]
+
+def fft_helper(A,w):
+    if len(A)==1:
+        return [A[0],A[0]]
+    A_even=A[::2]
+    A_odd=A[1::2]
+    fft_even = fft_helper(A_even,w**2)
+    fft_odd = fft_helper(A_odd,w**2)
+    out=[]
+    for i in range(len(A)):
+        out[i]=fft_even[i]+(w**i)*fft_odd[i]
+    return out

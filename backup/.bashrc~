@@ -120,12 +120,36 @@ alias android-disconnect="fusermount -u /media/Nexus7/"
 
 #alias cs9flon="ssh -X cs9b-bg@star.cs.berkeley.edu"
 #alias fs9flon="ssh -X cs9b-bg@hive4.cs.berkeley.edu"
-alias cs61clon="ssh -X cs61c-hp@hive6.cs.berkeley.edu"
-alias fcs61clon="ssh -X cs61c-hp@hive6.cs.berkeley.edu"
+#alias cs61clon="ssh -X cs61c-hp@hive8.cs.berkeley.edu"
+#alias fcs61clon="ssh -X cs61c-hp@hive8.cs.berkeley.edu"
+alias cs188lon="ssh -X cs188-aj@hive27.cs.berkeley.edu"
+alias cs170lon="ssh -X cs170-ix@hive27.cs.berkeley.edu"
 alias giblon="ssh -X gib@ssh.ocf.berkeley.edu"
 alias ocflon="ssh -X alchu@ssh.ocf.berkeley.edu"
 
 [[ -s /etc/profile.d/autojump.sh ]] && . /etc/profile.d/autojump.sh
 
 PATH+=:~/.vim/runFiles
+PATH+=:/opt
 alias mars=/opt/mars/Mars4_3.jar
+export TERM=screen-256color-bce
+
+
+case "$TERM" in
+  xterm-color) color_prompt=yes;;
+esac
+
+if [ ! $TMUX ]; then tmux -2; fi
+
+alias hsplit="tmux split -d -p "
+alias vsplit="tmux split -d -h -p "
+alias pb="pastebinit -b http://pastebin.com"
+
+
+RAMIP="23.226.224.191"
+alias ramnodelon="ssh -X arctangent1759@$RAMIP"
+
+alias ga="git add ."
+alias gc="git commit -m "
+alias gp="git push "
+alias gpm="git push origin master"

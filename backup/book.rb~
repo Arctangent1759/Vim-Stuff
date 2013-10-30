@@ -1,0 +1,30 @@
+puts "Enter author names (first last or first MI last) here. Enter '.' when done."
+names=[]
+while (input=gets.chomp()) != "."
+    parts=input.split()
+    if parts.length==3
+        first=parts[0][0].upcase()+parts[1][0].upcase()
+        last=parts[2]
+    else
+        first=parts[0][0].upcase()
+        last=parts[1]
+    end
+    names.push([first,last])
+end
+
+print "Enter year of publication:"
+Year=gets.chomp()
+print "Enter Title here:"
+Title=gets.chomp()
+print "Enter Place of publication here:"
+Place=gets.chomp()
+print "Enter publisher here:"
+Publisher=gets.chomp()
+
+out = ""
+names.each do |n|
+    out+="#{n[1]} #{n[0]}, "
+end
+out=out.slice(0,out.length-2)
+out += ". #{Year}. <i>#{Title}</i>. #{Place}:#{Publisher}."
+puts out

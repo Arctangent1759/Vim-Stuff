@@ -1,0 +1,39 @@
+\documentclass[preview]{standalone}
+\usepackage{enumerate,amsmath,textcomp,amssymb,geometry,graphicx,tikz,pgfplots}
+\begin{document}
+$ $\\
+	\section*{Problem 4}
+	\textbf{You are given two boxes: one of them containing 900 red marbles and 100 blue marbles, the other one contains 500 red marbles and 500 blue marbles.}\\
+	\\
+	Let $B$ be the event that a marble is blue, and $1$ be the event that a marble came from bucket 1.
+	\begin{enumerate}[1)]
+		\item
+			\textbf{If we pick one of the boxes randomly, and pick a marble what is the probability that it is blue?}\\
+			$\frac{1}{2}\times\frac{1}{10}+\frac{1}{2}\times\frac{1}{2}=\frac{6}{20}$
+		\item
+			\textbf{If we see that the marble is blue, what is the probability that it is chosen from box 1?}\\
+			$P(1|B)=\frac{P(1\cap B)}{P(B)}=\frac{\frac{1}{20}}{\frac{1}{20}+\frac{1}{4}}=\frac{1}{6}$
+		\item
+			\textbf{Suppose we pick one marble from box 1 and without looking at its color we put it side. Then we pick another marble from box 1. What is the probability that the second marble is blue?}\\
+			$\frac{1}{10}\times\frac{99}{999}+\frac{9}{10}\times\frac{100}{999}=\frac{999}{9990}=\frac{1}{10}$
+	\end{enumerate}
+	$ $\\
+	$ $\\
+	\section*{Problem 5}
+	\textbf{Plot} $x^2$.\\
+
+	\begin{tikzpicture}
+	  \begin{axis}[ 
+		xmin=-10,
+		xmax=10,
+		ymin=-10,
+		ymax=10,
+		samples=500,
+		smooth,
+		xlabel=x,
+		ylabel=y,
+	  ] 
+		\addplot[domain=-10:10] {x^2}; 
+	  \end{axis}
+	\end{tikzpicture}
+\end{document}

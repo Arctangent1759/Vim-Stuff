@@ -1,0 +1,13 @@
+VGain
+
+.include ./Lab_4_LMC6482.MOD
+X1 1 2 4 5 3 LMC6482A/NS
+Vps 4 0 15
+Vns 0 5 15
+
+V1 0 1 DC 5V
+V2 0 2 DC 0V
+V3 0 3 DC 0V
+.DC V3 0 15 .01
+.MEAS DC FIND V(3) WHEN V(3)=0
+.End

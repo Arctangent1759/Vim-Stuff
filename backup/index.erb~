@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+    <body>
+        <% if fladnag %>
+            <em>Fladnag!</em><b><%= fladnag %></b>
+        <% else %>
+            The meerkats are in the bag.
+        <% end %>
+        <form action="/hello" method="POST">
+            <input type="text" name="name"/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>

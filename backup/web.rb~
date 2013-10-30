@@ -1,0 +1,7 @@
+require "web/version"
+require "sinatra"
+
+module Web
+    get "/" do
+    end
+end

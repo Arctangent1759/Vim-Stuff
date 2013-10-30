@@ -1,0 +1,156 @@
+CS 61C Homework 5
+Name: Alexander Chu
+Login: cs61c-hp
+
+
+P1 - Pipelining
+1) 
+25ns + 20ns + 30ns + 30ns= 105ns
+25ns < 105ns
+1/105ns=9500000Hz
+
+9.5MHz
+
+2) 
+1/(25ns+30ns)=18200000=18.2MHz
+
+18.2MHz
+3) 
+
+Pipelined:
+25+20+25+30+25+30=155ns
+155ns
+
+Non-Pipelined:
+105ns
+4)
+3
+
+
+P2 - Waveform Diagrams
+1) 4
+2) 2
+3) 65ns-95ns, 125ns-155ns
+4) 125ns-155ns
+
+
+
+P3 - Clock Frequency
+1)
+Yes.
+2)
+3ns+2ns+1ns+1ns=7ns
+1/7ns=142857143Hz
+
+7ns
+143MHz
+3)
+Wire inputs X_i and Y_i to the inputs of Adder 1.
+Wire the output of Adder 1 to an input of Adder 2.
+Wire the Q of the Register to the other input of Adder 2.
+Wire the output of Adder 2 to the D of the Register.
+And lastly, wire the clock to the register.
+The critical path is now between Q and Adder 2 back to 
+the register, with a clock time of 1ns+3ns+2ns=6ns<7ns.
+
+
+
+
+P4 - Simple FSM and Truth Tables
+
+CurState    | Input    | NextState    | Output
+    0    |     | 0        | 0         | 0
+    0    |     | 1        | 1         | 0
+    1    |     | 0        | 0         | 0
+    1    |     | 1        | 1         | 1
+
+//you can add more rows if necessary
+
+
+
+P5 - Truth Tables, Boolean Algebra, FSMs, Logic Circuits
+1)
+
+CurState    | Input    | NextState    | Output
+    00    |     | 0        | 01         | 0
+    00    |     | 1        | 10         | 0
+    01    |     | 0        | 01         | 1
+    01    |     | 1        | 10         | 0
+    10    |     | 0        | 01         | 0
+    10    |     | 1        | 00         | 0
+    11    |     | 0        | 00         | 0
+    11    |     | 1        | 00         | 0
+
+
+Out = (State_1')(State_0)(Input')
+
+Next1 = (State_1')(State_0')(Input)+(State_1')(State_0)(Input)
+((State_1')(State_0')+(State_1')(State_0))(Input)
+((State_1'))(Input)
+(State_1')(Input)
+
+Next0 = (State_1')(State_0')(Input')+(State_1')(State_0)(Input')+(State_1)(State_0')(Input')
+((State_1')(State_0')+(State_1')(State_0)+(State_1)(State_0'))(Input')
+((State_1')+(State_1)(State_0'))(Input')
+((State_1')+(State_0'))(Input')
+
+2) hw5fsm.circ
+3) !(A || B)
+
+
+
+P6
+1)
+jal:
+
+New Datapath (with signal Jump):
+Connect signal Jump to a mux on the feedback loop between the Branch datapath and the PC.
+If Jump is low, leave PC unchanged.
+If Jump is high, set PC to ((PC & 0xF0000000) | zeroextend(instruction[25-0]))
+
+New Datapath (with signal setRa):
+Connect setRa to a mux on the line to Write Data Zero branch branch.
+If setRa is low, leave the output of the line unchanged.
+If setRa is high, pass the value of PC+8 (wire the existing PC+8 branch to this one) to the Write Data Zero branch. Also change writeRegister (via MUX) to $ra.
+
+
+RegDst: 0
+Branch: 0
+MemRead: X
+MemToReg: X
+ALUOp: Jal
+MemWrite: 0
+ALUSrc: X
+RegWrite: 1
+Jump: 1
+setRa:1
+
+
+
+
+ori:
+RegDst: 0
+Branch: 0
+MemRead: X
+MemToReg: X
+ALUOp: Or
+MemWrite: 0
+ALUSrc: 1
+RegWrite: 1
+Jump: 0
+setRa:0
+
+2)
+Instruction | RegDst | ALUSrc | MemToReg | RegWrite | MemRead | MemWrite | Branch | Jump   | SetRa    | //add more columns here if you need to
+R-format    | 1      | 0      | 0        | 1        | 0       | 0        | 0      | 0      | 0        |
+lw          | 0      | 1      | 1        | 1        | 1       | 0        | 0      | 0      | 0        |
+sw          | X      | 1      | X        | 0        | 0       | 1        | 0      | 0      | 0        |
+beq         | X      | 0      | X        | 0        | 0       | 0        | 1      | 0      | 0        |
+jal         | 0      | X      | X        | 1        | 0       | 0        | X      | 1      | 1        |
+ori         | 0      | 1      | X        | 1        | X       | 0        | 0      | 0      | 0        |
+
+3)
+If MemToReg were to be replaced with MemRead, then all register writes would come from the ALU when MemRead is false.
+This would work, because all TAL mips instructions that read from memory store to registers.
+
+If MemToReg were to  be replaced with MemWrite, then all register writes would come from the ALU when MemWrite is false.

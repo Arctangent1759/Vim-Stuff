@@ -1,0 +1,16 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,textcomp,amssymb,geometry,graphicx,qtree}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{111}  % Your discussion section
+\def\Login{cs70-kd} % Your login
+\def\HW{8} % Homework number
+
+\title{CS70--Spring 2013}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS70--Spring 2013 Homework \HW, \Name, section \Sec}{CS70--Spring 2013 Homework \HW, \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\begin{document}
+$\sum_{i=-\infty}^{\infty}(\frac{1}{a})^{-\frac{t}{\tau}}$
+\end{document}

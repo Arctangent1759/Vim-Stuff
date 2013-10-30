@@ -1,815 +1,966 @@
-/home/arctangent1759/Music/Darksiders OST Disc 1/01 Darksiders Theme.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Twilight-lCXFRC3PI6w.mp3
-/home/arctangent1759/Music/Wild_Arms_The_Traveling_Band's_Last_Song_OC_ReMix.mp3
-/home/arctangent1759/Music/Final_Fantasy_7_Not_the_Taxi_You_Whistled_For_OC_ReMix.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/12 The Wake of Battle.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Ixion-nnuSDmxFiQw.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-02-ThisIsEverything.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-07-GreySnow.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_flicker_which_divides_light_and_darkness-cfm03ctrtTM.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Hand_in_Hand_(Reprise)-ZaSuM1--J7g.mp3
-/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/06 Killbane and the Syndicate.mp3
-/home/arctangent1759/Music/Castlevania_3_In_the_Beginning_There_Was_Jazz_OC_ReMix.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_03_-_Perfect_I_Am_Not.mp3
-/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/05 Oleg and Kinzie.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Strategy-neyWrT13mQM.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Speechless_Fight-pwrs5G4UM_A.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_End_Of_Battle-uLnvUm5wQd0.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/19 - SS Anne.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/21 - Bicycle.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/06 - The Road To Viridian City.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/03 Black Swarm.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Lulu's_Theme-p6BRz9RxeVI.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Victory_Fanfare-7VbBl46qFmk.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Never_Land_Sky-DaQNYgcMok4.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_To_the_Successor_of_the_Crystal-IrWthd4mPtk.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Yuna's_Determination-5S4lKQGNRGk.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Precious_Stars_in_the_Sky-BNU2I4MrILM.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_An_Imminent_Threat-2tjNeaU-xFk.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-06-SugarOnMyTongue.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Blast_Away!_-Gummi_Ship_II--HaXefUyUMas.mp3
-/home/arctangent1759/Music/Shenmue/CD1/16 Antiquity Tree.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/13 - Mt. Moon.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Peril-wOUUgPipBr4.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_15_-_Who_Are_We_To_Care.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Think_of_me-7oNJc8NHZYk.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Across_the_Divide-2j5AmKN9Vr0.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DoRight.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Magic_is_Everything-_Fn1Pw-LxU8.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Valefor-j9p51uf_7DU.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-06-TheSpiritWorld.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-14-VioletWantsItHerWay.mp3
-/home/arctangent1759/Music/Braid_Soundtrack_-_Tell_It_By_Heart_-_Jami_Sieber-BvzKpxFk70A.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/02 Battle with Silitha.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/10 Clash of Swords.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-11-AThousandSkinsPt1.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Scherzo_di_notte_(Joking_Night)-IpAm0OTBUoQ.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-111-HistoryRepeats.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-05-TheVagabond.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/10 Mayhem.mp3
-/home/arctangent1759/Music/Final_Fantasy_12_The_Drum_of_Basswall_OC_ReMix.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-12-WakeUp.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SkynyrdsNumber4874.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-04-PostcardFromHell.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Auron's_Theme-aFKchkQm37o.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Infiltration-mhjLAJ05kbQ.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_Step-HzNAk9FgwSM.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_White_mirror-RynR9cIRe8A.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_10_-_Together_In_The_Empty.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Always_on_My_Mind-yqWdqdiR2kY.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-06-ButItDid.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Assault-D4y5BtvX9EI.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Starry_Moonlit_Night_~Arrange_Version~-_0LYPdUjfqQ.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-05-HouseInMyHead.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_buffer_for_quiet-wWoWG_33BQw.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/15 Dark Desperation.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/07 Battle with the Stygian.mp3
-/home/arctangent1759/Music/Braid_OST_-_Downstream-W7UVfoXQT6w.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-04-Troublemaker.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/15 - Cerulean City (_ Fuschia City).mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_03_-_My_Song_For_January.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_No_No_I_don't_die_Noooo!-eDCBN93cwrk.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Echoes_in_the_Heart-hI3c9HiamPo.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_09_-_Stop_It_Instrumental.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Sorrow_(Imperial_Version)-qqh--6vhjZ8.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_07_-_The_Time_To_Run.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Fight_With_Seymour-sp1DbD-dEB4.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_In_the_gloomy_Darkness-tLL-zEZACGM.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-11-GoodbyeToSpring.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Seeking_Power-6wzU706vNlA.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Annual_Festival-yt20Ndh0i3w.mp3
-/home/arctangent1759/Music/Raindancer/11 - So Far Away and So Near.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-10-FastFoodFantasy.mp3
-/home/arctangent1759/Music/Raindancer/09 - Will o_ The Wisp.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Ashe's_Theme-kIcI70Ve-f0.mp3
-/home/arctangent1759/Music/Shenmue/CD1/08 Nozomi's Confession.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheTownCharterOfCantonOhio.mp3
-/home/arctangent1759/Music/422780__PkmnButWAnimals_Th.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/18 End Credits.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Travel_Agency-e1CzlVas2ME.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_04_-_Notebook_Reading.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Voice_of_Wing,_Song_of_Time-u91dBSLuXgA.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/14 Battle with Abaddon.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Endless_Sky-fQnwY8ou5Z0.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-109-TheBottom.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Light_and_Shadow-MFq1w1JL_sM.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-04-PrivateHurricane.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-211-Afterglow.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_16_-_What_Its_All_About.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Shudder,_Monster-6Q0MFpJt2KU.mp3
-/home/arctangent1759/Music/Raindancer/02 - Song of Joy.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_05_-_Chasing_Time.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_01_-_Slow_Motion_Strut_Version_Two.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Pursuit-jQkzLGKzLIM.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_09_-_From_Truth.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Dalmasca_Estersand-RgvaZ1F7Ox8.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/13 Silent Call to Action.mp3
-/home/arctangent1759/Music/Shenmue/CD2/16 Secret of a Warehouse.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Road_to_a_Hero-IIaYHt6LA0E.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Beginning_Of_The_End-TtQ0qI7knYI.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/8 Burial Shrine.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-KickOffYourShoes.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Omen-v7gPU-DrJGI.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Nap-TaogKghvbZg.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-08-WaterInTheCreek.mp3
-/home/arctangent1759/Music/313799_Together_We_Ride.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/30 Trading Shells.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Sad_Monster-dFqw9y70zWA.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SheRemained.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Dream_To_Be_A_Sky_Pirate-gKebU_3JFrQ.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Shaking_Bahamut-1mPx35yhcjc.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-12-OfDarkRoomsAndCrookedCandles.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-10-TheVoices.mp3
-/home/arctangent1759/Music/Shenmue/CD2/14 Revenge of a Sailor.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_A_Gentle_Wind_Blows-FyKHgS0sVuM.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Burning_Sands-8cwDySQ_h4k.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/07 - Battle_ VS Wild Pok_mon.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/05 Courage to Stand.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Goblin's_Lair-6lNPKTx_Ii0.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Trembling_homefront-YZsvv6eJyko.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_The_Boundary_Between_Snow_And_Ice-8SR6mwa6mZI.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Sleeping_Treasure_in_the_Sand-SSwCJ6wyKCw.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/15 War's Theme.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Creep-PKp-W6MAgYc.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/5 Red Faction.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Destati-CEDMjryggsM.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/05 Hunting the Hunter.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Meager_Advance-NbTz2W8jOwA.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Mosphoran_Highwaste--ySdD5Hi8As.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_To_The_Place_Of_Gods-xZ2rw-VDwfA.mp3
-/home/arctangent1759/Music/Chrono_Trigger_Trigger_Please_OC_ReMix.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/05 Death To All Enemies.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Level_Up!-391lf-zhXi4.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Out_of_the_Frying_Pan-6rGHtL2TeqA.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Anima-lFXGfkIsYmw.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-03-HollowGrove.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-210-IWannaKnow.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_From_strength_to_kindness-1CLsvVdM1m0.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Zertinan_Caverns-l3XiB0vFOKo.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/13 The Catacombs.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/20 Waiting for the Drop.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-KeepInTouch.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-ZeroToPhantom.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_End_of_the_Tale-1m4ADSgm90M.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Destiny's_Force-kcSUipk7gdo.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Rikku's_Theme-JSXQjBpGYJM.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Night_of_Fate-wil_98TPRRo.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/01 Twilight on Approach.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheLongestDream.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/24 - Celadon City.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/14 Epic Moment.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Ending_Movie-i-I2laZZaok.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-04-Untitled.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Challenge-WceHivMzkTE.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Loop_Demo-DKNZvy2YfUc.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Cerobi_Steppe-9qQm3kaxfl4.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Seymour's_Ambition-H5Sjgx49g_4.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/23 - The Ghost of Pok_mon Tower.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-07-TheRavenAndTheSwan.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Kairi_III-5RVqempcQko.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_State_Of_Emergency-stxE6yl239w.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_If_it's_Three_People-fVXtJLEeC00.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-01-IWantToDestroySomethingBeautiful.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Blast_Away!_-Gummi_Ship_I--CyQljXcpRiM.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Patricide-qQS7dTt6K5k.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_06_-_Summers_Coming.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Jahara,_Land_Of_The_Garif-yzdIgRZ_34g.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Journey_to_the_projective_mind-pQBoUqtIrfQ.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-101-HeritagePlace.mp3
-/home/arctangent1759/Music/Shenmue/CD1/07 Cherry Blossom Wind Dance.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Xmas_2012/Dexter_Britain_-_03_-_Auld_Lang_Syne.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-12-MotionlessLand.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Macalania_Woods-g-keAF0Fh8M.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-04-AThousandSkinsPt2.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Nostalgic_Profile-r2HJJDx_ceI.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_11_-_Wonderland_Instrumental.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Leap_in_the_Dark-2MuVuuI1BFg.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/06 The Month of Valiant Effort.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-02-Cherry.mp3
-/home/arctangent1759/Music/Braid_Soundtrack_-_Undercurrent-6dNu2b8GdXA.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SkylineOfTheSea.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/24 Pushing the Lines.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Esper-13GyoLq_4dw.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/31 - Evolution.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/14 - Red_s Journey (The Road To Cerulean City).mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/06 Blood in the Water.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Grand_Maester_Mika-F5_oS2Pa-tA.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/08 Demon Scourge.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/31 Planning of Fates.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/01 Battle with Tiamat.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-0x0000007b.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Luca-TDjMXfyxXKk.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Goodnight-TggGycAjj3E.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-12-Gemini.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Tricksy_Clock-2qdPty1AWBw.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Water_of_Life-SOIBvD0cxsM.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_07_-_Losing_Love.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_4/Dexter_Britain_-_New_Approach.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-10-JosieHasTheUpperHand.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/15 Empowered.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_14_-_Calling.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-01-LetItIn.mp3
-/home/arctangent1759/Music/423473_Fighting.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/04 Chaos Eater.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_I'm_Moogle-0HySDdqmW14.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-108-MorningBlue.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Echoes_at_the_Mountain_Peak-0Qt7NN1D3ls.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Otherworld-k9DVQjE5hUw.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Once_Upon_a_Time-ozIX1sR0ohU.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/15 All Plans in Motion.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/27 March of the Black Boots.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Tomb_Of_Raithwall-wwca-40IE4Q.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/28 - Ocean Waltz (Surfing).mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-05-ToLoseTheWar.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_A_Quiet_Decision-D7gKoCoK3kA.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/02 The Cathedral.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_12_-_Telling_Stories.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_You're_Really_A_Child-K7dMpg7yyEM.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Yuna's_Theme-GX2-Qh5MHz4.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Dearly_Beloved-2U28Gtc28z0.mp3
 /home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Overlooking_the_Great_Ocean-6iH54wXukqU.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_06_-_Safe_In_Glass_Houses.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/18 Nex Sacramentum.mp3
-/home/arctangent1759/Music/Shenmue/CD1/06 The Sadness I Carry on My Shoulders.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/17 Uriel.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-206-ShadowsInTheMoonlight.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-02-Cherubs.mp3
-/home/arctangent1759/Music/Braid_-__Maenam-5kWo8N4QNXM.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Opening_Movie_(Theme_Of_Final_Fantasy_XII)-zQ7YS6MQl2M.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Dark_Clouds_(Imperial_Version)-hyrWuLKcKn8.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/32 Silent Battlefield.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Penelo's_Theme-Pl8HV-ngAKw.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Unite,_Descent-42eD-8cDlmc.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/25 Desperate Measures.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/03 - Dreams and Adventures (Oak_s Opening Speech).mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/16 Invasion by Moonlight.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/22 Push the Line.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/01 Sunrise on the Battlefield.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_They_May_Pass-dnNTOUZ87sE.mp3
-/home/arctangent1759/Music/72077_newgrounds_fe_hel.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/28 King and Country.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-01-TalkAboutYourFeelings.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Tidus'_Theme--yvA_cwmXm4.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-203-OnBrevity.mp3
-/home/arctangent1759/Music/Braid_Music_-_Industry-_gllhaQw76w.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Pirate's_Gigue-1cYdIkLHsQU.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-03-Chainsaw.mp3
-/home/arctangent1759/Music/Shenmue/CD1/18 Departure on a New Journey (Arranged by Y. Koshiro).mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-08-CienVolando.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/17 Heads Will Roll.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Under_the_Sea-GGGJBnyVl9Y.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Something_Burns_in_the_Heart-qUDwkLox8Js.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-06-Inertia.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-12-ASong.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/25 In Memory.mp3
-/home/arctangent1759/Music/Shenmue/CD2/06 Memories of Distant Days.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_My_Den-JF9WxPv5Vnk.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-207-GoodToGo.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/06 The Council.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Leap_the_Precipice-55oNugf4GW4.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-04-Gravity.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Giza_Plains-D7J_8IB5i6k.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/27 - Silph Co. Under Siege.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_05_-_The_War_In_My_Head.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-05-SymmetryAndThePocketOfAngels.mp3
-/home/arctangent1759/Music/Shenmue/CD2/05 To Fly Vacantly Like a Hawk.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Can_you_recite_the_Dream-QDyD9aRdMPM.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Forgotten_Capital-EE8-z8wW-c4.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Sky_Fortress_Bahamut-ZVDTwxjcV9s.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/19 Breaking out.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-04-BigDiscoBall.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Raindrops-9Qge7tnRrBw.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/21 They're Out There Somewhere.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-105-RevolutionNow.mp3
-/home/arctangent1759/Music/Final_Fanatsy_X_-_OST_-_The_Blitzers-Ki6mPJWjfHk.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Suteki_Da_Ne-HXI_11k9uVg.mp3
-/home/arctangent1759/Music/Shenmue/CD2/10 Working Man.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-10-HeyRuth.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Strange_Whispers-FR1LjZtFn84.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Silence_and_life-nEeoN35HKCE.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Theme_Of_Final_Fantasy_XII_(Presentation_Version)-1E2Xiz1PxeM.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_DANTOTSU!-iqzEJREp-QU.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/08 Flight Over Ruined Eden.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-11-MidnightSun.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Chocobo_FFXII_Version-a_0XB8zLDrI.mp3
-/home/arctangent1759/Music/Shenmue/CD2/19 Wish... (Karaoke Version).mp3
-/home/arctangent1759/Music/Portal_2_The_Orchestra_Is_a_Lie_OC_ReMix.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/12 Battle with Greaver.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SpaceCamp.mp3
-/home/arctangent1759/Music/Shenmue/CD2/11 Snack Linda Theme.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Relaxing_Place-ZIbnsQH7dU4.mp3
-/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/03 The Mission Part 1.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/03 Strange Moment.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/25 - Celadon Game Corner.mp3
-/home/arctangent1759/Music/Shenmue/CD1/19 Shenmue ~ Sedge Tree (Arranged by Y. Koshiro).mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Game_Over-CuP4bkl-bYI.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Kairi_II-wRRNeWcNMMA.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_11_-_Forever_Pit.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OldManBlanchard.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/2 Cavern.mp3
-/home/arctangent1759/Music/Braid_Soundtrack_-_Downstream-uejW9xIFCMw.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/17 - Battle_ VS Gym Leader (_ Elite Four).mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Fight_To_The_Death-75hQJylsOdw.mp3
-/home/arctangent1759/Music/Braid_OST_-_Downstream-kWWDEGts_8Q.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/14 Lit by the Fires of Battle.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-01-OnlyWhispering.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/20 Counter-Attack.mp3
-/home/arctangent1759/Music/Lee_Maddeford_-_09_-_Le_petit_jardin_with_Les_Gauchers_Orchestra.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Blitz_Off-dvObI-M2xb4.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-201-Ships.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_To_The_Summit-sfVFOYHDFbA.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-205-MeAndBillyBarnum.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-07-DizzySpells.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/11 Cautious Advance.mp3
-/home/arctangent1759/Music/Shenmue/CD1/14 Dawn.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/36 Untitled.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Departure-hNRHO2pY97I.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-09-TwelveMonkeys.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/10 Keeping Pace.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Blast_Away!_-Gummi_Ship_3--s8d7OGnYWDk.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Gigolo.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Dalmasca_Westersand-BXLJGs2FjdY.mp3
-/home/arctangent1759/Music/514227_Solar-Noise---EP-PR.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DarkRoads.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Secret_Of_Nethicite-3-S3RKV910g.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Final_Battle-HYUqu95g_2o.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-GangnamStyle.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-04-IHateYou.mp3
-/home/arctangent1759/Music/Shenmue/CD1/05 Christmas on Dobuita Street.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Giruvegan's_Mystery-KqsLEPZbPRY.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/08 Marching for Vengeance.mp3
-/home/arctangent1759/Music/514675_If-I-Cant.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Suteki_Da_Ne_[Orchestra_Version]-qGLWIg-vsHY.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Your_Circumstances-8da1Rx5_N9c.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-11-GallowsHill.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-UpcomingDowntime.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/06 Flight Path.mp3
 /home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_4/Dexter_Britain_-_Time_Catches_Up.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Bahamut-gstBeevwI58.mp3
-/home/arctangent1759/Music/465872_Athletic_Theme_Rock.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Monstrous_Monstro-lqt8XDiiQaQ.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-09-FoolsGold.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/23 Shattered.mp3
-/home/arctangent1759/Music/Raindancer/04 - Round and Round.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/01 - Shelf of Memories (Prelude).mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/13 Vulgrim.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_It_Began_with_a_Letter-NBz9QGct3Z4.mp3
-/home/arctangent1759/Music/Shenmue/CD2/12 Inherited Skills.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_07_-_Nights_Tale.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/17 Last Acts.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Mickey_Mouse_Club_March-FDmfEPw91U4.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Arabian_Dream-WY1XWFI1zqI.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Jekkt's_Theme-BNOIs0BLsiw.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Repeated_Tide-L0hperjV1B8.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_wall_with_no_front_or_back-4C80F4Yu_Ag.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-09-Pompeii.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/22 - Lavender Town.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_The_Mediocrity_sought_out_by_everyone-MMxhBnHgY-8.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-15-BabaGanoush.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-05-Lafayette.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Port_City_Of_Balfonheim-whOVFue2Ojw.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_This_Is_Your_Story-DaKJOsL22NU.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Moonless_Starry_Night_[English_Version]-YFaJlBxqTOg.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_An_Intense_Situation-DSnZK3pp7sE.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_02__The_Call-PZKpSsvMRxU.mp3
-/home/arctangent1759/Music/Raindancer/01 - The Willow Maid.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_12_-_After_The_Week_Ive_Had.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-02-BonjourMonAmie.mp3
-/home/arctangent1759/Music/Shenmue/CD1/15 Departure.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-06-Anchor.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/33 Tiger in the Mist.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_13__Final_Confluence-cbG3llaKvuI.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/32 - Present Your Badges (Indigo Plateau).mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/08 - Viridian City (_ Pewter City_ Saffron City).mp3
-/home/arctangent1759/Music/Shenmue/CD2/17 To Continent and Sea.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/13 A Selfless Action.mp3
-/home/arctangent1759/Music/Shenmue/CD2/02 Snowy Scenery ~ Version 2.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-204-DontCloseYourEyes.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Spira_Unplugged-AymdefgOZeM.mp3
-/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/01 Saints Row the Third.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Twilight_in_Dreamland-bOhpHX3q7P8.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Hey.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_10_-_Waking_Up_Instrumental.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-05-ShesOnMyMind.mp3
-/home/arctangent1759/Music/Raindancer/05 - Butterfly_s Dream.mp3
-/home/arctangent1759/Music/Braid_Soundtrack_-_Lullaby_Set-UvbbT9E3czs.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Unsent_Laugh-xrYP6WTZxho.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_White_Room-TgN85J2BXC0.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Fragments_of_Sorrow-FNbJ4MOpchg.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/04 - Pallet Town.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Treasured_Memories-nIppaIt9YbE.mp3
-/home/arctangent1759/Music/Shenmue/CD2/18 Wish....mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-FiveMinutes.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-02-MonaLisa.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/12 Rescue Ruin.mp3
-/home/arctangent1759/Music/Shenmue/CD1/09 Nozomi and Ryo.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_From_tomorrow_on-YA9RTBl71X0.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/35 - Ending.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-103-Saturday.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Underground_for_Underhand-3noJ0RcPh88.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_faint_Light_grasped_in_the_Hand-GM7LR0VSheU.mp3
-/home/arctangent1759/Music/Braid_Soundtrack_-_Romanesca-X-WXoobR7dQ.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Spira-jOQiuoIy_JI.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Texas.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Dreadnought_Leviathan_Bridge--lEkixSzw6Q.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-09-OnceTomorrow.mp3
-/home/arctangent1759/Music/Shenmue/CD2/01 Snowy Scenery.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Moving_Clouds_on_the_River's_Surface-GwY0geNQoGE.mp3
-/home/arctangent1759/Music/Pokemon_Red_Version_Battle_for_the_Badge_OC_ReMix.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-209-TheMission.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chonicles_-_OST_-_Orgel_of_Water-O7Jrh-2baAE.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/02 - Red and Blue (Opening Theme).mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Just_an_Itty_Bitty_too_much-LEBmGQukXtQ.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Final_Fantasy_FFXII_Version-dVhkE8em0WI.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/18 Critical Push.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_4/Dexter_Britain_-_Forced_Through_Time.mp3
-/home/arctangent1759/Music/Shenmue/CD2/04 Departure for Hope.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Besaid-PS3uwlOfTRM.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-10-HomeImprovement.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Djose_Temple--bvTjmLXRQc.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_12_-_The_Lost_Ones.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Shrouding_Dark_Cloud-2IzygDP9YCA.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Nocturne-sr7tI-5p10c.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/7 Unlikely Allies.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_08_-_Leave_Well_Enough_Alone_Instrumental.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_When_we_are_together-QjhxXALw3ho.mp3
-/home/arctangent1759/Music/Shenmue/CD1/11 Daily Agony.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_March_Caprice_for_Piano_and_Orchestra--obiKbbuh1s.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/26 Skirmish in the Woods.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-10-SwimmingInTurpentine.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-08-SwimmingToCambodia.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Guadosalam--Scxkta6xfY.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Holy_Bananas!-FaKQuGn9cDY.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Hollow_Bastion-VHGObdC2TuU.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_16__Nadir-UTkq8ZhbvcM.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_When_the_Northern_Sky_Was_Clear-IKE2GufZorI.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-01-DarienGap.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/02 Surveying the Enemy.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Amidatty_and_Eleanor,_too-wv0_KT_Icsc.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/16 Peace at What Cost.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_18__I_was_Born_for_This-qizpBpHTzkU.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-11-TheGloaming.mp3
-/home/arctangent1759/Music/Braid_OST_-_Undercurrent-qJNlsYh4sfw.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-06-Snooter.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Abandoning_Power-bZPJGDoKYkw.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-13-Epilogue.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_A_Walk_in_Andante-6adSyG9bBP8.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Promise_With_Balthier-iy7XAj5AlDw.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Trials-fiYyuYlcIxM.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_08_-_Collapsing_Time.mp3
-/home/arctangent1759/Music/Final_Fantasy_8_White_Magic_Is_for_Sissies_OC_ReMix.mp3
-/home/arctangent1759/Music/Chrono_Cross_A_Dream_Between_Worlds_OC_ReMix.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_08__Fourth_Confluence-e1Jbes2NLf8.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Destiny-QuiV6CNpLWU.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Naivety-VmAsJL5Dt6k.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Strength_in_Sadness-Fx7GG_YUipY.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Phantoms-0kJfdOX5u84.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_19_-_Calling_Instrumental.mp3
-/home/arctangent1759/Music/Shenmue/CD2/08 The Place Where the Sun Sets.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-07-BrownBoxes.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-08-Overthrown.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-03-BorderBlaster.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Stilshrine_Of_Miriam-GfzBkZ1YxXw.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/9 Breathe.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Time_For_Rest-QUp46wc9d0Y.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Prelude-P1rlIYOSvvs.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Yunalesca-OQuBYJknamI.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth-alQ1d7jsz0A.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Thoroughly_Blue-o4jE6hDZ8mU.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Esper_Battle-rVYHhcYWttY.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_01_-_The_Tea_Party.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Bravely_Forward-1CRUFXHz0tk.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-09-MorningAfter.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/29 - Cinnabar Island.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Chocobo_Jam-B8Y17OEd9gU.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-08-SoftOrangeGlow.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Royal_Capital_Rabanastre-City_Upper_Ground-YvW9KQ5vu8Y.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Sandsea-XygkIvA5B0Q.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-11-ImNotDreaming.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-01-Incoherent.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/08 At What Cost.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Eruyt_Village-QOAD58HCB-c.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-104-TheParade.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/17 The Heavy Price of Victory.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Nalbina_Fortress_Underground_Prison-LTu1lzfLolA.mp3
-/home/arctangent1759/Music/Wild_Arms_A_Morning_at_the_Abbey_OC_ReMix.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Temple_Players-qXi_1aqJJuc.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Clan_Headquarters-fsiRVJNNSxA.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Barheim_Passage-brEjm1Id5pc.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-13-CheapskateRomantic.mp3
-/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/02 When Good Heists Go Bad.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Barbarians-KT5AhUmNuT4.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/22 In the Eye of a Sniper.mp3
-/home/arctangent1759/Music/Shenmue/CD1/01 Shenmue ~ Sedge Tree (Original Version).mp3
-/home/arctangent1759/Music/Final_Fantasy_-_XII_Mission_Start-B_zyu8f6Axo.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_A_Piece_of_Peace-tJgxyxoAyG8.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/11 Prison Break.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-BobSellsChevrolets.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-05-ThePawnbrokersStepdaughter.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_A_Very_Small_Wish-P3g_tsFqVPQ.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Neighbourhood_Of_Water-cIHhSiSQYU8.mp3
-/home/arctangent1759/Music/Shenmue/CD2/03 Separated from Yokosuka.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Feywood-lpXe6VTjvnk.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Qui_Are_Al_Bhed-bzxP5wblAyw.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-102-Go.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-13-Frannie.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Someday_the_Dream_Will_End-_dOmfKvdlZg.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/09 Echo Gorge.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Hand_in_Hand-UHowlm4YMIk.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/03 Undead on Arrival.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Revolution-G7ZmArZVrV0.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/16 Well of Souls.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Seize_the_artifact_for_tallness-yV2lvdO6bqA.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Servants_of_the_Mountain-kty5w-7pJBE.mp3
-/home/arctangent1759/Music/505644_Fire-Emblem-Move-Ou.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-07-AlreadyThere.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_11__Fifth_Confluence-fuDG3wF4Gf4.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-07-InvisibleLight.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Squirming_Evil-irXizg9k0yg.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/09 In Prophecy.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Pursuit-4KpTwF-sA_0.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Shiva-nCDKmX6JQZA.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Agitation_(Imperial_Version)-XssigkHISPY.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Serenity-bBrZgk9sG14.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Chocobo_FFXII_Arrange_Ver_1-1igj65H0e4g.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Wedding--Tsoxul-LTE.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Auditory_Hallucination-lb-p0z7Kdto.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Sound_of_the_Wind_[Japanese_Version]-Sh3uGHm6eQo.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SexyNationArmy.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_HIKARI_-_KINGDOM_HEARTS_Instrumental-v3zS3sHJf6o.mp3
-/home/arctangent1759/Music/Final_Fantasy_11_Online_A_Decent_Challenge_OC_ReMix.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Well-done-It2cLrFP2m4.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Garamsythe_Waterway-UdMFlKUED48.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Kiss_Me_Good-Bye-ZI3daqEsC6Q.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_I_Don't_Want_to_Forget-N19ojSFaHEM.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-110-RogueNation.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Dark_Knight_(Imperial_Version)-MZNAs-v5su8.mp3
-/home/arctangent1759/Music/406695_fe3_main_o.mp3
-/home/arctangent1759/Music/55311_newgrounds_ffx_ba.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/11 The Measure of One's Worth.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-03-Dust.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_The_First_Town-WmTeQimolS4.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Xmas_2012/Dexter_Britain_-_02_-_Silent_Night_Part_1.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_A_Land_Of_Memories-wb0W0M0Pc-M.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Clash_Of_Swords-TDCUaYGmD5s.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-11-RiverWentDry.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/03 The End of B Company.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Rabanastre_Downtown-fMgLuY6bNds.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/04 Survival Most Unlikely.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Ride_ze_Shoopuf-sbNpMHJyPF8.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-03-SheDreamsInBlue.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Destiny_Islands-nipZBhajQWE.mp3
-/home/arctangent1759/Music/Final_Fantasy_Requiem_for_a_Dying_World_OC_ReMix.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/21 We Came in the Night.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_14__The_Crossing-jvMkchZhzzI.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Miracle-ck1_wI4JD04.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Aiming_Towards_the_New_World-Za22i5SEZhQ.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_09_-_Going_Under.mp3
-/home/arctangent1759/Music/Raindancer/08 - Birds of a Feather.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/24 Ashes and Blood.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Having_a_Wild_Time_(Previous_Version)-M5ihDSTm-ss.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Wandering_Flame-u5V0Ctn-NW4.mp3
-/home/arctangent1759/Music/514911_Final-Boss.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_11_-_Wonderland_Instrumental.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Pressure-1VUMcABK2Rw.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/29 Opposing Fronts.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HowToSucceedInSymphony.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_18_-_Arcade_On_Fire.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-10-FitForAKing.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Phon_Coast-pWgc1pSMCMw.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Battle_For_Freedom-8PjEN-zFlDQ.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/26 - Team Rocket Hideout.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Friends_in_My_Heart-INRRiKqVTK4.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Ozmone_Plain-QjP6z0YOlSA.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/05 Eden.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Farewell-SYYzbfP928s.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-02-Effortless.mp3
-/home/arctangent1759/Music/UC Berkeley Rager Mix.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Decision_on_the_Dock-Wh565n0IYVU.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/09 Swiftly, Silently.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-09-Omaha.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/16 Earth Caller.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_To_the_End_of_the_Abyss-SJb4mqMtmWk.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-13-SleepyThought.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Clash_On_The_Big_Bridge_FFXII_Version-K4M5ivckBPQ.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Dive_into_the_vast_expanse_of_plains-xTaujbqgSoY.mp3
-/home/arctangent1759/Music/Shenmue/CD1/02 Shen Fa ~ Sedge Flower (Original Version).mp3
-/home/arctangent1759/Music/Final_Fantasy_10_Silence_Before_Repentance_OC_ReMix.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-06-StarsCollide.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Caravan_Crossroad-mHnlLP4SnAE.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Promised_Grace-umz2fUSYYRo.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-03-CantTakeOurLoveAway.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-10-GoldenSunrise.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Battle_Drum-LIB_JkaRKoc.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Monster's_Dance_~Rondo~-sYOH4PYYCKw.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-12-Sundown.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-08-HonchoGrahamFromBirmingham.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_05_-_Seeing_The_Future.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/6 Zealots.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Olympus_Coliseum-JKfVZsKX5Os.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-06-OhMallory.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-04-CrazyGlue.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/04 Planning for Darkness.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_No_Time_to_Think-cdVXygYYofs.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/18 A Moment of Clarity.mp3
-/home/arctangent1759/Music/32645_newgrounds_ffxbat.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-05-UnderTheStairs.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_The_Deep_End-B9Y40VoTni8.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Eternal_Oath-oJgj9Q6Hw6g.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Golmore_Jungle-N-rF-rJjt_k.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/05 - Oak Research Lab.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_07__The_Road_of_Trials-hdG-e_Joc8Q.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Grand_Waltz_Brilliant-fW8dvp6BisI.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Prosperity_and_Tradition-Bu742uOpdmA.mp3
-/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/08 End Game.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Mag_Mell-d8PgXhllhPU.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/23 Flash Thunder.mp3
-/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/07 Stag.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/3 The Swarm.mp3
-/home/arctangent1759/Music/Braid_Music_-_Trust-bosF7nq2Uh4.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/10 Madman's Sermon.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_A_Contest_of_Aeons-Ljr0y2VsC2s.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-02-2020.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Reflect_the_Sky,_Bloom_the_Life-t6BUtLAlaLM.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/20 - Beyond Rock Tunnel (The Road To Lavender Town).mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-09-LittleTomcat.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Today_Arrives,_Becoming_Tomorrow-ogpvzHrLCPU.mp3
-/home/arctangent1759/Music/Braid_Soundtrack_-_Long_Past_Gone-u4tEhqQGTBs.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-05-TheHandymansLament.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_02_-_After_Christmas.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_A_Day_in_Agrabah-snEm4Z0uQJs.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-208-Memorized.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Spooks_of_Halloween_Town-1sIFqUojgY8.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-FearIsFree.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_An_inspection_which_values_harmony-yHgZaCRuHQY.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Once_Upon_a_Time-ozIX1sR0ohU.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-03 Pot Hocket - Idle City Street (Kids Run Through the City).mp3
 /home/arctangent1759/Music/Pokemon Orchestrated/33 - The Final Showdown_ VS Champion Rival.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_10_-_Train.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/35 To Those Who Rest.mp3
-/home/arctangent1759/Music/Shenmue/CD2/07 Memories of Distant Days ~ Version 2.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-09-Coffee.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-01-Swansong.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Coexistence_(Liberation_Army_Version)-DF-gbWKbjD0.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_01_-_The_Time_To_Run_Finale.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/10 The Storm Approaches.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Small_Happiness-MDHRk_jEikg.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Skycity_Of_Bhujerba-rQNWafc6_9k.mp3
-/home/arctangent1759/Music/Raindancer/03 - No One But You.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Wonderland_of_wanderer-6P2Wd2Z9DqU.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Boss_Battle-ySrSIrO_Cs8.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-WrongSideOfTheRevolution.mp3
-/home/arctangent1759/Music/Shenmue/CD1/03 Departure on a New Journey (Original Version).mp3
-/home/arctangent1759/Music/Raindancer/10 - Winter Moon.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Abyss-n_eLrffE8l8.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Forze_del_male_(Force_of_Evil)-C-vhOlGDPMA.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-01-FightTheSea.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/11 Gnashing of Teeth.mp3
-/home/arctangent1759/Music/514530_Song-of-Storms-Remi.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Ifrit-04WzhFTeCQI.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Traverse_Town-1PrFYl6ujj8.mp3
-/home/arctangent1759/Music/515355_Yuletide-Groove.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-08-EastSideBar.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-06-LearnToFly.mp3
-/home/arctangent1759/Music/513907_Monument-of-Non-Exi.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_4/Dexter_Britain_-_Grand_Movement.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Illuminant_lives--ZFByiCh1D8.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-10-Methylchloroisothiazolinone.mp3
-/home/arctangent1759/Music/Lord_of_the_Rings_Volume_1_One_Ring_OC_ReMix.mp3
-/home/arctangent1759/Music/Shenmue/CD1/13 Sadness and Hope.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Endure_and_resist-0BEB6_zWlKA.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/14 Crossing the Rotting Battlefield.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Innumerable_animals-rBuOjK66PUM.mp3
-/home/arctangent1759/Music/Raindancer/06 - Raindancer.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Nalbina_Fortress_Town_Area--ccRdIJCk4o.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Braska's_Daughter-SJIVFHdsDx4.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Make_a_Resolution-onyTjuhAP-g.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_09__Temptations-QEGtv0A6JMY.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Your_Truth_Is_My_False-vuGcRWxozhc.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Kairi_II-wRRNeWcNMMA.mp3
 /home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Oh,_Light___!-BkBW3erFVWs.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Welcome_to_Wonderland-4Q12-OiucQE.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/07 Ruthless Tactic.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Little_Scoundrel-LyGVlQteY8I.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-AcrossTheDustyPlains.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-09-LetMeTalkCarol.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-03-IllBeRightBehindYouJosephine.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Sound_of_the_Wind_[English_Version]-IfQ4DiRzd14.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Victory_Fanfare-chQP6Q5FO5s.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-IOU.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Coexistence_(Imperial_Version)-fjwT7JUmMSg.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/16 - Pok_mon Gym.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-02-AdventuresOfTheDeafDreamer.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/4 The Specialist.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Turning_the_Key-BnIjh1WMDOI.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_03__First_Confluence-qSc-clmoT4I.mp3
-/home/arctangent1759/Music/Shenmue/CD1/04 Encounter with Destiny.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Symphonic_Poem__Hope-HhPYVTlMuxM.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-03-Insomnia.mp3
-/home/arctangent1759/Music/Legend_of_Zelda_Majora's_Mask_Dawn_of_a_New_Day_OC_ReMix.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-106-Flypaper.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Parasite.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Kairi_I-V0PjA3oC-UA.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/12 Danger on all Sides.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Basch's_Reminiscence-ify66pqucsg.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Battle_Theme-SqR5qUKEDrs.mp3
-/home/arctangent1759/Music/506132_Inner-Peace.mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/12 Waiting.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_17_-_Waking_Up.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_I_Believe-ZlYiJ0_H84c.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Princess'_Vision-xri_gNuZqIo.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-11-AreYouHavingFun.mp3
-/home/arctangent1759/Music/422780__PkmnButWAnimals_Th(1).mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Walk_of_the_heart-k7b1_FdhepA.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/02 Tales of the Front.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Theme_Of_The_Empire-J3vT3hp0U5w.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Having_a_Wild_Time--K-xTASre_w.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Xmas_2012/Dexter_Britain_-_01_-_The_Holiday_Excitement.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_To_Zanarkand-1qd-XX6mIDM.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_08_-_Running_Through_Tunnels.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/34 - Into The Hall of Fame.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/10 - Viridian Forest.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-1000Words.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-08-TogetherOnOurOwn.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Hikari_[KINGDOM_Orchestra_Instrumental_Version]-p3lrp0Lt4as.mp3
-/home/arctangent1759/Music/Braid_Music_-_Identity-l9nBVIUsJew.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_The_posture_you_do_not_despise-yxTZ4UAGCuQ.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-07-ShowerScene.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_03_-_In_The_Electric_Fields.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_The_Time_of_Many_Smiling_Faces-13IccSl20ZA.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Opposition_Resignation-nUUlCgrDvk8.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-07-NothingInTheDark.mp3
-/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Starry_Moonlit_Night_[Japanese_Version]-s7F4wuIof8w.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/12 - Battle_ VS Trainer.mp3
-/home/arctangent1759/Music/Shenmue/CD2/13 Hip de Hop.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-107-ImLettingGo.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Signs_Of_A_Change-Zv9AMf_1aDQ.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Challenging_The_Empire-wEZmgiFVWwY.mp3
-/home/arctangent1759/Music/Shenmue/CD1/20 Shen Fa ~ Sedge Flower (Arranged by Y. Koshiro).mp3
-/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/1 Overture.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Where_is_This--V6eBIPYg_o.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Merlin's_Magical_House--M9nP90LQ-8.mp3
-/home/arctangent1759/Music/Shenmue/CD2/09 The Place Where the Sun Sets ~ Version 2.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-08-UpKilkenny.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/11 Shadow Realm.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_12__Atonement-pAtYPnCsWzo.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Beyond_the_Door-A-KdCDSiJoQ.mp3
-/home/arctangent1759/Music/Shenmue/CD1/12 Tears of Separation.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Salikawood-ZhUYPy7GVn4.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_17__Apotheosis-ypNgvc6c6Cc.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Seperation_With_Penelo-agdc97WFjU4.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/11 Gnashing of Teeth.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_To_the_End_of_the_Abyss-SJb4mqMtmWk.mp3
 /home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Seymour's_Theme-E6abE13c4iQ.mp3
-/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/07 Waiting for Those Who Will Not Return.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_The_Ronso-UrIfDOUg-6A.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Winnie_the_Pooh-dzyvGZQIs24.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Face-Off-9AaT6oe5XIo.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Guardando_nel_buio_(Watching_in_the_Dark)-0Zc0mQIQjxs.mp3
-/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_11_-_The_Fresh_Monday.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Rapid_Fire-c7xzvsjEe24.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Sochen_Cave_Palace-4Qq2U6W-NbY.mp3
-/home/arctangent1759/Music/Final_Fantasy_7_Aire_Tam_Break_OC_ReMix.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Oopsy-Daisy-mxpeXcnk56M.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Mission_Failure-yrHNPzq6Z3c.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Two_Ends_of_my_Doze-R9w4YckjIaQ.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-07-CardinalBrigade.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-11-ThanksForComing.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Tragedy-VZONX-f10IA.mp3
-/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/09 On Guard for Liberty.mp3
-/home/arctangent1759/Music/513968_Song-52-Zerozz-Trib.mp3
-/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/04 The Mission Part 2.mp3
-/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Rock_and_burn_you-42qCPrEFDhg.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Shipmeister's_Humoresque-GPLONpxBbQo.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Sending-QW7SBUqzY6I.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Burning_Sands-8cwDySQ_h4k.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Well-done-It2cLrFP2m4.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Yuna's_Determination-5S4lKQGNRGk.mp3
 /home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Echo_of_Memories-zWzWibsL-LY.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Rebellion-zQWdY8WJ0Fk.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Captain_Hook's_Pirate_Ship-bc19KQwKmXk.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Calm_Before_the_Storm-sdN-vRT2TuU.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Secret_Practice-JZGQ_v-LAKU.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Nocturne-sr7tI-5p10c.mp3
+/home/arctangent1759/Music/Final_Fantasy_10_Silence_Before_Repentance_OC_ReMix.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Having_a_Wild_Time_(Previous_Version)-M5ihDSTm-ss.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/08 At What Cost.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Treasured_Memories-nIppaIt9YbE.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-02-2020.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Fight_With_Seymour-sp1DbD-dEB4.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Reflect_the_Sky,_Bloom_the_Life-t6BUtLAlaLM.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/11 Shadow Realm.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/14 - Red_s Journey (The Road To Cerulean City).mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-03 Rexy - Gestahlian Sonata (The Empire 'Gestahl').mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-13-Frannie.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Across_the_Divide-2j5AmKN9Vr0.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_11_-_The_Fresh_Monday.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Sochen_Cave_Palace-4Qq2U6W-NbY.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Welcome_to_Wonderland-4Q12-OiucQE.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Opposition_Resignation-nUUlCgrDvk8.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/08 Marching for Vengeance.mp3
+/home/arctangent1759/Music/465872_Athletic_Theme_Rock.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-08 Chad Seiter - Terra's Resolve (Terra).mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/35 To Those Who Rest.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/07 Light Combat.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-209-TheMission.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-104-TheParade.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/27 March of the Black Boots.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-02 SnappleMan, norg, Captain Finbeard - Omen - II. Terror March (Opening Theme).mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Having_a_Wild_Time--K-xTASre_w.mp3
+/home/arctangent1759/Music/Perfection. Original Soundtrack/MP3/02 Closer.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-04-BigDiscoBall.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/12 Rescue Ruin.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-01-TalkAboutYourFeelings.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_05_-_The_War_In_My_Head.mp3
+/home/arctangent1759/Music/Shenmue/CD1/05 Christmas on Dobuita Street.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Barheim_Passage-brEjm1Id5pc.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Olympus_Coliseum-JKfVZsKX5Os.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-14-VioletWantsItHerWay.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-208-Memorized.mp3
 /home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/34 A Company of Heroes.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 1/04 Battle with Straga.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Dearly_Beloved_(Reprise)-3azmxVp8H3g.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Bustin'_up_on_the_Beach-E0Ywf-ZuASw.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Mi'ihen_Highroad-RQ3V2yAQijY.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-12-Nincompoop.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/30 - Pok_mon Mansion.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-14-WaitingTakesTime.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_The_Ronso-UrIfDOUg-6A.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-12 Joshua Morse - Camp Kefka (Troops March On).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-IOU.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Shudder,_Monster-6Q0MFpJt2KU.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Strange_Whispers-FR1LjZtFn84.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Ifrit-04WzhFTeCQI.mp3
+/home/arctangent1759/Music/Braid_OST_-_Downstream-W7UVfoXQT6w.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Wonderland_of_wanderer-6P2Wd2Z9DqU.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Precious_Stars_in_the_Sky-BNU2I4MrILM.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Echoes_in_the_Heart-hI3c9HiamPo.mp3
 /home/arctangent1759/Music/Raindancer/07 - Temple of the Sky.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-03-InfiniteHorizon.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-03 Forrest Powell feat. Laura Intravia - Katabasis (Epitaph).mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/25 Desperate Measures.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-106-Flypaper.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/2 Cavern.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/02 The Cathedral.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-01 bustatunez - Prologue (Opening Theme).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-09-TwelveMonkeys.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/9 Breathe.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Mi'ihen_Highroad-RQ3V2yAQijY.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Hand_in_Hand_(Reprise)-ZaSuM1--J7g.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Ozmone_Plain-QjP6z0YOlSA.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Grand_Waltz_Brilliant-fW8dvp6BisI.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Someday_the_Dream_Will_End-_dOmfKvdlZg.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Opening_Movie_(Theme_Of_Final_Fantasy_XII)-zQ7YS6MQl2M.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/22 In the Eye of a Sniper.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_They_May_Pass-dnNTOUZ87sE.mp3
+/home/arctangent1759/Music/Los Lonely Boys/Los Lonely Boys/13 Heaven.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/04 The Cello Song.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-06 Argle - The Endless Stair (Fanatics).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-202-FlutterByButterfly.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_19_-_Calling_Instrumental.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Chocobo_FFXII_Arrange_Ver_1-1igj65H0e4g.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/02 Moonlight.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Chocobo_Jam-B8Y17OEd9gU.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Water_of_Life-SOIBvD0cxsM.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-11-GoodbyeToSpring.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Guadosalam--Scxkta6xfY.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-11 zircon, XPRTNovice, Jillian Aversa, Jeff Ball - A Fistful of Nickels (Shadow).mp3
+/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/03 The Mission Part 1.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-08-CienVolando.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Prosperity_and_Tradition-Bu742uOpdmA.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Eternal_Oath-oJgj9Q6Hw6g.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-10 Leitbur - On the Run (The Returners).mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_No_No_I_don't_die_Noooo!-eDCBN93cwrk.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-102-Go.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-14 OA, Moonlapse, BardicKnowledge, Laura Intravia feat. DragonAvenger - The Nightmare Oath (Overture).mp3
+/home/arctangent1759/Music/Shenmue/CD2/18 Wish....mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Strength_in_Sadness-Fx7GG_YUipY.mp3
+/home/arctangent1759/Music/515355_Yuletide-Groove.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Your_Circumstances-8da1Rx5_N9c.mp3
+/home/arctangent1759/Music/Braid_Soundtrack_-_Romanesca-X-WXoobR7dQ.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_The_Deep_End-B9Y40VoTni8.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Make_a_Resolution-onyTjuhAP-g.mp3
+/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/06 Killbane and the Syndicate.mp3
+/home/arctangent1759/Music/Shenmue/CD2/15 Nightmare.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Holy_Bananas!-FaKQuGn9cDY.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_A_Gentle_Wind_Blows-FyKHgS0sVuM.mp3
+/home/arctangent1759/Music/Perfection. Original Soundtrack/MP3/04 The Looking Glass.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Sorrow_(Liberation_Army_Version)-YbhXVEE_zxI.mp3
+/home/arctangent1759/Music/Final_Fantasy_11_Online_A_Decent_Challenge_OC_ReMix.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Dearly_Beloved-2U28Gtc28z0.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Garamsythe_Waterway-UdMFlKUED48.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Tragedy-VZONX-f10IA.mp3
+/home/arctangent1759/Music/Raindancer/01 - The Willow Maid.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_14_-_Calling.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-06-Inertia.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-04-AThousandSkinsPt2.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_01_-_The_Tea_Party.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_08__Fourth_Confluence-e1Jbes2NLf8.mp3
+/home/arctangent1759/Music/Fight On_ The Greatest College/Fight On_ The Greatest College/12 University Of Notre Dame-'Notr.mp3
+/home/arctangent1759/Music/32645_newgrounds_ffxbat.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_I_Don't_Want_to_Forget-N19ojSFaHEM.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Winnie_the_Pooh-dzyvGZQIs24.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Ending_Movie-i-I2laZZaok.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/05 Courage to Stand.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_Step-HzNAk9FgwSM.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-07 Anti-Syne - There Will Be Blood (Metamorphosis).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DoRight.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-05-SymmetryAndThePocketOfAngels.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_01_-_Slow_Motion_Strut_Version_Two.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/31 Planning of Fates.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-04-CrazyGlue.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-AcrossTheDustyPlains.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-02-Cherry.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/10 Clash of Swords.mp3
+/home/arctangent1759/Music/Shenmue/CD1/11 Daily Agony.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-03-CantTakeOurLoveAway.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Esper-13GyoLq_4dw.mp3
+/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/08 End Game.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_10_-_Train.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Sound_of_the_Wind_[English_Version]-IfQ4DiRzd14.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-108-MorningBlue.mp3
+/home/arctangent1759/Music/OverClocked ReMix/Wild Arms_ ARMed and DANGerous/09 The Traveling Band's Last Song.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-WrongSideOfTheRevolution.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Under_the_Sea-GGGJBnyVl9Y.mp3
+/home/arctangent1759/Music/Train/Alive At Last/13 Drops Of Jupiter.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Revolution-G7ZmArZVrV0.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Calm_Before_the_Storm-sdN-vRT2TuU.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/07 Ruthless Tactic.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/12 Danger on all Sides.mp3
+/home/arctangent1759/Music/Shenmue/CD2/02 Snowy Scenery ~ Version 2.mp3
+/home/arctangent1759/Music/OverClocked ReMix/25YEARLEGEND_ A Legend of Zeld/03 Fushigina Forest _A Link to th.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-06-SugarOnMyTongue.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/32 - Present Your Badges (Indigo Plateau).mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Shiva-nCDKmX6JQZA.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DarkRoads.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-05-Lafayette.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Underground_for_Underhand-3noJ0RcPh88.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Battle_Theme-SqR5qUKEDrs.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-04 Flexstyle - 13th Floor Demonstration (The Magic House).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-02-ThisIsEverything.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/09 Charlie Brown Medley.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Djose_Temple--bvTjmLXRQc.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/20 - Beyond Rock Tunnel (The Road To Lavender Town).mp3
+/home/arctangent1759/Music/Final_Fantasy_7_Aire_Tam_Break_OC_ReMix.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/05 - Oak Research Lab.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/08 - Viridian City (_ Pewter City_ Saffron City).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Speechless_Fight-pwrs5G4UM_A.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_HIKARI_-_KINGDOM_HEARTS_Instrumental-v3zS3sHJf6o.mp3
+/home/arctangent1759/Music/Legend_of_Zelda_Majora's_Mask_Dawn_of_a_New_Day_OC_ReMix.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Clash_Of_Swords-TDCUaYGmD5s.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-10 Jovette Rivera - The 6th Kingdom (Terra).mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-13 Forrest Powell - A Tranquil Rest (Rest in Peace).mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_When_the_Northern_Sky_Was_Clear-IKE2GufZorI.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Valefor-j9p51uf_7DU.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Something_Burns_in_the_Heart-qUDwkLox8Js.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-01 Joshua Morse feat. Jeff Ball, Laura Intravia - A Glimmer of Hope (Searching for Friends).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-101-HeritagePlace.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Lulu's_Theme-p6BRz9RxeVI.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Victory_Fanfare-chQP6Q5FO5s.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Xmas_2012/Dexter_Britain_-_01_-_The_Holiday_Excitement.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Neighbourhood_Of_Water-cIHhSiSQYU8.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-08-UpKilkenny.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_White_mirror-RynR9cIRe8A.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/29 - Cinnabar Island.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-12-WakeUp.mp3
+/home/arctangent1759/Music/Raindancer/02 - Song of Joy.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Your_Truth_Is_My_False-vuGcRWxozhc.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Thoroughly_Blue-o4jE6hDZ8mU.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Dalmasca_Estersand-RgvaZ1F7Ox8.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/06 Cello Wars(Radio Edit).mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-05 XPRTNovice - The Narshemellow (Umaro).mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/1 Overture.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-13 WillRock - Strange World (Another World of Beasts).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-04-IHateYou.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_A_Very_Small_Wish-P3g_tsFqVPQ.mp3
+/home/arctangent1759/Music/Shenmue/CD1/02 Shen Fa ~ Sedge Flower (Original Version).mp3
+/home/arctangent1759/Music/00 Scars of Time_mp3.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/06 The Council.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/18 A Moment of Clarity.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/08 Flight Over Ruined Eden.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-06 Leitbur - Tastes Like Victory (Fanfare).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Sky_Fortress_Bahamut-ZVDTwxjcV9s.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Theme_Of_The_Empire-J3vT3hp0U5w.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/16 Invasion by Moonlight.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-15 Jake Kaufman, Tommy Pedrini - The Impresario (Opera Sequence).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Stilshrine_Of_Miriam-GfzBkZ1YxXw.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_08_-_Collapsing_Time.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/08 Bring Him Home(Les Miserables).mp3
+/home/arctangent1759/Music/00 FFXIII-2-0mm_mp3.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/32 Silent Battlefield.mp3
+/home/arctangent1759/Music/Shenmue/CD1/19 Shenmue ~ Sedge Tree (Arranged by Y. Koshiro).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-02-AdventuresOfTheDeafDreamer.mp3
+/home/arctangent1759/Music/Kristen/00 Code Monkey.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_07__The_Road_of_Trials-hdG-e_Joc8Q.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Battle_For_Freedom-8PjEN-zFlDQ.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-07-BrownBoxes.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_4/Dexter_Britain_-_New_Approach.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-10 Tepid - Electro de Choco (Techno de Chocobo).mp3
+/home/arctangent1759/Music/Chrono_Cross_A_Dream_Between_Worlds_OC_ReMix.mp3
+/home/arctangent1759/Music/Trevor Crookston_ShadowArkLord/Collaborations/00 Sadness and Sorrow.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Chocobo_FFXII_Version-a_0XB8zLDrI.mp3
+/home/arctangent1759/Music/UC Berkeley Rager Mix.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_DANTOTSU!-iqzEJREp-QU.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Moonless_Starry_Night_[English_Version]-YFaJlBxqTOg.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_11_-_Wonderland_Instrumental.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Signs_Of_A_Change-Zv9AMf_1aDQ.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-02-BonjourMonAmie.mp3
+/home/arctangent1759/Music/422780__PkmnButWAnimals_Th.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/15 War's Theme.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Sleeping_Treasure_in_the_Sand-SSwCJ6wyKCw.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-03 SnappleMan, norg, Captain Finbeard - Omen - III. Daydream (Opening Theme, Battle Theme).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-01-DarienGap.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/33 Tiger in the Mist.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SheRemained.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Eruyt_Village-QOAD58HCB-c.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Assault-D4y5BtvX9EI.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-08 Steffan Andrews - Ascension of a Madman (Kefka).mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/16 Peace at What Cost.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_18_-_Arcade_On_Fire.mp3
+/home/arctangent1759/Music/Reverse Osmosis/Fifty Million Reverse Osmosis/11 _Transformers_ Main Theme.mp3
+/home/arctangent1759/Music/Raindancer/05 - Butterfly_s Dream.mp3
+/home/arctangent1759/Music/Masashi Hamauzu/Final Fantasy XIII-(OST)/09 The Pulse Fal'Cie.mp3
+/home/arctangent1759/Music/00 FFXIII-2-Between_time_and_Spac.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/07 - Battle_ VS Wild Pok_mon.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Small_Happiness-MDHRk_jEikg.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/22 - Lavender Town.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-08-Overthrown.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Anima-lFXGfkIsYmw.mp3
+/home/arctangent1759/Music/Castlevania_3_In_the_Beginning_There_Was_Jazz_OC_ReMix.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Seperation_With_Penelo-agdc97WFjU4.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/17 - Battle_ VS Gym Leader (_ Elite Four).mp3
+/home/arctangent1759/Music/Braid_-__Maenam-5kWo8N4QNXM.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/03 Strange Moment.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Jahara,_Land_Of_The_Garif-yzdIgRZ_34g.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_It_Began_with_a_Letter-NBz9QGct3Z4.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Mickey_Mouse_Club_March-FDmfEPw91U4.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Battle_Drum-LIB_JkaRKoc.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Spooks_of_Halloween_Town-1sIFqUojgY8.mp3
+/home/arctangent1759/Music/Super_Mario_Galaxy_Little_Glockenspiel_OC_ReMix.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-01-Swansong.mp3
+/home/arctangent1759/Music/Shenmue/CD2/07 Memories of Distant Days ~ Version 2.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-06-Snooter.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-02 posu yan - river of sine waves (The Serpent Trench).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Giruvegan's_Mystery-KqsLEPZbPRY.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_A_Day_in_Agrabah-snEm4Z0uQJs.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-13-SleepyThought.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Secret_Of_Nethicite-3-S3RKV910g.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-07-TheRavenAndTheSwan.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_04_-_Notebook_Reading.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_A_Walk_in_Andante-6adSyG9bBP8.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/06 - The Road To Viridian City.mp3
+/home/arctangent1759/Music/Raindancer/09 - Will o_ The Wisp.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_10_-_Waking_Up_Instrumental.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/25 - Celadon Game Corner.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/20 Waiting for the Drop.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_07_-_Losing_Love.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Pursuit-jQkzLGKzLIM.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/12 Battle with Greaver.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Decision_on_the_Dock-Wh565n0IYVU.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Patricide-qQS7dTt6K5k.mp3
+/home/arctangent1759/Music/Braid_OST_-_Downstream-kWWDEGts_8Q.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/34 - Into The Hall of Fame.mp3
+/home/arctangent1759/Music/Fight On_ The Greatest College/Fight On_ The Greatest College/13 Ohio State University-'Across.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Destiny-QuiV6CNpLWU.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-07-CardinalBrigade.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-11-ImNotDreaming.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/16 - Pok_mon Gym.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-04-Untitled.mp3
+/home/arctangent1759/Music/Masashi Hamauzu/Final Fantasy XIII-(OST)/16 Primarch Dysley.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Face-Off-9AaT6oe5XIo.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-110-RogueNation.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Innumerable_animals-rBuOjK66PUM.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Farewell-SYYzbfP928s.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-10-GoldenSunrise.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/24 Pushing the Lines.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Suteki_Da_Ne-HXI_11k9uVg.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_The_Boundary_Between_Snow_And_Ice-8SR6mwa6mZI.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Trials-fiYyuYlcIxM.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-10-HomeImprovement.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/13 Vulgrim.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Kiss_Me_Good-Bye-ZI3daqEsC6Q.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Grand_Maester_Mika-F5_oS2Pa-tA.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Miracle-ck1_wI4JD04.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Goblin's_Lair-6lNPKTx_Ii0.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Meager_Advance-NbTz2W8jOwA.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Barbarians-KT5AhUmNuT4.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Boss_Battle-ySrSIrO_Cs8.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Silence_and_life-nEeoN35HKCE.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Kairi_III-5RVqempcQko.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-12 Flexstyle - Evisceration (The Fierce Battle).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Theme_Of_Final_Fantasy_XII_(Presentation_Version)-1E2Xiz1PxeM.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Monster's_Dance_~Rondo~-sYOH4PYYCKw.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Rock_and_burn_you-42qCPrEFDhg.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Night_of_Fate-wil_98TPRRo.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-203-OnBrevity.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Think_of_me-7oNJc8NHZYk.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-FearIsFree.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-17 Flexstyle, OA, Nutritious - Savage Triumph (Wild West).mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/25 In Memory.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/04 Planning for Darkness.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_12_-_After_The_Week_Ive_Had.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-09-Omaha.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chonicles_-_OST_-_Orgel_of_Water-O7Jrh-2baAE.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Giza_Plains-D7J_8IB5i6k.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Monstrous_Monstro-lqt8XDiiQaQ.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-KickOffYourShoes.mp3
+/home/arctangent1759/Music/Shenmue/CD1/06 The Sadness I Carry on My Shoulders.mp3
+/home/arctangent1759/Music/Raindancer/03 - No One But You.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Endure_and_resist-0BEB6_zWlKA.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/09 Swiftly, Silently.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-02-MonaLisa.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-11-GallowsHill.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-07 Nutritious - Castles in the Sand (Edgar & Sabin).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-09-Coffee.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-07-AlreadyThere.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-16 zircon, Jillian Aversa, AeroZ - Till We Meet Again (Aria de Mezzo Carattere).mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Jekkt's_Theme-BNOIs0BLsiw.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-14 Archangel - Umaro's New Groove (Umaro).mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Relaxing_Place-ZIbnsQH7dU4.mp3
+/home/arctangent1759/Music/Braid_Soundtrack_-_Lullaby_Set-UvbbT9E3czs.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-03 Joshua Morse - Remember (Awakening).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Loop_Demo-DKNZvy2YfUc.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Besaid-PS3uwlOfTRM.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Macalania_Woods-g-keAF0Fh8M.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Twilight_in_Dreamland-bOhpHX3q7P8.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Destiny's_Force-kcSUipk7gdo.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Little_Scoundrel-LyGVlQteY8I.mp3
+/home/arctangent1759/Music/ellywu2/Chrono Symphonic - http___chro/11 The Masamune.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-06-LearnToFly.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-10-Methylchloroisothiazolinone.mp3
+/home/arctangent1759/Music/00 FFXIII-2-Oath_Brand_mp3.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Just_an_Itty_Bitty_too_much-LEBmGQukXtQ.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Two_Ends_of_my_Doze-R9w4YckjIaQ.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Unsent_Laugh-xrYP6WTZxho.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheLongestDream.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-KeepInTouch.mp3
+/home/arctangent1759/Music/Perfection. Original Soundtrack/MP3/07 Free Fall.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Kairi_I-V0PjA3oC-UA.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/03 The End of B Company.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-02 Anti-Syne - Johnny's Got That Funk (Johnny C Bad).mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/13 Twinkle Lullaby.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-05-ShesOnMyMind.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_My_Den-JF9WxPv5Vnk.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Mag_Mell-d8PgXhllhPU.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Zertinan_Caverns-l3XiB0vFOKo.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Dark_Clouds_(Imperial_Version)-hyrWuLKcKn8.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/06 Flight Path.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Coexistence_(Liberation_Army_Version)-DF-gbWKbjD0.mp3
+/home/arctangent1759/Music/514675_If-I-Cant.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OldManBlanchard.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Ride_ze_Shoopuf-sbNpMHJyPF8.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/18 End Credits.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/17 Heads Will Roll.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-GangnamStyle.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_This_Is_Your_Story-DaKJOsL22NU.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Prelude-P1rlIYOSvvs.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-05-HouseInMyHead.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/11 All Of Me.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/10 The Storm Approaches.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Illuminant_lives--ZFByiCh1D8.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Goodnight-TggGycAjj3E.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_09_-_Going_Under.mp3
+/home/arctangent1759/Music/Shenmue/CD1/07 Cherry Blossom Wind Dance.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-09-OnceTomorrow.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_An_Imminent_Threat-2tjNeaU-xFk.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/13 Silent Call to Action.mp3
+/home/arctangent1759/Music/Claado Shou/Chrono Symphonic - http___chro/17 The Third Guru.mp3
+/home/arctangent1759/Music/Final_Fantasy_7_Not_the_Taxi_You_Whistled_For_OC_ReMix.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_End_of_the_World-qRexFC4FHg4.mp3
+/home/arctangent1759/Music/423473_Fighting.mp3
+/home/arctangent1759/Music/Shenmue/CD2/03 Separated from Yokosuka.mp3
+/home/arctangent1759/Music/Shenmue/CD1/18 Departure on a New Journey (Arranged by Y. Koshiro).mp3
+/home/arctangent1759/Music/514774_Rainwave---Star-Bur.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/18 Critical Push.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-08-SwimmingToCambodia.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Squirming_Evil-irXizg9k0yg.mp3
+/home/arctangent1759/Music/Shenmue/CD2/16 Secret of a Warehouse.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/31 - Evolution.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Golmore_Jungle-N-rF-rJjt_k.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Today_Arrives,_Becoming_Tomorrow-ogpvzHrLCPU.mp3
+/home/arctangent1759/Music/Shenmue/CD1/16 Antiquity Tree.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Challenging_The_Empire-wEZmgiFVWwY.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-206-ShadowsInTheMoonlight.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_End_Of_Battle-uLnvUm5wQd0.mp3
+/home/arctangent1759/Music/Erik McClure/Aurora Theory/11 Cosminox.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-15 mv feat. Jeff Ball - De Nuit (The Phantom Forest).mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/07 Battle with the Stygian.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-03-SheDreamsInBlue.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-10-HeyRuth.mp3
+/home/arctangent1759/Music/ForgeTrackAudio/_Chess 4 Life_ OST/01 _Chess 4 Life_ (Original Sound.mp3
+/home/arctangent1759/Music/Boyz II Men/Full Circle/02 The Color Of Love.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-17 zircon - Full Speed Ahead (Setzer).mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/17 The Heavy Price of Victory.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-10 Rexy, Brandon Strader - Black Genesis (New Continent).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Sorrow_(Imperial_Version)-qqh--6vhjZ8.mp3
+/home/arctangent1759/Music/Chrono_Trigger_Trigger_Please_OC_ReMix.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Abyss-n_eLrffE8l8.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_06_-_Safe_In_Glass_Houses.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Bahamut-gstBeevwI58.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Shaking_Bahamut-1mPx35yhcjc.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Beyond_the_Door-A-KdCDSiJoQ.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Blitz_Off-dvObI-M2xb4.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/23 Flash Thunder.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/35 - Ending.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-0x0000007b.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Hollow_Bastion-VHGObdC2TuU.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_A_Quiet_Decision-D7gKoCoK3kA.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/21 They're Out There Somewhere.mp3
+/home/arctangent1759/Music/Braid_Music_-_Industry-_gllhaQw76w.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-05 Fishy feat. XPRTNovice - Bad Octopus (Save Them!, Grand Finale).mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_The_Time_of_Many_Smiling_Faces-13IccSl20ZA.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-204-DontCloseYourEyes.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/12 - Battle_ VS Trainer.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/26 - Team Rocket Hideout.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-201-Ships.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/09 In Prophecy.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Symphonic_Poem__Hope-HhPYVTlMuxM.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_03_-_My_Song_For_January.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Forgotten_Capital-EE8-z8wW-c4.mp3
+/home/arctangent1759/Music/Random Encounters/Random Encounters/05 In Another Castle.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-07-ShowerScene.mp3
+/home/arctangent1759/Music/Sara Bareilles/Little Voice/03 Bottle It Up.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Esper_Battle-rVYHhcYWttY.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-207-GoodToGo.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/09 On Guard for Liberty.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Yunalesca-OQuBYJknamI.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/05 Eden.mp3
+/home/arctangent1759/Music/Shenmue/CD1/03 Departure on a New Journey (Original Version).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Phon_Coast-pWgc1pSMCMw.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/17 Last Acts.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Raindrops-9Qge7tnRrBw.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_In_the_gloomy_Darkness-tLL-zEZACGM.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-12-ASong.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-04 SnappleMan, norg, Captain Finbeard - Omen - IV. Polemos (Battle Theme).mp3
+/home/arctangent1759/Music/Dexter_Britain_-_11_-_Wonderland_Instrumental.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/13 The Catacombs.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/6 Zealots.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_No_Time_to_Think-cdVXygYYofs.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-04-Gravity.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Skycity_Of_Bhujerba-rQNWafc6_9k.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Xmas_2012/Dexter_Britain_-_02_-_Silent_Night_Part_1.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-13 diotrans - Fiddlesticks Rag (Spinach Rag).mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_05_-_Seeing_The_Future.mp3
+/home/arctangent1759/Music/Shenmue/CD1/17 Flower Girl.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-04 djpretzel - The Megiddo Brigade (Devil's Lab).mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_To_Zanarkand-1qd-XX6mIDM.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Game_Over-wcOCZ1FloYo.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Endless_Sky-fQnwY8ou5Z0.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-11-RiverWentDry.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-04-PostcardFromHell.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-06 pu_freak - Royal Blood, Fraternal Love (Edgar & Sabin).mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/20 Counter-Attack.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Forze_del_male_(Force_of_Evil)-C-vhOlGDPMA.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Otherworld-k9DVQjE5hUw.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-ZeroToPhantom.mp3
+/home/arctangent1759/Music/Shenmue/CD2/05 To Fly Vacantly Like a Hawk.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-05-UnderTheStairs.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/07 Waiting for Those Who Will Not Return.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-15-BabaGanoush.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_11_-_Forever_Pit.mp3
+/home/arctangent1759/Music/313799_Together_We_Ride.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/14 Epic Moment.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Final_Fantasy_FFXII_Version-dVhkE8em0WI.mp3
+/home/arctangent1759/Music/Whitney Houston/Whitney The Greatest Hits/03 Greatest Love Of All.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SpaceCamp.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/10 Keeping Pace.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/21 We Came in the Night.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-11 McVaffe - Reverie of the Broken Phoenix (Forever Rachel).mp3
+/home/arctangent1759/Music/Final_Fantasy_8_White_Magic_Is_for_Sissies_OC_ReMix.mp3
+/home/arctangent1759/Music/katethegreat19/00 Gently As She Goes ~ katethegr.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_If_it's_Three_People-fVXtJLEeC00.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Road_to_a_Hero-IIaYHt6LA0E.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/12 The Wake of Battle.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Seymour's_Ambition-H5Sjgx49g_4.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Bounce-O-Rama-GslclrVpqoo.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/22 Push the Line.mp3
+/home/arctangent1759/Music/Frightened Rabbit/The Winter of Mixed Drinks/02 Swim Until You Can't See Land.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-UpcomingDowntime.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-04 DragonAvenger, OA - Courage, Failure, Rosebud (Under Martial Law).mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/36 Untitled.mp3
+/home/arctangent1759/Music/Andrew Gerlicher/00 _Drop it Low_- Feat_ Subconsci.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/05 Hunting the Hunter.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-09-FoolsGold.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Always_on_My_Mind-yqWdqdiR2kY.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/23 Shattered.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/4 The Specialist.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Luca-TDjMXfyxXKk.mp3
+/home/arctangent1759/Music/OverClocked ReMix/http___xenogears_ocremix_org -/05 Wounded Soldier (The Wounded S.mp3
+/home/arctangent1759/Music/00 Piano - Still Alive The song f.mp3
+/home/arctangent1759/Music/Andy Williams/Merry Christmas/02 Have Yourself A Merry Little C.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Nalbina_Fortress_Town_Area--ccRdIJCk4o.mp3
+/home/arctangent1759/Music/Final_Fantasy_12_The_Drum_of_Basswall_OC_ReMix.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Friends_in_My_Heart-INRRiKqVTK4.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/02 Battle with Silitha.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_08_-_Running_Through_Tunnels.mp3
+/home/arctangent1759/Music/Shenmue/CD1/01 Shenmue ~ Sedge Tree (Original Version).mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_faint_Light_grasped_in_the_Hand-GM7LR0VSheU.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Spira_Unplugged-AymdefgOZeM.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/15 Dark Desperation.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/08 Demon Scourge.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-07 halc - Aggressive Blue Magic (Strago).mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_A_Contest_of_Aeons-Ljr0y2VsC2s.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-04 Jeff Ball feat. Laura Intravia - Smoke and Clouds (Locke).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Clash_On_The_Big_Bridge_FFXII_Version-K4M5ivckBPQ.mp3
 /home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Leaving_the_Body_Freely-SQbYjLtWmjU.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Voice_of_Wing,_Song_of_Time-u91dBSLuXgA.mp3
+/home/arctangent1759/Music/Shenmue/CD2/06 Memories of Distant Days.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-05 SnappleMan, norg, Captain Finbeard - Polemos (Battle Theme).mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/04 Survival Most Unlikely.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_02__The_Call-PZKpSsvMRxU.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_01_-_The_Time_To_Run_Finale.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/02 - Red and Blue (Opening Theme).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_White_Room-TgN85J2BXC0.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_15_-_Who_Are_We_To_Care.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/01 - Shelf of Memories (Prelude).mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_The_First_Town-WmTeQimolS4.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/19 Breaking out.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/01 Battle with Tiamat.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Hikari_[KINGDOM_Orchestra_Instrumental_Version]-p3lrp0Lt4as.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-02-Cherubs.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Gigolo.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Ixion-nnuSDmxFiQw.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/01 Sunrise on the Battlefield.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Rebellion-zQWdY8WJ0Fk.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Naivety-VmAsJL5Dt6k.mp3
+/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/04 The Mission Part 2.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Pirate's_Gigue-1cYdIkLHsQU.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-04-Troublemaker.mp3
+/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/07 Stag.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-05-TheHandymansLament.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Sending-QW7SBUqzY6I.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Trembling_homefront-YZsvv6eJyko.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Royal_Capital_Rabanastre-City_Upper_Ground-YvW9KQ5vu8Y.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Amidatty_and_Eleanor,_too-wv0_KT_Icsc.mp3
+/home/arctangent1759/Music/Shenmue/CD2/12 Inherited Skills.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/13 - Mt. Moon.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-02-Effortless.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-01-LetItIn.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Seize_the_artifact_for_tallness-yV2lvdO6bqA.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_09_-_From_Truth.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-12-Sundown.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Dark_Knight_(Imperial_Version)-MZNAs-v5su8.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-03-BorderBlaster.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_buffer_for_quiet-wWoWG_33BQw.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-12-MotionlessLand.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Time_For_Rest-QUp46wc9d0Y.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-06 Brandon Strader - Mogstradamus (Mog).mp3
+/home/arctangent1759/Music/Braid_-_The_True_Undercurrent--z7mglI4bY8.mp3
+/home/arctangent1759/Music/72077_newgrounds_fe_hel.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Shrouding_Dark_Cloud-2IzygDP9YCA.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Nostalgic_Profile-r2HJJDx_ceI.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/16 Earth Caller.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-13 Radiowar - Stone Drum (Cyan).mp3
+/home/arctangent1759/Music/505644_Fire-Emblem-Move-Ou.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/14 Crossing the Rotting Battlefield.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-14 Beatdrop - Toxic (The Unforgiven).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Princess'_Vision-xri_gNuZqIo.mp3
+/home/arctangent1759/Music/Weird Al Yankovic/Greatest Hits/08 Lasagna.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheTownCharterOfCantonOhio.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/02 Tales of the Front.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Feywood-lpXe6VTjvnk.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Shipmeister's_Humoresque-GPLONpxBbQo.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-08-SoftOrangeGlow.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Fragments_of_Sorrow-FNbJ4MOpchg.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-09 Level 99 - A Simple Flip Can Change Fate (Coin Song).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-10-FitForAKing.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Merlin's_Magical_House--M9nP90LQ-8.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Bustin'_up_on_the_Beach-E0Ywf-ZuASw.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Traverse_Town-1PrFYl6ujj8.mp3
+/home/arctangent1759/Music/Masashi Hamauzu/Final Fantasy XIII-(OST)/03 The Thirteenth Day.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-11 zircon - Meditations on an Apocalypse (Catastrophe).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Beginning_Of_The_End-TtQ0qI7knYI.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/04 - Pallet Town.mp3
+/home/arctangent1759/Music/Shenmue/CD2/09 The Place Where the Sun Sets ~ Version 2.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_11__Fifth_Confluence-fuDG3wF4Gf4.mp3
+/home/arctangent1759/Music/Perfection. Original Soundtrack/MP3/01 Fall In.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Nalbina_Fortress_Underground_Prison-LTu1lzfLolA.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Temple_Players-qXi_1aqJJuc.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-105-RevolutionNow.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Wedding--Tsoxul-LTE.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-08-TogetherOnOurOwn.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/02 Surveying the Enemy.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-103-Saturday.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_To_The_Summit-sfVFOYHDFbA.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-210-IWannaKnow.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/03 Undead on Arrival.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_End_of_the_Tale-1m4ADSgm90M.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_The_posture_you_do_not_despise-yxTZ4UAGCuQ.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-15 Palpable, OA - Event Horizon (The Day After).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-07-DizzySpells.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/5 Red Faction.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Leap_in_the_Dark-2MuVuuI1BFg.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Captain_Hook's_Pirate_Ship-bc19KQwKmXk.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-03-HollowGrove.mp3
+/home/arctangent1759/Music/Wild_Arms_The_Traveling_Band's_Last_Song_OC_ReMix.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/06 Blood in the Water.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/17 Uriel.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_18__I_was_Born_for_This-qizpBpHTzkU.mp3
+/home/arctangent1759/Music/Karl Jenkins_Carmine Lauri_Dav/Classical Music 2010/12 Allegretto from Palladio for S.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/27 - Silph Co. Under Siege.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Scherzo_di_notte_(Joking_Night)-IpAm0OTBUoQ.mp3
+/home/arctangent1759/Music/Shenmue/CD1/20 Shen Fa ~ Sedge Flower (Arranged by Y. Koshiro).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-02-Stickybee.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-06-Anchor.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_12_-_The_Lost_Ones.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_4/Dexter_Britain_-_Forced_Through_Time.mp3
+/home/arctangent1759/Music/513907_Monument-of-Non-Exi.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/14 Lit by the Fires of Battle.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Coexistence_(Imperial_Version)-fjwT7JUmMSg.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-13-CheapskateRomantic.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_02_-_After_Christmas.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_17_-_Waking_Up.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_State_Of_Emergency-stxE6yl239w.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_13__Final_Confluence-cbG3llaKvuI.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-01-IWillNotLetYouLetMeDown.mp3
+/home/arctangent1759/Music/Shenmue/CD2/10 Working Man.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Ashe's_Theme-kIcI70Ve-f0.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Challenge-WceHivMzkTE.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-08-WaterInTheCreek.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Phantoms-0kJfdOX5u84.mp3
+/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/05 Oleg and Kinzie.mp3
+/home/arctangent1759/Music/Braid_Soundtrack_-_Long_Past_Gone-u4tEhqQGTBs.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-05-ToLoseTheWar.mp3
+/home/arctangent1759/Music/Various Artists/The Hills-The Soundtrack/02 Boston.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Sound_of_the_Wind_[Japanese_Version]-Sh3uGHm6eQo.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Walk_of_the_heart-k7b1_FdhepA.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Basch's_Reminiscence-ify66pqucsg.mp3
+/home/arctangent1759/Music/Raindancer/08 - Birds of a Feather.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Rikku's_Theme-JSXQjBpGYJM.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/10 - Viridian Forest.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-01-FightTheSea.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-10-TheVoices.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_To_the_Successor_of_the_Crystal-IrWthd4mPtk.mp3
+/home/arctangent1759/Music/Final_Fantasy_-_XII_Mission_Start-B_zyu8f6Axo.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-06-TheSpiritWorld.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/11 Cautious Advance.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_09__Temptations-QEGtv0A6JMY.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-12 Mazedude - Slam Davis (Slam Shuffle).mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-08 Mattias Haggstrom Gerdt - Dark Blue Substance (Cyan).mp3
+/home/arctangent1759/Music/Final_Fantasy_Requiem_for_a_Dying_World_OC_ReMix.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SkynyrdsNumber4874.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-05-ThePawnbrokersStepdaughter.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Serenity-bBrZgk9sG14.mp3
+/home/arctangent1759/Music/00 FFXIII-2-Rodeo_de_Chocobo_mp3.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/7 Unlikely Allies.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Nap-TaogKghvbZg.mp3
+/home/arctangent1759/Music/Shenmue/CD1/15 Departure.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-01-IWantToDestroySomethingBeautiful.mp3
+/home/arctangent1759/Music/Shenmue/CD1/10 Rain.mp3
+/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/02 When Good Heists Go Bad.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Promised_Grace-umz2fUSYYRo.mp3
+/home/arctangent1759/Music/516336_EnV---Pneumatic-Tok.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-08 Jose the Bronx Rican - Pure Essence (Relm).mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/12 Waiting.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_03_-_In_The_Electric_Fields.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/8 Burial Shrine.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/03 Black Swarm.mp3
+/home/arctangent1759/Music/The Fifth Dimension/Ultimate 5th Dimension/20 Workin' On A Groovy Thing.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-09 McVaffe - Savage Dance (Wild West).mp3
+/home/arctangent1759/Music/Random Encounters/Season 2/02 Peach - End Credits and The Re.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Moving_Clouds_on_the_River's_Surface-GwY0geNQoGE.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Starry_Moonlit_Night_[Japanese_Version]-s7F4wuIof8w.mp3
+/home/arctangent1759/Music/Russell Cox/Chrono Symphonic - http___chro/21 The Chrono Trigger.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-16 XPRTNovice - Gobble, Snarf, Snap (Phantom Train).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Dreadnought_Leviathan_Bridge--lEkixSzw6Q.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_14__The_Crossing-jvMkchZhzzI.mp3
+/home/arctangent1759/Music/Jimmy Wong/00 Want You Gone (Cover).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Small_Bargain-n31t8kuxwrA.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-09-MorningAfter.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-11-AreYouHavingFun.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-06-OhMallory.mp3
+/home/arctangent1759/Music/Shenmue/CD1/04 Encounter with Destiny.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/18 - Vermilion City.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Bravely_Forward-1CRUFXHz0tk.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-107-ImLettingGo.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_An_Intense_Situation-DSnZK3pp7sE.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-03-Dust.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_From_tomorrow_on-YA9RTBl71X0.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SkylineOfTheSea.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/11 Prison Break.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_03_-_Perfect_I_Am_Not.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Where_is_This--V6eBIPYg_o.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Pursuit-4KpTwF-sA_0.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/03 - Dreams and Adventures (Oak_s Opening Speech).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-01-OnlyWhispering.mp3
+/home/arctangent1759/Music/Lee_Maddeford_-_09_-_Le_petit_jardin_with_Les_Gauchers_Orchestra.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/24 - Celadon City.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Light_and_Shadow-MFq1w1JL_sM.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_When_we_are_together-QjhxXALw3ho.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Echoes_at_the_Mountain_Peak-0Qt7NN1D3ls.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Journey_to_the_projective_mind-pQBoUqtIrfQ.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_From_strength_to_kindness-1CLsvVdM1m0.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_10_-_Together_In_The_Empty.mp3
+/home/arctangent1759/Music/Perfection. Original Soundtrack/MP3/06 Dat Funk (Bonus Track).mp3
+/home/arctangent1759/Music/Raindancer/06 - Raindancer.mp3
+/home/arctangent1759/Music/Final_Fantasy_1_&_2_Dawn_of_Souls_Earthrise_OC_ReMix.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Destiny_Islands-nipZBhajQWE.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Yuna's_Theme-GX2-Qh5MHz4.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/28 King and Country.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/14 Battle with Abaddon.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HowToSucceedInSymphony.mp3
+/home/arctangent1759/Music/Shenmue/CD2/13 Hip de Hop.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Tidus'_Theme--yvA_cwmXm4.mp3
+/home/arctangent1759/Music/Malcolm Kirby - Saints Row The Third/01 Saints Row the Third.mp3
+/home/arctangent1759/Music/Pokemon_Red_Version_Battle_for_the_Badge_OC_ReMix.mp3
+/home/arctangent1759/Music/514911_Final-Boss.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Penelo's_Theme-Pl8HV-ngAKw.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Xmas_2012/Dexter_Britain_-_03_-_Auld_Lang_Syne.mp3
+/home/arctangent1759/Music/Perfection. Original Soundtrack/MP3/03 Mandala.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/23 - The Ghost of Pok_mon Tower.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/26 Skirmish in the Woods.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/09 Echo Gorge.mp3
+/home/arctangent1759/Music/OverClocked ReMix/Wild Arms_ ARMed and DANGerous/01 Return to Dust (Ashes to Ashes.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Auditory_Hallucination-lb-p0z7Kdto.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/04 Battle with Straga.mp3
+/home/arctangent1759/Music/Braid_Soundtrack_-_Tell_It_By_Heart_-_Jami_Sieber-BvzKpxFk70A.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/09 - Pok_mon Center.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/3 The Swarm.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/01 Twilight on Approach.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Unite,_Descent-42eD-8cDlmc.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-02 XPRTNovice - Go-Go Gadget Gonkulator (Gogo).mp3
+/home/arctangent1759/Music/Jonathan Coulton/Code Monkey Remix Contest/01 Code Monkey (DJ Shamelessly Se.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/01 Darksiders Theme.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-06-ButItDid.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-07-GreySnow.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SexyNationArmy.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/19 - SS Anne.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-05 Patrick Burns - Following Forgotten (The Mines of Narshe).mp3
+/home/arctangent1759/Music/Braid_OST_-_Undercurrent-qJNlsYh4sfw.mp3
+/home/arctangent1759/Music/Sleepy Emp/Chrono Symphonic - http___chro/04 To Lands Unknown.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_A_Piece_of_Peace-tJgxyxoAyG8.mp3
+/home/arctangent1759/Music/513968_Song-52-Zerozz-Trib.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-08-HonchoGrahamFromBirmingham.mp3
+/home/arctangent1759/Music/Willie Nelson/Country Super Hits/06 On The Road Again.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Salikawood-ZhUYPy7GVn4.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Starry_Moonlit_Night_~Arrange_Version~-_0LYPdUjfqQ.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Seeking_Power-6wzU706vNlA.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_An_inspection_which_values_harmony-yHgZaCRuHQY.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Blast_Away!_-Gummi_Ship_3--s8d7OGnYWDk.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Sandsea-XygkIvA5B0Q.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-10-SwimmingInTurpentine.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Magic_is_Everything-_Fn1Pw-LxU8.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-09 Shnabubula, Gabe Terracciano - Ending Suite (Ending Theme).mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Dearly_Beloved_(Reprise)-3azmxVp8H3g.mp3
+/home/arctangent1759/Music/Random Encounters/Season 2/01 The Best We Can Be - A Princes.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Hey.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-05 DDRKirby(ISQ) - There's Nothing Like Flying (Blackjack).mp3
+/home/arctangent1759/Music/Braid_Soundtrack_-_Downstream-uejW9xIFCMw.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth-alQ1d7jsz0A.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Never_Land_Sky-DaQNYgcMok4.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Dalmasca_Westersand-BXLJGs2FjdY.mp3
+/home/arctangent1759/Music/Raindancer/11 - So Far Away and So Near.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_16_-_What_Its_All_About.mp3
+/home/arctangent1759/Music/Braid_Music_-_Trust-bosF7nq2Uh4.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Omen-v7gPU-DrJGI.mp3
+/home/arctangent1759/Music/Shenmue/CD2/01 Snowy Scenery.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-13-Epilogue.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-07 bLiNd - Bass of the Returners (The Returners).mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Guardando_nel_buio_(Watching_in_the_Dark)-0Zc0mQIQjxs.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_17__Apotheosis-ypNgvc6c6Cc.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_07_-_Nights_Tale.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Final_Battle-HYUqu95g_2o.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Rapid_Fire-c7xzvsjEe24.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Infiltration-mhjLAJ05kbQ.mp3
+/home/arctangent1759/Music/514227_Solar-Noise---EP-PR.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Clan_Headquarters-fsiRVJNNSxA.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-01 SnappleMan, norg, Captain Finbeard - Omen - I. Black Dawn (Opening Theme).mp3
+/home/arctangent1759/Music/514530_Song-of-Storms-Remi.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_I'm_Moogle-0HySDdqmW14.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_I_Believe-ZlYiJ0_H84c.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-04-PrivateHurricane.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_16__Nadir-UTkq8ZhbvcM.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Destati-CEDMjryggsM.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Tomb_Of_Raithwall-wwca-40IE4Q.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Parasite.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Hymn_of_the_Fayth_~_Spira-jOQiuoIy_JI.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/15 - Cerulean City (_ Fuschia City).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Dream_To_Be_A_Sky_Pirate-gKebU_3JFrQ.mp3
+/home/arctangent1759/Music/Fight On_ The Greatest College/Fight On_ The Greatest College/01 The Star Spangled Banner.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-09 Sole Signal - Illusionary (Another World of Beasts).mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/04 Chaos Eater.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Agitation_(Imperial_Version)-XssigkHISPY.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Pressure-1VUMcABK2Rw.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-07-NothingInTheDark.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-03-Insomnia.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-BobSellsChevrolets.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-11-TheGloaming.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/15 Empowered.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_08_-_Leave_Well_Enough_Alone_Instrumental.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-10 Disco Dan - Humble Beginnings, Great Expectations (The Prelude).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-03-IllBeRightBehindYouJosephine.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Port_City_Of_Balfonheim-whOVFue2Ojw.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Auron's_Theme-aFKchkQm37o.mp3
+/home/arctangent1759/Music/Braid_Soundtrack_-_Undercurrent-6dNu2b8GdXA.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Caravan_Crossroad-mHnlLP4SnAE.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Promise_With_Balthier-iy7XAj5AlDw.mp3
+/home/arctangent1759/Music/Mr_ Scruff/Ninja Tuna/01 Kalimba.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-12-OfDarkRoomsAndCrookedCandles.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_06__Third_Confluence-zKovsl_xKa4.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Departure-hNRHO2pY97I.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/30 - Pok_mon Mansion.mp3
+/home/arctangent1759/Music/OverClocked ReMix/25YEARLEGEND_ A Legend of Zeld/14 Ilia's Adagio Meets Dark March.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_05_-_Chasing_Time.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-01-Incoherent.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-205-MeAndBillyBarnum.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_The_Travel_Agency-e1CzlVas2ME.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Cerobi_Steppe-9qQm3kaxfl4.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-12-Gemini.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_flicker_which_divides_light_and_darkness-cfm03ctrtTM.mp3
 /home/arctangent1759/Music/Pokemon Orchestrated/11 - Show Me Around_ Old Man_.mp3
 /home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/19 For Those Who Weren't There.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Game_Over-wcOCZ1FloYo.mp3
-/home/arctangent1759/Music/Shenmue/CD1/17 Flower Girl.mp3
-/home/arctangent1759/Music/Shenmue/CD2/15 Nightmare.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Small_Bargain-n31t8kuxwrA.mp3
-/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Movement_in_Green-3WuPUe-8xZg.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/18 - Vermilion City.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_End_of_the_World-qRexFC4FHg4.mp3
-/home/arctangent1759/Music/Pokemon Orchestrated/09 - Pok_mon Center.mp3
-/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Bounce-O-Rama-GslclrVpqoo.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-02-Stickybee.mp3
-/home/arctangent1759/Music/Shenmue/CD1/10 Rain.mp3
-/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_06__Third_Confluence-zKovsl_xKa4.mp3
-/home/arctangent1759/Music/Final_Fantasy_XII_-_Sorrow_(Liberation_Army_Version)-YbhXVEE_zxI.mp3
-/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-202-FlutterByButterfly.mp3
-/home/arctangent1759/Music/Braid_-_The_True_Undercurrent--z7mglI4bY8.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_March_Caprice_for_Piano_and_Orchestra--obiKbbuh1s.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Game_Over-CuP4bkl-bYI.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Creep-PKp-W6MAgYc.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/29 Opposing Fronts.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-109-TheBottom.mp3
+/home/arctangent1759/Music/Kansas/Kansas/01 Carry On Wayward Son.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-11-ThanksForComing.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/11 The Measure of One's Worth.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-01 bustatunez - Wild Child Ballad (Gau).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-HereToday/JoshWoodward-HereTodayRemixed-11-MidnightSun.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 1/18 Nex Sacramentum.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/07 O Fortuna(Carmina Burana).mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part2/JoshWoodward-TheSimpleLife-211-Afterglow.mp3
+/home/arctangent1759/Music/Shenmue/CD1/13 Sadness and Hope.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Peril-wOUUgPipBr4.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Out_of_the_Frying_Pan-6rGHtL2TeqA.mp3
+/home/arctangent1759/Music/Shenmue/CD2/11 Snack Linda Theme.mp3
+/home/arctangent1759/Music/Lord_of_the_Rings_Volume_1_One_Ring_OC_ReMix.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Qui_Are_Al_Bhed-bzxP5wblAyw.mp3
 /home/arctangent1759/Music/Final_Fantasy_XII_-_Momentary_Relief-iEZe1quSM3A.mp3
-/home/arctangent1759/Music/Darksiders OST Disc 2/07 Light Combat.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/06 The Month of Valiant Effort.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Leap_the_Precipice-55oNugf4GW4.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Secret_Practice-JZGQ_v-LAKU.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/15 All Plans in Motion.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Strategy-neyWrT13mQM.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Annual_Festival-yt20Ndh0i3w.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Repeated_Tide-L0hperjV1B8.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Texas.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-07-InvisibleLight.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-OnlyWhispering/JoshWoodward-OnlyWhispering-08-EastSideBar.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Wandering_Flame-u5V0Ctn-NW4.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-FiveMinutes.mp3
+/home/arctangent1759/Music/422780__PkmnButWAnimals_Th(1).mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Braska's_Daughter-SJIVFHdsDx4.mp3
+/home/arctangent1759/Music/Shenmue/CD1/08 Nozomi's Confession.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-09 XPRTNovice - La Montana de los Caballos Jovenes (Mt. Koltz).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Fight_To_The_Death-75hQJylsOdw.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/16 Well of Souls.mp3
+/home/arctangent1759/Music/Red Faction Armageddon Original Soundtrack - MP3/10 Madman's Sermon.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_07_-_The_Time_To_Run.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-11 bLiNd - Slam Shufflin' (Slam Shuffle).mp3
+/home/arctangent1759/Music/Portal_2_The_Orchestra_Is_a_Lie_OC_ReMix.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-14 Derek Oren, Jeremy Robson - Elegy for a Ruined World (Dark World).mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Volume_5/Dexter_Britain_-_12_-_Telling_Stories.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Oopsy-Daisy-mxpeXcnk56M.mp3
+/home/arctangent1759/Music/Random Encounters/Season 2/07 One Winged Office_ A Sephiroth.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Movement_in_Green-3WuPUe-8xZg.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Twilight-lCXFRC3PI6w.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/10 Mayhem.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-03-Chainsaw.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 2/2-06 Danny Baranowsky - Train Suplex (Decisive Battle).mp3
+/home/arctangent1759/Music/Shenmue/CD2/08 The Place Where the Sun Sets.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Victory_Fanfare-7VbBl46qFmk.mp3
+/home/arctangent1759/Music/Shenmue/CD2/17 To Continent and Sea.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-09-Pompeii.mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/21 - Bicycle.mp3
+/home/arctangent1759/Music/Masashi Hamauzu/Final Fantasy XIII-(OST)/08 The Pompa Sancta.mp3
+/home/arctangent1759/Music/Raindancer/04 - Round and Round.mp3
+/home/arctangent1759/Music/Wild_Arms_A_Morning_at_the_Abbey_OC_ReMix.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_07_-_The_Time_To_Run.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-SunnySideOfTheStreet/JoshWoodward-SunnySideOfTheStreet-10-FastFoodFantasy.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_4/Dexter_Britain_-_Grand_Movement.mp3
+/home/arctangent1759/Music/The Teeth/Carry the Wood/01 So Long.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/05 Rolling In The Deep.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-16 Calum Bowen feat. Xarnax42 - Blackjack's Breakup Bossa (Blackjack).mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_The_Mediocrity_sought_out_by_everyone-MMxhBnHgY-8.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Can_you_recite_the_Dream-QDyD9aRdMPM.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_The_Mosphoran_Highwaste--ySdD5Hi8As.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_A_wall_with_no_front_or_back-4C80F4Yu_Ag.mp3
+/home/arctangent1759/Music/Shenmue/CD2/14 Revenge of a Sailor.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_06_-_Summers_Coming.mp3
+/home/arctangent1759/Music/Final_Fanatsy_X_-_OST_-_The_Blitzers-Ki6mPJWjfHk.mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_12__Atonement-pAtYPnCsWzo.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Blast_Away!_-Gummi_Ship_I--CyQljXcpRiM.mp3
+/home/arctangent1759/Music/Various Artists/R&B Slow Grooves/06 At Your Best You Are Love.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheWake/JoshWoodward-TheWake-09-LittleTomcat.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Breadcrumbs/JoshWoodward-Breadcrumbs-06-StarsCollide.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Abandoning_Power-bZPJGDoKYkw.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-05-TheVagabond.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/30 Trading Shells.mp3
+/home/arctangent1759/Music/The Piano Guys/The Piano Guys Hits Vol_ 1/03 Without You.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_To_The_Place_Of_Gods-xZ2rw-VDwfA.mp3
+/home/arctangent1759/Music/Company of Heroes - Songs from the Front - MP3/13 A Selfless Action.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Mission_Failure-yrHNPzq6Z3c.mp3
+/home/arctangent1759/Music/Dexter_Britain_-_Creative_Commons_Vol_2/Dexter_Britain_-_09_-_Stop_It_Instrumental.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-03-InfiniteHorizon.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Arabian_Dream-WY1XWFI1zqI.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-08 zircon, Sixto Sounds - Demon, Fiend & Goddess (Dancing Mad).mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Level_Up!-391lf-zhXi4.mp3
+/home/arctangent1759/Music/Fight On_ The Greatest College/Fight On_ The Greatest College/20 University Of Southern Califor.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-1000Words.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 5 - Bonus/5-12 sphexic - Jidoorian Rhapsody (The Wedding).mp3
+/home/arctangent1759/Music/Pokemon Orchestrated/28 - Ocean Waltz (Surfing).mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Turning_the_Key-BnIjh1WMDOI.mp3
+/home/arctangent1759/Music/406695_fe3_main_o.mp3
+/home/arctangent1759/Music/PLBenjaminZ/Chrono Symphonic - http___chro/10 Denadoro Climb.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-10-JosieHasTheUpperHand.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Hand_in_Hand-UHowlm4YMIk.mp3
+/home/arctangent1759/Music/Shenmue/CD1/12 Tears of Separation.mp3
+/home/arctangent1759/Music/Braid_Music_-_Identity-l9nBVIUsJew.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-Ashes/JoshWoodward-Ashes-11-AThousandSkinsPt1.mp3
+/home/arctangent1759/Music/Eternal_Sonata_-_OST_-_Dive_into_the_vast_expanse_of_plains-xTaujbqgSoY.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Tricksy_Clock-2qdPty1AWBw.mp3
+/home/arctangent1759/Music/Company of Heroes - All Heroes Rise - MP3/24 Ashes and Blood.mp3
+/home/arctangent1759/Music/Shenmue/CD1/09 Nozomi and Ryo.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_A_Land_Of_Memories-wb0W0M0Pc-M.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 4/4-07 Derek Oren, Jeremy Robson - Trauermarsch (Last Dungeon).mp3
+/home/arctangent1759/Music/Shenmue/CD2/19 Wish... (Karaoke Version).mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Aiming_Towards_the_New_World-Za22i5SEZhQ.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-NotQuiteConnected/JoshWoodward-NQC-09-LetMeTalkCarol.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-TheSimpleLife-Part1/JoshWoodward-TheSimpleLife-111-HistoryRepeats.mp3
+/home/arctangent1759/Music/Final_Fantasy_Crystal_Chronicles_-_OST_-_Sad_Monster-dFqw9y70zWA.mp3
+/home/arctangent1759/Music/00 FFXIII-2-Starting_Over__mp3.mp3
+/home/arctangent1759/Music/Shenmue/CD2/04 Departure for Hope.mp3
+/home/arctangent1759/Music/Raindancer/10 - Winter Moon.mp3
+/home/arctangent1759/Music/55311_newgrounds_ffx_ba.mp3
+/home/arctangent1759/Music/Darksiders OST Disc 2/05 Death To All Enemies.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-CrawfordStreet/JoshWoodward-CrawfordStreet-14-WaitingTakesTime.mp3
+/home/arctangent1759/Music/506132_Inner-Peace.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_Rabanastre_Downtown-fMgLuY6bNds.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Servants_of_the_Mountain-kty5w-7pJBE.mp3
+/home/arctangent1759/Music/Perfection. Original Soundtrack/MP3/05 Drifter (Bonus Track).mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 1/1-02 Mustin - Now Is the Winter (The Mines of Narshe).mp3
+/home/arctangent1759/Music/OverClocked ReMix/Wild Arms_ ARMed and DANGerous/01 A Morning at the Abbey (Abbey).mp3
+/home/arctangent1759/Music/Shenmue/CD1/14 Dawn.mp3
+/home/arctangent1759/Music/Kingdom_Hearts_-_OST_-_Blast_Away!_-Gummi_Ship_II--HaXefUyUMas.mp3
+/home/arctangent1759/Music/Final_Fantasy_XII_-_You're_Really_A_Child-K7dMpg7yyEM.mp3
+/home/arctangent1759/Music/Final_Fantasy_VI_-_Balance_and_Ruin/MP3/Disc 3/3-01 Joshua Morse - Flava de Chocobo (Techno de Chocobo).mp3
+/home/arctangent1759/Music/Journey_Soundtrack_(Austin_Wintory)_-_03__First_Confluence-qSc-clmoT4I.mp3
+/home/arctangent1759/Music/Josh Woodward/JoshWoodward-DirtyWings/JoshWoodward-DW-12-Nincompoop.mp3
+/home/arctangent1759/Music/Final_Fantasy_X_-_OST_-_Suteki_Da_Ne_[Orchestra_Version]-qGLWIg-vsHY.mp3

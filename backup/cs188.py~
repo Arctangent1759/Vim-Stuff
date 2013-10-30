@@ -1,0 +1,55 @@
+vals_input=[]
+for _ in range(24):
+    vals_input.append(float(raw_input('Enter Number: ')))
+
+ds={
+        'A':{
+            'Clockwise':{
+                'B':[vals_input[0],vals_input[1]],
+                'C':[vals_input[2],vals_input[3]]
+                },
+            'Counterclockwise':{
+                'B':[vals_input[4],vals_input[5]],
+                'C':[vals_input[6],vals_input[7]]
+                },
+            },
+        'B':{
+            'Clockwise':{
+                'A':[vals_input[8],vals_input[9]],
+                'C':[vals_input[10],vals_input[11]]
+                },
+            'Counterclockwise':{
+                'A':[vals_input[12],vals_input[13]],
+                'C':[vals_input[14],vals_input[15]]
+                },
+            },
+        'C':{
+            'Clockwise':{
+                'A':[vals_input[16],vals_input[17]],
+                'B':[vals_input[18],vals_input[19]]
+                },
+            'Counterclockwise':{
+                'A':[vals_input[20],vals_input[21]],
+                'B':[vals_input[22],vals_input[23]]
+                },
+            },
+        }
+
+
+vals_input=[]
+for _ in range(6):
+    vals_input.append(float(raw_input('Enter Number: ')))
+
+A=max(vals_input[0],vals_input[1])
+B=max(vals_input[2],vals_input[3])
+C=max(vals_input[4],vals_input[5])
+
+qk={'A':A,'B':B,'C':C}
+
+for s in ('A','B','C'):
+    for a in ('Clockwise','Counterclockwise'):
+        out=0
+        curr=ds[s][a]
+        for sprime in curr:
+            out+=curr[sprime][0]*(curr[sprime][1]+0.5*qk[sprime])
+        print s+" "+a+"---"+str(out)

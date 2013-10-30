@@ -1,0 +1,12 @@
+#!/usr/bin/python
+import fileinput, re
+
+uniques={}
+
+for line in fileinput.input():
+    for match in re.findall('[0-9]{3}-[0-9]{2}-[0-9]{4}',line):
+        uniques[match]=True
+
+for line in uniques:
+    if len(line)==12:
+        print line.rstrip()

@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/arctangent1759/.archive/syntastic'
-let g:netrw_dirhist_2='/home/arctangent1759/Documents/Projects/Instructional'
-let g:netrw_dirhist_3='/home/arctangent1759/workspace/test/bin/org/test'
-let g:netrw_dirhist_4='/home/arctangent1759/.vim/config'
-let g:netrw_dirhist_5='/home/arctangent1759/Documents/School/CS61B/Homework/hw9'
-let g:netrw_dirhist_6='/home/arctangent1759/Documents/Projects/Ongoing/MMO/assets/html'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/arctangent1759/.android'
+let g:netrw_dirhist_2='/home/arctangent1759'
+let g:netrw_dirhist_3='/home/arctangent1759/.metadata'
+let g:netrw_dirhist_4='/home/arctangent1759'
+let g:netrw_dirhist_5='/home/arctangent1759/Documents/Projects/Ongoing/PennApps2013/hazardous-vocabulary-overdrive/.git'
+let g:netrw_dirhist_6='/home/arctangent1759/Documents/Projects/Ongoing/2dTribes/assets/html'
+let g:netrw_dirhist_7='/home/arctangent1759/Documents/Projects/Instructional/Ruby/web/web/lib/web'

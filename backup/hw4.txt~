@@ -1,0 +1,111 @@
+CS 61C Homework 4
+Name: Alexander Chu
+
+Login: cs61c-hp
+
+Problem 1
+
+a:
+0xd49c0000
+
+b:
+2^16
+
+c:
+2^-40
+
+d:
+0 (-15 Biased)
+
+e:
+31 (16 Biased)
+
+Problem 2
+
+a:
+The assembler assembles individual .c or .java files, and doesn't know the positions of referenced entities that are outside the current file. The linker takes the generated .o object code, and links them together into an executable. It would only be logical that the absolute addressing occurs in the linker, since the linker is passed all of the files that it is merging together; while the assembler does not know the absolute addresses of instructions in each file, the linker does.
+
+b:
+No. The assembler creates independent object code files that act through the interface of their symbol and relocation tables. If a single file is changed, only that file must be recompiled.
+
+c i:
+  Symbol
+
+  ii:
+  Relocation
+
+  iii:
+  Relocation
+
+Problem 3
+
+a:
+20.0
+
+b:
+System B is faster by a factor of 1.6.
+
+
+c i:
+.02
+
+  ii:
+4 Cycles
+
+  iii:
+11 Cycles
+
+d:
+6.62
+
+Problem 4
+
+a i:
+  T=10
+
+
+
+  ii:
+	0xabc8
+	0xabc9
+	0xabca
+	0xabcb
+	0xabcc
+	0xabce
+	0xabcf
+
+  iii:
+	All blocks beginning with the following prefixes:
+	0bxxxxxxxxxx001yyy
+
+	where xxxxxxxxxx is a 10 bit binary string not equal to 1010101111
+	and
+	where yyy is a 3 bit binary string
+
+b i:
+  T=11
+
+  ii:
+	0xabc8
+	0xabc9
+	0xabca
+	0xabcb
+	0xabcc
+	0xabce
+	0xabcf
+
+  iii:
+	None. The other block in the set may be occupied by any of the addresses that would conflict with 0xABCD's block in the Direct Mapped implementation, which would allow a hit for any of them.
+	Hence, there are no guaranteed misses.
+
+c i:
+  Maximum:90%
+  Minimum:85%
+
+  ii:
+  Maximum:85%
+  Minimum:80%
+
+  iii:
+  Maximum:0%
+  Minimum:0%

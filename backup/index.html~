@@ -1,23 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-  <head>
-	<script src="/socket.io/socket.io.js"></script>
-	<script type="text/javascript">
-	  var socket=io.connect('http://'+window.location.host);
-	  socket.on('chatmsg',function(data){
-		  document.getElementById('chatBox').innerHTML+="<br/>"+data.text;
-	  });
-	</script>
-  </head>
-  <body>
-	<div id = "chatBox"></div>
-	<input type="text" id = "textbox"></input>
-	<button onclick="
-	  socket.emit('data',{
-		text:document.getElementById('textbox').value,
-	  });
-	  ">
-	  Send
-	</button>
-  </body>
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+</head>
+<body>
+
+  <p>Nothing here {{'yet' + '!'}}</p>
+  <p>2+2={{4}}</p>
+  <p>Width:{{window.innerWidth}}</p>
+
+</body>
 </html>

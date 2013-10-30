@@ -1,8 +1,18 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[11pt]{article}
+\usepackage{amsmath,textcomp,amssymb,geometry,graphicx,tikz,pgfplots}
 \begin{document}
-Words words words words. Text text. Circles.
-\section{Test test test}
-OVALS!
-\subsection{The heresy of ovals}
-Ovals are banned.
+\begin{tikzpicture}
+  \begin{axis}[ 
+  	xmin=0,
+  	xmax=10,
+  	ymin=-10,
+  	ymax=10,
+	samples=500,
+	smooth,
+    xlabel=dog,
+    ylabel=asdf,
+  ] 
+    \addplot[domain=-10:10] {ln(x)/ln(2)}; 
+  \end{axis}
+\end{tikzpicture}
 \end{document}

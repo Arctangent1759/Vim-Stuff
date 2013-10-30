@@ -1,0 +1,13 @@
+** Spice 9
+*=-=-=-=-=-=- 
+
+.include <path to Lab_4_LMC6482.MOD>
+V1 1 0 AC
+C1 2 3 0.503u
+R1 2 3 316
+R2 1 2 100
+X1 0 2 4 5 3 LMC6482A/NS
+Vhigh 4 0 20
+Vlow 0 5 20
+.AC dec 10000000 1p 1T
+.END

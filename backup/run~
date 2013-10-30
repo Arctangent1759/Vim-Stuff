@@ -1,4 +1,3 @@
 scp -rq . cs61c-hp@hive6.cs.berkeley.edu:~/proj1
-scp -q remotescr.sh cs61c-hp@hive6.cs.berkeley.edu:~
-ssh cs61c-hp@hive6.cs.berkeley.edu 'chmod +x ./remotescr.sh'
-ssh cs61c-hp@hive6.cs.berkeley.edu './remotescr.sh'
+ssh cs61c-hp@hive6.cs.berkeley.edu 'chmod +x ./proj1/remotescr.sh'
+ssh cs61c-hp@hive6.cs.berkeley.edu './proj1/remotescr.sh' 2>&1 | less
