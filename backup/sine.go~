@@ -1,0 +1,9 @@
+package sineTest
+
+import (
+    "fmt"
+)
+
+func main(){
+    fmt.Print("HErro");
+}

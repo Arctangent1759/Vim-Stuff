@@ -1,0 +1,35 @@
+#include "animals.h"
+Mouse::Mouse(string s, Position p) : Animal(s,p){
+    cout << "Initializing person " << s << " at position " << p << endl;
+}
+
+bool Mouse::Chase(){
+    this->myPos.IncrementPosition(0.0,1.0);
+    cout << "Mouse position: " << this->myPos << endl;
+    return false;
+}
+
+Cat::Cat(string s, Position p) : Animal(s,p){
+    cout << "Initializing person " << s << " at position " << p << endl;
+}
+bool Cat::Chase(){
+    Position oldPos = this->myPos;
+    if (this->myPos.Sees(this->myTarget->Pos())){
+        this->myPos.IncrementPosition(-1.0,0.0);
+    }else{
+        this->myPos.IncrementPosition(0.0,1.25);
+    }
+    cout << "Cat position: " << this->myPos << endl;
+    return this->myTarget->Pos().IsBetween(oldPos,this->myPos);
+}
+
+Person::Person(string s, Position p):Animal(s,p){
+    cout << "Initializing person " << s << " at position " << p << endl;
+}
+bool Person::Chase(){
+    if (!this->myPos.Sees(this->myTarget->Pos())){
+        this->myPos.IncrementPosition(0.0,-2.0);
+    }
+    cout << "Person position: " << this->myPos << endl;
+    return false;
+}

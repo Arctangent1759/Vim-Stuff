@@ -1,0 +1,157 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+
+using namespace std;
+
+template <class T> class ListNode{
+    public:
+        ListNode();
+        T val;
+        ListNode *next;
+};
+
+template <class T> class List{
+    public:
+        List();
+        int length() const;
+        T get(int i) const;
+        void push(T i);
+        string toString() const;
+        List& operator +=(const List& l);
+        template <class U> friend void derpify(List<U> &l);
+        template <class U> friend bool operator==(const List<U> &l1,const List<U> &l2);
+    private:
+        ListNode<T> *my_head;
+        int my_length;
+};
+
+template <class T>
+void derpify(List<T> &l){
+    l.my_length--;
+}
+
+
+
+template <class T> ListNode<T>::ListNode(){
+    this->next=NULL;
+}
+
+template <class T> List<T>::List(){
+    this->my_head=NULL;
+    this->my_length=0;
+}
+
+template <class T> int List<T>::length() const{
+    return this->my_length;
+}
+
+template <class T> T List<T>::get(int i) const{
+    ListNode<T> *curr = this->my_head;
+    while (i > 0){
+        curr=curr->next;
+        i--;
+    }
+    return curr->val;
+}
+
+template <class T> void List<T>::push(T i){
+    ListNode<T> *old_head = this->my_head;
+    this->my_head = new ListNode<T>();
+    this->my_head->val=i;
+    this->my_head->next=old_head;
+    this->my_length++;
+}
+
+template <class T> string List<T>::toString() const{
+    ostringstream s("");
+    for (int i = 0; i < this->length(); i++){
+        s << (this->get(i)) << " ";
+    }
+    return s.str();
+}
+
+template <class T> List<T>& operator +(const List<T> &l1, const List<T> &l2){
+    List<T> &out = *new List<T>();
+    for (int i = 0; i < l1.length(); i++){
+        out.push(l1.get(i));
+    }
+    for (int i = 0; i < l2.length(); i++){
+        out.push(l2.get(i));
+    }
+    return out;
+}
+
+template <class T> ostream& operator <<(ostream &os, const List<T> &l){
+    os << l.toString();
+    return os;
+}
+
+template <class T> List<T>& List<T>::operator +=(const List<T>& l){
+    List<T> out = *this + l;
+    this->my_head=out.my_head;
+    this->my_length=out.my_length;
+    return *this;
+}
+
+template <class U> bool operator==(const List<U> &l1,const List<U> &l2){
+    if (l1.my_length!=l2.my_length){
+        return false;
+    }
+    ListNode<U> *a=l1.my_head;
+    ListNode<U> *b=l2.my_head;
+    while (a!=NULL && b!=NULL){
+        if (a->val!=b->val){
+            return false;
+        }
+        a=a->next;
+        b=b->next;
+    }
+    return a==b;
+}
+
+template <class T> void print(const T& x){
+    cout << x << endl;
+}
+
+int main(){
+    List<int> &x = *new List<int>();
+    x.push(0);
+    x.push(1);
+    x.push(2);
+    x.push(3);
+    x.push(4);
+    x.push(5);
+    List<int> &y = *new List<int>();
+    y.push(6);
+    y.push(7);
+    y.push(8);
+    print(x);
+    print(y);
+    print(y+x);
+    x+=y;
+    print(x.toString());
+    print(x.length());
+    derpify(x);
+    print(x.length());
+    List<string> &a = *new List<string>();
+    List<string> &b = *new List<string>();
+    a.push("The");
+    a.push("cake");
+    a.push("is");
+    b.push("a");
+    b.push("lie.");
+    print(b+a);
+    List<string> &q = *new List<string>();
+    List<string> &w = *new List<string>();
+    q.push("a");
+    q.push("s");
+    q.push("d");
+    q.push("f");
+    w.push("a");
+    w.push("s");
+    w.push("d");
+    w.push("f");
+    print(q==w);
+    return 0;
+}

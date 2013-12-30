@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+class Animal{
+    public:
+        Animal(){
+            this->name="Steve";
+        }
+        virtual void talk(){
+            cout << "Herro." << endl;
+        }
+        virtual void speak(){
+            cout << "My name is " << this->name << "." << endl;
+            this->talk();
+        }
+    protected:
+        string name;
+};
+
+class Dog : public Animal{
+    public:
+        Dog(){
+            this->owner="Steve";
+            this->name="Fido";
+        }
+        virtual void talk(){
+            cout << "Woof woof." << endl;
+        }
+        virtual void speak(){
+            cout << "My name is " << this->name << "." << endl;
+            cout << "My owner is " << this->owner << "." << endl;
+            this->talk();
+        }
+    private:
+        string owner;
+};
+
+
+int main(){
+    Animal &a = *(new Dog());
+    a.speak();
+    return 0;
+}

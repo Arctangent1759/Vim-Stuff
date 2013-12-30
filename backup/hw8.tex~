@@ -1,0 +1,416 @@
+% Search for all the places that say "PUT SOMETHING HERE".
+
+\documentclass[10pt]{article}
+\usepackage{amsmath,textcomp,amssymb,graphicx}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{107, Yun Park}  % Your GSI's name and discussion section
+\def\Login{cs170-ix} % Your login
+\def\Homework{8}%Number of Homework, PUT SOMETHING HERE
+\def\Session{Fall 2013}
+
+
+\title{CS170--Fall 2013 --- Solutions to Homework 7\vspace{-2ex}}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS170--\Session\  Homework \Homework\ \Name, section \Sec}{CS170--\Session\ Homework \Homework\ \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\usepackage[margin=0.125in]{geometry}
+
+\begin{document}
+\maketitle
+\vspace{-4ex}
+\textbf{Collaborators}: Robert Chang, Rohan Chitnis, Jong Ahn, Leo Wu
+\vspace{-4ex}
+
+\section*{Problem 1}
+
+\subsection*{Part (a)}
+\textbf{Main Idea:}\\
+We break the problem into testing each substring of length less than i, then checking if the rest of the word can be properly broken into words:\\
+getTrue returns the first of its arguments that evaluates to true.\\
+$L(i)=\mbox{getTrue}_{0 \le j \le i}(L(j) \wedge dict(s[j:i]))$\\
+$L(0)=true$\\
+This algorithm operates off the idea that if we know that if a sentence is valid, then the sentence without its last word is also valid.
+Hence, we can build up from the initial condition that an empty string is valid.
+\textbf{Pseudocode:}
+\begin{verbatim}
+def validateString(s):
+    L=[None]*(len(s)+1)
+    L[0]=True
+    for i in range(1,len(s)+1):
+        for j in range(i+1):
+            if L[j] and dict(s[j:i]):
+                L[i]=True
+    return L[len(s)]==True
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+We start with a base case of a string of length zero. 
+An empty string is always valid because it can be broken down into a list of words (an empty list).
+Now, suppose that our algorithm correctly validates any string of length less than or equal to n.
+Our algorithm does this by storing the validity of each substring s[:i] in L.
+For a string of length n+m, where the substring of length m at the end contains at most one word (either an entire word, or partial gibberish).
+For that string to be valid, one of the following cases must hold true:\\ 
+1. s[:n] was validated (we know this by our inductive hypothesis), and s[n:n+m] is a word.\\
+2. $\exists l < n$, s[:i] was validated (we know this by our inductive hypothesis), and s[i:i+m] is a word.
+But since our algorithm checks all substrings s[:l], $l\le n$ in the outer loop, it validates a string if and only if either contition 1 or 2 are satisfied.
+Hence, by induction, our solution correctly validates any string of length n.
+
+\textbf{Running Time:}\\
+$O(n^2)$\\
+\textbf{Running Time Analysis:}\\
+For a string of length n, we fill in an array of length $n$ to validate the string. 
+However, for a given subproblem of length n, we have to divide it at all of its indices, checking recursively that it can in fact be broken into words.
+Hence, we have to run n iterations for each of the n entries in the array, yielding a $O(n^2)$ running time.
+\label{pg:end-of-p1}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p1-continuation}}
+\newpage
+
+
+%%Do NOT remove/comment the next line
+\pagestyle{plain}
+
+
+%%It makes sure your name appears only on the first page
+\section*{Problem 2}
+\textbf{Main Idea:}\\
+There are three actions we can take given any piece of cloth. 
+We can cut it vertically at some x, we can cut it horizontally at some y, and we can make the existing cloth into a product.
+For the first two options, we recursively make products out of each half of the cloth.
+Hence, our problem can be broken into subproblems as follows:\\
+$L(X,Y)=max($\\
+\indent$max_{x \in [1,X]}(L(X-x,Y)+L(x,Y)),$\\
+\indent$max_{y \in [1,Y]}(L(X,Y-y)+L(X,y)),$\\
+\indent$max(\mbox{($a_i$,$b_i$,$c_i$)[2] for ($a_i$,$b_i$,$c_i$) in products if $a_i$==X and $b_i$==Y})$\\
+$)$\\
+Where our initial conditions are:\\
+$L(0,Y)=0 \forall Y \in \mathbb{R}$\\
+$L(X,0)=0 \forall X \in \mathbb{R}$\\
+\textbf{Pseudocode:}
+\begin{verbatim}
+def clothCut(X,Y,products):
+    L=[[0 for j in range(Y+1)] for i in range(X+1)]
+    for j in range(Y+1):
+        for i in range(X+1):
+            L[i][j]=max([\\
+                max([L(i-x,j)+L(x,j) for x in range(1,i+1)]),\\
+                max([L(i,j-y)+L(i,y) for y in range(1,j+1)]),\\
+                max([(a_i,b_i,c_i)[2] for (a_i,b_i,c_i) in products if a_i==X and b_i==Y])\\
+            ])
+    return L[X][Y]
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+From analyzing this code, it is clear that the algorithm tries every possible combination of cuts, and constitutes a state-space search.
+That is, it tries every combination of (x,y), where x and y are cuts (the memoziation merely reduces the runtime).
+It then maxes over the rewards these choices of x and y.
+Because this algorithm computes the reward of every sequence of cuts, and maxes over them at each level, the solution is the optimal reward for that given piece of cloth.\\
+\textbf{Running Time:}\\
+$O(XY(X+Y+n))$\\
+\textbf{Running Time Analysis:}\\
+Since we divide this problem into subproblems, this problem constitutes filling in a X by Y table.
+Since each cell in the table relies on each cell above and to the left of it, the algorithm then consists of 3 nested layers of loops.
+The outer two loops of the algorithm compute each cell in the table, so their contents are executed XY times.
+To compute the best way to cut each cloth of size i,j, we have to test all the sizes from 1 to i to get the best vertical cut, and the sizes from 1 to j to get the best horizontal cut.
+Each of these operations take O(X) and O(Y) operations, respectively.
+Iterating through the products takes O(N) time.
+Since these operations take place inside the nested loops, the final runtime is $O(XY(X+Y+n))$
+
+\label{pg:end-of-p2}
+
+%Insert solution here
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p2-continuation}}
+
+
+
+\newpage
+
+\section*{Problem 3}
+\textbf{Main Idea:}\\
+For each level of the tree, we have n choices for the root.
+Our approach tries every possible root of the tree, divides the tree into left and right subproblems, and recursively determines the cost of each level, passing a cost paramter to each level.
+To reduce runtimes, we model the recursion as filling in a two-dimensional table, and break the problem into subproblems using the following recurrance:\\
+$L(lbound,upbound,level)=min_{i \in [lbound,upbound)}(L(lbound,i,level+1)+L(i+1,upbound,level+1)+level*frequency(words[i]))$\\
+$L(lbound,upbound,level)=0\mbox{ }\forall\mbox{ }lbound \ge upbound$\\\\
+\textbf{Pseudocode:}
+\begin{verbatim}
+def optimizeTree(words,frequency):
+    #Each table entry takes the form [cost, treeObj]
+    L=[[[0,null] for upbound in range(len(words))] for lbound in range(len(words))]
+    for lbound in range(0,n):
+        for upbound in range(lbound+1,n):
+            vals=[]
+            cost = sum(frequency[l] for l in words[lbound:upbound])
+            for i in range(lbound,upbound):
+                vals.append(L[lbound][i][0]+L[i+1][upbound][0]+ cost,make_tree(L[lbound][i][0],L[lbound][i][1]))
+            best = max(vals, key = lambda x: x[0])
+            L[lbound][upbound]=[best[0],best[1]]
+    return L[len(words)][len(words)]
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+Observe that we have modeled our recurrance as:\\
+$L(lbound,upbound,level)=min_{i \in [lbound,upbound)}(L(lbound,i,level+1)+L(i+1,upbound,level+1)+level*frequency(words[i]))$\\
+This is equivalent to computing the cost of each potential root in the list of words and recursively calculating the cost of the left and right trees if this root were selected.
+(Because the list is sorted, words[lbound:i] and words[i:upbound] are gaurunteed to be the left and right binary search trees.)
+Since we try every root in every recursive call, this algorithm effectively tries every possible tree, eliminating redundant computations with memoziation.
+By maxing over these combinations (which constitute every legal binary search tree for those words paired with its cost), we are gaurunteed to find the optimal solution.
+Hence, our algorithm computes the optimal solution given words and frequency.\\
+\textbf{Running Time:}\\
+$O(n^3)$\\
+\textbf{Running Time Analysis:}\\
+Normally, our expression from the main idea takes $O(n^4)$ operations, because it consists of filling in a n by n by n table, each cell taking $n$ operations to compute.
+However, we utilize the property that if we sum over all frequencies between lbound and upbound at each level, we can eliminate a factor of n from our runtime.
+To demonstrate this, observe that if we perform this step for a leaf node of frequency $f_0$, the cost is $1f_0$.
+However, if we add a parent with frequency $f_1$ to the leaf, we get $1f_1+2f_0$, and so on. 
+Since we now only have 3 nested loops, each with O(n) iterations, our runtime is $O(n^3)$.
+
+\label{pg:end-of-p3}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p3-continuation}}
+
+
+
+
+\newpage
+
+\section*{Problem 4}
+\textbf{Main Idea:}\\
+We model this problem as an expanding front f.
+Start the f at 0, and iterate upwards towards n.
+If there is an element $s_i$ in S the set of triples with $l_i=f$, it can either be included or not included.
+If included, nothing with $l_j < r_i$ can be included, so move f to $r_i$. That is, $f:=r_i+1$.
+To avoid having to search through the list of triples every time f changes, we preprocess the list, using a bucketsort like technique.
+Iterate through S, and for each $(l_i,r_i,w_i)$, append $(l_i,r_i,w_i)$ to $buckets[l_i]$, where buckets is an n-array of linked lists.
+The problem can then be broken into the following recurrance:\\
+$L(f)=max(max_i(L(buckets[f][i][1])+buckets[f][i][2]),L(f+1))$
+$L(n)=0$
+\\
+\textbf{Pseudocode:}
+\begin{verbatim}
+def maximizeInterval(S,n):
+    sequence=[]
+    buckets = [[] for _ in range(n)]
+    for i in S:
+        buckets[S[i].l].append((S[i].l,S[i].r,S[i].w))
+    L=[0 for _ in range(n)]
+    for f in reversed(range(0,n)): #Iterate backwards from base case
+        maxVal=-infty
+        maxKey=None
+        for elem in buckets[f]:
+            val=L[elem[1]]+elem[2]
+            if val > maxVal:
+                maxVal=val
+                maxKey=elem
+        include=maxVal
+        notInclude=L[f+1]
+        if include>notInclude:
+            L[f]=include
+            sequence=[maxKey]+sequence
+        else:
+            L[f]=notInclude
+    return sequence
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+Begin with the base case of $f=n$.
+If the front is full, then no more triples can be added, so the result is 0, as in our algorithm.
+Suppose that the algorithm gives the optimal triples for all $i<n$.
+Then, for f=n+1 or $r_i$ (depending on where the nth iteration leaves the front), there are two possible cases:\\
+1. buckets[f] is empty\\
+In which case the algorithm will do nothing, as is optimal.\\
+2. buckets[f] contains items\\
+In which case the algorithm will choose the item i that maximizes $w_i+L[j]$ for some $j<n$, which, by our base case, has been shown to be optimal.
+Hence, by induction, our algorithm is gaurunteed to return an optimal result.
+\textbf{Running Time:}\\
+$O(m+n)$\\
+\textbf{Running Time Analysis:}\\
+First, we create the buckets datastructure of length n in O(n) time.
+We then populate the buckets structure by iterating through S and adding each element, taking O(m) time.
+We then enter the main loop, which iterates n times.
+In the loop, we iterate through buckets[f] m times worst case, but since each element appears in buckets exactly once, and f increases monotonically from zero, each bucket will only be examined exactly once.
+Therefore, each of the m elements in buckets will be processed exactly once.
+The rest of the loop consists of constant time operations, so the entire operation only takes $O(n+m)$ time.
+
+\label{pg:end-of-p4}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p4-continuation}}
+
+
+\newpage
+
+\section*{Problem 5}
+\textbf{Main Idea:}\\
+To optimally schedule the tasks, observe that if we choose to do tasks 1, 2, 3, and don't do tasks 4, 5, 6, we are gaurunteed to recieve at most $V_1+V_2+V_3-T(P_4+P_5+P_6)$, regardless of how we order the tasks.
+In other words, we recieve $V_i$ for tasks we choose to do, and recieve $-TP_i$ for tasks we do not do.
+We can thus devise a procedure by breaking the problem into two phases:
+First, we choose which tasks to fit into our T days. This will resemble the knapsack problem.
+Second, we will use our greedy algorithm from homework 7 to compute the optimal ordering of tasks we choose to do.\\
+To solve the knapsack problem for part 1, we model each task as an item of value $V_i+P_iT$, and size $R_i$, with knapsack of size T, and without repetition.
+The problem can thus be broken down into\\
+$L(t,i)=max(L(t-R_i,i-1)+V_i+P_iT,L(t,i-1))$\\
+$L(0,i)=L(t,0)=0$
+Where t is time remaining and i is the index of tasks not completed.\\
+Along the way, of course, we keep track of the tasks that we choose, so that we can input them into step 2, the greedy algorithm which we have already proved correct in homework 7.
+\textbf{Pseudocode:}
+\begin{verbatim}
+def schedule(V,P,R,T):
+    L=[[0 for j in range(len(V))] for t in range(T)]
+    taskList=[]
+    for i in range(1,len(V)):
+        for t in range(1,T):
+            if R[i]>t:
+                L[t][i]=L[t][i-1]
+            else:
+                L[t][i]=max(L[t-R[i][i-1]]+V[i]+T*P[i],L[t][i-1])
+                if L[t-R[i][i-1]]+V_i+T*R_i > L[t][i-1]:
+                    taskList+=(V[i],P[i],R[i])
+    return hw_4_greedy_ordering(taskList)
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+We will first show that runnning the knapsack algorithm with rewards $V_i+T*P_i$ will gauruntee an optimal selection of tasks to do.
+We start with the most naive algorithm for optimizing the tasks.
+When choosing some set A of tasks to do, we are gaurunteed to recieve a positive reward of $V_A$=sum($V_i$ for i in A).
+For the tasks S-A we choose not to do, we always will suffer a penalty of $V_{S-A}$=sum(T*$P_i$ for i in S-A).
+We can model this as a knapsack problem recurrence with a reward of $V_i$ and a base case of $L(0,S-A)=-T\sum_{i\in(S-A)}P_i$.
+However, observe that this is asymptotically inefficient, since the number of combinations S-A is very large.
+We resolve this by changing our base case to $L(0,i)=-T\sum_{i\in S}P_i$. 
+That is, we assume that we suffer the penalty for all tasks until we choose to do them.
+Because of this change, we have to modify our reward function to $V_i+TP_i$ to model the fact that when we choose to do a given task, we stop being punished for $TP_i$.
+However, now that all base cases are offset by $-T\sum_{i\in S}P_i$, the offset can be removed, since we're only optimizing over $V_i+TP_i$.
+Hence, we end up with our base case L(0,i)=L(t,0)=0, and our reward function of $V_i+P_iT$, and the first phase of our algorithm produces an optimal set of tasks to schedule.
+We have shown in problem 4 of homework 7 that the greedy algorithm for ordering tasks is optimal.
+Hence, our algorithm selects the tasks optimally.\\
+\textbf{Running Time:}\\
+$O(nT+nlog(n))$\\
+\textbf{Running Time Analysis:}\\
+The knapsack algorithm takes nT time, because of the outer loop that takes T time, the inner loop that takes n time, and a constant time operation within.
+The greedy algorithm from homework 7 takes nlogn due to the fact that it relies on a sorting algorithm of some kind.
+Running both takes $O(nT+nlog(n))$ time.
+
+\label{pg:end-of-p5}
+
+%Insert solution here
+
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p5-continuation}}
+
+
+\newpage
+
+
+%% Comment out the "extra spaces" completely for the problems for you
+%% don't need them
+
+\section*{Extra space for Problem 1}
+\emph{Continued from Page \pageref{pg:end-of-p1}}\\
+
+%Insert solution here
+
+
+\label{pg:p1-continuation}
+\subsection*{Part (b)}
+\textbf{Main Idea:}\\
+We use the same algorithm as part (a), except we keep track of the positions of the line breaks at each level.
+When we find a true L(j) such that  s[j:] is also a word, we also add j's break positions to our current list of breaks.
+\textbf{Pseudocode:}
+\begin{verbatim}
+def reconstructString(s):
+    L=[[False,[i]] for i in range(len(s)+1)]
+    L[0]=[True,[0]]
+    for i in range(1,len(s)+1):
+        for j in range(i+1):
+            if L[j][0] and dict(s[j:i].lower()):
+                L[i][0]=True
+                L[i][1]+=L[j][1]
+    spacePositions = list(reversed(L[len(s)][1]))
+    outputWords=[]
+    for i in range(1,len(spacePositions)):
+        outputWords.append(s[spacePositions[i-1]:spacePositions[i]])
+    return ' '.join(outputWords)+"."
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+We know that this algorithm validates strings of length n correctly, from part (a).
+We now need to show that we have correctly extended the algorithm to find the sentence and return it.
+Observe that instead of holding booleans, the array L now holds its boolean and a list of space positions.
+We assume that in our representation, the value at L[i] holds the space positions of the string in s[:i].
+To find the spaces in any substring s' of s, our algorithm simply has to append the list of spaces for j, when it finds each j such that s[j:i] is a word and s[:j] can be broken into words.
+Hence, our final algorithm has a complete list of space positions for the string s.
+\textbf{Running Time:}\\
+$O(n^2)$\\
+\textbf{Running Time Analysis:}\\
+The only addition to this algorithm from part (a) is that we must append the list of breaks for each true L[j].
+If the list of breaks follows a linked list implementation, then the lists can be appended in constant time.
+Hence, the running time stays at $O(n^2)$.
+
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 2}
+\emph{Continued from Page \pageref{pg:end-of-p2}}\\
+
+%Insert solution here
+
+\label{pg:p2-continuation}
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 3}
+\label{pg:p3-continuation}
+\emph{Continued from Page \pageref{pg:end-of-p3}}\\
+%Insert solution here
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\section*{Extra space for Problem 4}
+\emph{Continued from Page \pageref{pg:end-of-p4}}\\
+\label{pg:p4-continuation}
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\section*{Extra space for Problem 5}
+\emph{Continued from Page \pageref{pg:end-of-p5}}\\
+
+\label{pg:p5-continuation}
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\end{document}

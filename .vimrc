@@ -4,3 +4,4 @@ source ~/.vim/config/settings.vim
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/autocmds.vim
 source ~/.vim/config/autocomplete.vim
+source ~/.vim/config/syntaxdispatch.vim

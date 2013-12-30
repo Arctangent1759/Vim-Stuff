@@ -1,0 +1,66 @@
+package main
+
+import "flag"
+import "fmt"
+import "os"
+import "image"
+
+
+/*
+Loads an image and returns it
+*/
+func loadImg(path string) (image.Image){
+    var file, ok =os.Open(path)
+    if ok!=nil{
+        die([]string{"File "+path+" not found."})
+    }
+    return image.Decode(file)
+}
+
+/*
+Parses command line arguments into a dictionary of key-value pairs and a list of filenames
+*/
+func parseArgs() (map[string]string, []string){
+    flag.Parse()
+
+    if flag.NArg()<1{
+        usage()
+        die([]string{})
+    }
+
+    var flags = make(map[string]string)
+    var filenames = make([]string,flag.NArg()-flag.NFlag())
+    for i:=0; i < flag.NArg()-flag.NFlag(); i++{
+        filenames[i+flag.NFlag()]=flag.Arg(i+flag.NFlag())
+    }
+    return flags, filenames
+}
+
+/*
+Prints the usage message
+*/
+func usage(){
+    println("Usage: asciiize.go filename1 [filename2] [filename3] ...")
+}
+
+/*
+Causes the program to end, printing any errors that caused unexpected termination.
+*/
+func die(errors []string){
+    if len(errors)>0{
+        var errormsg = "Script has terminated because of the following errors:\n"
+        for i:=0; i<len(errors); i++{
+            errormsg += "\t"+errors[i]+"\n"
+        }
+        fmt.Fprint(os.Stderr,errormsg)
+    }
+    os.Exit(1)
+}
+
+
+func main(){
+    var _, fileNames = parseArgs()
+    for i:=0; i<len(fileNames); i++{
+        var imgFile = loadImg(fileNames[i]);
+    }
+}

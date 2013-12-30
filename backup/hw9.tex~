@@ -1,0 +1,421 @@
+% Search for all the places that say "PUT SOMETHING HERE".
+
+\documentclass[10pt]{article}
+\usepackage{amsmath,textcomp,amssymb,graphicx}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{107, Yun Park}  % Your GSI's name and discussion section
+\def\Login{cs170-ix} % Your login
+\def\Homework{9}%Number of Homework, PUT SOMETHING HERE
+\def\Session{Fall 2013}
+
+
+\title{CS170--Fall 2013 --- Solutions to Homework 7\vspace{-2ex}}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS170--\Session\  Homework \Homework\ \Name, section \Sec}{CS170--\Session\ Homework \Homework\ \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\usepackage[margin=0.125in]{geometry}
+
+\begin{document}
+\maketitle
+\vspace{-4ex}
+\textbf{Collaborators}: Robert Chang, Rohan Chitnis, Jong Ahn, Leo Wu
+\vspace{-4ex}
+\section*{Problem 1}
+\label{pg:end-of-p1}
+\textbf{Main Idea:}\\
+Observe that longest path through the tree consists of some root node and the longest path from two of its children to some leaf. 
+First, using an postorder traversal, compute the height of each node. This height represents the length of the longest path going through this node a leaf in the tree.
+The height of a leaf node is zero, and the height of a non-leaf node is equal to the largest sum of the height of each of its child nodes and the edge to that node.
+Then, consider each potential root node in the tree. For each node, add each of the node's child height with the edge going to that child, and take the largest two values.
+The sum of these two values represents the cost of the longest path going through that root node.
+Now, take the maximum of all of these path costs to obtain the cost of the longest path through the tree.
+\textbf{Pseudocode:}
+\begin{verbatim}
+def longestPathTree(tree,weights):
+    heights={}
+    computeMaxHeights(tree,heights,weights)
+    pathLengths={}
+    for node in tree:
+        if len(node.children)==0:
+            continue
+        elif len(node.children)==1:
+            pathLengths.append(height[node])
+        else:
+            childCosts=[height[child]+weights[(node,child)] for child in node.children]
+            pathLengths.append(sum(get_two_largest(childCosts)))
+    return max(pathLengths)
+
+def computeMaxHeights(root,heights,weights):
+    #Uses an postorder traversal to compute the height (as defined above) of each node.
+    #When this function returns, the dictionary heights should
+    #contain the height of each node.
+    if len(root.children)==0:
+        return 0 #The height of a leaf is 0
+    else:
+        child_heights=[]
+        for child in root.children:
+            computeMaxHeights(child,heights,weights)
+            child_heights.append(heights[child],child)
+        max_child_weight, max_child = max(child_heights)
+        heights[root]=max_child_weight + weights[(root,max_child)]
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+We first show that the postorder traversal ComputeMaxHeights correctly determines the longest path from each node to a leaf relative to some root.
+Function computeMaxHeights is a dynamic programming approach to computning heights.
+It can be described by the recurrance $L(n)=max_{i \in n.nodes}(L(i)+weight(i))$, where $L(n)=0$ if n is a leaf.
+Hence, the algorithm can be broken into subproblems, each node's height being equal to the largest sum of each child and the edge to that child.
+\\
+We now show that a maximum length path in the graph either connects two leaves, or a leaf and a node with only one child.
+Suppose for contradiction that there exists a tree whose maximum length path P of weight $W_P$ does not connect two leaves or a leaf and a one-child node.
+Take the node that is not a leaf, and add the length of the path to a leaf, with total weight W. 
+Since weights are nonnegative, W is a positive number, we have a path $W'_P=W_P+W$.
+$W_P'>W_P$, so the path $P$ is not maximum length. Contradiction reached.
+\\
+Now, we show that the algorithm produces the optimal solution.
+As shown before, the maximum length path will always consist of some node and the longest path through at most two of its children.
+The algorithm above computes the cost of each potential root node by adding the two largest children and their respective edges.
+Hence, we get the each potential longest path in the graph, consistent on the condition that the maximium path must run through a node and at most two of its children.
+Taking the max of the potential paths yields the longest path through the tree.
+
+
+
+
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p1-continuation}}
+\newpage
+
+
+%%Do NOT remove/comment the next line
+\pagestyle{plain}
+
+
+%%It makes sure your name appears only on the first page
+\section*{Problem 2}
+$S_{MX\rightarrow CA}=$ the number of shnupells transported from Mexico to California.\\
+$S_{MX\rightarrow NY}=$ the number of shnupells transported from Mexico to New York.\\
+$S_{KA\rightarrow CA}=$ the number of shnupells transported from Kansas to California.\\
+$S_{KA\rightarrow NY}=$ the number of shnupells transported from Kansas to New York.\\
+$S_{MX\rightarrow CA}+S_{MX\rightarrow NY} \le 8$\\
+$S_{KA\rightarrow CA}+S_{KA\rightarrow NY} \le 15$\\
+$S_{MX\rightarrow CA}+S_{KA\rightarrow CA} \ge 13$\\
+$S_{MX\rightarrow NY}+S_{KA\rightarrow NY} \ge 10$\\
+$S_{MX\rightarrow CA}\ge 0$\\
+$S_{MX\rightarrow NY}\ge 0$\\
+$S_{KA\rightarrow CA}\ge 0$\\
+$S_{KA\rightarrow NY}\ge 0$\\
+Minimize $4S_{MX\rightarrow CA}+1S_{MX\rightarrow NY}+3S_{KA\rightarrow CA}+2S_{KA\rightarrow NY}$\\
+Run the simplex algorithm on this linear program.
+\label{pg:end-of-p2}
+
+%Insert solution here
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p2-continuation}}
+
+
+
+\newpage
+
+\section*{Problem 3}
+\subsection*{Part (a)}
+No solution.\\
+\textbf{Proof:}\\
+Suppose for contradiction that there exist some values A and B of a and b such that the problem is infeasable.
+This means that in said configuration, no values of x and y such that $Ax+By\le 1$ and $x,y\ge 0$.
+Let $x=0$ and $y=0$. This satisfies $x\ge 0$ and $y\ge 0$ for all $a,b$, and $Ax+By=0\le 1$, which satisfies the constraints.
+This contradicts the fact that $a=A$ and $b=B$ make the problem infeasible. Contradiction reached.
+Hence, there are no values of a and b such that the problem is infeasible.
+\subsection*{Part (b)}
+$a\le0 \vee b\le 0$\\
+The feasible area specified the constrint $x,y\ge 0$ is the first quadrant of a cartesian coordinate axis.
+The region $ax+by\le 1$ is side of the line passing between $\frac{1}{a}$ and $\frac{1}{b}$ including the point (0,0).
+The total feasible area specified by this problem is the intersection of the area bounded by $ax+by\le 1$ and the first quadrant.
+If $a$ is negative, then the x intercept of $ax+by\le 1=\frac{1}{a}$ is negative. 
+Likewise, if $b$ is negative, then the y intercept of $ax+by\le 1= \frac{1}{b}$ is negative.
+Then, if $a$ and $b$ are both negative, then the area bounded by $ax+by\le 1$ includes the entire first quadrant, so the optimal solution is unbounded.
+If $a$ is negative and $b$ is positive, then $ax+by\le 1$ includes the x axis, so $x$ can go to infinity, and the optimal solution is unbounded.
+If $b$ is negative and $a$ is positive, then $ax+by\le 1$ includes the y axis, so $y$ can go to infinity, and the optimal solution is unbounded.
+If either $a$ or $b$ is 0, then $x$ or $y$ can grow to infinity, respectively, so the solution is unbounded.
+Hence, the problem becomes unbounded if $a\le 0$ or $b\le 0$.
+(More intuitively, if a or b are negative or zero, then x or y can grow infinitely because the $ax+by\le 1$ constraint will never be violated for positive $x$ and $y$.)
+
+\subsection*{Part (c)}
+$a > 0 \wedge b > 0 \wedge a \neq b$ \\
+\textbf{Proof:}\\
+
+We first show that these constraints are bounded.
+For the problem to have a bounded solution, the feasible area must have a finite edge.
+The feasible area specified the constrint $x,y\ge 0$ is the first quadrant of a cartesian coordinate axis, as stated in the proof for part (b).
+Also as shown before, the x and y intercepts of $ax+by \le 1$  share the same sign as $a$ and $b$, and are equal to $\frac{1}{a}$ and $\frac{1}{b}$, respectively.
+Furthermore, the region specified by $ax+by \le 1$ always includes point (0,0).
+Suppose for contradiction that there exists a bounded solution for $a \le 0$ or $b \le 0$.
+As shown in part (b), if $a \le 0$, then x can grow to infinity because the region bounded by $ax+by\le 1$ includes the x axis.
+Likewise, if $b \le 0$, then y can grow to infinity because the region bounded by $ax+by\le 1$ includes the y axis.
+Hence, the solution is not bounded if $a\le 0 \vee b\le 0$, and so by contradiction, $a > 0 \wedge b > 0$.\\
+
+We now show that the constraints produce a unique solution.
+For the problem to have a unique solution, there must exist a point in the direction of increasing c where the level curve $c=x+y$ intersects the feasible area exactly once (a tangency).
+The feasible area, being bounded by the x axis, the y axis, and $ax+by\le 1$, is a right triangle with a hypotenuse slope $\frac{-a}{b}$.
+Since the feasible area takes the form of a polygon, by definition of tangent line, if there exists a unique solution to these constraints, $x+y=c$ will intersect the feasible area at one of its vertices, namely (a,0) or (0,b).
+Hence, the unique optimal solution is either (a,0) or (0,b), if a unique optimal solution exists.
+However, if a=b, the line c=ax+by has y-intercept (a,0) and x-intercept (0,b), so it crosses both optimal solutions.
+Since the line passing through two points is uniquely determined by those two points, this is the only setting of $a$ and $b$ that intersects both possible optimal points.
+Hence, the solution is unique if $a \neq b$.
+
+We have shown, thus, that a unique optimal solution exists if $a > 0 \wedge b > 0 \wedge a \neq b$.
+
+
+\label{pg:end-of-p3}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p3-continuation}}
+
+
+
+
+\newpage
+
+\section*{Problem 4}
+Applying duality to the primal problem:\\
+max $x_1-2x_3$\\
+$y_1$\indent$x_1-x_2\le 1$\\
+$y_2$\indent$2x_2-x_3\le 1$\\
+$y_1x_1-y_1x_2+2y_2x_2-y_2x_3\le y_1+y_2$\\
+$y_1x_1+(2y_2-y_1)x_2+(-y_2)x_3\le y_1+y_2$\\
+Yields dual problem:\\
+min $y_1+y_2$\\
+$y_1 \ge 1$\\
+$y_2 \le 2$\\
+$2y_2-y_1\ge0$\\
+According to the claim in the problem, the solution $(\frac{3}{2},\frac{1}{2},0)$ is an optimal solution to the primal problem, yielding an optimal value of $\frac{3}{2}$.
+We solve the dual problem via the simplex algorithm. The vertices of the feasible area are (1,2), (4,2), and ($\frac{1}{2}$,1), with objective values 3, 6, and $\frac{3}{2}$, respectively.
+The minimum of these is $\frac{3}{2}$ is the optimum solution to the dual problem.
+This is equal to the solution to the solution to the primal problem, so $x_1-2x_3\le \frac{3}{2}$, and the solution is optimal.
+\label{pg:end-of-p4}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p4-continuation}}
+
+
+\newpage
+
+\section*{Problem 5}
+
+\textbf{Objective Function:}\\
+$C=x_1x_2$\\
+
+\textbf{Constraints:}\\
+$x_1+x_2 \le 1$\\
+$x_1 \ge 0$\\
+$x_2 \ge 0$\\
+
+The notion that the optimal solution always lies on a corner of the feasible region relies on the fact that a line can only be tangent to a polygon at its vertices, and hence, a unique optimum only appears at the corners of the feasible region.
+In our example, the objective function takes the form of the right half of the hyperbola $x_2=\frac{C}{x_1}$.
+We want to maximize C, so we choose a value of C such that the level curve $x_2=\frac{C}{x_1}$ is tangent to the feasible area.
+In this case, for C=.25, $x_2=\frac{C}{x_1}$ is tangnet to $x_1+x_2 \le 1$ at point $(.5,.5)$.
+Solving the system of equations, we can show that $x_1x_2=C$ does not intersect $x_1+x_2=1$ (and therefore the feasible area) for $C>.25$:
+$$x_1x_2=C$$
+$$x_1+x_2=1$$
+$$\frac{C}{x_2}+x_2=1$$
+$$C+x_2^2=x_2$$
+$$C+x_2^2-x_2=0$$
+$$x_2=\frac{1\pm\sqrt{1-4C}}{2}$$
+As shown above, if optimal C is greater than $.25$, then there are no real solutions to $(x_1,x_2)$. 
+Likewise, if optimal C is less than $.25$, there are multiple solutions to $x_2$.
+There is exactly one solution to $x_2$ for $C=.25$.
+Hence, there exists an optimal solution $\boxed{x_1=.5, x_2=.5, C=.25}$ for the system.
+
+
+
+
+\label{pg:end-of-p5}
+
+%Insert solution here
+
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p5-continuation}}
+
+
+\newpage
+
+\section*{Problem 6}
+\textbf{Main Idea:}\\
+First, find the optimal flow from each edge using the simplex algorithm.
+For each edge, test if it is critical.
+An edge whose optimal output is less than its capacity is non-critical, because is capacity can be decreased without changing the size of the flow.
+An edge whose optimal output is at its capacity is non-critical if there exists a way to reallocate at least one unit of flow to another path from its start node to its end node.
+The first case is trivial to check (a simple conditional will do).
+For the second case, the test is no more than an undirected breadth first search.
+Remove the edge from the graph, and perform a modified breadth first search from the start node of the edge, searching for the end node of the edge.
+Treat all edges as undirected, but only traverse backward edges (tip to tail) if their output is nonzero.
+Only traverse forward edges (tail to tip) if their output is less than their capacity. This gauruntees that the decrease in capacity in the edge in question can be transferred by another path, mantaining maximum output.
+If v is found, then the edge is non-critical.
+If there is no such path to v, then the edge is critical.
+\textbf{Pseudocode:}
+\begin{verbatim}
+def findCriticalEdge(graph):
+    flow_graph = find_maximum_flow(graph)
+    capacity = graph.weights
+    output = flow_graph.weights
+    for edge (u,v) in graph:
+        if isCritical(u,v,graph,capacity,output):
+            return (u,v)
+    return False
+            
+def isCritical(u,v,graph,capacity,output):
+    if output(u,v)<capacity(u,v):
+        return False
+    queue=make_queue()
+    visited={}
+    graph.remove(edge(u,v))
+    queue.push(u)
+    while stack is not empty:
+        currNode = stack.pop()
+        visited[v]=True
+        if currNode == v:
+            return False
+        for edge (currNode,otherNode) in currNode.getUndirectedEdges():
+            if isForwardEdge(currNode,otherNode) && output(currNode,otherNode)==capacity(currNode,otherNode):
+                #Edge goes from currNode to otherNode and edge is at capacity
+                continue
+            if isBackwardEdge(currNode,otherNode) && output(currNode,otherNode)==0:
+                #Edge goes from otherNode to currNode and edge is outputting 0
+                continue
+            if visited(otherNode):
+                continue
+            queue.push(otherNode)
+    return True
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+The algorithm focuses on testing whether edges are noncritical so it can return edges that are not noncritical (aka critical).
+If an edge is noncritical, its capacity can be decreased by some amount without decreasing the maximum flow.
+This justifies our trivial case, that an edge whose output i is less than capacity instantly becomes noncritical.
+For the nontrivial case, notice that if an edge can be decreased by some amount, then it can be decreased by one, so the fact that an edge can be decreased by one is a necessary and sufficient condition for the edge being non-critical.
+Hence, our algorithm focuses on testing whether one unit of flow in an edge (u,v) can be transferred to another part of the graph to preserve maximum flow.
+For this to happen, there must exist some path from u to v that allows the unit of flow to be transferred.
+Since the edge (u,v) is decreasing by one unit of flow, some incoming edge must also decrease by one unit of flow.
+Hence, we can only traverse a backward edge if its output is greater than zero. The same is true for every subsequent node.
+We implement this in isCritical by checking all backward edges for zero output.
+Likewise, we can only traverse a forward edge if its output is not at capacity, because it needs to increase in capacity to supply v.
+We implement this in isCritical by checking all forward edges for extra capacity.
+Hence, our breadth first search does not traverse any edges over which a unit of capacity cannot be transferred.
+Thus, isCritical can determine if an edge is not critical by finding another path to v over which a unit of capacity can be moved.
+Since isCritical is run for each node, the algorithm finds critical edges.
+
+\textbf{Running Time:}\\
+$O(|V||E|^2)$
+\textbf{Running Time Analysis:}\\
+Running the simplex algorithm to find the maximal flow of each edge takes $O(|V||E|^2)$ time.
+Then, we run a breadth first search for each edge to test if it is critical, taking $|E|O(|V|+|E|)$ time.
+In total, our runtime is $|V||E|^2+|V||E|+|E|^2 \in O(|V||E|^2)$
+\label{pg:end-of-p6}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p6-continuation}}
+
+
+\newpage
+
+
+
+%% Comment out the "extra spaces" completely for the problems for you
+%% don't need them
+
+\section*{Extra space for Problem 1}
+\emph{Continued from Page \pageref{pg:end-of-p1}}\\
+\label{pg:p1-continuation}
+
+%Insert solution here
+
+
+\textbf{Running Time:}\\
+$O(|V|+|E|)$\\
+\textbf{Running Time Analysis:}\\
+ComputeMaxHeights is an postorder traversal, meaning that it is a DFS that visits every edge and vertex once, running in $O(|V|+|E|)$ time.
+The algorithm then iterates through the list of nodes, taking $O(|V|)$ time.
+(Even though each node considers each child edge, each edge is only considered once, taking $O(|V|)$ time.
+Then, taking the max of the $|V|$ path lengths takes $O(|V|)$ time, either by quickselect or running max.
+In total, the algorithm takes $|V|+|E|+|V|+|E|+|V| \in \boxed{O(|V|+|E|)} time$.
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 2}
+\emph{Continued from Page \pageref{pg:end-of-p2}}\\
+
+%Insert solution here
+
+\label{pg:p2-continuation}
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 3}
+\label{pg:p3-continuation}
+\emph{Continued from Page \pageref{pg:end-of-p3}}\\
+%Insert solution here
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\section*{Extra space for Problem 4}
+\emph{Continued from Page \pageref{pg:end-of-p4}}\\
+\label{pg:p4-continuation}
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\section*{Extra space for Problem 5}
+\emph{Continued from Page \pageref{pg:end-of-p5}}\\
+
+\label{pg:p5-continuation}
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+\section*{Extra space for Problem 6}
+\emph{Continued from Page \pageref{pg:end-of-p6}}\\
+
+\label{pg:p6-continuation}
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\end{document}

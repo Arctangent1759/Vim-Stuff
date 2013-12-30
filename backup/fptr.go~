@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+
+type FunctWrapper struct{
+    f func()
+}
+
+func main(){
+    var fn = func(){fmt.Printf("Herro")}
+    var x FunctWrapper = FunctWrapper{fn}
+    x.f()
+}

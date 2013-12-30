@@ -82,11 +82,19 @@ nnoremap L ]}
 nnoremap <leader>tab mzggvG$='z
 
 "OMG EMBEDDED SHELL
-nnoremap ;osh :!tmux split -p 30<cr>
+nnoremap <leader>osh :silent execute "!tmux split -p 30"<cr>
 
 "---------------------
 "------Run Maps-------
 "---------------------
-nnoremap <leader>r :execute "!pdflatex " . @% . "; evince " . join(split(@%,"\\.tex")) . ".pdf &"<cr>
+"nnoremap <leader>r :execute "!pdflatex " . @% . "; evince " . join(split(@%,"\\.tex")) . ".pdf &"<cr>
+nnoremap <leader>r :silent execute "!pdflatex " . @% . " > /dev/null && evince " . join(split(@%,"\\.tex")) . ".pdf &" \| redraw!<cr>
 "nnoremap <leader><f5> :execute "!javac %;java " . join(split(@%,".java"))<cr>
 nnoremap <leader><f5> :execute "!gcc %; ./a.out;"<cr>
+
+
+"---------------------
+"-----EasyMotion------
+"---------------------
+let g:EasyMotion_leader_key = '<Leader>e'
+

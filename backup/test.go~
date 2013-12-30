@@ -1,0 +1,31 @@
+package main
+
+import (
+        "net/http"
+        "fmt"
+       )
+
+type Handler struct{
+    handle func(w http.ResponseWriter, r *http.Request)
+}
+
+func (self Handler) ServeHTTP(w http.ResponseWriter, r *http.Request){
+    self.handle(w,r)
+}
+
+type ConcatStruct struct{
+    first string
+    second string
+    third string
+}
+func (self ConcatStruct) ServeHTTP(w http.ResponseWriter, r *http.Request){
+    fmt.Fprint(w,self.first,self.second,self.third)
+    fmt.Println("Called")
+}
+
+func main() {
+    http.Handle("/",Handler{func(w http.ResponseWriter, r *http.Request){fmt.Fprint(w,"Herro!!")}})
+    http.Handle("/str",Handler{func(w http.ResponseWriter, r *http.Request){fmt.Fprint(w,"String!!")}})
+    http.Handle("/concat",ConcatStruct{"Interdimensional","Potato","Launcher"})
+    http.ListenAndServe("localhost:4000", nil)
+}

@@ -149,7 +149,20 @@ alias pb="pastebinit -b http://pastebin.com"
 RAMIP="23.226.224.191"
 alias ramnodelon="ssh -X arctangent1759@$RAMIP"
 
-alias ga="git add ."
+alias ga="git add"
+alias gaa="git add ."
 alias gc="git commit -m "
 alias gp="git push "
 alias gpm="git push origin master"
+alias gpu="git pull"
+alias gpum="git pull origin master"
+
+export TWILIO_ACCOUNT_SID=AC301adecd6768abb3df7cbf8e4ec97c01
+export TWILIO_AUTH_TOKEN=53bd9b3c33ca6e473c7fd38b3ee68d52
+export TWILIO_NUMBER=+13235456675
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+alias ide="tmux split -p 30 && tmux split -h && tmux select-pane -U && vim"
+

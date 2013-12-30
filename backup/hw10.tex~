@@ -1,0 +1,350 @@
+% Search for all the places that say "PUT SOMETHING HERE".
+
+\documentclass[10pt]{article}
+\usepackage{amsmath,textcomp,amssymb,graphicx}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows}
+
+\def\Name{Alexander Chu}  % Your name
+\def\Sec{107, Yun Park}  % Your GSI's name and discussion section
+\def\Login{cs170-ix} % Your login
+\def\Homework{10}%Number of Homework, PUT SOMETHING HERE
+\def\Session{Fall 2013}
+
+
+\title{CS170--Fall 2013 --- Solutions to Homework 7\vspace{-2ex}}
+\author{\Name, section \Sec, \texttt{\Login}}
+\markboth{CS170--\Session\  Homework \Homework\ \Name, section \Sec}{CS170--\Session\ Homework \Homework\ \Name, section \Sec, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\usepackage[margin=0.125in]{geometry}
+
+\begin{document}
+\maketitle
+\vspace{-4ex}
+\textbf{Collaborators}: Robert Chang, Rohan Chitnis, Jong Ahn, Leo Wu
+\vspace{-4ex}
+\section*{Problem 1}
+Let Tony's strategy be $(g,s,f)$, where $g$ is the probability that he will pick gourmet, $s$ is the probability he will pick seating, and $f$ is the probability that he will pick free soda.\\
+If Joey plays optimally, the payoff of the game will be $z:=max(2g-3f,-g-2s+f)$\\
+This imposes the constraints $z\ge2g-3f$ and $z\ge-g-2s+f$.\\
+Tony's strategy should have the objective of $min(z)$.\\
+Hence, we have a linear program:\\
+$min(z)$\\
+$z-2g+3f \ge 0$\\
+$z+g+2s-f \ge 0$\\
+$g+s+f = 1$\\
+$g,s,f \ge 0$\\
+The constraints for strategy $(l,b)$ (lower prices and bigger slices, respectively) for Joey's optimality is:\\
+$w:=min(2l-1b,-2b,-3l+1b)\Rightarrow w\le2l-1b,w\le-2b,w\le-3l+1b$\\
+So the linear program for the dual problem is:\\
+$max(w)$\\
+$w-2l+1b \le 0$\\
+$w+2b \le 0$\\
+$w+3l-1b \le 0$\\
+$l+b=1$\\
+$l,b\ge0$\\
+
+Running simplex, we get the optamal solution for Joey:$(l,b)=(1/2,1/2)$\\
+The optimal solution for Tony is:$(z,g,f)=(0,2/3,1/3)$
+Plugging these into the expected value equation, we get the game value equal to $-1$.
+
+\label{pg:end-of-p1}
+
+
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p1-continuation}}
+\newpage
+
+
+%%Do NOT remove/comment the next line
+\pagestyle{plain}
+
+
+%%It makes sure your name appears only on the first page
+\section*{Problem 2}
+\subsection*{Part (a)}
+Let $A_i=1$ if actor $i$ is chosen, and $A_i=0$ if actor $i$ is not chosen, and let $A$ be the vector of all $A_i$s.\\
+Let $I_i=1$ if investor $i$ is chosen, and $I_i=0$ if investor $i$ is not chosen.\\
+We wish to maximize $\sum_{i=0}^{m}(I_ip_i)-\sum_{i=0}^{n}(A_is_i)$\\
+We know that if $I_i==1$ then $A_i==1 \forall A_i \in L_i$\\
+Represent each $L_i$ as an n-length vector, with 1 if actor $i$ is present in the list, and 0 otherwise.\\
+Let $len(L_i)$ be the number of 1s in the vector $L_i$, ie the number of actors that investor i likes.\\
+We then model the constriant that all actors that an investor likes must be part of the set: \\
+$A \cdot L_i \ge (I_i)(len(L_i))$\\
+\\
+We then arrive at the following linear program:\\
+Maximize $z=\sum_{i=0}^{m}(I_ip_i)-\sum_{i=0}^{n}(A_is_i)$\\
+$\sum_{j=0}^{n}A_jL_i[j] \ge len(L_i)I_i \forall i \in [0,m)$\\
+$A_i, L_i \in \{0,1\}$
+
+Which we can use simplex to solve for the optimal solution.
+
+\subsection*{Part (b)}
+We modify the linear program to allow non-integral domains for the variables A and L:
+
+Maximize $z=\sum_{i=0}^{m}(I_ip_i)-\sum_{i=0}^{n}(A_is_i)$\\
+$A_j L_i[j] > 0 \forall i \in [0,m] \forall j \in [0,n]$\\
+$A_i, L_i \le 1$
+$A_i, L_i \ge 0$
+
+Now we show that there is always an integer solution that is more optimal than any non-integer solution.
+Take some set S of actors and investors.
+S represents a set of assignments of each $I_i$ and $A_j$ with either integer or non-integer values.
+Suppose we had some S with non-integer values.
+Let X = the highest non-integer value, and let Y = the second highest (not necessarily non-integer) value.
+Take L, the set of all variables with value X.
+If L consists entirely of investors, then increasing their value to 1 will always increase their investment and therefore the optimality of the solution.
+If L consists entirely of actors, then their values can be decreased to Y, the second highest value, decreasing their cost and increasing optimality.
+If L consists of actors and investors, then their values can be decreased to Y if the sum of investments is less than cost, and increased to 1 if the sum of investment is greater than cost.
+After doing these transforms, we are left with Y being the highest non-integer value.
+However, if Y is still a non-integer value, we can run this procedure again, each iteration increasing the profit.
+Since Y is always decreasing, the optimal solution will converge to all variables being 1 or 0.
+Hence, even when non-integer domains are allowed, the problem will always converge to an integer solution.
+
+
+
+\label{pg:end-of-p2}
+
+%Insert solution here
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p2-continuation}}
+
+
+
+\newpage
+
+\section*{Problem 3}
+\label{pg:end-of-p3}
+\subsection*{Part (a)}
+In the Ford Fulkerson algorithm, alternate between the path S|A|B|T and path S|B|A|T.
+Since the maximum flow through any path is the minimum edge in the path, the maximum of S|A|B|T and S|B|A|T are both 1 because of the capacity of B|A and A|B in the residual graph. 
+Therefore, each pass of S|A|B|T reduces the forward edge in the residual graph S|A by 1, and each pass of S|B|A|T reduces the forward edge in the residual graph S|B by 1.
+Since the starting weight of S|A is 1000, it takes 1000 iteratsions of Ford-Fulkerson to reduce each forward edge to 0, which is when the algorithm terminates, since no valid paths from s to t exist.
+Hence, it takes a total of 2000 iterations for Ford-Fulkerson to terminate on this graph with this choice of paths.
+\subsection*{Part (b)}
+\textbf{Main Idea:}\\
+Notice that the fatness of a path is just the fatness of its smallest edge. 
+The algorithm, then, is just dijkstra's algorithm, except we minimize over the source edge's fatness and the current edge instead of adding the two quantites (the latter yields the distance of that edge from the source node, rather than fatness).
+\textbf{Pseudocode:}
+\begin{verbatim}
+def fattest-path(G):
+    fatness={v:infinity for v in G.vertices}
+    prev={}
+    fatness[G.sourceNode]=0
+    minHeap=make_min_heap()
+    for v in graph:
+        minHeap.insert(v,key=fatness[v])
+    while minHeap is not empty:
+        u = minHeap.pop()
+        for (u,v) in u.edges:
+            cap = min(Graph.capacity(u,v),fatness[u])
+            if cap > fatness[u]: 
+                fatness[u]=cap
+                decrease_key(minHeap,u,cap)
+                prev[u]=v
+    out=[]
+    curr = G.terminalNode
+    while curr!=G.sourceNode:
+        out.append(curr)
+        curr=prev[curr]
+    return out
+\end{verbatim}
+\textbf{Proof of Correctness:}\\
+We know that the maximum capacity of any path is at most its smallest edge, because all edges in the path must carry the entire capacity of the path.
+Hence, the fatness of a path is the fatness of its smallest edge.
+The only modification that our algorithm makes from Dijkstra's algorithm is that it changes the reduction from $dist[u]=max(dist[v]+weight[u,v])$ to $min(fatness[v],weight[u,v])$.
+This effectively changes the reduction step in Dijkstra's algorithm from computing the distance along the path to the smallest edge in the path, which computes fattest path, rather than shortest path.
+Hence, at each interation, the algorithm mantains the invariant that each node will be part of the explored path that maximizes its fatness.
+This gauruntees that our modification of Dijkstra's algorithm will result in the fattest path.\\
+\textbf{Running Time:}\\
+$O(|V|+|E|log|V|)$\\
+\textbf{Running Time Analysis:}\\
+This algorithm changes the constant time $dist[u]=max(dist[v]+weight[u,v])$ to $min(fatness[v],weight[u,v])$, another constant time operation.
+Hence, it must have the same running time as Dijkstra's algorithm.\\
+\subsection*{Part (c)}
+From the Ford-Fulkerson algorithm, we know that there exists a min cut, a set of edges whose capacities equal their flows, and sum equal to the maximum flow.
+We will now show that if n distinct paths that go through the same edge in the min cut, only one of them will contribute flow to the max flow. 
+Suppose for contradiction that more than one distinct path goes through some edge $e$ in the min cut, and contribute to the max flow.
+Suppose that the flow through $e$ is $f$.
+Since each path contributes to the max flow, neither can have a total flow $e$, which means that each path must contain some edge with flow less than $f$.
+These edges satisfy the definition of min-cut, so they must also be part of the min-cut, making $e$ not a min-cut edge. 
+By contradiction, only one path going through each min-cut edge can contribute to max flow.
+Since the min-cut size is $\le |E|$, the number of paths needed to find the max-flow is bounded on $O(|E|)$.
+
+
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p3-continuation}}
+
+
+
+
+\newpage
+
+\section*{Problem 4}
+\textbf{Main Idea:}\\
+Create T copies of each room. We denote the ith copy of room $u$ as $u_i$.
+Since we are modeling this as a maximum flow problem, create a source node and connect it with edges of infinite capacity to each copy of s, the start room.
+Create a terminal node and connect it with edges of infinite capacity to each copy of t, the exit room.
+We use different copies of the rooms to model the passage of time; room $u_i$ represents the state of room $u$ at time $i$.
+Since each hallway has both a capacity and time, we model time by representing a hallway from $u$ to $v$ taking $t$ seconds as an edge from $u_i$ to $v_{i+t}$.
+Therefore, for each hallway from some room $u$ to some room $v$ with capacity $c$ an time $t$, create an edge from $u_i$ to $v_{i+t}$ with capacity $c$ for each $1\le i \le T$.
+If it happens that $i+t$ is greater than T, such that $v_{i+t}$ does not exist do not add the edge to the graph, since this represents a hallway which cannot be escaped within the T seconds.
+To summarize, we now have a flow capacity graph with a source node connected by infinite capacity edges to T copies of s, and a terminal node connected by infinite capacity edges to T copies of t.
+We represent each hallway from some $u$ to some $v$ with time $t$ and capacity $c$ as an edge from $u_i$ to $v_{i+t}$ with capacity $c$.
+Now, we have a model for the problem; increasing $i$ denotes the passage of time.
+The source and terminal nodes of the flow graph represent the enter and exit states of the building.
+All people start in the source node, and escape in $T$ seconds if they reach the terminal node in $T$ seconds, that is, before the $T$th copy of any room is reached.
+To compute the maximum number of people who can escape in $T$ seconds, run the Ford-Fulkerson algorithm on the graph to compute the size of the maximum flow into t.\\
+\textbf{Proof of Correctness:}\\
+As we have argued, this problem reduces very naturally into a max flow problem.
+Correctness follows from the fact that the Ford-Fulkerson algorithm can compute the optimal max flow from s to t.\\
+\textbf{Running Time:}\\
+$\boxed{O(|R||H|^2T^3)}$, where R is the set of rooms, H is the set of hallways, T is the time alotted.\\
+\textbf{Running Time Analysis:}\\
+It takes $|R|T$ time to copy each room $|T|$ times, and $O(|H|T)$ time to add all hallways at all times to each room.
+This leaves us with a graph with $O(|R|T)$ rooms and $O(|H|T)$ edges.
+Ford-Fulkerson runs in $O(|V||E|^2)$ time with a good path ordering, so the total runtime is $\boxed{O(|R||H|^2T^3)}$.
+
+
+
+\label{pg:end-of-p4}
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p4-continuation}}
+
+
+\newpage
+
+\section*{Problem 5}
+
+\textbf{Main Idea:}\\
+Create two copies each node in the DAG in two sets $L$ and $R$ in the bipartite graph. 
+Denote the two copies of node $u$ as $u_l$ and $u_r$ in set $L$ and $R$, respectively.
+For each edge $(u,v)$ from node $u$ to $v$ in the input graph, add edge $(u_l,v_r)$ from $u_l$ to $v_r$ in the bipartite graph.
+Create a source node and connect it to each node in $L$, and create a terminal node and connect it to each node in $R$.
+Give each node a weight of 1, and run the Ford-Fulkerson algorithm on the graph, which does bipartite matching and maximally matches nodes in $L$ to nodes in $R$.
+Create a disjoint sets object with an element for each node in the input graph.
+For each edge $(u_l,v_r)$ in the bipartite-matched graph, union $u$ and $v$ in the disjoint sets.
+The number of paths necessary to cover all nodes is equal to the number of disjoint sets remaining after this operation.
+\\
+\textbf{Proof of Correctness:}\\
+This method relies on the notion that each node can only be used once. 
+Hence, only one of each of the node's edges can be traversed in a given path. 
+Maximum bipartite matching gauruntees that the maximal number of nodes in the left set are matched to the maximal number of nodes in the right set. 
+We know this because maximum bipartite matching relies on the Ford-Fulkerson max flow algorithm, which forces each node in $L$ to choose an optimal recipient of its unit of flow in $R$. 
+(Suppose for contradiction that the max flow algorithm produces a number of nodes in R that is less than the optimium number of matches. 
+Since each node in $R$ is connected to the terimal node by an edge of capacity 1, producing any less than the optimal number of matches will result in a less-than-max flow, contradicting the invariant of the Ford-Fulkerson algorithm.)
+We want to divide the graph into maximum-sized non-intersecting sets of nodes connected by paths, minimizing the number of sets needed.
+We now show that if two elements are connected by an edge in an optimal path, then they must be connected by the maximum bipartite matching.
+Suppose for contradiction that an edge $(u,v)$ between two elements $u$ and $v$ is in an optimal path, but the edge $(u_l,v_r)$ is not in the bipartite matching.
+This means that there must exist some edge $(u_l,v_r')$ and an edge $(u_l',v_r)$ in the bipartite graph such that the number of singlet nodes (nodes that cannot be matched) is reduced from when edge $(u_l,v_r)$ was included.
+But this also reduces the number of singlet nodes in the graph by 2, which decreases the number of paths necessary by 2, while only increasing the number of paths by 1, as the path containing $u$ and $v$ split into 2.
+Hence, the path containing $(u,v)$ may not be optimal in the first case. By contradiction, an edge in the maximum bipartite matching corresponds to an edge in an optimum path.
+The problem, thus, is reduced to finding the maximum bipartite matching, which can be done correctly with the Ford-Fulkerson algorithm.
+\\
+\textbf{Running Time:}\\
+$O(|V||E|^2+|V|log|V|)$\\
+\textbf{Running Time Analysis:}\\
+Constructing the bipartite graph takes $O(|V|+|E|)$ time\.
+Running the Ford-Fulkerson algorithm on the bipartite graph takes $O(|V||E|^2)$.
+In the worst case, all the nodes are in the same path, so we have to union all of the disjoint sets. Each union requires a find, which takes $O(log(|V|))$ time.
+Taking all the unions, thus, takes $|V|log(|V|)$ time, resulting in a total running time of $O(|V||E|^2+|V|log|V|)$.
+\label{pg:end-of-p5}
+
+%Insert solution here
+
+
+% Make sure that the solution here does not exceed one page here. If
+% it does, use the extra space for this problem at the end.  
+%
+% Comment out the next line if you are NOT using the extra space
+\paragraph{} \emph{Continued on Page \pageref{pg:p5-continuation}}
+
+
+\newpage
+
+
+
+%% Comment out the "extra spaces" completely for the problems for you
+%% don't need them
+
+\section*{Extra space for Problem 1}
+\emph{Continued from Page \pageref{pg:end-of-p1}}\\
+\label{pg:p1-continuation}
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 2}
+\emph{Continued from Page \pageref{pg:end-of-p2}}\\
+
+%Insert solution here
+
+\label{pg:p2-continuation}
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+\section*{Extra space for Problem 3}
+\label{pg:p3-continuation}
+\emph{Continued from Page \pageref{pg:end-of-p3}}\\
+%Insert solution here
+\subsection*{Part (d)}
+Suppose $F$ is the size of the max flow. 
+To solve the max-flow problem optimally, one has to cover all $F$ units of flow, which exist somewhere on the capacity graph, in the mininum number of paths.
+We model solving the problem as a set cover problem.
+Represent each 1 unit of flow as a node. There are, thus, $F$ distinct nodes in the set cover problem.
+A path, then, is simply a set covering N nodes, where N is the fatness of the path, the optimal amount of flow going through that path.
+Since we want to minimize the number of paths we need to explore, we want to minimize the number of paths needed to cover the $F$ units of flow.
+This equates to minimizing the number of sets needed to cover $F$ distinct nodes, which just reduces to the set cover problem.
+The greedy set cover algorithm can cover $n$ nodes in $klog(n)$ sets, where k is the optimal number of nodes.
+This equates to a greedy solution where we repeatedly pick the fattest path, which is the path with the largest flow, and in our analogy a set that covers the largest number of nodes.
+As we have shown in part (c), the optimal number of iterations of max-flow necessary is in $O(|E|)$, so $k$, the optimal number of sets, is $|E|$. 
+The number of nodes, $n$, is equal to $F$ as shown before.
+Hence, the number of iterations necessary to solve the problem optimally is $O(|E|log|F|)$.
+
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\section*{Extra space for Problem 4}
+\emph{Continued from Page \pageref{pg:end-of-p4}}\\
+\label{pg:p4-continuation}
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+
+
+\section*{Extra space for Problem 5}
+\emph{Continued from Page \pageref{pg:end-of-p5}}\\
+
+\label{pg:p5-continuation}
+
+\newpage
+%%Comment out the above three lines if you are not using extra space
+%%for this problem.
+
+\end{document}

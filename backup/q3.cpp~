@@ -1,0 +1,7 @@
+class TreeNode {
+    public:
+    private:
+            int myInfo;
+            TreeNode* myLeft;
+            TreeNode* myRight;
+};

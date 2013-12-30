@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+import "time"
+
+func thread1(){
+    for {
+        time.Sleep(1*time.Millisecond)
+        fmt.Println("Herro")
+    }
+}
+func thread2(){
+    for {
+        time.Sleep(1*time.Millisecond)
+        fmt.Println("Wurldz")
+    }
+}
+
+func main(){
+    go thread1()
+        go thread2()
+}

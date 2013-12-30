@@ -1,0 +1,14 @@
+##
+## TuX
+## (c) pborys@p-soft.silesia.linux.org.pl 
+##
+$the_cow = <<EOC;
+   $thoughts
+    $thoughts
+          ______  _-_-_-_-_-_-_-_-
+        /\\_/\\  | -_-_-_-_-_-_-_-_
+       (^. ^ )_| _-_-_-_-_-_-_-_-
+           ** **
+
+
+EOC

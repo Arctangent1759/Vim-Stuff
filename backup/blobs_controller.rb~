@@ -1,0 +1,7 @@
+class BlobsController < ApplicationController
+    def new()
+    end
+    def create()
+        render text: "cow"
+    end
+end

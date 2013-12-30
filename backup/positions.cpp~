@@ -1,0 +1,52 @@
+#include "positions.h"
+#include <math.h>
+
+Position::Position (){
+    this->myRadius=1;
+    this->myAngleInRadians=0;
+}
+Position::Position (float r){
+    this->myRadius=r;
+    this->myAngleInRadians=0;
+}
+Position::Position (float r, float thetaInRadians){
+    this->myRadius=r;
+    this->myAngleInRadians=thetaInRadians;
+}
+
+void Position::SetAbsolutePosition (float r, float thetaInRadians){
+    this->myRadius=r;
+    this->myAngleInRadians=thetaInRadians;
+}
+
+void Position::IncrementPosition (float rChange, float thetaChange){
+    this->myRadius+=rChange;
+    this->myAngleInRadians+=thetaChange;
+    while (this->myAngleInRadians < 0){this->myAngleInRadians+=2*3.14159265359;}
+    while (this->myAngleInRadians > 2*3.14159265359){this->myAngleInRadians-=2*3.14159265359;}
+}
+
+bool Position::operator== (Position coords){
+    return coords.myRadius==this->myRadius && coords.myAngleInRadians==this->myAngleInRadians;
+}
+
+void Position::Print (){
+    cout << this << endl;
+}
+
+ostream& operator<< (ostream &out, Position &pos){
+    out << "< r:" << pos.myRadius << " angle:" << pos.myAngleInRadians << " >";
+    return out;
+}
+
+bool Position::Sees (Position pos){
+    return (this->myRadius) * cos(this->myAngleInRadians - pos.myAngleInRadians) >= 1.0;
+}
+
+bool Position::IsAtStatue (){
+    return this->myRadius<=1;
+}
+
+bool Position::IsBetween (Position old, Position current){
+	return old.myRadius == current.myRadius && old.myRadius == this->myRadius && cos (this->myAngleInRadians - old.myAngleInRadians) > cos (current.myAngleInRadians- old.myAngleInRadians) && cos (current.myAngleInRadians - this->myAngleInRadians) > cos (current.myAngleInRadians - old.myAngleInRadians);
+}

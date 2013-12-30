@@ -1,0 +1,41 @@
+HOSTNAME="http://localhost:4567"
+
+STDOUT.sync=true
+
+def curl(addr)
+    system("curl -s \"#{addr}\" > .clienttmp")
+    return File.open('./.clienttmp').read()
+end
+
+def ask(prompt)
+    print prompt
+    return gets
+end
+
+def cleanStr(s)
+    return s.split(" ").join("%20").chomp()
+end
+
+userName=cleanStr(ask "Please enter your desired username here: ")
+userID = curl("#{HOSTNAME}/new/#{userName}")
+puts "Welcome, #{userName}."
+
+
+messages=""
+
+read_loop=Thread.new do
+    while (input=ask '>> ')!=nil
+        input=cleanStr(input);
+        curl("#{HOSTNAME}/sendmsg/#{userID}/#{input}")
+    end
+end
+
+get_loop=Thread.new do
+    newmsg=curl("#{HOSTNAME}/receive")
+    if newmsg != messages
+        puts messages
+    end
+    messages=newmsg
+end
+
+system("if [ -f .clienttmp ]; then rm .clienttmp; fi")

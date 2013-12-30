@@ -35,11 +35,12 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 set nobackup
+set cindent
 
 "---------------------
 "---Backup Settings---
 "---------------------
-set backup
+set noswapfile
 set backupdir=~/.vim/backup
 
 "---------------------
@@ -49,3 +50,12 @@ set undofile                " Save undo's after file closes
 set undodir=~/.vim/undo " where to save undo histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
+
+"---------------------
+"----    Go     ------
+"---------------------
+
+"---------------------
+"----  Syntastic  ----
+"---------------------
+let g:syntastic_cpp_check_header = 1

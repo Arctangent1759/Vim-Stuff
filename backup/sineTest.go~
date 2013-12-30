@@ -1,0 +1,15 @@
+package main
+
+import (
+    "math"
+    "fmt"
+)
+
+func main(){
+    var pi = math.Pi
+    fmt.Println(-math.Sin(0));
+    fmt.Println(-math.Sin(pi/2));
+    fmt.Println(-math.Sin(pi));
+    fmt.Println(-math.Sin(3*pi/2));
+    fmt.Println(-math.Sin(2*pi));
+}

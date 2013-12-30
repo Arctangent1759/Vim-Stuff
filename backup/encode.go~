@@ -1,0 +1,54 @@
+package main
+import (
+    "fmt"
+    "image"
+    "os"
+    _ "image/png"
+    _ "image/gif"
+    _ "image/jpeg"
+)
+
+func main(){
+}
+
+//Helper functions
+
+func loadImg(path string)(image.Image){
+    var file, openerr = os.Open(path)
+    if openerr!=nil{
+        die([]string{"Failed to open file at " + path})
+    }
+    var img, _, decodeerr = image.Decode(file)
+    if decodeerr!=nil{
+        die([]string{"File at " + path + " is not a recognized image format"})
+    }
+    return img
+}
+func makeOdd(val int)(int){
+    if (val%2==1){
+        return val
+    }else{
+        return val+1
+    }
+}
+func makeEven(val int)(int){
+    if (val%2==1){
+        return val
+    }else{
+        if val!=255{
+            return val+1
+        }else{
+            return val-1
+        }
+    }
+}
+func die(errors []string){
+    if len(errors)>0{
+        var errormsg = "Script has terminated because of the following errors:\n"
+        for i:=0; i<len(errors); i++{
+            errormsg += "\t"+errors[i]+"\n"
+        }
+        fmt.Fprint(os.Stderr,errormsg)
+    }
+    os.Exit(1)
+}

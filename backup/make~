@@ -1,1 +1,1 @@
-javac $(find | egrep \"\.java$")
+g++ *.cpp
