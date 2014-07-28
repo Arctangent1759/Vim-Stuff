@@ -1,9 +1,0 @@
-#!/usr/bin/python
-import random;
-import sys;
-def randomize(line):
-	words=line.split();
-	random.shuffle(words);
-	return words;
-
-print(' '.join(randomize(raw_input("Please enter a sequence of words, separated by spaces:"))));

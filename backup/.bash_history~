@@ -1,1999 +1,1896 @@
-sudo aplay -l
-echo "Sound cards recognized by the system:"; lspci -nn | grep --color=none '\[04[80][13]\]'; echo "Sound cards recognized by ALSA:"; lspci -nn | grep '\[04[80][13]\]' | while read line; do lspci -nnk | grep -A 3 '\[04[80][13]\]' | grep -e 'Kernel modules: ..*' -e '\[04[80][13]\]' | grep --color=none -F "$line"; done; echo "Sound cards recognized by ALSA, and activated:"; lspci -nn | grep '\[04[80][13]\]' | while read line; do lspci -nnk | grep -A 3 '\[04[80][13]\]' | grep -e 'Kernel drivers in use: ..*' -e '\[04[80][13]\]' | grep --color=none -F "$line"; done
-DRIVER=`lspci -ks SLOTID | grep "Kernel modules:" | awk -F: '{print $2}' | sed 's/ *//g'`; modprobe $DRIVER && echo "$DRIVER" | sudo tee -a /etc/modules
-cd Documents/Projects/Ongoing/MMO/
-ls
-vim
-git pull origin master
-Arctangent1759
-vim game.js 
+vim q.py
 exit
-vim index.html
-vim server.js 
+ipython
 exit
-vim server.js 
-exit
-node index.html 
-node server.js 
-exit
-node server.js 
-vim index.html
-exit
-cd
-cd Documents/Projects/Ongoing/MMO/
-ls
-vim server.js 
-cd 
-vim asdfasf.js 
-vim asdf
-cd Documents/Projects/Ongoing/MMO/
-vim server.js 
-exit
-vim poly.py
-mkdir node-test
-cd node
-cd ..
-cd node-test/
-ls
-vim server.js
-node server.js 
-vim server.js 
-node server.js 
-screen
-cd
-ls Downloads/ | grep 'ard'
-arduino 
 
-sudo apt-get install gnome-desktop-environment 
-gnome-help
-gnome-system-monitor 
-gnome-open
-reboot
-sudo reboot
-getfacl /media/arctangent1759
-sudo rmdir /media/arctangent1759
-arduino 
-getfacl /media/arctangent1759
-cd /media/arctangent1759/
-ls
-ls -la
-cd /dev
-ls
-ls > ~/dev.txt
-ls > ~/dev2.txt
-diff ~/dev.txt ~/dev2.txt 
-ls  | grep serial
-cd serial/
-ls
-ls -Fa
-cd by-id/
-ls
-ls -la
-ls -al
-cd ../..
-ls -l ttyUSB0 
+xmodmap 
+man xmodmap 
+clear
+exit
+cd 
+cd Webcam/
+gnome-open .
+exit
+ping 8.8.8.8
+exit
+ruby
+irb
+exit
+curl http://localhost:4567
+curl http://localhost:4567/
+exit
+cat Test.rb 
+vim Test.rb 
+exit
+ruby
+irb
+exit
+irb
 cd
-sudo arduino 
-arduino
+vim Test.r
+vim Test.rb
+irb
+vim Test.rb
+irb
+ruby Test.rb 
+irb
 exit
-sudo apt-get install arduino
-arduino
-node server.js 
+cd Documents/Projects/Instructional/Ruby/
+irb
+irb a s d f
+irb -a a s d f
+vim ex13.rb
+ruby ex13.rb a s d f
+irb
+vim test
+irb
+vim test 
+vim test
+irb
+vim test
+irb
+vim test
+irb
+vim test
+python
+irb
+vim Ex25
+mv Ex25 ex25.rb
+ruby ex25.rb 
+irb
+wget http://ruby.learncodethehardway.org/book/exercise26.txt
+vim exercise26.txt 
+mv exercise26.txt exercise26.r
+mv exercise26.r exercise26.rb
+vim exercise26.rb 
+ruby exercise26.rb 
+vim exercise26.rb 
+ruby exercise26.rb 
+vim exercise26.rb 
+ruby exercise26.rb 
+vim exercise26.rb 
+ruby exercise26.rb 
+cat ex25.rb 
+ruby exercise26.rb 
+vim exercise26.rb 
+ruby exercise26.rb 
+vim exercise26.rb 
+irb
+gem install Sinatra
+gem install sinatra
+sudo gem install sinatra
+ls
+mkdir web
+cd web
+bundle gem ontheweb
+ls
+cd ontheweb/
+ls
+cd ..
+rm -rf ontheweb/
+gem install web
+bundle gem web
+ls
+cd web
+ls
+cd lib/
+ls
+vim web
+vim web.rb web
+vim web.rb
+ruby web
+ruby web.rb 
+sudo gem install sinatra
+ruby web.rb 
+cd ..
+ruby lib/web.rb 
+ls
+cd ..
+rm -r web/
+ls
+cd ..
+rm -rf web/
+bundle gem gothonweb
+cd gothonweb/
+ls
+vim lib/gothonweb.rb 
+ruby lib/gothonweb.rb 
+vim lib/gothonweb
+vim lib/gothonweb.rb 
+ls
+cat Gemfile 
+ls
+vim lib/gothonweb.rb 
+ls
+cd lib
+sl
+ls
+cd gothonweb/
+ls
+vim version.rb 
+cd ..
+ls
+vim gothonweb.gemspec 
+ls
+cd lib
+ls
+cd gothonweb/
+ls
+cd ..
+vim gothonweb.rb 
+cd ..
+ruby lib/gothonweb
+ruby lib/gothonweb.rb 
+sudo ruby lib/gothonweb.rb 
+vim gothonweb.rb 
+vim lib/gothonweb.rb 
+irb
+vim lib/gothonweb.rb 
 exit
-vim server.js 
+ping 8.8.8.8
+ramnodelon 
+exit
+ls
+clear
+ping 8.8.8.8
+python
+cd Documents/School/cs188/
+ls
+cd proj/
+ls
+wget https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/project4-tracking/tracking.zip
+ls
+unzip tracking.zip 
+ls
+rm tracking
+rm tracking.zip 
+irb
+cd
+ls
+cd 
+ls
+cd test
+ls
+cd ..
+cd testSinatra/
+ls
+echo "potato" > asdf
+irb
+cd
+vim bib.py
+vim bib.rb
+ruby bib.rb 
+vim bib.rb
+cd
+vim bib.rb 
+exit
+irb
+vim bib.rb 
+exit
+evince resume.docx-2.pdf 
+bg
+python
+vim quicksort.java
+mv quicksort.java Quicksort.java
+vim Quicksort.java 
+exi
+exit
+ruby bib.rb 
+vim bib.rb 
+ruby bib.rb 
+vim bib.rb 
+ruby bib.rb 
+cat bib.rb 
+pb bib.rb 
 python
 exit
-ls /dev/usbserial
-ls /dev/usb
-ls /dev/ttyUSB0 
-ls /dev/tty0
-ls /dev/ttyUSB0 
-ls /dev/ttyUSB1 
+irb
+exit
+vsplit 50
+clear
+echo mischnal@google.com
+echo mischnal@google.com > email
+ls
+cd
+exit
+ipython
+exit
+mkdir GoogleInterview
+cd G
+cd GoogleInterview/
+ls
+clear
+hsplit 30
+clear
+vim
+exit
+man npm
+npm
+npm -g
+npm -h
+exit
+npm install
+npm install -h
+man npm install
+exit
+ping 8.8.8.8
+cd
+vim
+exit
+evince Documents/School/cs170/Textbook/chap6.pdf 
+bg
+gnome-open Documents/School/cs170/Textbook/
+ls
+irb
+ruby bib.rb 
+vim bib.rb
+cp bib.rb book.rb
+vim book.rb 
+ruby bib.rb 
+cd Documents/School/.archive/
+ls
+d su13/
+ls
+cd su13/
+l
+cd cs61c/
+ls
+cd lab
+ls
+ls lab6
+cd lab5
+ls
+cd ..
+ls lab4
+ls lab6
+cd lab6
+vim 
+ls
+cd ..
+ls
+cd ..
+ls
+cd lec
+ls
+cd ..
+ls
+cd proj/
+ls
+cd ..
+ls
+cat review 
+ls
+cd ..
+ls
+cd ..
+cd
+l
+irb
+ping 8.8.8.8
+exit
+cd Documents/School/cs188/
+ls
+cd proj/
+ls
+vim
+ls
+cd tracking/
+ls
+vim
+python busters
+python busters.py 
+bg
+vim busters
+vim busters.py
+python busters.py
+ls
+clear
+ls
+vim inference.py
+cat * | grep 'your code here'
+cat -r * | grep 'your code here'
+man cat
+clear
+cat * | grep '**'
+ls
+vim inference.py
+cat * | grep 'YOUR CODE HERE'
+clear
+ls
+cd
+clear
+ls
+clear
+ramnodelon 
+cd
+mkdir Angular
+cd Angular/
+git clone https://github.com/angular/angular.js
+ls
+cd angular.js/
+ls
+sudo npm install -g karma
+ls
+cd ..
+cd angular-phonecat/
+git checkout -f step-0
+node ./scripts/web-server.js 
+ls
+vim app/index.html 
+node ./scripts/web-server.js 
+git checkout -f step-1
+node ind
+node ./scripts/web-server.js 
+exit
+irb
+exit
+vim app/js/controllers.js 
+exit
+python
+cd Documents/School/cs188/
+ls
+cd proj/
+ls
+cd tracking/
+ls
+python game.py
+python inference.py
+python pacman.py 
+python busters
+python busters.py
+ramnodelon 
+ngrok
+ls
+grok
+man grok
+bundle install
+ruby app.rb 
+hsplit 30
+vim
+exit
+vsplit 50
+xit
+exit
+exit
+cd
+mv Downloads/ngrok.zip .
+mkdir ngrok
+mv ngrok.zip ngrok
+cd ngrok/
+ls
+unzip ngrok.zip 
+ls
+cd ng
+./ngrok 
+ls
+vim ngrok
+ls
+rm ngrok
+unzip ngrok.zip 
+rm ngrok.zip 
+ls
+echo $PATH
+mv ngrok /usr/local/bin/
+sudo mv ngrok /usr/local/bin/
+ngrok 8080
+man ngrok
+ngrok
+ngrok -h
+eit
+exit
+cd
+git clone https://github.com/twilio/starter-ruby
+cd starter-ruby/
+ls
+clear
+ls
+vim app.rb 
+exit
+vim cookiebot 
+sudo apt-get update java
+sudo apt-get install java
+java
+man java
+java -v
+java --version
+java | less
+java 2>&1 | ess
+java 2>&1 | less
+java -version
+exit
+ping 8.8.8.8
+vim
+ping 8.8.8.8
+vim
+fg
+vim cookiebot 
+exit
+n
+ramnodelon 
+clamtk 
+clamscan 
+sudo clamscan 
+bg
+clear
+python
+evince schedule.pdf 
+#apache2
+vim
+cd Documents/School/anthro106/
+ls
+vim lec13.md
+exit
+cowsay -f
+cowsay -f stegosaurus asdfasfasf
+fortune | cowsay -f stegosaurus | lolcat
+cowsay -f stegosaurus asdfasfasf
+fortune | cowsay -f stegosaurus | lolcat
+fortune | cowsay -f moofasa | lolcat
+fortune | cowsay -f unipony | lolcat
+fortune | cowsay -l
+fortune | cowsay -f apt | lolcat
+fortune | cowsay -f beavis.zen | lolcat
+fortune | cowsay -l
+fortune | cowsay -f duck | lolcat
+fortune | cowsay -l
+fortune | cowsay -f turtle | lolcat
+fortune | cowsay -f suse | lolcat
+fortune | cowsay -f stimpy | lolcat
+fortune | cowsay -l
+fortune | cowsay -f flaming-sheep | lolcat
+fortune | cowsay -f daemon | lolcat
+fortune | cowsay -f flaming-sheep | lolcat
+fortune | cowsay -l
+fortune | cowsay -f elephant-in-snake | lolcat
+fortune | cowsay -f snake | lolcat
+fortune | cowsay -f elephant | lolcat
+fortune | cowsay -l
+fortune | cowsay -f eyes | lolcat
+fortune | cowsay -f kiss | lolcat
+fortune | cowsay -f eyes | lolcat
+fortune | cowsay -f elephant-in-snake | lolcat
+fortune | cowsay -l
+fortune | cowsay -f meow | lolcat
+fortune | cowsay -f sodomized-sheep | lolcat
+clear
+fortune | cowsay -l
+cd
+cd Documents/Projects/
+mkdir CowChat
+cd CowChat/
+ls
+vim cowchat.rb
+irb
+vsplit 30
+vim /home/arctangent1759/.vim/config/mappings.vim 
+hsplit 70
+exit
+irb
+curl 'localhost:4567'
+irb
+cowsay -l
+irb
+curl localhost:4567
+curl localhost:4567/new/potato
+curl loc
+curl localhost:4567/new/potato
+curl localhost:4567/new/asdf/asdf/asdf
+irb
+curl localhost:4567/new/asdf/asdf/asdf
+curl localhost:4567/new/asdf
+echo $(curl localhost:4567/new/asdf)
+echo $(curl -q localhost:4567/new/asdf)
+echo $(curl -Q localhost:4567/new/asdf)
+man curl
+echo $(curl -s localhost:4567/new/asdf)
+echo $(curl -s localhost:4567/new/asdf safasdf)
+echo $(curl -s localhost:4567/new/asdf/jksfdsf)
+echo $(curl -s "localhost:4567/new/asdf/jksfdsf")
+echo $(curl -s "localhost:4567/new/asdf/jksfd sf")
+echo $(curl -s "localhost:4567/new/asdf/jks fdsf")
+ir
+irb
+curl localhost:4567
+
+curl localhost:4567
+curl localhost:4567/new/Fladnag
+curl localhost:4567/new/a
+curl localhost:4567/new/b
+curl localhost:4567/new/c
+curl localhost:4567/new/d
+curl localhost:4567/new/a
+curl localhost:4567/new/b
+curl localhost:4567/new/TestUser
+curl localhost:4567/new/Arctangent
+curl localhost:4567/nreceive
+curl localhost:4567/receive
+curl localhost:4567/sendmsg/0/Test
+curl localhost:4567/receive
+curl localhost:4567/new/Arctangent
+curl localhost:4567/sendmsg/1/Test
+curl localhost:4567/sendmsg/2/Test
+curl localhost:4567/receive
+curl localhost:4567/new/User1
+curl localhost:4567/sendmsg/1/Message
+curl localhost:4567/new/User2
+curl localhost:4567/sendmsg/2/Hallo wurldz
+curl "localhost:4567/sendmsg/2/Hallo wurldz"
+curl "localhost:4567/sendmsg/2/Hallowurldz"
+curl localhost:4567/sendmsg/recieve
+curl localhost:4567/sendmsg/receive
+curl localhost:4567/receive
+curl localhost:4567/sendmsg/a%20space
+curl "localhost:4567/sendmsg/a%20space"
+curl "localhost:4567/sendmsg/a\%20space"
+curl "localhost:4567/sendmsg/%20space"
+curl "localhost:4567/sendmsg/white%20space"
+curl "localhost:4567/2/sendmsg/white%20space"
+curl "localhost:4567/sendmsg/2/white%20space"
+ruby
+irb
+cowsay -f default 'asdfda'
+curl http://localhost:4567/
+irb
+curl http://localhost:4567/
+curl http://localhost:4567/new/Test
+curl http://localhost:4567/sendmsg/1/I am a turtle.
+curl http://localhost:4567/sendmsg/1/I%20am%20a%20turtle.
+curl http://localhost:4567/receive | less
+curl http://localhost:4567/new/Test
+curl http://localhost:4567/sendmsg/1/I%20am%20a%20turtle.
+curl http://localhost:4567/sendmsg/1/I%20am%20a%20turtle./sheep
+curl http://localhost:4567/receive
+hsplit 30
+vim cowchat.rb 
+ls
+git init
+git remote add origin https://github.com/Arctangent1759/cowChat
+git add .
+git commit -m 'basic hacky server'
+git push origin master
+ls
+gpm
+ls
+vim
+mv cowchat.rb cowServer.rb
+vim  cowChat.rb
+git add -u .
+gcm 'renamed files appropriately'
+gc 'renamed files appropriately'
+gpm
+vim cowChat.rb
+ruby cowChat.rb 
+vim cowChat.rb
+ruby cowChat.rb 
+vim cowChat.rb
+ruby cowChat.rb 
+vim cowChat.rb
+ruby cowChat.rb 
+vim cowChat.rb
+ruby cowChat.rb 
+vim cowChat.rb
+ruby cowChat.rb 
+irb
+exit
+pkill firefox
+ext
+exit
+cowsay -f cow 'asdfsd'
+cowsay -l
+cowsay -f cower
+cowsay -f cock 'asdfasfds'
+cowsay -f default 'asdfasfds'
+clear
+irb
+exit
+irb
+exit
+ruby
+irb
 exit
 exti
 exit
 python
+cowsay -l
+irb
 exit
-which python
-exit
-vim serialport.py
-vim serialWrite.py
-exit
-arduino &
-exit
-vim test
-cat test | ./serialWrite.py
-chmod +x serialWrite.py
-cat test | ./serialWrite.py
-./serialWrite.py 
-cat test | ./serialWrite.py
-vim test
-cat test | ./serialWrite.py
-vim test.js
-node test.js | ./serialWrite.py 
-vim test.js 
-exit
-arduino &
-exit
-vim serialWrite.py 
-exit
-ls
-cd node-test/
-ls
-vim server.js 
-screen
-exit
-arduino &
-exit
-cd ..
-ls
-cd Documents/Projects/Ongoing/Pirate/
-ls
-vim pirate.sh 
-exit
-eit
-exit
-vim index.js 
-exit
-cheese 
-\cheese
-cheese
-ls
 cd
-clear
-exit
-l
-ls assets/
-exit
-node index.js 
-exit
-ls
-vim server
-vim server.js 
-exit
+clr
 clear
 ls
-./game 
-clear
-vim Documents/Projects/Ongoing/MMO/server
-vim Documents/Projects/Ongoing/MMO/server.js 
-cd
 cd Documents/Projects/Ongoing/
 ls
+clear
 cd MMO/
 ls
 vim
-node index.js 
-ls
-vim index.js 
-screen
 exit
-vim lec01
+ping 8.8.8.8
+fortune | cowsay | lolcat
 ls
-cd ..
+. logout.sh 
+. login.sh Arctangent
+. send.sh 'Hi leo.' flaming-sheep
+. receive.sh 
+. send.sh 'potato' dragon
+. receive.sh 
+exit
+vsplit 50
+ruby cowChat.rb 
+ruby cowServer.rb 
 ls
-cd ..
+rm nonexistentfile
+rm -s nonexistentfile
+rm -q nonexistentfile
+man rm
+echo $(rm nonexistentfile)
+[ -f temp ]
+$[ -f temp ]
+echo $[ -f temp ]
+echo [ -f temp ]
+echo $([ -f temp ])
+echo $([ -f tmp ])
+echo $([ -F tmp ])
+echo $([ -f tmp ])
+echo $([ --file tmp ])
+echo $([ --t tmp ])
+echo $([ --T tmp ])
+if [ --T tmp ]; then echo 1; else echo 0; fi
+if [ -t tmp ]; then echo 1; else echo 0; fi
+if [ -f tmp ]; then echo 1; else echo 0; fi
+if [ -f temp ]; then echo 1; else echo 0; fi
+ruby cowServer.rb 
+exit
+ruby cowChat.rb 
 ls
-cd ee40/
-ls
-mkdir hw
-ls
-mkdir lab
-mkdir lec
-ls
+ruby cowChat.rb 
+curl localhost:45:4567/receive
+curl localhost:4567/receive
 clear
-mkdir dis
-ls
-cd ..
-ls
-cd cs61c
-ls
-mkdir dis
-ls
+irb
+curl "localhost:4567/receive"
+X=4
+Y
+$X
+if [[ -z X ]]; then echo 1; else echo 0; end; 
+if [[ -z X ]]; then echo 1; else echo 0; fi; 
+if [[ -z Y ]]; then echo 1; else echo 0; fi; 
+if [ -z Y ]; then echo 1; else echo 0; fi; 
+if [ -z X ]; then echo 1; else echo 0; fi; 
+if [ -z $X ]; then echo 1; else echo 0; fi; 
+if [ -z $Y ]; then echo 1; else echo 0; fi; 
+echo ${"asdf asdf"/" "/"%20"}
+echo ${"asdf asdf"/ /"%20"}
+echo ${"asdf asdf"// /"%20"}
+x="asdf asdf"
+echo ${x}
+echo ${x// /%20}
+echo ${sadf asdf// /%20}
+cat temp
+cat temp | echo ';
+'
+cat temp | echo ''
+cat temp | echo -n ''
+exit
+atk
+stk
 clear
-cd lec
+cs170lon 
+ssh -X cs170-ix@nova.cs.berkeley.edu
+clear
 ls
-vim
-vim lec01 
-ls
-cd
-ext
+exit
+irb
+exit
+fortune | cowsay -f ghostbusters | lolcat
+fortune | cowsay -f flaming-sheep | lolcat
+fortune | cowsay -f ghostbusters | lolcat
+fortune | cowsay -f flaming-sheep | lolcat
+fortune | cowsay -f ghostbusters | lolcat
+fortune | cowsay -f flaming-sheep | lolcat
 exit
 python
 exit
+vim hw8.py
 ls
-scren
-screen
-ls
-exit
-cd Documents/Projects/Ongoing/MMO/
-ls
-vim index.js 
-exit
-ls
-clear
-ls
-cd Documents/Projects/Ongoing/MMO/
-ls
-node server
-node server.js 
-node index.js 
-ls
-cd
-exit
-vim lec01
-vim lec01.py 
-python lec01.py 
-vim lec01.py 
-python lec01.py 
-mv lec01.py flashCards.py
-vim flashCards.py 
-python flashCards.py 
-python -i flashCards.py 
-vim flashCards.py 
-python -i flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-ls
-vim flashCards.py 
-python flashCards.py 
-clear
-python flashCards.py 
-s
-ls
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-rm q
-ls
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-vim flashCards.py 
-python flashCards.py 
-exit
-python
-ipython
-exit
-ls
-cp ~/me.png .
-gimp me.png 
-ls
-rm me.png 
-gnome-open  me.jpg 
-mkdir hw0
-ls
-mv * hw0
-ls
-ls
-cd 
-cd Documents/School/
-ls
-cd cs61c/
-ls
-cd dis/
-ls
-cd..
-cd hw
-ls
-cd ../hw/
-ls
-toch hw0.txt
-touch hw0.txt
-vim hw0.txt 
-cheese
-cd
-cd Webcam/
-ls
-gimp 2013-06-24-225214.jpg 
-ls
-cd
-ls
-ls meNoBg.
-ls meNoBg.png
-ls
-cd Documents/School/cs61c/
-ls
-cd hw/
-s
-ls
-vim hw0.txt 
-exit
-mkdir hw1
-cd hw1
-wget http://www-inst.eecs.berkeley.edu/~cs61c/su13/hw/01/maxstring.c
-wget http://www-inst.eecs.berkeley.edu/~cs61c/su13/hw/01/Life1D.c
-wget http://www-inst.eecs.berkeley.edu/~cs61c/su13/hw/01/hw1.txt
-ls
-vim hw1.txt 
-exit
-python
-exit
-cd Webcam/
-ls
-gnome-open 2013-06-23-2*
-gnome-open .
-cd
-cd Documents/School/
-ls
-mkdir .archive
-mv * .archive/
-ls
+c
+cd ../..
+cd ..
 cd .archive/
 ls
-mkdir sp13
-mv * sp13
-ls
-cd ..
-ls
-mkdir cs61c
-mkdir ee40
-ls
-cd cs61c/
-ls
-vim lec01
-ls
-mkdir lec
-mkdir hw
-mkdir lab
-ls
-cd lec
-ls
-touch lec01
-ls
-cd ..
-ls
-cd lec
-ls
-screen
-clear
+ls -a
 cd
-screen
-cd Documents/School/
-ls
-cd ee40/
-ls
-clear
-ls
-cd lec/
-ls
-touch lec01
-vim lec01
-ls
-vim lec01 
-ls
-cd ..
-ls
-cd ..
-ls
-cd cs61c/
-ls
-cd dis/
-cd ../lec/
-ls
-vim lec01.py 
-screen
-gnome-open ~/Webcam/
-clear
-cd
-mkdir 61csite
-cd 61csite/
-wget -r 2 http://www-inst.eecs.berkeley.edu/~cs61c/su13/
-bg
-jls
-ls
-fg
-ls
-ps
-clear
-fg
-exit
-which python
-exit
-gcc
-ls
-touch helloWorld.c
-vim helloWorld.c 
-gcc helloWorld.c 
-ls
-./a.out 
-ls
-clea
-ls
-clear
-ls
-mv helloWorld.c ~
-rm a.out 
-cd
-exit
-youtube-dl https://www.youtube.com/watch?v=OTYI3PokSCc &
-youtube-dl https://www.youtube.com/watch?v=6F7quI-MbzY &
-youtube-dl https://www.youtube.com/watch?v=P85Fj8m6v84
-ps
-exit
-vim flashCards.py 
-./fl
-chmod +x flashCards.py 
-./flashCards.py 
-vim flashCards.py 
-./flashCards.py 
-cd
-mkdir youtube
-cd youtube/
-youtube-dl https://www.youtube.com/watch?v=FtVKlo-1XUY
-ls
-rm *
-youtube-dl https://www.youtube.com/watch?v=BOksW_NabEk &
-youtube-dl https://www.youtube.com/watch?v=RUZZUcAyWPQ
-bg
-youtube-dl https://www.youtube.com/watch?v=OkM0c-ensk8
-bg
-ps
-p
-ps
-exit
-vim lec02
-cd
-youtube-dl http://www.youtube.com/watch?v=eU4t0Yko9Uk
-ls
-clear
-mv eU4t0Yko9Uk.mp4 ee40vid.mp4
-ls
-exit
-vim test.c
-gcc test.c 
-vim test.c
-gcc
-gcc test.c
-cat test.c | gcc
-g++ test.c
-vim test.c
-mv test.c test.cpp
-vim test.cpp 
-rm test.cpp 
-ls
-clear
-cd Documents/School/cs61c/
-ls
-cd lec/
-ls
-vim flashCards.py 
-scren
-screen
-exit
-youtube-dl https://www.youtube.com/watch?v=C-iaon3cEa4 &
-ps
-exit
-ls
-ls *.mp4
-mv ee40vid.mp4 youtube/
-ls
-cd Documents/
-cd
-find
-find | egrep *.mp4
-find | egrep "*.mp4"
-mv Documents/School/cs61c/lec/*.mp4 youtube/
-cd youtube/
-ls
-gnome-open *
-gnome-open BOksW_NabEk.mp4 
-gnome-open OkM0c-ensk8.video 
-ls
-gnome-open OTYI3PokSCc.mp4 
-gnome-open P85Fj8m6v84.mp4 
-gnome-open RUZZUcAyWPQ.mp4 
-ls
-cd
-ls
-cd youtube/
-ls
-gnome-open ee40vid.mp4 
-cd
-cd Downloads/
-ls
-ls *.zls *.zip
-mkdir asdf
-mv Dexter_Britain_-_* Raindancer\ \(MP3\).zip Music.zip Music2.zip 
-mv Dexter_Britain_-_* Raindancer\ \(MP3\).zip Music.zip Music2.zip asdf/
-ls
-cd asdf
-ls
-gnome-open .
-ll
-ls
-mv Dexter_Britain_-_07_-_The_Time_To_Run.mp3 ..
-ls
-unzip Dexter_Britain_-_Creative_Commons_Vol_1.zip 
-ls
-rm *.mp3
-man unzip
-for i in $(ls); do echo $i; done
-mr Raindancer\ \(MP3\).zip Raindancer.zip
-mv Raindancer\ \(MP3\).zip Raindancer.zip
-for i in $(ls); do echo $i; done
-rm Dexter_Britain_-_Creative_Commons_Volume_5\(1\).zip 
-ls
-for i in $(ls); do echo $i; done
-for i in $(ls); do echo "$i"; done
-for i in $(ls); do echo $(cat "$i" "asdf"); done
-ls
-cat pl
-ls
-cat pl playlist.txt 
-cat pl
-cat playlist.txt 
-ls
-cd Downloads/
-ls
-cd asdf/
-ls
-for i in $(ls); do echo $i; done
-for i in $(ls); do echo $i "asdf"; done
-for i in $(ls); do echo $i "\b"; done
-for i in $(ls); do echo $i '\b'; done
-for i in $(ls); do echo $i '\n'; done
-for i in $(ls); do echo $i "\n"; done
-for i in $(ls); do echo $i "\\"; done
-for i in $(ls); do echo $i "\a"; done
-for i in $(ls); do echo $i "\e"; done
-for i in $(ls); do echo $i "\%"; done
-for i in $(ls); do echo $i "%"; done
-man cat
-for i in $(ls); do echo $i | cat; done
-for i in $(ls); do echo $i | cat "asdf"; done
-for i in $(ls); do echo $i | dog; done
-for i in $(ls); do echo $i; done
-ls | mkdir
-ls
-mkdir a b c
-ls
-rmdir a
-rmdir b
-rmdir c
-ls | gawk ''
-ls | gawk 
-ls | gawk '{print $0}'
-ls | gawk '{print split($0,".")}'
-ls | gawk '{print splce($0,".")}'
-ls | gawk '{print split(".",$0)}'
-ls | gawk '{print splice(".",$0)}'
-ls
-for i in $(ls); do echo $i "asdf"; done
-for i in $(ls); do echo $i"asdf"; done
-for i in $(ls); do echo $i"po"; done
-for i in $(ls); do mkdir $i"po"; done
-ls
-mv Dexter_Britain_-_Creative_Commons_Vol_1.zippo/ Dexter_Britain_-_Creative_Commons_Vol_1
-mv Dexter_Britain_-_Creative_Commons_Vol_2.zippo/ Dexter_Britain_-_Creative_Commons_Vol_2
-mv Dexter_Britain_-_Creative_Commons_Vol_3.zippo/ Dexter_Britain_-_Creative_Commons_Vol_3
-mv Dexter_Britain_-_Creative_Commons_Vol_4.zippo/ Dexter_Britain_-_Creative_Commons_Vol_4
-mv Dexter_Britain_-_Creative_Commons_Volume_5.zippo/ Dexter_Britain_-_Creative_Commons_Volume_5
-ls
-mv Dexter_Britain_-_Xmas_2012.zippo/ Dexter_Britain_-_Xmas_2012
-mv Music2.zippo/ Music2
-mv Music.zip Music
-rmdir Music*
-mv Music* ..
-ls
-mv Raindancer.zippo/ Raindancer
-ls
-mv Dexter_Britain_-_Creative_Commons_Vol_1.zip Dexter_Britain_-_Creative_Commons_Vol_1
-ls
-mv Dexter_Britain_-_Creative_Commons_Vol_4.zip Dexter_Britain_-_Creative_Commons_Vol_4
-mv Dexter_Britain_-_Creative_Commons_Volume_5.zip Dexter_Britain_-_Creative_Commons_Volume_5
-ls
-mv Dexter_Britain_-_Creative_Commons_Vol_2.zip Dexter_Britain_-_Creative_Commons_Vol_2
-ls
-mv *Xmas* Dexter_Britain_-_Xmas_2012
-ls
-mv Raindancer.zip Raindancer
-ls
-cd Dexter_Britain_-_Creative_Commons_Vol
-unzip Dexter_Britain_-_Creative_Commons_Vol_1/Dexter_Britain_-_Creative_Commons_Vol_1.zip 
-ls
-mv *.mp3 Dexter_Britain_-_Creative_Commons_Vol_1
-ls
-cd Dexter_Britain_-_Creative_Commons_Vol_2
-ls
-unzip Dexter_Britain_-_Creative_Commons_Vol_2.zip 
-cd ..
+find | grep 'scheme'
+cd Documents/School/.ARCHIVE/
 l
-cd Dexter_Britain_-_Creative_Commons_Vol_4
+cd Python_Scheme_Interpreter/
 ls
-unzip Dexter_Britain_-_Creative_Commons_Vol_4.zip 
+cd scheme/
 ls
-cd ..
+python scheme.py 
 ls
-cd Dexter_Britain_-_Creative_Commons_Volume_5/
-ls
-unzip Dexter_Britain_-_Creative_Commons_Volume_5.zip 
-cd ..
-ls
-cd Dexter_Britain_-_Xmas_2012/
-ls
-unzip Dexter_Britain_-_Xmas_2012.zip 
-cd ..
-ls
-cd Raindancer/
-ls
-unzip Raindancer.zip 
-ls
-cd ..
-.s
-ls
-mv * ~/Music/
-ls
-cd ..
-rmdir asdf/
-ls
-cd ../Music/
-ls
-cd Raindancer/
-ls
-cd
-cd Documents/School/cs61c/
-ls
-cd hw/
-ls
-cd hw0
-ls
-vim hw0.txt 
-cd ..
-scp -r hw0 cs61c-hp@star.cs.berkeley.edu
-scp -r hw0 cs61c-hp@star.cs.berkeley.edu:~
-cd
-vim .bashrc
+python3 scheme.py 
 exit
-cs61clon
-giblon
-vim .bashrc
-ls
-giblon
-cd
-giblon
+python
+pyhon
+python
 exit
-ls
-mkdir workspace
-cd workspace/
-ks
-ls
-mkdir .clean
-mv * .clean/
-scp gib@ssh.ocf.berkeley.edu:/home/g/gi/gib/projects/GlobalInternships/Static/css/
-scp gib@ssh.ocf.berkeley.edu:/home/g/gi/gib/projects/GlobalInternships/Static/css/ .
-scp -r gib@ssh.ocf.berkeley.edu:/home/g/gi/gib/projects/GlobalInternships/Static/css/ .
-ls
-scp -r gib@ssh.ocf.berkeley.edu:/home/g/gi/gib/projects/GlobalInternships/Static/ .
-vim
-screen
+ps -a
+sudo ps -A
+sudo ps -A | less
 exit
-cs61clon
-exit
+vsplit 50
+clear
+ruby cowchat.rb 
+vsplit 50
+hsplit 30
+vim cowChat.rb 
 ls
-lpr
+rm cowChat.rb 
 ls
-lpr
-man lpr
-ls
-ps
-l
-cd Documents/School/ee40/
-ls
-cd l
-ls
-cd docs/
-ls
-exit
-cd
-cd Documents/School/cs61c/hw/
-ls
-cd hw1
-ls
-vim maxstring.c 
-gcc maxstring.c 
-ls
-./a.out 
-vim maxstring.c 
-gcc maxstring.c 
-./a.out 
-vim maxstring.c 
-gcc maxstring.c 
-./a.out 
-vim maxstring.c 
-gcc -o maxstring -std=c99 maxstring.c
-./maxstring l 'hello world!' 'welcome to cs61c'
-./maxstring ' ' 'hello world!' 'welcome to cs61c'
-./maxstring l
-./maxstring b 'hello world!' 'welcome to cs61c'
-./maxstring
-vim maxstring.c 
-gcc -o maxstring -std=c99 maxstring.c
-./maxstring b 'hello world!' 'welcome to cs61c'
-./maxstring l 'hello world!' 'welcome to cs61c'
-vim maxstring.c 
-gcc -o maxstring -std=c99 maxstring.c
-ls
-vim testfile
-vim maxstring
-vim maxstring.c 
-gcc -o maxstring -std=c99 maxstring.c
-./maxstring l 'hello world!' 'welcome to cs61c'
-./maxstring ' ' 'hello world!' 'welcome to cs61c'
-./maxstring l
-./maxstring b 'hello world!' 'welcome to cs61c'
-./maxstring
-vim maxstring.c 
-./maxstring b 'hello world!' 'welcome to cs61c'
-gcc -o maxstring -std=c99 maxstring.c
-./maxstring 
-./maxstring b 'hello world!' 'welcome to cs61c'
-./maxstring ' ' 'hello world!' 'welcome to cs61c'
-./maxstring l 'hello world!' 'welcome to cs61c'
-./maxstring l
-ls
-rm a.out 
-rm maxstring
-ls
-vim Life1D.c 
-./Life1D 3 58979
-gcc -o Life1D Life1D.c 
-ls
-rm a.out 
-ls
-./Life1D 3 58979
-vim Life1D
-vim Life1D.c 
-gcc -o Life1D Life1D.c 
-./Life1D 3 58979
-vim Life1D
-vim Life1D.c 
-./Life1D 3 58979
-gcc -o Life1D Life1D.c 
-./Life1D 3 58979
-vim Life1D.c 
-gcc -o Life1D Life1D.c 
-./Life1D 3 58979
-vim Life1D.c 
-gcc -o Life1D Life1D.c 
-./Life1D 3 58979
-echo 1110011001100011
-vim Life1D.c 
-gcc -o Life1D Life1D.c 
-./Life1D 3 58979
-vim Life1D.c 
-./Life1D 3 58979
-gcc -o Life1D Life1D.c 
-./Life1D 3 58979
-./Life1D 5 32384626
-./Life1D 4 4338327
-/Life1D 17 3141592653
-./Life1D 17 3141592653
-./Life1D 3 58979 | ./scale.sh 10 | ppmtogif > Life1D_3_58979.gif
-vim Life1D.c 
-gcc -o Life1D Life1D.c 
-./Life1D 3 58979 | ./scale.sh 10 | ppmtogif > Life1D_3_58979.gif
-./Life1D 17 3141592653
-ls
-./Life1D 3 58979 | ./scale.sh 10 | ppmtogif > Life1D_3_58979.gif
-ls
-scale.sh
-/scale.sh
-wget http://www-inst.eecs.berkeley.edu/~cs61c/su13/hw/01/scale.sh
-./Life1D 3 58979 | ./scale.sh 10 | ppmtogif > Life1D_3_58979.gif
-chmod +x scale.sh 
-./Life1D 3 58979 | ./scale.sh 10 | ppmtogif > Life1D_3_58979.gif
-ls
-gnome-open Life1D_3_58979.gif 
-Life1D 5 32384626 
-./Life1D 5 32384626 | ./scale.sh 10 | ppmtogif > Life1D_3_58979.gif
-ls
-gnome-open Life1D_3_58979.gif 
-./Life1D 4 4338327| ./scale.sh 10 | ppmtogif > Life1D_3_58979.gif
-gnome-open Life1D_3_58979.gif 
-./Life1D 17 3141592653 | ./scale.sh 10 | ppmtogif > Life1D_3_58979.gif
-gnome-open Life1D_3_58979.gif 
+vim cowChat.sh
+rm cowChat.sh 
 ls
 clear
 ls
-gdb
-cd ..
+vim login.sh
+chmod +x login
+chmod +x login.sh 
+./login.sh test
+vim login.sh
+./login.sh test
+vim login.sh
+./login.sh test
+vim login.sh
+./login.sh test
+vim login.sh
+./login.sh test
+vim login.sh
+./login.sh test
+vim login.sh
+./login.sh test
+vim login.sh
+./login.sh test
+vim login.sh
+./login.sh test
+vim login.sh
+$cowchatUID
+echo $cowchatUID
+$cowchatUID
+vim login.sh
+clear
 ls
-cd lab/
+. cowServer.rb 
+clear
+. login.sh 
+$cowchatUID 
+clear
+echo $cowchatUID 
+clear
+. login.sh 
+echo $cowchatUID 
+ls
+clear
+ls
+vim login.sh 
+ls
+chmod +x send.sh 
+ls
+./login.sh Arctangent
+./send.sh 
+./send.sh "Walrus"
+curl http://localhost:4567/receive
+./send.sh "Walrus"
+vim send.sh 
+./send.sh "Walrus"
+vim send.sh 
+vim login.sh 
+./login.sh 
+./send.sh 
+vim login.sh 
+./send.sh "I am not a walrus."
+vim login.sh 
+vim send.sh 
+./send.sh "I am not a walrus."
+vim send.sh 
+./send.sh "I%20am%20not%20a%20walrus."
+$cowchatUID 
+unset
+unset cowchatUID 
+$cowchatUID
+vim login.sh 
+vim logout.sh
+./login.sh 
+./send.sh "Potato"
+curl http://localhost:4567/receive
+./login.sh 
+./login.sh Potato
+. logout.sh 
+. login.sh Potato
+curl http://localhost:4567/receive
+./send.sh Potatonator
+curl http://localhost:4567/receive
+clear
+. login.sh
+. logout.sh
+. logout.sh Arctangent
+. send.sh "Tengo un gato en mis pantalones."
+. send.sh "Tengo%20un%20gato%20en%20mis%20pantalones."
+. logout.sh
+. login.sh Arctangent
+. send.sh "Tengo%20un%20gato%20en%20mis%20pantalones."
+curl http://localhost:4567/receive
+vim receive.sh
+ls
+chmod +x logout.sh 
+chmod +x receive.sh 
+ls
+. receive.sh 
+ls
+. logout.sh 
+. login xxxhacker6969xxx
+. login.sh xxxhacker6969xxx
+. send.sh "find%20sexy%20singles%20%in%20your%20%area"
+. send.sh "find%20sexy%20singles%20in%20your%20area"
+. receive.sh 
+clear
+ls
+vim send.sh 
+man sed
+replace
+apropos 
+apropos string replace
+apropos substring replace
+apropos substring replace | less
+ls
+. send.sh potato
+vim send.sh 
+. send.sh "potato potato"
+. send.sh "potato potato\!"
+. send.sh "potato potato."
+ls
+clear
+ls
+. receive
+. receive.sh 
+clear
+. send.sh Potato!
+vim send.sh 
+clear
+. logout.sh 
+. send.sh Potato
+. login.sh Tester
+. send.sh Potato
+. receive.sh 
+. send.sh Potato
+vim send.sh 
+clear
+. send.sh Potato
+vim send.sh 
+ls
+vim cowServer.rb 
+./send.sh Potato
+. logout.sh 
+ls
+. login.sh Arctangent
+. send.sh message
+. receive.sh 
+. send.sh 'This is a message with spaces.
+'
+. receive.sh 
 s
 ls
-mkdir lab1
-rmdir lab1/
-mkdir lab2
-cd lab2/
+. logout.sh 
+. rc
+. receive.sh 
 ls
-scp -r cs61b-hp@hive4.cs.berkeley.edu:~cs61c/labs/02 .
-cat ~/.bash
-cat ~/.bashrc 
-scp -r cs61c-hp@hive4.cs.berkeley.edu:~cs61c/labs/02 .
+vim send.sh 
+. login.sh Username
+. receive.sh Test default
+. send.sh Test default
+. send.sh Test sheep
+. send.sh Test 
+vim send.sh 
+. send.sh Potato
+vim send.sh 
+. send.sh Test
+. send.sh test flarg
+. send.sh test default
+. send.sh test sheep
+. receive.sh 
 ls
-cd 02
+vim receive.sh 
+. receive.sh 
+vim cowServer.rb 
 ls
-cd ..
-mv 02/* .
+. login.sh Arctangent
+. receive.sh 
+. send.sh "Santa Claus"
+. receive.sh 
+. send.sh "Santa Claus" flaming-sheep
+. receive.sh 
+. send.sh $(fortune) flaming-sheep
+. receive.sh 
+. send.sh "$(fortune)" flaming-sheep
+. receive.sh 
+vim send.sh 
+. send.sh "$(fortune)" flaming-sheep
+. receive.sh 
+. send.sh "$(fortune)" flaming-sheep
+. receive.sh 
+. send.sh "$(fortune)" flaming-sheep
+. receive.sh 
+. send.sh "$(fortune)" flaming-sheep
+. receive.sh 
+. send.sh "$(fortune)" flaming-sheep
+. receive.sh 
+. send.sh "$(fortune)" flaming-sheep
+. receive.sh 
 ls
-rmdir 02
+git add .
+git commit -m 'raw command line UI
+'
+git push origin master
+gpm
 ls
-vim
-vim gdb.txt
+vim cowServer.rb 
 ls
-ls -l
-ls -a
-gdb ./$ gcc -g -o hello hello.c
-./$ gcc -g -o hello hello.c
-gcc -g -o hello hello.c
+vim cowServer.rb 
 ls
-gdb hello
-gdb ./hello 
+vim receive.sh 
+. receive.sh 
+git add .
+ga
+ga .
+gc 'Made it faster, at the expense of pretty colors'
+gpm
 ls
-gcc -g -o ll_equal ll_equal.c 
-./ll_equal 
-vim ll_equal
-gdb ll_equal 
-gcc -g -o ll_equal ll_equal.c 
-./ll_equal 
-vim ll_equal.c 
-gcc -g -o ll_equal ll_equal.c 
-./ll_equal 
-gcc -g -o ll_equal ll_equal.c 
-./ll_equal 
-gcc -g -o ll_cycle ll_cycle.c 
-./ll_cycle 
-gcc -g -o ll_cycle ll_cycle.c 
-./ll_cycle 
-vim ll_cycle.c
+. send.sh Test
+. receive.sh 
+. send.sh Test flaming-sheep
+. receive.sh 
+. send.sh Test sodomized-sheep
+. receive.sh 
+. send.sh Test dragon
+. receive.sh 
+. send.sh Test dragon
+. receive.sh 
 clear
-ls
-./hello 
-./ll_cycle 
-cd ~/Desktop/
-ls
-cd clewn-1.15/
-ls
-vim README 
-ls
-vim INSTALL 
-cd
-mv ~/Downloads/vimgdb.tar.gz .
-mkir vimgdb
-mkdir vimgdb
-mv vimgdb.tar.gz vimgdb
-cd vimgdb/
-ls
-tar -xvf vimgdb.tar.gz 
-ls
-rm vimgdb.tar.gz 
-cd vimgdb_1.2/
-ls
-vim vimgdb
-cd ..
-ls
-mkdir ~/.vim/misc
-ls
-mv vimgdb_1.2/ ~/.vim/misc/
-cd
-vim
-vim test.c
-vim /home/arctangent1759/.vim/.vimrc
-vim
-vim ~/.vim/.vimrc
-cd Documents/School/cs61c/
-ls
-cd lab/lab2/
-ls
-vimgdb
-opt
-echo $PATH
-TEST=4
-$TEST
-TEST+=5
-$TEST
-cd
-vim .bashrc 
-cd .vim
-ls
-ls misc/
-mv misc/ runFiles
-echo $PATH
-vim /home/arctangent1759/.bashrc 
-cd runFiles/
-ls
-mv vimgdb_1.2/vimgdb .
-mv vimgdb_1.2/vimgdb_msg .
-ls
-cd vimgdb_1.2/
-ls
-mkdir ../../misc
-mv vimgdb.vim ~/.vim/misc/
-ls
-cd ..
-rmdir vimgdb_1.2/
-ls
-cd ..
-exit
-python
-cd Documents/School/cs61c/lab/lab2/
-ls
-vim hello.c 
-exit
-./game 
-love
-cd youtube/
-ls
-gnome-open binky.flv 
-cd
-gnome-open shipWaiver.pdf 
-ls
-screen
-exit
-cd Documents/School/cs61c/l
-cd Documents/School/cs61c/lab/
-ls
-cd lab2/
-ls
-vimgdb
-cd
-ls
-cd .vim
-ls
-cd runFiles/
-ls
-./vimgdb
-./vimgdb_msg 
-vim vimgdb_msg 
-vim vimgdb
-ls
-cd
-echo $PATH 
-vim /home/arctangent1759/.bashrc 
-exit
-screen
-exit
-cd jdgui/
-ls
-vim readme.txt 
-exit
-cd Documents/School/cs61c/
-ls
-cd lab/
-ls
-cd lab2/
-ls
-./ll_equal 
-./ll_cycle 
-cd ../../hw/
-ls
-cd hw1
-ls
-vimgdb maxstring.c 
-vimgdb Life1D
-man gcc
-cd ~/youtube/
-youtube-dl http://www.youtube.com/watch?v=-j8ZMMuu7MU
-cd
-clear
-cd Documents/School/cs
-cd Documents/School/cs61c/
-ls
-clear
-l
-cd lab/
-ls
-cd lab2/
-ls
-vimgdb ll_equal
-ls
-./ll_equal 
-vim ll_cycle
-vim ll_cycle.c
-vim gdb.txt 
-vimgdb hello
-vim ll_equal
-vim ll_equal.c
-./ll_cycle 
-vim ll_cycle
-vim ll_cycle.c
-cd
-ls
-cd Documents/School/cs61c/
-ls
-cd
-cd Documents/Projects/Ongoing/MMO/
-ls
-vim server_constants.js 
-vim curseFilter.js 
-exit
-cd Documents/School/cs61c/
-ls
-cd lec
-ls
-cd ../lab/lab2/
-ls
-vimgdb hello.c 
-vimgdb hello
-vim hello.c 
-ls
-vimgdb hello
-cd ../../l
-cd ../../lec/
-ls
-vim lec04
-cd
-evince mozilla.pdf 
-exit
-vimgdb
-R1;3402;0cvimgdb
-vimgdb
-R1;3402;0c
-ls
-screen
-exit
-cd youtube/
-ls
-gnome-open OT
-gnome-open OTYI3PokSCc.mp4 
-gnome-open P85Fj8m6v84.mp4 
-gnome-open RUZZUcAyWPQ.mp4 
-youtube-dl http://www.youtube.com/watch?v=DXUOWXidcY0
-airmon-ng wlan0
-sudo airmon-ng wlan0
-sudo airmon-ng start wlan0 11
-airodump-ng
-sudo 
-sudo airodump-ng mon0
-ls
-airmon-ng stop wlan0
-sudo airmon-ng stop wlan0
-ps -a | less
-sudo ps -a | less
-sudo ps -aj
-sudo ps -a
-sudo ps -l
-sudo ps -la
-python
-evince comcastAcct.pdf 
-cheese
-cd Webcam/
-ls
-cheese
-cd
-ls
-cat proof 
-clear
-ls
-cd Documents/School/ee40/
-ls
-cd docs
-ls
-evince HW1_assignment.pdf 
-bg
-evince HW1_assignment.pdf 
-man evince
-cat HW1_assignment.pdf | evince
-cat HW1_assignment.pdf > copy
-evince copy
-bg
-rm copy 
-clear
-ls
-clear
-ipython
-exit
-cd Documents/School/ee40/hw/
-ls
-cd ..
-ls
-cd docs/
-ls
-evince HW1_assignment.pdf 
-bg
-python
-cear
-clear
-python
-cd
-cd Documents/School/cs61c/
-ls
-cd hw
-ls
-cd hw
-cd hw1
-ls
-vim hw1.txt 
-ls
-vim hw1.txt 
-ls
-vim maxstring.c 
-cd
-$ curl https://install.meteor.com | sh
-$ curl https://install.meteor.com
-curl https://install.meteor.com | sh
-meteor create ~/my_cool_app
-cd my_cool_app/
-meteor
-ls
-cd ..
-meteor
-cd my_cool_app/
-vim
-cd ..
-rm -r my_cool_app/
-ls
-clear
-cd youtube/
-ls
-ls -lt
-mplayer Animirus__About_Soccer_\(Ep#8\)-ZI_M_lgXB4E.mp4 
-ls -lt
-mplayer Bounty_Hunter_-_Space_Janitors_Season_2_Ep__6-HjgQWRCUMGM.mp4 
-ls -lt
-mplayer SourceFed_Investigates_the_NSA-KQ6uEcSaGGU.mp4 
-ls -lt
-mplayer  Boston_Consoles_Itself_With_Porn\!-JQeOuRfXMXs.mp4 
-ls
-ls -lt
-mplayer  Dear_Ryan_-_Do_a_Basketball_Trick_Shot\!-w8kFDipIWq4.mp4 
-ls -lt
-mplayer  How_Fast_and_Furious_6_Should_Have_Ended-UDKd5nrUjC4.mp4 
-ls -lt
-mplayer  How_To_Party_Really_Good_-_50k_Students-Es_NQOlrq3s.mp4 
-ls -lt
-mplayer  In_NOT_AMERICA_News,_Prisons_Are_Closing_Due_to_Prisoner_Shortage-GsZIj_f1oDo.mp4 
-ls -lt
-mplayer  C-iaon3cEa4.flv 
-ls -lt
-mplayer  One_Star\!_6_Planets\!_3_Super_Earths\!_SPACE\!-t_-f9zcKyg8.mp4 
-ls
-mplayer  6F7quI-MbzY.mp4 
-ls
-ls -lt
-mplayer  DH_-_Stephano_vs_Bischu_-_PvZ_-_Neo_Planet_S_-_StarCraft_2_-_Heart_of_the_Swarm-4HZLHrjYQPs.mp4 
-ls -lt
-mplayer  Weekend_Projects_-_TV-Go-Sleep_Universal_TV_Timer-mtXuv5NyfIU.mp4 
-ls -lt
-mplayer  Miami\'s_Doomed\,_Odd_Jobs_\&_New_Planets_IT\'S_COMMENT_COMMENTARY_74\!-0F-Q1siq7lA.mp4 
-ls -lt
-mplayer  Immigration_Officer_Bribed_with_Egg_Rolls\!-wlzZ1l7nzPk.mp4 
-ls -lt
-mplayer  C-iaon3cEa4.flv 
-ls -lt
-mplayer RUZZUcAyWPQ.mp4 
-ls -lt
-mplayer  OTYI3PokSCc.mp4 
-ls -lt
-mplayer  6F7quI-MbzY.mp4 
-ls -lt
-mplayer  Cloning_Extinct_Rhinos_From_One_Drop_of_Blood-AQ7t40MSaOc.mp4 Twelve_Tones-4niz8TfY794.mp4 
-cd
-cd Documents/School/cs61c/
+. login.sh Arctangent
+. send.sh "Hi Robert."
+. receive.sh 
+. send.sh "How are you, robert" flaming-sheep
+. receive.sh 
+. login.sh Arctangent
+. send.sh "How are you, robert" flaming-sheep
+. receive.sh 
+. logout.sh 
+. login.sh Arctangent
+. send.sh "How are you, robert" flaming-sheep
+. receive.sh 
+cd 
+cd Documents/School/cs170/
 ls
 cd hw/
 ls
-scp -r hw1 cs61c-hp@star.cs.berkeley.edu
-scp -r hw1 cs61c-hp@star.cs.berkeley.edu:~
-cs61clon
-man rm
-fbcmd
-sudo apt-get install php5-cli php5-curl
+mkdir hw8
+cd hw8
+cp ../hw7 .
+l
+cp ../hw7/hw7.tex 
+cp ../hw7/hw7.tex .
 ls
-wget  https://raw.github.com/dtompkins/fbcmd/master/fbcmd_update.php
-ls
-mv fbcmd_update.php ~
-cd
-mkdirasdf
-mkdir fbcmd
-mv fbcmd_update.php fbcmd
-cd fbcmd/
-ls
-sudo php fbcmd_update.php sudo 
-php fbcmd_update.php
-php fbcmd_update.php install
-fbcmd
-fbcmd go auth 
-fbcmd go auth HAI9MG
-fbcmd go auth 
-fbcmd go auth QVIQNF
-fbcmd go access
-fbcmd addperm
-fbcmd go  auth
-fbcmd auth VDDGNM
-fbcmd addperm
-fbcmd test
-fbcmd help
-fbcmd flast
-fbcmd flast 5
-fbcmd flast 2
-fbcmd flast 1
-fbcmd post
-fbcmd post test
-fbcmd delpost 100002956061089_401960619912470
-fbcmd fgroups
-fbcmd mywal
-fbcmd mywall
-fbcmd mywall 4
-man fbcmd
-fbcmd
-fbcmd | less
-fbcmd mywall new
-fbcmd mywall 
-fbcmd mywall count 5
-fbcmd mywall count=5
-fbcmd mywall count=2
-fbcmd mywall count=1
-fbcmd mywall count = 1
-fbcmd mywall count
-fbcmd mywall
-fbcmd mywall c
-fbcmd mywall new
-fbcmd mywall news
-fbcmd mywall 2
-fbcmd mywall 3
-fbcmd mywall 4
-fbcmd mywall 100
-fbcmd | less
-fbcmd wallpost
-fbcmd wallpost Nitin
-fbcmd help wallpost
-fbcmd wallpost "Nitin Sadras" "Check this out: https://sites.google.com/a/dtompkins.com/fbcmd/"
-cs61clon
+mv hw7.tex hw8.tex 
+vim hw8.tex 
+vim hw8.p
+vim hw8.py
 exit
-mplayer Twelve_Tones-4niz8TfY794.mp4 
+python main.py 
 exit
-cd
-cd Documents/School/
-sl
 ls
-cd ee40/
-cd docs/
-cs61clon
+clear
+cd Documents/Projects/Ongoing/
 ls
-cd
+mkdir Meraki
+cd Meraki/
 ls
-cd Documents/School/ee40/
+clear
+hsplit 30
 ls
-cd docs
+cd ..
+rmdir Meraki/
+git clone https://github.com/Arctangent1759/MerakiChallenge
 ls
-evince Quiz0.pdf 
-bg
+cd MerakiChallenge/
+ls
+clear
+ls
+ls -a
+ls
+vim .gitignore 
+ls
+cat README.md 
+vim
+git clone https://github.com/Cisco-Meraki-CFG/IteratedPrisonersDilemma
+ls
+cd IteratedPrisonersDilemma/
 ls
 cd ..
 ls
+git add .
+cd IteratedPrisonersDilemma/
+l
+ls -a
+rm -rf .git
+ls
+mv * ..
+cd ..
+rmdir IteratedPrisonersDilemma/
+ls
+cd IteratedPrisonersDilemma/
+ls
+ls -a
+rm .gitignore 
+cd ..
+rmdi IteratedPrisonersDilemma/
+rmdir IteratedPrisonersDilemma/
+ga .
+gpm
+gcm 'added files'
+gc 'added files'
+gpm
+ls
+cd Players/
+ls
+cp resistor.py player.py
+vim player.py 
+gpm
+gpo
+gpu
+vim /home/arctangent1759/.bashrc
+source ~/.bashrc
+gpu
+gpum
+ls
+rm player.py 
+vim QbertQlearning.py 
+ls
+cd ..
+python main.py 
+python main.py  2>&1 | less
+ls
+python main.py  2>&1 | less
+vim TourneyMaster.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+ls
+vim Players/QbertQlearning.py
+vim TourneyMaster.py
+python main.py  2>&1 | less
+vim Players/QbertQlearning.py
+python main.py  2>&1 | less
+ls
+clear
+ls
+cd Players/
+ls
+vim randPlayer.py
+ls
+rm randPlayer.py
+ls
+cd ..
+python main.py 
+ls
+vim Game.py
+python main.py 
+vim Game.py
+python main.py 
+vim Game.py
+python main.py 
+vim Game.py
+python main.py 
+ls
+cd Players/
+ls
 cd ..
 ls
-cd cs61c/hw/hw0
+vim main.py 
 ls
-gnome-open me.jpg
+vim Game.py
 ls
-bg
+vim Players/QbertQlearning.py
+python main.py 
 ls
-ps
-cd ../..
-cd ../ee40/
+vim Game.py
+python main.py 
 ls
-cd docs/
+vim Game.py
+python main.py 
+vim Game.py
+python main.py 
+vim Game.py
+python main.py 
 ls
-evince Course_Overview_EE40Su2013.pdf 
-bg
+cd Players/
 ls
-evince ~/mozilla.pdf 
-cd../..
-cd ../..
+cp QbertQlearning.py EvilTwin.py
+cd ..
+python main.py 
 ls
-cd cs61c/
+python main.py 
+python main.py ls
 ls
-cdhw
-cd hw
+cd Players/
 ls
-rm -r cs61c-hp@star.cs.berkeley.edu/
+vim QbertQlearning.py
 ls
-mkdir hw2
-cd hw
-cd hw2
-wget http://www-inst.eecs.berkeley.edu/~cs61c/su13/hw/02/flights.c
-vim flights.c 
+cd ..
+ls
+diff MatchMaster.py ~/IteratedPrisonersDilemma/MatchMaster.py
+diff . ~/IteratedPrisonersDilemma
+ls
+cd Players/
+ls
+vim resistor.py
+vim cooperator.py
+cd ..
+ls
+python main.py 
+ls
+vim Game.py
+rm Players/EvilTwin.py
+ls
+python main.py 
+vim Players/QbertQlearning.py
+python main.py 
+vim Players/QbertQlearning.py
+python main.py 
+vim Players/QbertQlearning.py
+python main.py 
+vim Players/QbertQlearning.py
+ls
+python main.py 
+vim Players/QbertQlearning.py
+python main.py 
+vim Players/QbertQlearning.py
+python main.py  | less
+vim Players/QbertQlearning.py
+exit
+vsplit 50
+clear
+ls
+cd ..
+ls
+exit
+cd ..
+python
+exit
+cd
+git clone https://github.com/Cisco-Meraki-CFG/IteratedPrisonersDilemma
+cd IteratedPrisonersDilemma/
+ls
+cp ~/Documents/Projects/Ongoing/MerakiChallenge/Players/QbertQlearning.py Players/
+ls
+cd Players/
+ls
+cd ..
+python main.py 
+ls
+cd Players/
+ls
+vim
+python main.py 
+cd ..
+python main.py 
+cd Players/
 vim
 ls
-cs61clon
-l
-scp cs61c-hp@star.cs.berkeley.edu:02/timeHM.c
-scp cs61c-hp@star.cs.berkeley.edu:02/timeHM.c .
+cd ..
 ls
-clear
+python main.py 
 exit
-cd youtube/
-ls
-mplayer Dear_Ryan_-_Do_a_Basketball_Trick_Shot\!-w8kFDipIWq4.mp4 
-mplayer Animirus__About_Soccer_\(Ep#8\)-ZI_M_lgXB4E.mp4 
-mplayer Twelve_Tones-4niz8TfY794.mp4 &
-fg
-screen; fg
-screen
-cd
+python
+ga .
+gcm
+gc working qlearning
+gc 'working qlearning'
+gpm
+cd ..
+python ScoreBoard.py
+python main.py 
+vim TourneyMaster.py
+python main.py 
 exit
+cd Documents/Projects/Ongoing/
 ls
-cd
-cd Documents/School/cs61c/
-ls
-cd hw/hw1
-ls
-gcc maxstring.c 
-./a.out 
-./a.out j j jjj
-exit
-cd Documents/School/cs61c/
-ls
-cd lec/
-ls
-vim lec05
-fg
-ps
-bg
-ps
-bg
-fg
-ps
-kill vim
-pkill vim
-clear
-ls
-vim lec05 
+cd MerakiChallenge/
 ls
 cd ..
 ls
-cd l
+cd CSUAF2013/
 ls
-cd hw
+cd ..
 ls
-cd hw2
+cd PennApps2013/
+ls
+cd haz
+cd hazardous-vocabulary-overdrive/
+ls
+cat *.py
+wc
+cat *.py | wc
+cd ..
+ls
+cd ..
+ls
+cd 2dTribes/
+ls
+cat *.js
+cat *.js | wc
+cat *.js assets/js/game.js | wc
+cat *.js assets/js/game.js assets/html/index.html | wc
+cd ..
+ls
+cd BotShooter/
+ls
+cat *.js *.py | wc
+cat *.js *.py assets/js/*.js | wc
+cat *.js *.py assets/js/interpreter.js.js | wc
+cat *.js *.py assets/js/interpreter.js | wc
+exit
+sudo gem install rails
+clear
+ls
+cd Documents/Projects/Instructional/
+ls
+mkdir Rails
+cd R
+ls
+cd Rai
+cd Rails/
+ls
+rails new Blag
+ls
+rm -rf Blag/
+rails new Blag
+cd Blag
+ls
+cd ..
+rm -rf Bl
+ls
+rm -rf Blag/
+rails new Blag
+rm -rf Blag/
+rails -v
+ruby -v
+gem install rails
+rails --version
+rails new Blag
+gem install bundler
+sudo gem install bundler
+sudo gem install bundleradfsd
+gem install bundler
+gem update --system
+sudo gem update --system
+gem update
+sudo gem update
+ls
+rm -rf Blag/
+ls
+rails new Blag
+source 'http://rubygems.org'
+bundle update
+bundle
+ls
+cd Blag/
+ls
+bundle update
+cd ..
+ls
+rm -rf Blag
+ls
+gem new Blag
+ls -a
+ls
+rails new Blag
+bundle
+gem list
+gem list bundler
+gem uninstall bundler -v 1.2.3
+gem uninstall bundler
+gem uninstall bundler -v 1.2.3
+gem uninstall bundler -v 1.2
+gem uninstall bundler -v 1
+gem uninstall bundler 
+gem uninstall bundler -v 1.3.5
+gem list bundler
+gem uninstall bundler -v 1.2.3
+rvm
+ls
+cd Bla
+cd Blag
+ls
+rails server
+bundle instal
+bundle install
+rails server
+rails generate controller welcome index
+cd app/controllers/
 ls
 vim 
+cd ..
+vim config/routes.rb 
+rails server
 ls
+vim app/views/welcome/index.erb
+rails server
+ls
+vim config/routes.rb 
+ls
+cd app
+ls
+cd con
+ls
+cd controllers/
+ls
+vim welcome_controller.rb 
+vim
+python
+rails server
+cd ../..
+vim app/views/welcome/index.erb 
+vim app/views/welcome/index.html.erb 
+rm app/views/welcome/index.erb 
+rails server
+java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+java -Xmx1024M -Xms1024M -jar minecraft_server.1.7.2.jar nogui
+sudo java -Xmx1024M -Xms1024M -jar minecraft_server.1.7.2.jar nogui
+exit
+ngrok 1759
+exit
+ramnodelon 
+cd
+wget https://s3.amazonaws.com/Minecraft.Download/versions/1.7.2/minecraft_server.1.7.2.jar
+sudo java -Xmx1024M -Xms1024M -jar minecraft_server.1.7.2.jar nogui
+sudo java -Xmx1024M -Xms1024M -jar minecraft_server.1.7.2.jar
+sudo java -Xmx1024M -Xms1024M -jar minecraft_server.1.7.2.jar nogui
+man java
+ramnodelon 
+freee -m
+free -m
+grep MemTotal /proc/meminfo
+ramnodelon 
+ssh -X alchu@csua.berkeley.edu
+grok
+opengrok
+ngrok
+ls
+cd Documents/Projects/Ongoing/MMO/
+ls
+ngrok index.js 
+node index.js 
+ls
+exit
+cd ../..
+ls
+cd ..
+ls
+cd Ongoing/
+ls
+cd MerakiChallenge/
+ls
+vim Players/QbertQlearning.py
+pyhton main.py 
+python main.py 
+ls
+vim Players/
+vim Players/QbertQlearning.py
+python main.py 
+exit
+python
+irb
+exit
+rails destroy bacons
+rails destroy controller bacons
+rails destroy model bacon
+vim app/views/posts/edit.html.erb 
+exit
+rails g controller bacons
+rails g model bacon
+python
+mplayer ~/Music/514530_Song-of-Storms-Remi.mp3 
+ls
+rails g model Comment commenter:string body:text post:references
+cd app/models/
+vim comment.rb 
+rake db:migrate
+cd ..
+vim models/post.rb 
+rails g controller Comments
+cd ..
+vim app/views/posts/show.html.erb 
+exit
+rake routes
+exit
+rake rote
+rake route
+rake route --trace
+rake routes
+exit
+cd ..
+cd Blog/
+ls
+vim
+rails server
+ls
+cd app
+ls
+l
+ls
+cd assets/
+ls
+cd ..
+ls
+cd models/
+ls
+vim post.rb 
+exit
+rake routes
+exit
+pign 8.8.8.8
+ping 8.8.8.8
+exit
 cd
 cd Documents/Projects/Ongoing/MMO/
 ls
-node server
-node server.js 
 node index.js 
-cd ../..
-ls
-cd ..
-cd School/ee40/docs/
-ls
-evince Lab_1_Soldering_PCBs.pdf 
-evince Lab_2_Resistive_Circuits.pdf 
-bg
-python
-ps
-pkill ev
-pkill evince
-ps
-pkill ps
-ps
-ls
 exit
-cd Documents/School/cs61c/hw/
-ls
-cd hw2
-ls
-vim flights.out 
-ls
-cd ..
-scp -r hw2 cs61c-hp@star.cs.berkeley.edu:~
-cs61clon
-fcs61clon
-cd Documents/School/cs61c/
-ls
-cd hw/hw2
-ls
-clear
+ngrok 1759
+exit
+vi
+exit
+cd Documents/Projects/Instructional/Rails/Blag/
 ls
 vim
+rake routes
+vim config/routes.rb 
+rake routes
+hsplit 30
+rails g controller hosts
 ls
-make
-cat m
-cat Makefile 
+rails g controller posts
+rails destroy controller hosts
+cd app/controllers/
 ls
-./RouteTime airports.txt schedules.txt routes.txt
-ls
-vim airports.txt 
-vim flights.c
-./RouteTime airports.txt schedules.txt routes.txt
-make
-./RouteTime airports.txt schedules.txt routes.txt
-vim flights.c 
-make
-vim flights.c 
-make
-./RouteTime
-./RouteTime airports.txt schedules.txt routes.txt
-vimgdb RouteTime
-ls
-vim flights.c 
-make
-./RouteTime airports.txt schedules.txt routes.txt
-cat airports.txt 
-vim flights.c
-./RouteTime airports.txt schedules.txt routes.txt
-cat schedules.txt 
-make
-./RouteTime airports.txt schedules.txt routes.txt
-cat schedules.txt 
-./RouteTime airports.txt schedules.txt routes.txt
-cat flights.o
-cat flights.out 
-./RouteTime airports.txt schedules.txt routes.txt > test
-diff test flights.out 
-vim test
-vim flights.c 
-mak
-make
-./RouteTime airports.txt schedules.txt routes.txt > test
-diff test flights.out 
-vim flights.out 
-./RouteTime airports.txt schedules.txt routes.txt > test
-cat test 
-diff test flights.out 
-ls
-vim flights.c 
-make
-./RouteTime airports.txt schedules.txt routes.txt > test
-cat test 
-diff test flights.out 
-vim flights.c 
-exit
-exit
-ps
-ls
-clear
-screen
-exit
-cd
-view .networkKey 
-vim .networkKey 
-ls
-vim
-make
-vim vector.c 
-make
-make vector-test
-./vector-test 
-make vector-memcheck
-vim ll.c
-make ll-memcheck 
-ls
-vim ll.c
-make ll-test
-ll-test
-./ll-test
-ll-test
-./ll-test
-vim ll.c
-make ll-test
-./ll-test 
-make ll-memcheck 
-vim ll.c
-make ll-memcheck 
-ls
-cd ..
-scp -r lab3 cs61c-hp@hive4.cs.berkeley.edu:~
-scp -r cs61c-hp@hive4.cs.berkeley.edu:~cs61c/bin/Mars4_3.jar
-scp -r cs61c-hp@hive4.cs.berkeley.edu:~cs61c/bin/Mars4_3.jar .
-ls
-./Mars4_3.jar 
-bg
-cd lab3
-wget http://www-inst.eecs.berkeley.edu/~cs61c/su13/labs/03/lab3_ex3.s
-rm lab3_ex3.s.1
-ls
-vim lab3_ex4.s
-exit
-cd Documents/School/cs61c/
-cd lab/
-ls
-cd lab3
-ls
-clear
-screen
-exit
-ls
-./RouteTime 
-./RouteTime airports.txt schedules.txt routes.txt 
-cat flights.out 
-./RouteTime airports.txt schedules.txt routes.txt 
-make
-./RouteTime airports.txt schedules.txt routes.txt 
-cat test 
-./RouteTime airports.txt schedules.txt routes.txt > test
-diff test flights.out 
-cat test
-cat flights.out 
-ls
-vim Makefile 
-cat Makefile 
-make flights-memcheck
-make flights-memcheck | less
-make flights-memcheck 2&>1
-make flights-memcheck 2>&1
-make flights-memcheck 2>&1 | less
-mak
-make
-make flights-memcheck 2>&1 | less
-ls
-rm *.o
-ls
-rm 1
-ls
-rm RouteTime
-ls
-rm test
-ls
-cd ..
-ls
-scp -r hw2 cs61c-hp@hive4.cs.berkeley.edu:~
-ls
-cs61clon
-ssh -X cs61c-hp@hive4.cs.berkeley.edu
-exit
-./RouteTime 
-./RouteTime airports.txt schedules.txt routes.txt 
-ls
-vim schedules.txt 
-ls
-vim RouteTime.c
-cd
-cat .networkKey 
-cd Documents/School/ee40/
-ls
-cd docs/
-ls
-evince HW1_assignment.pdf 
-bg
-cd ../..
-cd cs61c/
-cd hw/hw2
-ls
-vim
-make run
-cat flights.out 
-ls
+vim posts_controller.rb 
 cd ../..
 ls
-cd lec
-s
+vim
+rails destroy 
 ls
-vim lec07
+rails destroy test
+rails destroy controller test
+cd app/views/
 ls
-touch lec07
+cd ../..
+rails g controller blobs
+vim
+rails generate model Post
+rails destroy model Post
+rails generate model Post title:string text:string
+rails generate model Post title:string text:text
+vim db/migrate/20131103045942_create_posts.rb 
+rake migrate
+rake db:migrate
+vim
+exit
+rails generate model Post title:string text:text
+rails remove
+rails delete model Post
+rails destroy model Post
+rails g controller Test
 ls
-cd ..
-ls
-clear
+mv app/views/posts/_comment.html.erb app/views/comments/
+;;ljkexit
+exit
+vsplit 50
+rails server
+exit
 l
 ls
-cd lec
+cd ..
 ls
-cd ../..
-ls
-cd ee40/
-cd doc
-cd docs/
-ls
-evince HW1_assignment.pdf 
-(( 1875*2/10000 ))
-echo $(( 1875*2/10000 ))
-echo $(( 1875.0*2.0/10000.0 ))
-clear
-python
-clear
-ls
-clear
-ls
+cat lol.txt
 cd
-ls
-cd Documents/School/cs61c/
-ls
-mars
-ls
-cd lab
-ls
-sudo mkdir /opt/mars
-braid
-mv Mars4_3.jar /opt/mars/
-sudo mv Mars4_3.jar /opt/mars/
-sydo
-clear
-mars
-/opt/mars/Mars4_3.jar 
-bg
-alias mars=/opt/mars/Mars4_3.jar
-mars
-echo "alias mars=/opt/mars/Mars4_3.jar" >> .bashrc
-cat .bashrc 
-echo "alias mars=/opt/mars/Mars4_3.jar" >> .bashrc
-cat .bashrc 
-echo "alias mars=/opt/mars/Mars4_3.jar" >> ~/.bashrc
-cat ~/.bash
-cat ~/.bashrc
-rm .bashrc 
-cat ~/.bashrc
+cat lol.txt
 exit
-cs61clon
-cd Documents/School/cs61c/
-ls
-cd hw
-ls
-cd hw2
-ls
-vim
-ls
-make
-./RouteTime 
-./RouteTime airports.txt schedules.txt routes.txt 
-vim flights.c
-vimgdb RouteTime
-vim flights.c
-make
-./RouteTime airports.txt schedules.txt routes.txt 
-vimgdb RouteTime
-screen
+ngrok 4567
 exit
-cheese
-ls
-vim ll_anagram.s 
+node
 exit
-cd
-ls
-l *.c
-vim test2.c
-vim test.c
-ls
-cd Documents/
-vim test2.c
-ls
-ls *.c
-cd School/
-ls *.c
-cd cs61c/
-ls *.c
-ls
-cd hw/
-ls *.c
-ls
-vim test2.c 
+irb
 exit
-mips
-mars
-bg
-exit
-vim
-cat qs
-rm qs
-ls
-vim ll_anagram.s 
-ls
-vim ll_anagram.s 
-ls
-clear
-pyth
-python
-ls
-vim ll_anagram.s 
+cd ..
 ls
 cd ..
-scp -r hw3/ cs61c-hp@star.cs.berkeley.edu:~
-cs61clon
-exit
+cd Projects/Instructional/
+ls
+cd Ruby
+ls
+cd gothonweb/
+ls
+cd lib
+ls
+vim gothonweb
 cd
+ls *.rb
+vim Test.rb 
+ls
+exit
+clear
+ls
+cd Documents/School/
+l
+cd cs188
+ls
+cd
+cd Documents/Projects/Ongoing/Cow
+find | grep 'cow
+find | grep 'cow'
+cd Documents/Projects/CowChat/
+clear
+ls
+vim cowServer.rb 
+hsplit 30
+ls
+vim index.erb
+mkdir views
+mv index.erb views/
+vim views/
+cd views/
+ls
+vim index.erb 
+exit
+vsplit 50
+ruby cowServer.rb 
+exit
+ls
+./login.sh arctangent
+./send.sh "Hi" flaming-sheep
+./logout.sh 
+./login.sh Arctangent
+./send.sh "Hi" flaming-sheep
+. logout.sh 
+. login.sh Arctangent
+. send.sh "hello" flaming-sheep
+. send.sh "potato" dragon
+. send.sh "dragon" dragon
+git add .
+git commit -m 'added frontend'
+git push origin master
+exit
+ramnodelon 
+ls ~/lol.txt
+cat ~/lol.txt
+find | grep 'lol.txt'
+find . | grep 'lol.txt'
+find / | grep 'lol.txt'
+sudo find / | grep 'lol.txt'
+exit
+cat ~/lol.txt
+cd
+find | grep 'lol.txt'
 cd Downloads/
-ls circuit
 ls
-ls | grep jar
-cd
-ls | grep jar
-cd Documents/
-ls | grep jar
-cd School/
-ls | grep jar
-;s
-ls
-cd ee40/
-ls
-ls * | grep jar
-ls *
-cd
-find | grep jar
-cd circuit/
-ls
-firefox index.html 
-ls
-clear
-ls
-firefox index.html 
-clear
-ls
-exit
-cs61clon
-airmon-ng 
-exit
-mars
+evince Lecture14 
+evince Lecture15.pdf 
 bg
-vim
-mv test2.c Documents/School/cs61c/hw/
-l
-cat ~/captainforever 
-cd Downloads/tor-browser_en-US/
-ls
-./start-tor-browser 
-ls
-cd
-clear
-ls
-ll
-cleat
-clear
-ls
+exit
 ping 8.8.8.8
-clear
-cs61clon
-fcs61clon
-ssh -X cs61c-hp@hive4.cs.berkeley.edu
-ssh -X cs61c-hp@hive6.cs.berkeley.edu
+curl xkcd.com
+exit
+ga .
 ls
+git init
+ga .
+gcm
+gc 'Finished problems 1 and 2
+gc 'Finished problems 1 and 2'
+git add remote origin https://github.com/Arctangent1759/cs188Project3
+git remote add origin https://github.com/Arctangent1759/cs188Project3
+git pull origin master
+gpm
+gpu
+gpu master
+gpu origin master
+export EDITOR=im
+export EDITOR=vim
+clear
+ls
+gpm
+exit
+ping 8.8.8.8
+python
+fg
+exit
 cd
-cd Documents/School/cs61c/
-ls
-cd hw/hw
-cd hw/
-mkdir hw4
-mkdir hw3
-rmdir hw4
-ls
-cd hw3
-ls
-wget http://www-inst.eecs.berkeley.edu/~cs61c/su13/hw/03/hw3.txt
-wget http://www-inst.eecs.berkeley.edu/~cs61c/su13/hw/03/ll_anagram.s
-ls
-vim
-scren
-screen
-cs61clon
-exit
-mkdir proj1
-scp -r cs61c-hp@hive4.cs.berkeley.edu:~cs61c/proj/01/ .
-scp -r cs61c-hp@hive6.cs.berkeley.edu:~cs61c/proj/01/ .
-ls
-ls 01
-ls proj1/
-mv 01/* proj1/
-ls
-ls 01
-rmdir 01
-cd r
-cd proj1/
-ls
-clear
-ls
-vim
-make
-mips-gcc
-cs61clon
-vim /home/arctangent1759/.bash
-vim /home/arctangent1759/.bashrc 
-fcs61clon
-vim /home/arctangent1759/.bashrc 
-ssh -X cs61c-hp@hive6.cs.berkeley.edu
-scp -r cs61c-hp@hive6.cs.berkeley.edu:/home/ff/cs61c/bin/mips-xcc/bin/mips-gcc .
-ls
-./mips-gcc 
-make
-mv mips-gcc /opt/
-sudo mv mips-gcc /opt/
-vim /home/arctangent1759/.bashrc 
-exit
-ls
-clear
-cd Documents/School/cs61c/
-ls
-mkdir proj
-cd proj/
-ls
-clear
-screen
+vim memo.txt
 exit
 c
 cd
+cd Documents/School/cs170/
 ls
-clear
-cc
-clear
-mkdir .ssh
-cd .ss
-cd .ssh
+cd Textbook/
 ls
-cat known_hosts 
-ssh-keygen 
-ls
-cat id_rsa
-cat id_rsa.pub 
-ssh-keygen(1) 
-man ssh-keygen 
-ls
-cat id_rsa.pub 
-cp id_rsa.pub authorized_keys
-ls
-cat authorized_keys 
-ls
-scp authorized_keys cs61c-hp@hive6.cs.berkeley.edu:~/.ssh/
-cs61clon
-ls
-scp authorized_keys cs61c-hp@hive6.cs.berkeley.edu:~/.ssh/
-cd
-ls
-cd Documents/School/cs61c/
-ls
-cd proj/
-ls
-cd proj1/
-man ssh
-cs61clon
-ls
-ssh cs61c-hp@hive6.cs.berkeley.edu who
-ssh cs61c-hp@hive6.cs.berkeley.edu ls
-ssh cs61c-hp@hive6.cs.berkeley.edu cd hw0
-ssh cs61c-hp@hive6.cs.berkeley.edu ls
-ssh cs61c-hp@hive6.cs.berkeley.edu cd hw0 & ls
-ssh -o "BatchMode yes" cs61c-hp@hive6.cs.berkeley.edu ls
-touch run
-vim run
-./run
-chmod +x ./run
-./run
-python
+evince chap6.pdf 
+evince chap7.pdf 
+bg
+ex
 exit
-vim ./run
-exit
-ps
-exit
-ls
-cd ../../
-ls
-clear
-ls
-cd lab
-ls
-cd ..
+cd Documents/School/cs170/
 ls
 cd hw
 ls
-cd hw3
+mkdir hw9
+cp hw8/hw8.tex hw9/
+cd hw9
 ls
-clear
+vim hw8.tex 
+mv hw8.tex hw9.tex 
 ls
-mars
-bg
+vim hw9.tex 
 exit
-ls
-vim run 
-./run 
-vim run
-./run
-ls
-vim run
-./run
-vim run
-./run
-vim run
-./run
-touch remotescr
-mv remotescr.sh
-mv remotescr remotescr.sh
-vim remotescr.sh 
-vim run 
-ls
-./run
-ls
-vim run
-./run
-vim run
-./run
-vim run
-./run
-vim remotescr.sh 
-./run
-vim remotescr.sh 
-vim disassemble.c 
-./run
-vim disassemble.c 
-ls
-cs61clon
-vim remotescr.sh 
-./run
-vim mipscode/insts.dump 
-vim disassemble.
-vim disassemble.c
-ls
+vim
 exit
-cd ../../../../Projects/Ongoing/Pirate/
-cd test/
-ls
-../pirate.sh https://www.youtube.com/playlist?list=PL96C35uN7xGLDEnHuhD7CTZES3KXFnwm0
-ls
-mplayer  All_The_Colours,_Including_Grue__How_Languages_See_Colours_Differently-2TtnD4jmCDQ.mp3 
-mplayer *.mp4
-mplayer *
-ls
+cd \
 cd
-cd Documents/School/cs61c/
+cd Documents/Projects/Ongoing/Cow
+cd Documents/Projects/Ongoing/
 ls
-cd hw/hw3
+cd ..
 ls
-vim ll_anagram.s 
-vim hw3.txt 
+mv CowChat/ Ongoing/
+cd Ongoing/
+cd Co
+cd CowChat/
+ls
+ruby cowServer.rb 
+exit
+ngrok cowServer.rb 
+ngrok 4567
+exit
+ls
+. logout.sh 
+. login.sh Alex
+fortune
+. send.sh "$(fortune)"
+. send.sh ""$(fortune)""
+. send.sh "$(fortune)"
+. send.sh "$(fortune)" flaming-sheep
+. send.sh "$(fortune)"
+vim send.sh 
+fortune
+$fortune
+echo $fortune
+echo $(fortune)
+echo ${fortune}
+im send.sh 
+vim send.sh 
+echo ${fortune// /%20}
+echo ${$(fortune)// /%20}
+vim send.sh 
+echo ${fortune// /%20}
+vim send.sh 
+echo ${fortune// /%20}
+echo ${fortune///}
+echo ${fortune//}
+echo ${fortune/}
+echo ${fortune}
+echo ""${fortune}
+echo ${fortune}
+x="asdf"
+echo ${x}
+echo ${(fortune)}
+$(fortune)
+echo $(fortune)
+ecjp {"$(fortune)"}
+echo {"$(fortune)"}
+echo ${"$(fortune)"}
+echo ${$(fortune)}
+echo ${fortune}
+fortune
+fortune | sed s/ /%20/g
+fortune | sed "s/ /%20/g"
+fortune | sed "s/ /%20/g"
+ngrok -authtoken GRwaMz3mEu6Kt881h8LL 1759
+ngrok -authtoken GRwaMz3mEu6Kt881h8LL 
+ngrok -authtoken GRwaMz3mEu6Kt881h8LL 1759
+cd
+sudo find / | grep 'ngrok'
 exit
 cd ../../..
-cd ../Projects/
+cd ../Projects/Ongoing/
 ls
-cd Ongoing/Pirate/
+cd CowChat/
 ls
-cd test/
-ls
-../pirate.sh https://www.youtube.com/playlist?list=PL96C35uN7xGI08uVWv9iEX-maKrBhEcIn
+. receive.sh 
 exit
-apropos ls
-apropos apropos 
-apropos close
-apropos kill process
-apropos kill process | less
-apropos man
-man apropos 
-man man
+$editor
+$EDITOR
+exit
+lynx
+cler
+clear
+exit
+ngrok 4567
+exi
+exit
+cd
+cd Documents/Projects/Ongoing/CowChat/
+ls
+ruby cowServer.rb 
+exit
+sudo vim /usr/share/cowsay/cows/nyan.cow
+cowthink
+cowsay -f nyan asdfasdf
+cd
+cd Documents/Projects/Ongoing/CowChat/
+ruby cowServer.rb 
+ngrok 4567
+ls
+vim cowServer.rb 
+exit
+vim /home/arctangent1759/.tmux
+vim /home/arctangent1759/.tmux.conf 
+vim /home/arctangent1759/.tmux/.tmuxrc 
+tmux split -p 30
+tmux split -p 30 && tmux select-pane -D
+ls
+cd
+clear
+tmux split -p 30 && tmux select-pane -D
+tmux split -p 30 && tmux select-pane -J
+vim /home/arctangent1759/.tmux/.tmuxrc 
+tmux split -p 30 && tmux select-pane -D
+tmux split -p 30
+tmux split -p 30 && tmux split -v
+vim /home/arctangent1759/.bashrc
+tmux split -p 30 && tmux split -h
+tmux split -p 30 && tmux split -h && tmux select-pane -U
+tmux split -p 30 && tmux split -h && tmux select-pane -U && vim
+tmux split -h
+tmux split -p 30 && tmux split -h && ipython && tmux select-pane -U && vim
+tmux split -p 30 && tmux split -h && tmux select-pane -U && vim
+vim .bashrc
+exit
+ide
+clear
+vim /home/arctangent1759/.vim/config/mappings.vim 
+tmux split
+man tmux
+exit
+ie
+ide
+exit
+vim ~/.bashrc
+exit
+ls
+cd Documents/School/
+ls
+celar
 clear
 ls
+cd cs188/
+ls
+cd proj/
+ls
+cd tracking/
+ls
+clear
+ls
+hsplit 30
+clear
+vim
 exit
+vsplit 50
+clear
+python autograder.py -q q1 | less
+clear
+python autograder.py -q q1 | less
+python autograder.py -q q1
+python autograder.py -q q1 | less
+python autograder.py -q q1
+python autograder.py -q q2
+python autograder.py -q q1
+python autograder.py -q q2
+python autograder.py -q q3
+python autograder.py -q q3 --nographics
+python autograder.py -q q3 --no-graphics
+python autograder.py -q q3
+python autograder.py -q q3 | less
+python autograder.py -q q3 --no-graphics | less
+python autograder.py -q q3
+python autograder.py -q q4
+python autograder.py -q q4 | less
+python autograder.py -q q7
+python autograder.py -q q6
+python autograder.py -q q5
+python autograder.py -q q4
+python game.py
+python busters
+python busters.py
+python autograder.py -q q4
+python autograder.py -q q1
+python autograder.py -q q4
+python autograder.py -q q5
+python autograder.py -q q6
+python autograder.py -q q5
+python autograder.py -q q6
+python autograder.py -q q6 | less
+python autograder.py -q q
+python autograder.py -q q6
+exit
+clear
+ipython
+`ls`
+echo `ls`
+{`ls`}
+echo {`ls`}
+echo {`fortune`}
+echo ${`fortune`}
+echo `{fortune}`
+echo ${`fortune`}
+echo {`fortune`}
+echo $({`fortune`})
+echo $(echo {`fortune`})
+ipython
+cd Documents/School/cs188/proj/
+ls
+cd tracking/
+ls
+hsplit 30
+vim
+exit
+vsplit 50
+clear
+

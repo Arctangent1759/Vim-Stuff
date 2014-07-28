@@ -1,7 +1,0 @@
-import DList.*;
-
-public class ChainList{
-	DList<Object> Chains;
-	public ChainList(){
-	}
-}

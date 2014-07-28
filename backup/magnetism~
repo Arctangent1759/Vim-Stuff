@@ -1,4 +1,0 @@
-F = q(E + V x B)
-dF = I dl x B
-F = I \integral dl x B
-B=(\mu_0 I)/(2 pi r)

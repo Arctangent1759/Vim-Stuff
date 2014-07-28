@@ -1,6 +1,7 @@
 "----------------------
 "--------Maps----------
 "----------------------
+nnoremap <c-b> <c-v>
 noremap j gj
 noremap k gk
 "Convenience
@@ -30,10 +31,6 @@ nnoremap <leader><leader><leader>kirby :echom "(>'')>"<cr>
 nnoremap <leader>tn :tabnew<cr>
 nnoremap <leader>tc :tabclose<cr>
 nnoremap <leader>mt :tabmove
-nnoremap <leader><leader>h :tabp<cr>
-nnoremap <leader>, :tabp<cr>
-nnoremap <leader><leader>l :tabn<cr>
-nnoremap <leader>. :tabn<cr>
 nmap <c-j> mz:m+<cr>`z
 nmap <c-k> mz:m-2<cr>`z
 vmap <c-j> :m'>+<cr>`<my`>mzgv`yo`z
@@ -82,11 +79,21 @@ nnoremap L ]}
 nnoremap <leader>tab mzggvG$='z
 
 "OMG EMBEDDED SHELL
-nnoremap ;osh :!tmux split -p 30<cr>
+nnoremap <leader>osh :silent execute "!tmux split -p 30"<cr>
 
 "---------------------
 "------Run Maps-------
 "---------------------
-nnoremap <leader>r :execute "!pdflatex " . @% . "; evince " . join(split(@%,"\\.tex")) . ".pdf &"<cr>
+"nnoremap <leader>r :execute "!pdflatex " . @% . "; evince " . join(split(@%,"\\.tex")) . ".pdf &"<cr>
+nnoremap <leader>r :silent execute "!pdflatex " . @% . " > /dev/null && evince " . join(split(@%,"\\.tex")) . ".pdf &" \| redraw!<cr>
 "nnoremap <leader><f5> :execute "!javac %;java " . join(split(@%,".java"))<cr>
 nnoremap <leader><f5> :execute "!gcc %; ./a.out;"<cr>
+
+
+"---------------------
+"-----EasyMotion------
+"---------------------
+let g:EasyMotion_leader_key = ','
+
+" Editing a protected file as 'sudo'
+cnoremap <leader><leader>w w !sudo tee % >/dev/null<CR>

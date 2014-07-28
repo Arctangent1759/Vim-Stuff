@@ -1,8 +1,0 @@
-function Set(){
-  this.list=[];
-  this.
-}
-function _pair(key,value){
-  this.key=key;
-  this.value=value;
-}

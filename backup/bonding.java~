@@ -1,7 +1,0 @@
-class ball extends Throwable{}
-public class P{
-	P target;
-	public P(P target){
-		this.target=target;
-	}
-}

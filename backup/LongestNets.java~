@@ -1,9 +1,0 @@
-/**
- * LongestNets is a struct-like object that represents the longest networks on a board.
-**/
-public class LongestNets{
-	public Net black;
-	public Net white;
-	public LongestNets{
-	}
-}
