@@ -24,6 +24,7 @@ let localleader="'"
 let g:gundo_right=1
 let g:gundo_close_on_revert=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+let g:airline#extensions#tabline#enabled = 1
 
 syntax enable
 
@@ -48,9 +49,9 @@ set smartcase
 set encoding=utf8
 set autowrite
 set noswapfile
-set backupdir=~/.vim/gen/backup
+set backupdir=~/.vim/genfiles/backup
 set undofile
-set undodir=~/.vim/gen/undo
+set undodir=~/.vim/genfiles/undo
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
 
