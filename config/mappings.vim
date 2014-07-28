@@ -93,7 +93,4 @@ nnoremap <leader><f5> :execute "!gcc %; ./a.out;"<cr>
 "---------------------
 "-----EasyMotion------
 "---------------------
-let g:EasyMotion_leader_key = ','
-
-" Editing a protected file as 'sudo'
-cnoremap <leader><leader>w w !sudo tee % >/dev/null<CR>
+let g:EasyMotion_leader_key = '<Leader>e'

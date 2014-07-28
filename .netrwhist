@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/arctangent1759/Documents/Projects/CowChat/views'
-let g:netrw_dirhist_2='/home/arctangent1759/.tmux'
-let g:netrw_dirhist_3='/home'
-let g:netrw_dirhist_4='/home/arctangent1759/test'
-let g:netrw_dirhist_5='/home/arctangent1759/Documents/Projects/Ongoing/InvestBot/src'
-let g:netrw_dirhist_6='/home/arctangent1759/.vim'
