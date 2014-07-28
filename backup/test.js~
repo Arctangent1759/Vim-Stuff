@@ -1,6 +1,0 @@
-http=require('http')
-http.createServer(function(request,response){
-    response.writeHeader(200,{'content-type':'text/plain'});
-    response.write("Potato");
-    response.end();
-}).listen(8000);

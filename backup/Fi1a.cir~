@@ -1,8 +1,0 @@
-Figure 1
-V1 1 0 SINE(5 10 5k)
-R1 1 2 3.0k
-R2 2 0 1.0k
-
-.Trans 0 .001
-
-.End

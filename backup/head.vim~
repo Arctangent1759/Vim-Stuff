@@ -1,8 +1,0 @@
-call pathogen#infect()
-set nocompatible
-filetype off
-Bundle 'gmarik/vundle'
-call vundle#rc()
-
-source ~/.vim/plugin/supertab.vim
-"let g:SuperTabDefaultCompletionType = 'context' 

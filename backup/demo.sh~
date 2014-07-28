@@ -1,4 +1,0 @@
-for i in $(cat data | egrep 'img src="/i/t.gif"  class="i_p0"' | gawk '{split($7,a,"\""); split(a[2],b,"/"); print "http://pastebin.com/raw.php?i=" b[2]}'); 
-do 
-	curl $i >> texes
-done

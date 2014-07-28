@@ -1,8 +1,0 @@
-require_relative "gothonweb/version"
-require "sinatra"
-
-module Gothonweb
-    Sinatra.get "/" do
-        return "I am not a walrus."
-    end
-end
