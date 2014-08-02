@@ -15,6 +15,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'ervandew/supertab'
 Plugin 'kien/ctrlp.vim'
+Plugin 'rhysd/vim-clang-format'
 
 call vundle#end()
 filetype plugin indent on
@@ -25,6 +26,7 @@ let g:gundo_right=1
 let g:gundo_close_on_revert=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 let g:airline#extensions#tabline#enabled = 1
+let g:EclimCompletionMethod = 'omnifunc'
 
 syntax enable
 
@@ -79,7 +81,8 @@ nnoremap <c-v> "+p
 vnoremap <c-c> "+y
 vnoremap <c-v> "+p
 
-nnoremap <leader>f mzgg=G'z
+nnoremap <leader><tab> mzgg=G'z
+autocmd FileType c,cpp,objc nnoremap <Leader>f :<C-u>ClangFormat<CR>
 
 
 nnoremap <leader>n :NERDTreeToggle<cr>
