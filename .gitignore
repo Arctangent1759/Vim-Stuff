@@ -1,6 +1,2 @@
 *.pyc
-bundle/*
-genfiles/backup/*
-genfiles/undo/*
-genfiles/viminf*
 .netrwhist
