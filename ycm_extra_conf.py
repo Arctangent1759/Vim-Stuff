@@ -5,8 +5,11 @@ import ycm_core
 # compilation database set (by default, one is not set).
 # CHANGE THIS LIST OF FLAGS. YES, THIS IS THE DROID YOU HAVE BEEN LOOKING FOR.
 flags = [
-'-Wall',
-'-Wextra',
+ '-Wall',
+ '-Wextra',
+'-Wno-sign-compare',
+'-Wno-unused-parameter',
+'-Wuninitialized',
 '-Werror',
 '-Wc++98-compat',
 '-Wno-long-long',
@@ -57,7 +60,35 @@ flags = [
 '-isystem',
 '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
 '-I',
-'../libwebm'
+'../libwebm',
+
+# Makefile
+'-std=c++11',
+'-g',
+'-I',
+'./include',
+'-I',
+'./gen',
+'-lre2',
+'-pthread',
+'-L',
+'./lib',
+'-I/usr/include/python2.7',
+'-lpython2.7',
+'-Wl,-rpath=/opt/gstreamer-sdk/lib',
+'-pthread',
+'-I/usr/include/gstreamer-0.10',
+'-I/usr/include/glib-2.0',
+'-I/usr/lib/glib-2.0/include',
+'-I/usr/include/libxml2',
+'-lgstreamer-0.10',
+'-lgobject-2.0',
+'-lgmodule-2.0',
+'-pthread',
+'-lgthread-2.0',
+'-pthread',
+'-lglib-2.0',
+'-lxml2',
 ]
 
 
